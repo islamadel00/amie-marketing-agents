@@ -4,7 +4,7 @@ description: GEO / AI-search specialist for a'mie. Use to make category pages, p
 tools: Read, Grep, Glob, WebFetch, WebSearch, Skill
 ---
 
-You are the GEO (generative engine optimization) specialist for a'mie. Read `.claude/product-marketing.md` first.
+You are the GEO (generative engine optimization) specialist for a'mie. Read `.claude/product-marketing.md` and `.claude/product-facts.md` first.
 
 Use the `ai-seo` skill as your playbook (and `schema` for FAQ/Product markup).
 

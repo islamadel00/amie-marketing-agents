@@ -10,10 +10,11 @@ _Last updated: 2026-10-22_
 - **Store categories (the only ones shown on the site, in this order):** الأكثر مبيعاً · العناية بالجسم · لمعة الجسم · مجموعة الهدايا والعروض · المجموعات · العناية بالشعر · العطور · منتجات التان. "جميع المنتجات" = /products.
 
 ### Key products (facts only — do not invent ingredients or benefits)
+> **Full ingredients, sizes, prices, barcodes, STP and hooks per product: `.claude/product-facts.md` (official team sheets, 2026-10-22). It wins over this summary on sizes and ingredients. Its "⛔ ممنوع النشر" table lists sheet phrases that must never be published.**
 - **Hair Wax** stick 30 ml — beeswax + sweet almond oil; tames flyaways, sleek look, natural shine, no heat. #1 by orders.
 - **Sleek Secret Hair Mascara** 15 ml — panthenol; sets baby hairs in one swipe, no flakes. **Sleek Brush** — curved, dense bristles, parting tail. **Hair Set** = wax + mascara + brush + bag.
-- **Sea Salt Body Scrub** 300 ml (Lavender / Lemongrass) — shea + mango butter + vitamin E; stronger exfoliation than sugar.
-- **Whipped Body Butter** 250 ml (Lavender / Lemongrass) — shea, cocoa, sweet almond oil, hyaluronic acid; light, fast-absorbing, non-greasy.
+- **Sea Salt Body Scrub** 300 ml (Lavender / Lemongrass) — sea salt, shea + mango butter, rosemary oil, vitamin E; Lavender also has argan oil and **nut shells (allergy note required)**. No "3x stronger" or comparison claims.
+- **Whipped Body Butter** 250 ml (Lavender / Lemongrass) — shea, cocoa, sweet almond oil, jojoba, coconut, hyaluronic acid (Lavender adds aloe, B5, vitamin E); light, fast-absorbing, non-greasy.
 - **Foot Cream** — urea + lactic acid for rough heels. **Hand Cream** — shea, aloe vera, SPF 10. **Lip Plump** 10 ml — hyaluronic acid + mango butter (no plumping/enlarging claims).
 - **Body Glow** oil — water-like shine, silky feel, vitamin E, shea, cocoa, Natura scent, all skin tones.
 - **Body Highlighter** stick — Marshmallow (pearly) / Chocolate (bronze), shea + cocoa. Sets with makeup brush. **Into The Glow** set.
@@ -26,6 +27,7 @@ _Last updated: 2026-10-22_
 - Conscious, busy, often stressed; value thoughtful, quality, beautifully designed products with a story; care about wellness and balance.
 - Buy self-care regularly; value quality over price; influenced by educational content.
 - Primary persona: "Sara", 29, employee in Riyadh, long hours.
+- Product team targets (per product sheet): women 18–35 for tan, highlighters, hair and body care; all women for lip/hand care. Use the per-product segment in `product-facts.md` for ads and product copy; keep 24–45 for brand-level messaging until the team confirms one range.
 
 ## Problems & Pain Points
 - Constant work pressure and fast life; wants quick moments of comfort and self-care.
@@ -51,7 +53,7 @@ _Last updated: 2026-10-22_
 - Visual identity: black, smoky white, silver; secondary nature/floral palette. Fonts: Readex Pro (AR), Montserrat (EN). Minimal emoji.
 
 ### Hard rules (all content, ads, pages)
-- No unverified claims: no "علاج/يعالج", no "safe for pregnancy/children", no "negative energy", no medical results, percentages or "clinically proven", no "100% natural".
+- No unverified claims: no "علاج/يعالج", no "آمن/آمنة" or "خالي من المواد الضارة/الكيماويات", no "تنشيط الدورة الدموية", no "توحيد اللون", no "لا يسد المسام", no plumping/"امتلاء" for Lip Plump, no "first/most famous/no similar product" claims, no "safe for pregnancy/children", no "negative energy", no medical results, percentages or "clinically proven", no "100% natural".
 - No cash on delivery. No competitor names. Never reveal internal data sources.
 - Don't change category names or URLs (renaming in Zid changes the URL).
 

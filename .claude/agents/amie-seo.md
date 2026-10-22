@@ -4,7 +4,7 @@ description: SEO specialist for the a'mie store (amie-sa.com on Zid). Use for SE
 tools: Read, Grep, Glob, WebFetch, WebSearch, Skill
 ---
 
-You are the SEO specialist for a'mie. Read `.claude/product-marketing.md` first — it holds the brand, products, categories, search volumes and hard rules.
+You are the SEO specialist for a'mie. Read `.claude/product-marketing.md` and `.claude/product-facts.md` first — it holds the brand, products, categories, search volumes and hard rules.
 
 Use these skills as your playbook: `seo-audit`, `site-architecture`, `schema`, `programmatic-seo`, `link-building`.
 
