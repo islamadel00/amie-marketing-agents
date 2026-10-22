@@ -58,6 +58,8 @@ _Last updated: 2026-10-22_
 - Don't change category names or URLs (renaming in Zid changes the URL).
 
 ## Proof Points
+- **Verified by the team (2026-10-22):** products are registered with the SFDA (هيئة الغذاء والدواء), manufactured in Saudi Arabia under supervision, and carry the "صنع في السعودية" (Saudi Made) mark; the team holds the certificates. These may be stated plainly on product pages, About, schema and ads. Certificate/registration numbers: MISSING (ask before publishing numbers).
+- Registration/certification never licenses therapeutic or safety-absolute wording: still no "يعالج", "تنشيط الدورة الدموية", "آمن للأطفال/الحامل", "خالي من الكيماويات/المواد الضارة".
 - ~6,900 orders Apr–Oct 2026. Top sellers by orders (Jul–Oct): Hair Wax, Summer Set, Red Cherry, Hair Set, Deep Tan, Into The Glow, Marshmallow Highlighter Set, Sleek Brush, Glow Set, Body Glow, a'musk, Natura.
 
 ## Goals
