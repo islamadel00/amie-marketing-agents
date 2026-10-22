@@ -11,9 +11,10 @@ CARD = '''<div style="display: flex; background: #F5F6F7; border: 1px solid rgba
 </div>
 </div>'''
 ING = '''<div style="background: #F5F6F7; border: 1px solid rgba(29, 29, 28, 0.08); border-radius: 16px; padding: 22px; margin-top: {mt};">
-<h4 style="font-size: clamp(16px, 4.3vw, 19px); color: #1b1b1c; margin: 2px 0 3px;">{t} <span style="color: #7d8d9d; font-size: clamp(12px, 3.3vw, 13.5px); font-weight: normal;">({en})</span></h4>
+<h4 style="font-size: clamp(16px, 4.3vw, 19px); color: #1b1b1c; margin: 2px 0 3px;">{t}{en}</h4>
 <p style="margin: 7px 0 0; color: #2b2b2b; font-size: clamp(12px, 3.3vw, 13.5px); line-height: 1.95;">{b}</p>
 </div>'''
+EN = ' <span style="color: #7d8d9d; font-size: clamp(12px, 3.3vw, 13.5px); font-weight: normal;">({})</span>'
 H3 = '<h3 style="font-size: clamp(19px, 5vw, 24px); color: #1b1b1c; margin: 0 0 10px;">{}</h3>'
 
 def cards(items):
@@ -24,7 +25,7 @@ def section(title, body, intro=None):
     return f'<div style="padding: 32px 20px;">\n{H3.format(title)}{i}\n{body}\n</div>'
 
 def build(title, sub, intro, sections, steps, video=None):
-    """sections: list of (kind, title, items, intro) where kind is 'cards' or 'ingredients'."""
+    """sections: list of (kind, title, items, intro) where kind is 'cards', 'ingredients' or 'text' (intro is the paragraph); empty en skips the English name."""
     out = ['<div style="text-align: right; max-width: 720px; margin: 0 auto; background: #ffffff; color: #1b1b1c;">',
            '<div style="text-align: center; padding: 48px 20px 32px; background: #f8f9fa; border-radius: 20px;">',
            f'<h2 style="font-size: clamp(21px, 5.4vw, 32px); line-height: 1.25; color: #1b1b1c; margin: 0;">{title}</h2>',
@@ -37,8 +38,11 @@ def build(title, sub, intro, sections, steps, video=None):
     for kind, stitle, items, sintro in sections:
         out.append(DIV.format(m='24px 0 0' if first else '0'))
         first = False
+        if kind == 'text':
+            out.append(section(stitle, f'<p style="color: #2b2b2b; margin: 0; font-size: clamp(12.5px, 3.4vw, 14px); line-height: 1.95;">{sintro}</p>'))
+            continue
         body = cards(items) if kind == 'cards' else '\n'.join(
-            ING.format(mt='26px' if i == 0 else '14px', t=t, en=en, b=b) for i, (t, en, b) in enumerate(items))
+            ING.format(mt='26px' if i == 0 else '14px', t=t, en=EN.format(en) if en else '', b=b) for i, (t, en, b) in enumerate(items))
         out.append(section(stitle, body, sintro))
     out.append(DIV.format(m='0'))
     st = '\n'.join(f'<p style="padding: 14px 0; margin: 0; color: #2b2b2b; font-size: clamp(12px, 3.3vw, 13.5px); line-height: 1.85;"><strong style="color: #7d8d9d; font-size: 16px;">{AR[i]} </strong> {s}</p>' for i, s in enumerate(steps))
