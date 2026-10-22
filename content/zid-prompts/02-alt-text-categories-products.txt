@@ -38,15 +38,15 @@
 | مجموعة هايلايتر الجسم مارشميللو | Marshmallow Body Highlighter Set | مجموعة هايلايتر الجسم |
 | هايلايتر الجسم تشوكلت | Chocolate Body Highlighter | هايلايتر الجسم |
 | هايلايتر الجسم مارشميللو | Marshmallow Body Highlighter | هايلايتر للجسم |
-| سكراب الجسم اللافندر للبشرة الجافة | Lavender scrub | مقشر الجسم |
-| زبدة الجسم اللافندر للبشرة الجافة | Lavender Butter | زبدة الجسم |
+| سكراب الجسم اللافندر للبشرة الجافة | Lavender Sea Salt Body Scrub | مقشر الجسم |
+| زبدة الجسم اللافندر للبشرة الجافة | Lavender Whipped Body Butter | زبدة الجسم |
 | واكس تصفيف الشعر | Hair Wax 30ml | واكس للشعر |
 | مجموعة اللمعه | Glow Set | — |
 | جلّ لمعة الجسم | Body Glow | لمعة الجسم |
 | مجموعة الصيف | Summer Set | — |
 | زيت ديب تان | Deep Tan Tanning Oil 150ml | زيت تان |
 | جل تان قلتري قولد | Glittery Gold Tanning Gel 120ml | جل تان |
-| شنطة ايمي | Bag | — |
+| شنطة ايمي | a'mie Bag | — |
 | مرآة ايمى | Fluid-Shaped Luxury Mirror | — |
 | فرشاة الميك اب | Makeup brush | — |
 | فرشاة سليك للشعر | Sleek Brush | فرشاة سليك |
@@ -59,17 +59,17 @@
 | عطر الجسم ناتورا | Natura Body Mist | معطر الجسم |
 | مسك ايمي | a'musk | — |
 | كريم القدمين للترطيب العميق | Foot Cream | كريم يوريا |
-| شنطة ايمي بني | A'mi Bag | — |
+| شنطة ايمي بني | Brown Bag | — |
 | فرشاة الجسم الجافة | Dry body brush | — |
 | توزيعات ايمي — مسك 10 حبات | Mini Favors — 10 pieces Musk | — |
-| كيس التوزيعات ( الكبير ) | — | — |
-| كيس التوزيعات ( الصغير ) | — | — |
+| كيس التوزيعات ( الكبير ) | Large Favor Bag | — |
+| كيس التوزيعات ( الصغير ) | Small Favor Bag | — |
 | كريم تان رد تشيري | Red Cherry Tanning Cream 200ml | كريم تان |
-| توزيعات ايمي - مجموعة الشعر 5 حبات | — | — |
+| توزيعات ايمي - مجموعة الشعر 5 حبات | Mini Favors — 5 Hair Sets | — |
 | توزيعات ايمي — كريم اليدين 10 حبات | Mini Favors — 10 pieces hand cream | — |
-| توزيعات ايمي — مرطب الشفاه 10 حبات | Mini Favors — 10 pieces lip plump | — |
+| توزيعات ايمي — مرطب الشفاه 10 حبات | Mini Favors — 10 lip balms | — |
 | بوكس ايمي للاهداء | Signature Gift Box | — |
-| مرطب الشفاه بالعسل | Lip Plump Balm | مرطب شفايف |
+| مرطب الشفاه بالعسل | Honey Lip Balm | مرطب شفايف |
 | مجموعة القدمين و اليدين | Hand and Foot Cream Set | مرطب اليدين والقدمين |
 | كريم اليدين للترطيب | Hand Cream | كريم اليدين |
 
