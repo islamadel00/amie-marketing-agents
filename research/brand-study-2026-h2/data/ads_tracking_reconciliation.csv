@@ -1,0 +1,7 @@
+month,zid_orders_all_channels,sum_platform_attributed_purchases,platform_purchases_pct_of_store_orders,social_platform_purchases_meta_snap_tiktok,ga4_paid_social_purchases,social_platform_to_ga4_ratio
+2026-05,1171,715,61.06,715,MISSING (GA4 not tracking),
+2026-06,1181,1058,89.59,1058,MISSING (GA4 not tracking),
+2026-07,1350,1225,90.74,1225,109,11.24
+2026-08,872,892,102.29,814,131,6.21
+2026-09,1070,1462,136.64,1294,224,5.78
+2026-10,797,606,76.04,484,64,7.56

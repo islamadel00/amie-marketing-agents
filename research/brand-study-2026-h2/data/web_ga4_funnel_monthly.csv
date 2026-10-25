@@ -1,0 +1,5 @@
+month,view_item_events,add_to_cart_events,begin_checkout_events,add_payment_info_events,purchase_events,view_cart_events,add_shipping_info_events,view_to_cart,cart_to_checkout,checkout_to_payment,payment_to_purchase,view_to_purchase,view_item_users,add_to_cart_users,begin_checkout_users,add_payment_info_users,purchase_users,user_view_to_purchase
+2026-07,13978,3849,1945,2039,590,1671,1949,0.2754,0.5053,1.0483,0.2894,0.0422,8061,1682,1070,999,577,0.0716
+2026-08,45954,5838,2968,2758,713,2770,2729,0.127,0.5084,0.9292,0.2585,0.0155,30907,2443,1576,1354,695,0.0225
+2026-09,59102,8123,3918,3861,930,4952,5601,0.1374,0.4823,0.9855,0.2409,0.0157,39343,3246,2016,1782,916,0.0233
+2026-10,29967,6188,2916,2856,690,3441,4655,0.2065,0.4712,0.9794,0.2416,0.023,20690,2890,1695,1480,679,0.0328

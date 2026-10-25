@@ -1,0 +1,15 @@
+code,flag,orders_valid,orders_cancelled,gross_revenue_sar,discount_sar_est,net_revenue_sar,aov_net_sar,effective_discount_pct,pct_orders_new_customers,first_use,last_use,top_products_units,orders_by_month
+Summer26,influencer,1178,2,451197.73,66755.1,384442.63,326.35,14.8,49.32,2026-06-02,2026-09-29,Summer Set (333); a'mie Hair Wax 30ml (177); Hair Set (173),2026-06:398; 2026-07:301; 2026-08:428; 2026-09:51
+ND96,influencer,970,0,299380.72,60919.33,238461.39,245.84,20.35,56.6,2026-09-03,2026-10-10,a'mie Hair Wax 30ml (284); Hair Set (159); Foot Cream (132),2026-09:796; 2026-10:174
+NAJLA,influencer,374,1,111084.13,22175.1,88909.03,237.72,19.96,77.27,2026-10-06,2026-10-20,a'mie Into The Glow Collection (216); Marshmello Body Highlighter Set (75); Body Glow (71),2026-10:374
+Y10,influencer,192,1,44117.12,4391.57,39725.55,206.9,9.95,71.88,2026-06-27,2026-08-21,Deep Tan Tanning Oil 150ml (71); Chocolate Body Highlighter Set (60); Marshmello Body Highlighter Set (38),2026-06:85; 2026-07:30; 2026-08:77
+LULU,influencer,187,0,77538.41,7495.41,70042.99,374.56,9.67,41.18,2026-04-11,2026-09-15,Summer Set (65); Glittery Gold Tanning Gel 120ml (53); Deep Tan Tanning Oil 150ml (26),2026-04:10; 2026-06:2; 2026-07:150; 2026-08:23; 2026-09:2
+FTD,influencer,85,0,17472.35,1678.43,15793.91,185.81,9.61,72.94,2026-06-27,2026-07-25,Marshmello Body Highlighter Set (33); Chocolate Body Highlighter Set (27); a'mie Marshmello body highlighter (14),2026-06:69; 2026-07:16
+Loyal,other,60,0,22601.4,5530.55,17070.85,284.51,24.47,6.67,2026-04-11,2026-05-11,Marshmello Body Highlighter Set (17); a'mie Marshmello body highlighter (16); a'musk (14),2026-04:51; 2026-05:9
+aya,influencer,41,0,18563.2,1760.52,16802.68,409.82,9.48,58.54,2026-05-02,2026-08-10,Summer Set (14); Red Cherry Tanning Cream 200ml (13); Natura Body Mist (8),2026-05:34; 2026-06:4; 2026-07:2; 2026-08:1
+Sh10,influencer,33,1,7682.06,768.2,6913.86,209.51,10.0,81.82,2026-06-17,2026-10-21,Hair Set (23); a'mie Hair Wax 30ml (3); Sleek Secret Hair Mascara 15ml (3),2026-06:1; 2026-07:26; 2026-08:2; 2026-09:1; 2026-10:3
+SH,influencer,21,0,8132.82,580.48,7552.34,359.64,7.14,71.43,2026-05-29,2026-10-17,Summer Set (6); Red Cherry Tanning Cream 200ml (5); a'mie Hair Wax 30ml (4),2026-05:4; 2026-06:7; 2026-07:6; 2026-08:3; 2026-10:1
+Stc,pos_event,20,0,4972.3,745.84,4226.45,211.32,15.0,0.0,2026-04-30,2026-08-09,Lip Plump Balm 10ml (9); a'musk (7); Summer Set (3),2026-04:18; 2026-05:1; 2026-08:1
+RGD20,influencer,12,0,2702.58,621.2,2081.38,173.45,22.99,83.33,2026-10-04,2026-10-23,a'mie Hair Wax 30ml (5); a'musk (4); a'mie Into The Glow Collection (3),2026-10:12
+HS15,influencer,11,0,2353.75,353.06,2000.69,181.88,15.0,72.73,2026-09-04,2026-10-23,a'mie Hair Wax 30ml (5); Back to Routine Set (2); Hair Set (2),2026-09:9; 2026-10:2
+00002,gifting_100pct,5,3,2511.0,2511.0,0.0,0.0,100.0,100.0,2026-07-30,2026-09-02,Red Cherry Tanning Cream 200ml (2); Glittery Gold Tanning Gel 120ml (1); Lemongrass Sea Salt Body Scrub 300ml (1),2026-07:1; 2026-08:2; 2026-09:2

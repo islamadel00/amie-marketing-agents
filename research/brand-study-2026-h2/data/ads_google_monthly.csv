@@ -1,0 +1,7 @@
+month,platform,account_currency,spend_native,spend_sar,impressions,reach,clicks,ctr_pct,cpc_sar,cpm_sar,purchases,purchase_value_sar,roas,cpa_sar,notes
+2026-05,Google Ads,SAR,0,0,0,,0,,,,0,0,,,no spend (account active from Aug)
+2026-06,Google Ads,SAR,0,0,0,,0,,,,0,0,,,no spend (account active from Aug)
+2026-07,Google Ads,SAR,0,0,0,,0,,,,0,0,,,no spend (account active from Aug)
+2026-08,Google Ads,SAR,3100.12,3100.12,130254,,3653,2.8,0.85,23.8,78.0,23212.07,7.49,39.75,conversions = Purchase action only
+2026-09,Google Ads,SAR,5137.46,5137.46,133789,,3368,2.52,1.53,38.4,168,49248.62,9.59,30.58,conversions = Purchase action only
+2026-10,Google Ads,SAR,5405.17,5405.17,124868,,1683,1.35,3.21,43.29,122.0,36814.6,6.81,44.3,conversions = Purchase action only; Oct = 1-24

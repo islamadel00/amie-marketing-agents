@@ -1,0 +1,61 @@
+platform,ad_name,campaign,format,spend_sar,impressions,ctr_pct,hook_rate_pct,hook_definition,purchases,purchase_value_sar,roas,ugc_influencer_spark_flag
+Meta,Carousel Ad,ACQ-Sales-Catalog,CAROUSEL/CATALOG (DPA),26887.73,753778,1.13,0.15,3-sec views / impressions,787,286988.81,10.67,no UGC/creator signal in name
+Meta,2,ACQ-Sales-Conversion,VIDEO,7650.94,140268,0.65,18.44,3-sec views / impressions,229,86111.59,11.26,no UGC/creator signal in name
+Meta,Singleimage-21–NDV-PDP,ACQ-Sales-Conversion,IMAGE,2693.17,52880,0.89,0.02,3-sec views / impressions,47,14837.74,5.51,no UGC/creator signal in name
+Meta,SingleVideo-02,ACQ-Sales-Conversion,VIDEO,2459.78,45614,0.96,16.26,3-sec views / impressions,79,21188.25,8.61,no UGC/creator signal in name
+Meta,SingleVideo-07,ACQ-Sales-Conversion,VIDEO,2141.14,51199,1.81,41.38,3-sec views / impressions,46,14171.21,6.62,no UGC/creator signal in name
+Meta,SingleImage-ND-03-PDP,ACQ-Sales-Conversion,IMAGE,1845.79,43771,0.92,,3-sec views / impressions,42,10763.25,5.83,no UGC/creator signal in name
+Meta,SingelImage-02,ACQ-Sales-Conversion,IMAGE,1047.67,19479,1.04,,3-sec views / impressions,27,9923.48,9.47,no UGC/creator signal in name
+Meta,1,ACQ-Sales-Conversion,VIDEO,969.04,23777,0.38,14.18,3-sec views / impressions,6,2374.54,2.45,no UGC/creator signal in name
+Meta,SingelImage-21,ACQ-Sales-Conversion,IMAGE,711.67,9194,1.22,,3-sec views / impressions,21,7488.38,10.52,no UGC/creator signal in name
+Meta,SingleImage-11-PDP,ACQ-Sales-Conversion,IMAGE,703.73,14851,1.21,,3-sec views / impressions,23,6839.62,9.72,no UGC/creator signal in name
+Meta,3,ACQ-Sales-Conversion,VIDEO,691.35,13022,0.8,19.11,3-sec views / impressions,3,1694.29,2.45,no UGC/creator signal in name
+Meta,SingleVideo-05,ACQ-Sales-Conversion,VIDEO,686.77,10176,0.89,14.31,3-sec views / impressions,15,4869.38,7.09,no UGC/creator signal in name
+Meta,SingelImage-01–NDV-PDP,ACQ-Sales-Conversion,IMAGE,626.06,9900,1.07,0.77,3-sec views / impressions,21,6176.51,9.87,no UGC/creator signal in name
+Meta,SingelImage-03,ACQ-Sales-Conversion,IMAGE,555.97,8480,1.1,,3-sec views / impressions,14,6331.2,11.39,no UGC/creator signal in name
+Meta,SingelImage-01,ACQ-Sales-Conversion,IMAGE,475.65,7168,1.0,,3-sec views / impressions,7,2133.71,4.49,no UGC/creator signal in name
+Meta,1,Sales 2 Vids 20/4,VIDEO,415.16,8770,0.96,6.69,3-sec views / impressions,2,763.01,1.84,no UGC/creator signal in name
+Meta,SingleImage-ND-04-PDP,ACQ-Sales-Conversion,IMAGE,384.68,6362,1.15,,3-sec views / impressions,11,2538.53,6.6,no UGC/creator signal in name
+Meta,2,Sales 2 Vids 20/4,VIDEO,341.96,7605,1.28,17.59,3-sec views / impressions,1,476.7,1.39,no UGC/creator signal in name
+Meta,SingelImage-04,ACQ-Sales-Conversion,IMAGE,330.9,5685,1.27,,3-sec views / impressions,9,2776.84,8.39,no UGC/creator signal in name
+Meta,SingleVideo-08,ACQ-Sales-Conversion,VIDEO,283.31,4620,0.69,13.46,3-sec views / impressions,4,1142.62,4.03,no UGC/creator signal in name
+Snapchat,SingleImage-Frame,ACQ-Sales-Catalog,REMOTE_WEBPAGE,7174.11,576846,4.46,,video views / impressions,285,79807.75,11.12,
+Snapchat,SingleImage-06-PDP,ACQ-Sales-Conversion,REMOTE_WEBPAGE,7151.82,397378,0.98,,video views / impressions,353,134842.26,18.85,
+Snapchat,Collection-Frame,ACQ-Sales-Catalog,COLLECTION,6608.92,485409,4.04,,video views / impressions,291,78428.49,11.87,
+Snapchat,2,New Sales 11/4,REMOTE_WEBPAGE+VIDEO,4390.27,141842,0.38,1.18,video views / impressions,88,36081.39,8.22,
+Snapchat,نسخة من 2,Amr Scalling LLA 7-5 CP,REMOTE_WEBPAGE+VIDEO,4384.34,207229,1.02,5.84,video views / impressions,170,62878.37,14.34,creator/LLA copy (Arabic 'copy of')
+Snapchat,2,Sales Lla 26/4,REMOTE_WEBPAGE+VIDEO,4138.53,125103,0.42,0.33,video views / impressions,82,32112.0,7.76,
+Snapchat,نسخة من 4,Amr Scalling LLA 7-5 CP,REMOTE_WEBPAGE,3964.56,242363,1.01,,video views / impressions,153,50935.3,12.85,creator/LLA copy (Arabic 'copy of')
+Snapchat,SingleImage,ACQ-Sales-Catalog,REMOTE_WEBPAGE,2920.74,265309,0.82,,video views / impressions,110,32184.51,11.02,
+Snapchat,SingleVideo-UGC-02-PDP,ACQ-Sales-Conversion,REMOTE_WEBPAGE+VIDEO,2607.18,132885,1.68,17.84,video views / impressions,94,32960.47,12.64,UGC (name)
+Snapchat,3,New Summer Colle 17/6,REMOTE_WEBPAGE,2393.44,163484,1.07,,video views / impressions,123,43531.07,18.19,
+Snapchat,New4,Summer New Test Cap 30/4,REMOTE_WEBPAGE,2345.17,134419,0.97,,video views / impressions,86,33365.93,14.23,
+Snapchat,StoryAd-04-PLP,ACQ-Sales-Conversion,STORY,2341.41,123394,0.62,,video views / impressions,74,23935.23,10.22,
+Snapchat,New,Summer New Test Cap 30/4,REMOTE_WEBPAGE,2215.24,121962,0.86,,video views / impressions,73,29732.62,13.42,
+Snapchat,1,New Sales 11/6,REMOTE_WEBPAGE,2114.68,123656,1.06,,video views / impressions,126,39741.15,18.79,
+Snapchat,2,New Summer 4/6,REMOTE_WEBPAGE+VIDEO,1813.81,82411,1.2,12.55,video views / impressions,41,15495.3,8.54,
+Snapchat,edit,New Summer 4/6,REMOTE_WEBPAGE,1734.04,60065,0.94,,video views / impressions,24,9830.39,5.67,
+Snapchat,SingleImage-Frame-ND,ACQ-Sales-Catalog,REMOTE_WEBPAGE,1572.96,116908,2.78,,video views / impressions,69,17721.78,11.27,
+Snapchat,New2,Summer New Test Cap 30/4,REMOTE_WEBPAGE,1421.46,84095,0.81,,video views / impressions,55,24158.12,17.0,
+Snapchat,2,New Summer Colle 17/6,REMOTE_WEBPAGE,1331.4,81731,1.24,,video views / impressions,74,28583.84,21.47,
+Snapchat,SingleImage-ND-03-PLP,ACQ-Sales-Conversion,REMOTE_WEBPAGE,1256.4,58738,1.02,,video views / impressions,42,11677.67,9.29,
+TikTok,"Creator post 'sold out, now back' (tan) _1 new [caption paraphrased]",ACQ-Con-Sales,VIDEO,4548.21,196174,1.92,35.91,2-sec views / impressions,166,65883.3,14.49,creator/spark
+TikTok,"Creator post 'sold out, now back' (tan) _UGC-Art.shuroq [caption paraphrased]",ACQ-Con-Sales,VIDEO,1883.58,93261,1.35,30.13,2-sec views / impressions,56,17038.24,9.05,UGC/creator
+TikTok,Creator 'best tan' (tan) _UGC-Arwa [caption paraphrased],ACQ-Con-Sales,VIDEO,1221.24,53786,1.44,20.17,2-sec views / impressions,48,18353.99,15.03,UGC/creator
+TikTok,Creator National Day code (hair) _Hair care - UGC - 1 [caption paraphrased],ACQ-Con-Sales,VIDEO,1184.99,130892,1.07,32.14,2-sec views / impressions,30,7914.73,6.68,UGC/influencer (discount code)
+TikTok,Hair wax 'quality starts with ingredients' thanks @creator _hair wax [caption paraphrased],ACQ-Con-Sales,VIDEO,1164.44,69509,0.66,26.14,2-sec views / impressions,32,11159.9,9.58,creator/spark
+TikTok,Shower routine _UGC-Amie [caption paraphrased],ACQ-Con-Sales,VIDEO,1047.37,54845,1.49,14.88,2-sec views / impressions,28,7991.24,7.63,UGC (brand-made)
+TikTok,Hair wax thanks @creator _hair wax [caption paraphrased],ACQ-Con-Sales,VIDEO,1002.05,60475,0.58,9.7,2-sec views / impressions,35,9007.97,8.99,creator/spark
+TikTok,Glow box _اللمعة - UGC - 2 [caption paraphrased],ACQ-Con-Sales,VIDEO,930.26,70196,0.48,9.58,2-sec views / impressions,30,7565.29,8.13,UGC/creator
+TikTok,#amie _UGC-Amie [caption paraphrased],ACQ-Con-Sales,VIDEO,881.59,50066,0.72,12.44,2-sec views / impressions,23,6029.24,6.84,UGC (brand-made)
+TikTok,Bronzed glittery skin _UGC-lulu [caption paraphrased],ACQ-Con-Sales,VIDEO,850.92,62528,0.67,13.26,2-sec views / impressions,25,7864.43,9.24,UGC/creator
+TikTok,Made in Saudi hair routine _hair wax [caption paraphrased],ACQ-Con-Sales,VIDEO,833.37,51589,0.8,15.29,2-sec views / impressions,31,8542.33,10.25,brand
+TikTok,Before/after (tan) [caption paraphrased],New Sales Summer 6/6,IMAGE/CAROUSEL,824.47,55468,5.87,,2-sec views / impressions,25,13404.02,16.26,brand (non-video/image)
+TikTok,Creator glow 'always asked about' _UGC-Art.shuroq-02 [caption paraphrased],ACQ-Con-Sales,VIDEO,786.73,34029,0.85,15.74,2-sec views / impressions,31,9202.01,11.7,UGC/creator
+TikTok,#tan creator summer26 code [caption paraphrased],Sales Plog 7/6,VIDEO,691.81,104176,0.51,23.4,2-sec views / impressions,30,12338.26,17.83,creator/spark (discount code)
+TikTok,Body highlighter 2 shades [caption paraphrased],New Sales Summer 6/6,VIDEO,600.68,39994,0.61,32.09,2-sec views / impressions,10,4049.74,6.74,brand
+TikTok,@a'mie skincare _1 new [caption paraphrased],Sales Plog 7/6,IMAGE/CAROUSEL,594.91,54792,2.37,,2-sec views / impressions,29,9341.15,15.7,creator/spark (image)
+TikTok,Hair set 'sleek strands' _hair wax [caption paraphrased],ACQ-Con-Sales,VIDEO,584.07,47463,0.56,7.78,2-sec views / impressions,23,6538.0,11.19,brand
+TikTok,#amie _UGC-Ghadeer Alsharyoufi [caption paraphrased],ACQ-Con-Sales,VIDEO,533.8,30034,0.77,12.95,2-sec views / impressions,23,8280.25,15.51,UGC/creator
+TikTok,Hair collection creator _hair wax [caption paraphrased],ACQ-Con-Sales,VIDEO,476.07,67111,1.66,35.77,2-sec views / impressions,16,3857.65,8.1,creator/spark
+TikTok,Hair wax ingredients (brand) _hair wax [caption paraphrased],ACQ-Con-Sales,VIDEO,424.58,27185,0.95,31.81,2-sec views / impressions,9,2563.63,6.04,brand

@@ -1,0 +1,7 @@
+month,reach,views_account_wide,accounts_engaged,follows_gained,unfollows,net_follower_change,profile_reposts,profile_replies,bio_link_clicks_from_media,posts,reels,carousels,images,note
+2026-05,52848,409461,1501,637,248,389,30,34,44,14,5,4,5,
+2026-06,175353,819399,1512,666,218,448,42,34,11,15,1,10,4,
+2026-07,49097,433197,1043,601,228,373,11,48,116,17,3,10,4,
+2026-08,37383,331372,1818,954,205,749,42,36,,5,1,4,0,
+2026-09,52151,297613,904,413,191,222,5,20,8,9,6,1,2,
+2026-10,9642,217965,983,310,169,141,9,10,0,9,3,5,1,Oct = 1-24 only; reach for Oct queried as a single 1-24 range

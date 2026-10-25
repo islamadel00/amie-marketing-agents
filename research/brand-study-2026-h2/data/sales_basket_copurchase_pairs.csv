@@ -1,0 +1,41 @@
+product_a,product_b,orders_together,support_pct,confidence_a_to_b_pct,confidence_b_to_a_pct,lift
+a'mie Hair Wax 30ml,a'mie Sleek Brush,249,3.89,28.2,68.6,4.97
+Deep Tan Tanning Oil 150ml,Red Cherry Tanning Cream 200ml,150,2.34,24.23,19.06,1.97
+Deep Tan Tanning Oil 150ml,Glittery Gold Tanning Gel 120ml,106,1.66,17.12,35.45,3.67
+Hair Set,Summer Set,94,1.47,13.53,6.44,0.59
+Body Glow,Marshmello Body Highlighter Set,92,1.44,19.29,16.91,2.27
+Flora Body Mist,a'musk,88,1.38,34.11,22.74,5.64
+Flora Body Mist,Natura Body Mist,87,1.36,33.72,29.59,7.34
+Sleek Secret Hair Mascara 15ml,a'mie Hair Wax 30ml,78,1.22,26.9,8.83,1.95
+Chocolate Body Highlighter Set,Summer Set,76,1.19,19.95,5.21,0.88
+Natura Body Mist,a'musk,76,1.19,25.85,19.64,4.27
+A'mi Bag,Summer Set,74,1.16,47.44,5.07,2.08
+Glow Set,Summer Set,69,1.08,14.74,4.73,0.65
+Glow Set,Hair Set,67,1.05,14.32,9.64,1.32
+Glow Set,a'mie Marshmello body highlighter,66,1.03,14.1,24.0,3.28
+Marshmello Body Highlighter Set,Summer Set,57,0.89,10.48,3.91,0.46
+Sleek Secret Hair Mascara 15ml,a'mie Sleek Brush,57,0.89,19.66,15.7,3.47
+Glittery Gold Tanning Gel 120ml,Red Cherry Tanning Cream 200ml,57,0.89,19.06,7.24,1.55
+Summer Set,a'mie Hair Wax 30ml,53,0.83,3.63,6.0,0.26
+Body Glow,a'mie Marshmello body highlighter,53,0.83,11.11,19.27,2.59
+Summer Set,a'musk,50,0.78,3.43,12.92,0.57
+Marshmello Body Highlighter Set,a'mie Hair Wax 30ml,47,0.73,8.64,5.32,0.63
+Lemongrass Set,a'musk,47,0.73,16.61,12.14,2.75
+Body Glow,a'mie Hair Wax 30ml,45,0.7,9.43,5.1,0.68
+Body Glow,Summer Set,44,0.69,9.22,3.02,0.4
+Body Glow,Chocolate Body Highlighter Set,44,0.69,9.22,11.55,1.55
+Foot Cream,a'musk,43,0.67,15.3,11.11,2.53
+Flora Body Mist,Lemongrass Set,42,0.66,16.28,14.84,3.68
+Hair Set,a'musk,42,0.66,6.04,10.85,1.0
+Chocolate Body Highlighter Set,Marshmello Body Highlighter Set,42,0.66,11.02,7.72,1.3
+Dry body brush,Hair Set,42,0.66,36.52,6.04,3.36
+Lemongrass Set,Summer Set,40,0.62,14.13,2.74,0.62
+Hair Set,Marshmello Body Highlighter Set,39,0.61,5.61,7.17,0.66
+Glow Set,Marshmello Body Highlighter Set,38,0.59,8.12,6.99,0.96
+Sleek Secret Hair Mascara 15ml,Summer Set,37,0.58,12.76,2.54,0.56
+a'mie Chocolate Body Highlighter,a'mie Marshmello body highlighter,37,0.58,22.98,13.45,5.35
+Lemongrass Sea Salt Body Scrub 300ml,Lemongrass Whipped Body Butter 250ml,36,0.56,18.0,29.03,9.29
+Sleek Secret Hair Mascara 15ml,a'musk,36,0.56,12.41,9.3,2.05
+Glow Set,a'mie Hair Wax 30ml,36,0.56,7.69,4.08,0.56
+Body Glow,Sleek Secret Hair Mascara 15ml,35,0.55,7.34,12.07,1.62
+Body Glow,a'musk,35,0.55,7.34,9.04,1.21

@@ -1,0 +1,13 @@
+metric,value
+customers_with_valid_order_may_oct24,5857
+customers_2plus_orders_within_apr_oct24,587
+repeat_rate_within_window_pct,10.02
+customers_2plus_orders_lifetime_incl_pre_april,2354
+repeat_rate_lifetime_pct,40.19
+new_customers_first_order_in_window_apr_oct24,4128
+new_customers_with_2nd_order_in_window,248
+new_customer_2nd_order_rate_pct,6.01
+median_days_1st_to_2nd_order_new_customers,25.0
+median_days_1st_to_2nd_excluding_same_day,29.0
+share_2nd_orders_within_1_day_pct,11.69
+pos_guest_orders_excluded_from_customer_stats,18

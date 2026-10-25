@@ -1,0 +1,7 @@
+month,platform,account_currency,spend_native,spend_sar,impressions,reach,clicks,ctr_pct,cpc_sar,cpm_sar,purchases,purchase_value_sar,roas,cpa_sar,notes
+2026-05,Meta,USD,1854.47,6954.26,136776,44442,2427,1.77,2.87,50.84,177,71758.16,10.32,39.29,clicks=link clicks; reach monthly-deduped
+2026-06,Meta,USD,3385.02,12693.83,487529,157290,3571,0.73,3.55,26.04,287,117748.05,9.28,44.23,clicks=link clicks; reach monthly-deduped
+2026-07,Meta,USD,2558.6,9594.75,169578,42977,2072,1.22,4.63,56.58,359,130181.55,13.57,26.73,clicks=link clicks; reach monthly-deduped
+2026-08,Meta,USD,2149.59,8060.96,152075,31972,1675,1.1,4.81,53.01,180,60596.06,7.52,44.78,clicks=link clicks; reach monthly-deduped
+2026-09,Meta,USD,2971.51,11143.16,193212,45607,2256,1.17,4.94,57.67,337,92682.68,8.32,33.07,clicks=link clicks; reach monthly-deduped
+2026-10,Meta,USD,1482.55,5559.56,132992,54933,1528,1.15,3.64,41.8,77,24272.74,4.37,72.2,clicks=link clicks; reach monthly-deduped; Oct = 1-24
