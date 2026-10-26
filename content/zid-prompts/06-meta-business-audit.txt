@@ -1,0 +1,75 @@
+مهمة: مراجعة كاملة لحساب ايمي على Meta Business (Business Settings, Ads Manager, Events Manager, Commerce Manager, WhatsApp Manager, Account Quality) عشان نعرف كل نقاط الضعف، ونعرف إزاي نوصل للـ Account Manager أو الـ Meta Marketing Pro.
+
+قواعد صارمة:
+- اقرأ وصوّر بس. ممنوع تغيّر أي إعداد، أو توقف/تشغّل أي إعلان، أو تدفع، أو تدوس "Pay current balance"، أو تقبل/ترفض أي طلب، أو تضيف/تشيل أي شخص.
+- ممنوع تبعت أي رسالة أو تطلب مكالمة. بس اكتب الخيارات المتاحة.
+- أرقام الكروت: اكتب آخر 4 أرقام بس. ماتكتبش أي إيميلات أو أرقام تليفونات كاملة لأشخاص (اكتب الدور بس، زي "Admin 1").
+- احفظ صورة لكل شاشة في فولدر meta-audit على سطح المكتب: 01.png، 02.png ...
+- لو صفحة مش متاحة أو محتاجة صلاحية، اكتب ده وكمّل.
+
+ابدأ من business.facebook.com واختار البيزنس بتاع ايمي. لو فيه أكتر من Business Portfolio، اكتب أساميهم كلهم وراجع كل واحد.
+
+1) البيزنس نفسه (Business Settings > Business info)
+- اسم البيزنس، الـ Business ID، الموقع المكتوب، البلد.
+- حالة Business Verification: Verified / Not verified / Pending / Rejected (وسبب الرفض لو موجود).
+- Security Center: هل Two-factor authentication إجباري على الكل؟ كام Admin؟
+
+2) الناس والشركاء (Users > People / Partners)
+- عدد الأشخاص، وكل واحد دوره إيه (Admin / Employee). ماتكتبش أسماء كاملة لو مش لازم، كفاية "Admin 1".
+- الشركاء (وكالات أو شركات) اللي ليهم وصول: اسم الشريك وعلى إيه بالظبط.
+- أي حساب شخصي غريب أو قديم لسه ليه Admin.
+
+3) حسابات الإعلانات (Accounts > Ad accounts) لكل حساب:
+- الاسم والـ ID والحالة (Active / Disabled / Restricted / Closed).
+- العملة والمنطقة الزمنية.
+- Billing: طريقة الدفع (نوعها + آخر 4 أرقام)، هل فيه رصيد متأخر أو دفع فشل؟ كام؟ من إمتى؟
+- Account spending limit: موجود؟ كام؟ وصل له؟
+- آخر 30 يوم: هل فيه أيام الإعلانات وقفت بسبب الدفع؟ (من Billing > Payment activity)
+- مين ليه صلاحية على الحساب.
+ركّز جداً على "Ami Ads" (عليه مشكلة دفع) و "A'MI 96" (الإعلانات وقفت أيام 12-16 و 20-22 أكتوبر).
+
+4) Account Quality (facebook.com/accountquality)
+- كل المشاكل المفتوحة: النوع، على أنهي أصل (حساب إعلانات / صفحة / بيزنس)، والتاريخ.
+- إعلانات مرفوضة (Rejected) في آخر 90 يوم: اسم الإعلان والسبب.
+- أي قيود (Restrictions) على البيزنس أو على أي شخص.
+
+5) الصفحات وإنستجرام (Accounts > Pages / Instagram accounts)
+- صفحة فيسبوك: الاسم والحالة ومين المالك (البيزنس ولا شخص).
+- حساب إنستجرام: اسم اليوزر والاسم الظاهر، مربوط بأنهي حساب إعلانات، ومالك ولا Partner.
+- لو الصفحة أو إنستجرام مملوكين لبيزنس تاني أو لشخص، اكتب ده بوضوح.
+
+6) Events Manager (Data sources > Datasets / Pixels)
+- اسم ورقم كل Pixel/Dataset ومين المالك.
+- الأحداث اللي شغّالة آخر 7 أيام: PageView, ViewContent, AddToCart, InitiateCheckout, Purchase. عدد كل واحد.
+- Conversions API شغّال ولا Browser بس؟
+- Event Match Quality لحدث Purchase (الرقم من 10).
+- أي تحذيرات (Diagnostics): أحداث مكررة، قيمة ناقصة، عملة غلط.
+- Aggregated Event Measurement / Domain: هل amie-sa.com Verified في Brand safety > Domains؟
+
+7) الكتالوج (Commerce Manager)
+- اسم الكتالوج وعدد المنتجات.
+- منتجات عليها مشاكل أو مرفوضة: العدد والأسباب الأكثر.
+- العملة المستخدمة في الكتالوج، والروابط بتودّي على /ar/ ولا /ar-us/ ولا من غير بادئة؟
+- آخر تحديث للفيد إمتى.
+
+8) واتساب (WhatsApp Manager)
+- الـ WhatsApp Business Account ID.
+- كل رقم: الرقم (آخر 4 أرقام بس)، Phone number ID، الـ Display name، حالة الاسم (Approved / Pending / Rejected وسبب الرفض بالنص).
+- Quality rating (أخضر/أصفر/أحمر) و Messaging limit.
+- هل فيه Official Business Account (العلامة الخضرا)؟
+- Payment method لواتساب موجودة ولا لأ.
+
+9) الـ Account Manager / Meta Marketing Pro
+- في Ads Manager أو Business Suite أو صفحات المساعدة: فيه كارت "Talk to a Meta pro" أو "Your Meta Marketing Pro"؟
+- لو فيه اسم شخص متعيّن: اسمه الأول بس، وإيه طرق التواصل المعروضة (Request a call / Start chat / Book a session / إيميل)، ومواعيد متاحة.
+- لو مفيش: إيه خيارات الدعم الظاهرة في business.facebook.com/direct-support (Chat / Email / Call) ولأنهي مواضيع.
+- ماتطلبش مكالمة وماتبدأش شات. اكتب بس الخيارات.
+
+10) Meta Verified for Business
+- هل البيزنس أو إنستجرام مشترك في Meta Verified؟ لو لأ، هل الاشتراك متاح وبكام؟
+
+في الآخر:
+1. اكتب كل ده في ملف meta-business-audit.md على سطح المكتب، مقسّم بنفس الأرقام من 1 لـ 10، وكل جزء جدول.
+2. اكتب "أهم 10 نقاط ضعف" مرتبة من الأخطر، ولكل واحدة: إيه المشكلة، وفين، وإيه اللي بيحصل بسببها.
+3. اكتب "إزاي نوصل للـ Account Manager": كل الطرق اللي لقيتها بالظبط.
+4. قولي عدد الصور اللي اتحفظت.
