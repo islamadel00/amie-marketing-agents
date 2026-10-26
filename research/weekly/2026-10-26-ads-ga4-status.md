@@ -33,3 +33,16 @@ Notes:
 | TikTok | ACQ-Con-Sales | 3,824 | 991 | 111 | 22 | 34 | 45 | 8.4 | 5.0 |
 
 All listed campaigns show as active/enabled. Meta's Retention-Conversion-Sales spent 0 in both periods. TikTok's other 17 campaigns are disabled.
+
+## New ads in the last 7 days (19–25 Oct)
+
+None on any platform. "New" = first day with spend in the 30 days to 25 Oct (Meta also gives the post's created date).
+
+| Platform | Newest ad and when it started | Ads with spend 19–25 Oct |
+|---|---|---|
+| Meta | Singleimage-21–NDV-PDP, post created 27 Sep | 6 ads: Carousel Ad (since Apr), SingleImage-ND-03/04-PDP (7 Sep), SingleVideo-07 (21 Sep), SingleVideo-08 (16 Sep), Singleimage-21–NDV-PDP (27 Sep) |
+| Snapchat | Scrub IMG, Scrub Vid, Lavender collection IMG/Vid, Glow collection IMG, Chocolate highlighter, all first spent 15 Oct | 12 ads, all running before 18 Oct |
+| TikTok | RGD hair-care UGC and بوكس اللمعه UGC, first spent 2 Oct | 2 ads; the RGD caption still says national-day offers |
+| Google | No account changes recorded 12–26 Oct (AccountChanges report empty) | PMax + Shopping |
+
+Meta, 19–25 Oct by ad (SAR, platform purchases): Singleimage-21–NDV-PDP 638 / 1 · Carousel Ad 579 / 7 · SingleVideo-07 571 / 6 · SingleImage-ND-03-PDP 192 / 1 · SingleVideo-08 72 / 0 · SingleImage-ND-04-PDP 38 / 0.
