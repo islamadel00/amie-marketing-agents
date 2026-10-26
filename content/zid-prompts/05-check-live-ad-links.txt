@@ -1,0 +1,57 @@
+مهمة: افتح روابط الإعلانات الشغّالة دلوقتي لايمي، وتأكد إن كل رابط بيودّي على صفحة سليمة. اقرأ وصوّر بس.
+
+قواعد:
+- ممنوع تغيّر أي حاجة في أي حساب إعلانات أو في لوحة زد.
+- ممنوع تضيف للسلة أو تدفع.
+- افتح كل رابط في نافذة تصفح خاصة (Incognito)، بمقاس موبايل من DevTools (390×844).
+- احفظ صورة لأول شاشة من كل صفحة في فولدر ad-links على سطح المكتب، بأسماء: 01.png، 02.png ...
+
+الروابط:
+01 ميتا: https://amie-sa.com/products/amie-glow-skincare-set?utm_source=meta&utm_medium=cpc&utm_campaign=test
+02 ميتا: https://amie-sa.com/products
+03 ميتا: https://amie-sa.com/products/%D9%88%D8%A7%D9%83%D8%B3-%D8%A2%D9%8A%D9%85%D9%8A-%D9%84%D9%84%D8%B4%D8%B9%D8%B1?utm_source=meta&utm_medium=cpc&utm_campaign=test
+04 ميتا: https://amie-sa.com/products/amie-chocolate-body-highlighter-set/?utm_source=meta&utm_medium=cpc&utm_campaign=test
+05 سناب: https://amie-sa.com/products/%D9%85%D9%82%D8%B4%D8%B1-%D9%85%D8%B1%D8%B7%D8%A8-%D9%84%D9%84%D8%AC%D8%B3%D9%85
+06 سناب: https://amie-sa.com/products/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D9%8A%D9%87
+07 سناب: https://amie-sa.com/products/amie-chocolate-body-highlighter-set
+08 سناب: https://amie-sa.com/ar-eg/products/into-the-glow-collection?utm_medium=cpc&utm_source=snapchat&utm_campaign=test
+09 سناب: https://amie-sa.com/products/amie-glow-skincare-set/?utm_medium=cpc&utm_source=snapchat&utm_campaign=test
+10 سناب: https://amie-sa.com/products/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1?utm_medium=cpc&utm_source=snapchat&utm_campaign=test
+11 جوجل: https://amie-sa.com/categories/1436861/tanning-product
+12 جوجل: https://amie-sa.com/
+13 جوجل: https://amie-sa.com/ar-us/
+14 جوجل: https://amie-sa.com/ar/products/into-the-glow-collection
+15 جوجل: https://amie-sa.com/ar-us/products
+16 جوجل: https://amie-sa.com/ar-fr/
+17 جوجل: https://amie-sa.com/ar-ae/products/%D9%88%D8%A7%D9%83%D8%B3-%D8%A2%D9%8A%D9%85%D9%8A-%D9%84%D9%84%D8%B4%D8%B9%D8%B1
+
+الإعلانات نفسها (افتحها وصوّرها بس، ماتعلّقش ولا تعمل لايك):
+18 إنستجرام: https://www.instagram.com/p/DdzcqQ9srmI/
+19 إنستجرام: https://www.instagram.com/p/De8UfKXIElG/
+20 إنستجرام: https://www.instagram.com/p/Ddz9W02sb2O/
+21 إنستجرام: https://www.instagram.com/p/Dc-voyts3wH/
+22 إنستجرام: https://www.instagram.com/p/Ddz9W4SMVxO/
+23 إنستجرام: https://www.instagram.com/p/Ddz9XqgsPJ7/
+24 تيك توك: https://m.tiktok.com/v/7690955064227220757.html
+25 تيك توك: https://m.tiktok.com/v/7690918899834948871.html
+
+لكل رابط من 01 لـ 17 اكتب سطر في جدول فيه:
+- الرقم
+- الصفحة فتحت ولا لأ (لو فيه خطأ 404 أو صفحة فاضية اكتبه)
+- الرابط النهائي بعد ما الصفحة فتحت (انسخه من شريط العنوان: هل اتحوّل لرابط تاني؟ هل الـ utm لسه موجود؟)
+- اسم المنتج أو الصفحة زي ما هو مكتوب
+- السعر زي ما هو ظاهر، والعملة (ريال ولا دولار ولا غيره)
+- المنتج متوفر ولا "نفدت الكمية"
+- لغة الصفحة (عربي ولا إنجليزي)
+- أي حاجة غريبة: بوب أب، أسعار غلط، صور مكسورة، كلام عن الصيف أو اليوم الوطني
+
+لكل رابط من 18 لـ 25 اكتب:
+- الرقم
+- الإعلان صورة ولا فيديو، وعن أنهي منتج
+- الكلام المكتوب عليه أو في الكابشن (انسخه زي ما هو)
+- فيه ذكر لليوم الوطني أو الصيف أو كود خصم؟ أنهي كود؟
+
+في الآخر:
+1. احفظ الجدولين في ملف ad-links-check.md على سطح المكتب.
+2. اكتب أهم 5 مشاكل لقيتها، من الأسوأ.
+3. قولي عدد الصور اللي اتحفظت.
