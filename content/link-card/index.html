@@ -12,8 +12,10 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{min-height:100%}
 body{font-family:'Readex Pro',sans-serif;color:var(--ink);background:#ECEAE7;-webkit-font-smoothing:antialiased}
-body:before{content:"";position:fixed;inset:0;background:url(bg.jpg) center bottom/cover no-repeat;filter:sepia(.12) saturate(.9);z-index:0}
-body:after{content:"";position:fixed;inset:0;background:linear-gradient(180deg,rgba(248,244,240,.35) 0%,rgba(248,244,240,.1) 45%,rgba(248,244,240,0) 70%,rgba(248,244,240,.25) 100%);z-index:0}
+body:before{content:"";position:fixed;inset:-40px;background:url(bg.jpg) center bottom/cover no-repeat;filter:blur(28px) sepia(.12) saturate(.8) brightness(1.08);opacity:.5;z-index:0}
+.bgcol{position:fixed;top:0;bottom:0;left:50%;width:min(480px,100vw);transform:translateX(-50%);background:url(bg.jpg) center bottom/cover no-repeat;filter:sepia(.12) saturate(.9);z-index:0}
+.bgcol:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(248,244,240,.35) 0%,rgba(248,244,240,.1) 45%,rgba(248,244,240,0) 70%,rgba(248,244,240,.25) 100%)}
+@media (min-width:520px){.bgcol{box-shadow:0 0 60px rgba(0,0,0,.18)}}
 .wrap{position:relative;z-index:1;max-width:440px;margin:0 auto;padding:40px 20px 28px;min-height:100vh;display:flex;flex-direction:column}
 .logo{display:block;width:108px;margin:0 auto}
 .cat{margin-top:20px;text-align:center;font-size:11px;letter-spacing:3px;color:var(--muted);direction:ltr}
@@ -32,6 +34,7 @@ body:after{content:"";position:fixed;inset:0;background:linear-gradient(180deg,r
 </style>
 </head>
 <body>
+<div class="bgcol" aria-hidden="true"></div>
 <main class="wrap">
   <img class="logo" src="logo-dark.png" alt="a'mie">
   <p class="cat">BEAUTY, COSMETIC &amp; PERSONAL CARE</p>
