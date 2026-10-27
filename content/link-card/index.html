@@ -32,6 +32,22 @@ body:before{content:"";position:fixed;inset:-40px;background:url(bg.jpg) center 
 .row .go{margin-right:auto;color:#b9aaa3;font-size:18px}
 .foot{margin-top:auto;padding-top:30px;text-align:center;font-size:13px;letter-spacing:1.5px;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.45);direction:ltr}
 @media (max-height:740px){.wrap{padding-top:18px}.logo{width:84px}.tag{font-size:13.5px;line-height:1.55}.shop{margin-top:14px;padding:12px 18px}.row{padding:8px 18px}.row b{font-size:15px}}
+
+/* motion: CSS only, no JS */
+.shop,.row{transition:transform .25s ease,background-color .25s ease,box-shadow .25s ease}
+.row .go{transition:transform .25s ease}
+.shop:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(102,60,60,.32)}
+.shop:active{transform:scale(.98)}
+.row:hover{background:rgba(255,255,255,.55)}
+.row:hover .go{transform:translateX(-4px)}
+.row:active{background:rgba(255,255,255,.75)}
+.shop:focus-visible,.row:focus-visible{outline:2px solid var(--cta);outline-offset:2px}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.logo,.cat,.tag,.shop,.list{animation:rise .6s cubic-bezier(.2,.7,.2,1) backwards}
+.cat{animation-delay:.06s}.tag{animation-delay:.12s}.shop{animation-delay:.2s}.list{animation-delay:.28s}
+.bgcol{animation:fadein 1s ease both}
+@keyframes fadein{from{opacity:0}to{opacity:1}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
