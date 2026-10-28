@@ -1,0 +1,34 @@
+مهمة: تنظيف إعلانات سناب شات لحساب ايمي على ads.snapchat.com (حساب الإعلانات اللي عملته USD). صاحب الحساب موافق على الخطوات دي بس.
+
+قواعد صارمة:
+- ماتمسحش أي حاجة.
+- ماتغيّرش أي ميزانية، ولا Bid، ولا استهداف.
+- ماتشغّلش أي Ad Squad أو حملة متوقفة.
+- ماتدفعش، وماتعملش إعلان جديد.
+- لو سناب طلب Review قبل النشر، كمّل عادي، ده طبيعي بعد تعديل اللينك.
+- صوّر كل شاشة قبل وبعد التعديل، واحفظ الصور في فولدر snap-cleanup على سطح المكتب.
+
+1) أوقف (Pause) إعلان واحد بس:
+- "Glow collection IMG" في حملة ACQ-Sales-Conversion. صرف 8.22 دولار آخر 14 يوم ومجابش ولا طلب.
+
+2) صلّح اللينك (Web View URL) في الإعلانات دي، وغيّر اللينك بس، ماتغيّرش الصورة ولا الفيديو ولا النص.
+احتفظ بنفس الـ UTM: ?utm_medium=cpc&utm_source=snapchat&utm_campaign={{campaign.name}}
+- "SingleVideo-UGC-12-PDP": اللينك فيه /ar-eg/ وبيفتح الأسعار بالجنيه المصري. خليه:
+  https://amie-sa.com/products/into-the-glow-collection?utm_medium=cpc&utm_source=snapchat&utm_campaign={{campaign.name}}
+- "SingleVideo-UGC-02-PDP" و "SingleVideo-UGC-06-PDP" و "SingleVideo-UGC-09-PDP": شيل الـ "/" اللي في آخر اللينك:
+  https://amie-sa.com/products/amie-glow-skincare-set?utm_medium=cpc&utm_source=snapchat&utm_campaign={{campaign.name}}
+- "SingleImage-ND-02-PDP": شيل الـ "/" اللي في آخر اللينك:
+  https://amie-sa.com/products/back-to-routine-set?utm_medium=cpc&utm_source=snapchat&utm_campaign={{campaign.name}}
+- "SingleImage-ND-01-PDP": نفس اللينك الحالي من غير الـ "/" اللي قبل علامة ?
+- "SingleImage-ND-03-PLP": نفس اللينك الحالي من غير الـ "/" اللي قبل علامة ?
+لو أي إعلان ماينفعش تعدل لينكه وعايز تعمل نسخة جديدة، ماتعملهاش، اكتب ده بس.
+
+3) اقرأ بس وماتغيّرش حاجة:
+- حملة "Sales-Retention": ليه مكتوب عليها إن مفيش Ad Squad شغال؟ اكتبلي اسم كل Ad Squad فيها، وحالته، وميزانيته، وتاريخ آخر تشغيل.
+- حملة "ACQ-Sales-Catalog": اكتبلي الميزانية اليومية لكل Ad Squad.
+- حملة "ACQ-Sales-Conversion": اكتبلي الميزانية اليومية لكل Ad Squad.
+
+في الآخر اكتبلي:
+- جدول فيه: الإعلان، والتعديل اللي اتعمل، والحالة قبل وبعد (Active / In review / Paused).
+- جدول الميزانيات والـ Ad Squads.
+- عدد الصور اللي اتحفظت.
