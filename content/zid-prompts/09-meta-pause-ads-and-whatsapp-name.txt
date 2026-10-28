@@ -1,0 +1,42 @@
+مهمتين على Meta لحساب ايمي (Business ID: 719905179261431). صاحب الحساب موافق على المهمة الأولى بس، والتانية قراءة بس.
+
+قواعد صارمة للمهمتين:
+- ماتمسحش أي حاجة، وماتدفعش.
+- ماتغيّرش أي ميزانية أو استهداف.
+- ماتبعتش أي رسالة لعميل، وماتردش في الـ Inbox.
+- ماتقدّمش اسم جديد، وماتعدّلش أي إعداد في واتساب.
+- رقم التليفون: اكتب آخر 4 أرقام بس.
+- صوّر كل شاشة، واحفظ الصور في فولدر meta-28oct على سطح المكتب.
+
+==== المهمة 1: إيقاف 3 إعلانات (مسموح تدوس On/Off بس) ====
+1. افتح adsmanager.facebook.com، واختار حساب الإعلانات A'MI 96 (act_1246095824229223)، وادخل على تبويب Ads.
+2. أوقف (Off) الـ 3 إعلانات دول بس. الثلاثة في حملة ACQ-Sales-Conversion. ابحث بالـ Ad ID، واتأكد إن الاسم مطابق بالظبط قبل ما تدوس:
+   - SingleImage-ND-03-PDP، الـ Ad ID هو 6915693541679، في Ad set: SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set
+   - SingleImage-ND-04-PDP، الـ Ad ID هو 6915722869079، في Ad set: SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set
+   - Singleimage-21–NDV-PDP، الـ Ad ID هو 6916464097879، في Ad set: SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set
+3. انتبه: فيه إعلان اسمه "SingelImage-21" وهو متوقف أصلاً، ماتلمسوش.
+4. SingleVideo-07 و SingleVideo-08 و Carousel Ad لازم يفضلوا شغالين، ماتلمسهمش.
+5. لو ظهر زرار "Publish" أو "Review and publish"، وقّف وقولّي قبل ما تدوس.
+
+==== المهمة 2: اسم واتساب (قراءة بس) ====
+1. افتح business.facebook.com/wa/manage/phone-numbers، أو من Business Settings > Accounts > WhatsApp accounts > WhatsApp Manager.
+2. لكل رقم موجود اكتب:
+   - آخر 4 أرقام، والـ Phone number ID.
+   - الـ Display name الحالي.
+   - حالة الاسم: Approved / Pending / In review / Rejected / Declined.
+   - لو مرفوض: سبب الرفض بالنص زي ما هو مكتوب.
+   - تاريخ آخر طلب تغيير اسم لو ظاهر.
+   - Quality rating وMessaging limit.
+   - حالة الرقم: Connected / Pending / Flagged / Restricted.
+3. افتح Business Settings > Business info واكتب:
+   - حالة Business Verification.
+   - اسم البيزنس، والموقع المكتوب. هل لسه a-mi-sa.com ولا اتغيّر لـ amie-sa.com؟
+4. لو فيه أي تنبيه أو رسالة عن الاسم أو الرقم في WhatsApp Manager أو Account Quality، انقلها زي ما هي.
+
+==== في الآخر اكتبلي ====
+- جدول 1: الإعلان، والـ Ad ID، والحالة قبل، والحالة بعد.
+- جدول 2: SingleVideo-07 و SingleVideo-08 و Carousel Ad، وحالة كل واحد.
+- جدول 3: اسم واتساب (كل البيانات اللي فوق).
+- جدول 4: Business Verification والموقع.
+- هل الاسم اتقبل؟ اكتب "اتقبل" أو "لسه" أو "اترفض والسبب".
+- عدد الصور اللي اتحفظت.
