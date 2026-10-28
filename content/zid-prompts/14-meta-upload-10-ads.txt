@@ -1,0 +1,70 @@
+مهمة: رفع نفس الـ 10 إعلانات بتوع الـ Creative Hub على ميتا (Ads Manager، حساب A'MI 96، act_1246095824229223). الإعلانات تدخل في Ad sets موجودة، وكلها تترفع Off (Paused). أنا قاعد جنب الجهاز.
+
+الملفات على Google Drive. لو نزّلتها قبل كده لسناب في فولدر snap-ads استخدمها، ولو لأ نزّلها من اللينكات. لميتا استخدم النسخة الأصلية من غير تصغير، لأن ميتا بتقبل لحد 30 ميجا للصورة.
+
+قواعد صارمة:
+- ماتغيّرش أي ميزانية، ولا Bid، ولا استهداف، ولا Placements، ولا Optimization.
+- ماتعملش حملة أو Ad set جديد. ماتعملش Duplicate لأي Ad set.
+- ماتمسحش، وماتوقفش، وماتعدلش أي إعلان موجود.
+- ماتلمسش SingleVideo-07 ولا SingleVideo-08 ولا Carousel Ad.
+- كل إعلان جديد يترفع وهو Off. اقفل زرار On/Off بتاع الإعلان قبل ما تدوس Publish.
+- Publish مسموح بس لما تكون متأكد إن كل الإعلانات الجديدة Off، وإن مفيش أي تغيير تاني في الـ Review.
+- لو شاشة الـ Review فيها أي تغيير غير "إعلانات جديدة"، وقّف وقولّي.
+- ماتدفعش.
+- استخدم الهيدلاين والنص المكتوبين هنا بالحرف، ماتغيّرهمش.
+- اقفل كل Advantage+ creative enhancements اللي بتغيّر النص أو تضيف موسيقى أو تقص الصورة. سيب بس "Standard enhancements" لو إجباري، واكتبلي لو حصل ده.
+- صوّر كل شاشة، واحفظ الصور في فولدر meta-new-ads.
+
+إعدادات كل إعلان:
+- Identity: صفحة فيسبوك a'mie، وحساب انستجرام @amie__sa
+- Format: Single image or video
+- Primary text: نفس الهيدلاين اللي في الجدول
+- Headline: الهيدلاين اللي في الجدول
+- Description: سيبه فاضي
+- CTA: Shop Now
+- Website URL: اللينك اللي في الجدول
+- URL parameters: انسخها بالظبط من إعلان SingleVideo-07، من Tracking > URL parameters. لو فاضية فيه، حط:
+  utm_source=meta&utm_medium=cpc&utm_campaign={{campaign.name}}&utm_content={{ad.name}}
+- Tracking: الـ Pixel / Dataset نفسه اللي على SingleVideo-07 (Website events ON)
+- Media: الملف الأصلي 9:16. لو ميتا طلبت مقاس للفيد، اختار 4:5 crop من نص الصورة، وورّيني شكله في الجدول.
+
+اللينكات:
+- LAVSET = https://amie-sa.com/products/مجموعة-العنايه
+- LAVSCRUB = https://amie-sa.com/products/مقشر-مرطب-للجسم
+- ITG = https://amie-sa.com/products/into-the-glow-collection
+
+الـ Ad sets (الاتنين في حملة ACQ-Sales-Conversion):
+- VID = SingleVideo-Cold-Female-Broad (ID 6880655396279، ميزانية $30، شغال)
+- IMG = SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set (ID 6909361709679، ميزانية $36، شغال بس مفيهوش إعلانات شغالة دلوقتي)
+  - ماتغيّرش اسمه دلوقتي.
+
+| اسم الإعلان | الملف (Drive) | النوع | Ad set | اللينك | الهيدلاين والنص |
+|---|---|---|---|---|---|
+| AM2610-001_LAV-SET_VID_9X16_REVEAL_H1_V1_META | https://drive.google.com/file/d/1leLetIU3Vw_CixGtD7Twv5E8YVYAd8EX/view | فيديو | VID | LAVSET | مجموعة اللافندر تقشير و نعومة |
+| AM2610-002_LAV-SET_VID_9X16_REVEAL_H1_V1_META | https://drive.google.com/file/d/1zhHRTtwAbdQCVZbXyqeJ6EUIx32UWlsI/view | فيديو | VID | LAVSET | استرخاء آخر اليوم مع اللافندر |
+| AM2610-003_LAV-SCRUB_IMG_9X16_REVEAL_H1_V1_META | https://drive.google.com/file/d/1KSmgUxuE7-ji7Er6EaATFuXMqJDl5K9K/view | صورة | IMG | LAVSCRUB | سكراب اللافندر هو خيارك الأول |
+| AM2610-004_LAV-SCRUB_IMG_9X16_REVEAL_H1_V1_META | https://drive.google.com/file/d/1yDMQQlADWDADuCclOzGHIYbsLx-voTMU/view | صورة | IMG | LAVSCRUB | ودّعي تعب اليوم مع سكراب اللافندر |
+| AM2610-005_LAV-SCRUB_IMG_9X16_REVEAL_H1_V1_META | https://drive.google.com/file/d/1wf6uSQjFntzwDhklRaaaRgK9Y7PXYFe1/view | صورة | IMG | LAVSCRUB | سكراب بقشور المكسرات لتقشير ناعم |
+| AM2610-006_LAV-SET_IMG_9X16_REVEAL_H1_V1_META | https://drive.google.com/file/d/1ZRx1nfpUNIAV_mZlNj33ilEildovqUcw/view | صورة | IMG | LAVSET | مجموعة اللافندر تشيل تعب اليوم |
+| AM2610-007_LAV-SET_IMG_9X16_REVEAL_H1_V1_META | https://drive.google.com/file/d/1COZHEj9FoqhuEE8YtCgje5u169PqBKlA/view | صورة | IMG | LAVSET | جددي طاقتك نهاية اليوم مع اللافندر |
+| AM2610-008_ITG_VID_9X16_UGC_H1_V1_META | https://drive.google.com/file/d/12zmIC62_lwvBOmXsMhxTHV0OK4OplmXY/view | فيديو | VID | ITG | لمعة جسمك في دقايق مع ايمي |
+| AM2610-009_ITG_IMG_9X16_UGC_H1_V1_META | https://drive.google.com/file/d/1V7GcRpCIa8XRi9SRnrqR0-TM_8-i0v3X/view | صورة | IMG | ITG | مجموعة لمعة الجسم لفترة محدودة |
+| AM2610-010_ITG_IMG_9X16_UGC_H1_V1_META | https://drive.google.com/file/d/14Jv5l4BlxbnniAtEaYpVlVPNsoLDldoj/view | صورة | IMG | ITG | لمعة جسم لبشرة مشرقة و غير باهتة |
+
+ملاحظات:
+- 003 و010 مكتوب عليهم في الـ Hub إنهم فيديو، بس الملف نفسه صورة. ارفعهم كصورة.
+- اتأكد إن مفيش أي كود خصم مكتوب على الصورة أو الفيديو، زي ND96 أو SUMMER26. لو فيه، ماترفعهوش، واكتبلي.
+- افتح كل لينك من التلاتة، واتأكد إنه شغال، والمنتج متاح، والسعر بالريال.
+
+خطوات الشغل:
+1. افحص الملفات: النوع، والمقاس، والمدة، ومفيش كود. وافحص إعدادات SingleVideo-07: الـ URL parameters، والـ Pixel، والـ Identity.
+2. اعرضلي جدول الفحص، ووقّف. استناني أكتب "موافق".
+3. بعد "موافق": اعمل الإعلانات الـ 10 وهما Off، وبعدين Publish، بالشروط اللي فوق.
+4. بعد الـ Publish، اتأكد إن الـ 10 إعلانات الجداد Off، وإن SingleVideo-07 و SingleVideo-08 و Carousel Ad لسه زي ما هم.
+
+في الآخر اكتبلي:
+- جدول: اسم الإعلان، والـ Ad set، والحالة (Off / In review / Rejected)، والـ Ad ID.
+- الـ URL parameters اللي اتحطت.
+- أي Advantage+ enhancement فضل شغال.
+- الملفات اللي ماترفعتش، وليه.
+- عدد الصور اللي اتحفظت.
