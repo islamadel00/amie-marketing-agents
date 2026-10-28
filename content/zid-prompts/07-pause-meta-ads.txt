@@ -1,0 +1,21 @@
+مهمة: إيقاف 3 إعلانات بس على Meta Ads Manager لحساب ايمي "A'MI 96" (act_1246095824229223). الموافقة على الإيقاف اتاخدت من صاحب الحساب.
+
+افتح adsmanager.facebook.com واختار حساب الإعلانات A'MI 96، وبعدين ادخل على تبويب Ads.
+
+أوقف (Off) الإعلانات دي بس. ابحث بالـ Ad ID، واتأكد إن الاسم مطابق بالظبط قبل ما تدوس:
+1. SingleImage-ND-03-PDP، الـ Ad ID هو 6915693541679، وموجود في Ad set: SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set
+2. SingleImage-ND-04-PDP، الـ Ad ID هو 6915722869079، وموجود في Ad set: SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set
+3. Singleimage-21–NDV-PDP، الـ Ad ID هو 6916464097879، وموجود في Ad set: SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set
+الثلاثة في حملة ACQ-Sales-Conversion.
+
+قواعد صارمة:
+- الحاجة الوحيدة اللي مسموح بيها هي زرار التشغيل (On/Off) للـ 3 إعلانات دول.
+- ماتمسحش أي حاجة. ماتعدلش في الميزانية، ولا في أي Ad set أو حملة. ماتدفعش، وماتنشرش أي حاجة.
+- انتبه: فيه إعلان اسمه "SingelImage-21" وهو متوقف أصلاً، ماتلمسوش.
+- SingleVideo-07 و SingleVideo-08 و Carousel Ad لازم يفضلوا شغالين، ماتلمسهمش.
+- لو Meta طلبت "Publish" أو "Review and publish" بعد الإيقاف، اكتب ده ووقّف، ماتدوسش لحد ما أوافق.
+
+في الآخر:
+- صوّر شاشة تبين الـ 3 إعلانات وهي Off.
+- اكتبلي جدول فيه: اسم الإعلان، والـ Ad ID، وحالته قبل وبعد.
+- واكتبلي كمان حالة SingleVideo-07 و SingleVideo-08 و Carousel Ad.
