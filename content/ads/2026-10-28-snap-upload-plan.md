@@ -30,3 +30,7 @@ Risks:
 - Target Cost bids are too low ($2–$3.50); new ads will under-deliver until bids are raised.
 - Into The Glow ads (3) push the Marshmallow variant that is near stock-out.
 - Lavender scrub contains nut shells: allergy note should be on the image or product page (it is on the page).
+
+
+## Decision (28 Oct)
+Owner decided to keep all original Creative Hub headlines unchanged. Upload prompt 13 uses the originals. Reviewer flags above stay on record.

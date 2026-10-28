@@ -9,7 +9,7 @@
 - ماتضغطش Accept على أي اقتراح من سناب.
 - كل إعلان جديد يترفع Paused. ماتشغّلش أي حاجة لحد ما أقولك "شغّل".
 - ماتدفعش.
-- استخدم الهيدلاين المكتوب هنا بالحرف، ماتغيّروش.
+- استخدم الهيدلاين المكتوب هنا بالحرف (هو نفس اللي في الـ Creative Hub)، ماتغيّروش.
 - صوّر كل شاشة، واحفظ الصور في فولدر snap-new-ads.
 
 لكل إعلان:
@@ -28,16 +28,16 @@
 
 | اسم الإعلان | الملف (Drive) | النوع | Ad Squad | اللينك | الهيدلاين |
 |---|---|---|---|---|---|
-| AM2610-001_LAV-SET_VID_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1leLetIU3Vw_CixGtD7Twv5E8YVYAd8EX/view | فيديو | VID | LAVSET | مجموعة اللافندر تقشير ونعومة |
+| AM2610-001_LAV-SET_VID_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1leLetIU3Vw_CixGtD7Twv5E8YVYAd8EX/view | فيديو | VID | LAVSET | مجموعة اللافندر تقشير و نعومة |
 | AM2610-002_LAV-SET_VID_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1zhHRTtwAbdQCVZbXyqeJ6EUIx32UWlsI/view | فيديو | VID | LAVSET | استرخاء آخر اليوم مع اللافندر |
 | AM2610-003_LAV-SCRUB_IMG_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1KSmgUxuE7-ji7Er6EaATFuXMqJDl5K9K/view | صورة | IMG | LAVSCRUB | سكراب اللافندر هو خيارك الأول |
-| AM2610-004_LAV-SCRUB_IMG_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1yDMQQlADWDADuCclOzGHIYbsLx-voTMU/view | صورة | IMG | LAVSCRUB | سكراب اللافندر لبشرة أنعم |
+| AM2610-004_LAV-SCRUB_IMG_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1yDMQQlADWDADuCclOzGHIYbsLx-voTMU/view | صورة | IMG | LAVSCRUB | ودّعي تعب اليوم مع سكراب اللافندر |
 | AM2610-005_LAV-SCRUB_IMG_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1wf6uSQjFntzwDhklRaaaRgK9Y7PXYFe1/view | صورة | IMG | LAVSCRUB | سكراب بقشور المكسرات لتقشير ناعم |
-| AM2610-006_LAV-SET_IMG_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1ZRx1nfpUNIAV_mZlNj33ilEildovqUcw/view | صورة | IMG | LAVSET | مجموعة اللافندر لروتين آخر اليوم |
-| AM2610-007_LAV-SET_IMG_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1COZHEj9FoqhuEE8YtCgje5u169PqBKlA/view | صورة | IMG | LAVSET | ريحة اللافندر الهادية آخر اليوم |
-| AM2610-008_ITG_VID_9X16_UGC_H1_V1 | https://drive.google.com/file/d/12zmIC62_lwvBOmXsMhxTHV0OK4OplmXY/view | فيديو | VID | ITG | لمعة جسمك تبدأ مع ايمي |
-| AM2610-009_ITG_IMG_9X16_UGC_H1_V1 | https://drive.google.com/file/d/1V7GcRpCIa8XRi9SRnrqR0-TM_8-i0v3X/view | صورة (7 ميجا) | IMG | ITG | مجموعة لمعة الجسم من ايمي |
-| AM2610-010_ITG_IMG_9X16_UGC_H1_V1 | https://drive.google.com/file/d/14Jv5l4BlxbnniAtEaYpVlVPNsoLDldoj/view | صورة (6.7 ميجا) | IMG | ITG | لمعة جسم لبشرة مشرقة وغير باهتة |
+| AM2610-006_LAV-SET_IMG_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1ZRx1nfpUNIAV_mZlNj33ilEildovqUcw/view | صورة | IMG | LAVSET | مجموعة اللافندر تشيل تعب اليوم |
+| AM2610-007_LAV-SET_IMG_9X16_REVEAL_H1_V1 | https://drive.google.com/file/d/1COZHEj9FoqhuEE8YtCgje5u169PqBKlA/view | صورة | IMG | LAVSET | جددي طاقتك نهاية اليوم مع اللافندر |
+| AM2610-008_ITG_VID_9X16_UGC_H1_V1 | https://drive.google.com/file/d/12zmIC62_lwvBOmXsMhxTHV0OK4OplmXY/view | فيديو | VID | ITG | لمعة جسمك في دقايق مع ايمي |
+| AM2610-009_ITG_IMG_9X16_UGC_H1_V1 | https://drive.google.com/file/d/1V7GcRpCIa8XRi9SRnrqR0-TM_8-i0v3X/view | صورة (7 ميجا) | IMG | ITG | مجموعة لمعة الجسم لفترة محدودة |
+| AM2610-010_ITG_IMG_9X16_UGC_H1_V1 | https://drive.google.com/file/d/14Jv5l4BlxbnniAtEaYpVlVPNsoLDldoj/view | صورة (6.7 ميجا) | IMG | ITG | لمعة جسم لبشرة مشرقة و غير باهتة |
 
 ملاحظات:
 - 003 و010 مكتوب عليهم في الـ Hub إنهم فيديو، بس الملف نفسه صورة JPEG. ارفعهم كصورة، والاسم مكتوب هنا IMG.
