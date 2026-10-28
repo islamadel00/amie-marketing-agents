@@ -1,0 +1,33 @@
+operatingSystem,browser,sessions,ecommercePurchases
+iOS,Safari,147666,2817
+Android,Chrome,16080,22
+iOS,Chrome,2050,96
+iOS,Safari (in-app),1463,15
+Windows,Chrome,1429,1
+Macintosh,Safari,1021,13
+Android,Samsung Internet,841,12
+Android,Android Webview,800,18
+Macintosh,Chrome,551,2
+iOS,(not set),169,
+Linux,Chrome,160,
+Windows,Edge,94,2
+Windows,Firefox,30,
+(not set),Chrome,22,
+Linux,Firefox,21,
+(not set),(not set),20,
+Android,Opera,14,
+Chrome OS,Chrome,13,
+Macintosh,Mozilla Compatible Agent,11,
+Macintosh,Edge,9,
+Android,Android Runtime,7,
+Android,Firefox,7,
+Linux,Samsung Internet,7,
+Linux,Edge,5,
+Windows,Opera,4,
+(not set),Mozilla Compatible Agent,3,
+Android,Edge,3,
+Macintosh,Firefox,3,
+Macintosh,Opera,2,
+,(not set),1,
+(not set),Safari,1,
+Android,Aloha Browser,1,

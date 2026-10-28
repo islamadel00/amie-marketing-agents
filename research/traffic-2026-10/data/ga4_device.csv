@@ -1,0 +1,5 @@
+deviceCategory,sessions,engagedSessions,addToCarts,checkouts,ecommercePurchases,purchaseRevenue,averageSessionDuration
+mobile,166737,48366,24238,11835,2980,244789.5076,81.6643
+desktop,3348,1654,262,120,18,1324.8395,191.3733
+tablet,800,319,39,8,0,,101.6904
+smart tv,1,1,,,,,18.8261

@@ -1,0 +1,206 @@
+id,title,product_destination,approved_countries,disapproved_countries,issue_code,issue_servability,issue_attribute_name,issue_description,issue_detail,issue_applicable_countries,number_of_products
+0094541a-87ed-4dbf-8ebd-735b819194d4,مجموعة العودة للروتين,Demand gen ads,,SA,tobacco_policy_violation,DISAPPROVED,,Tobacco products & related equipment,"Tobacco-containing products, their components, or any related equipment are not allowed",SA,5
+0094541a-87ed-4dbf-8ebd-735b819194d4,مجموعة العودة للروتين,Demand gen ads on Discover surface,,SA,tobacco_policy_violation,DISAPPROVED,,Tobacco products & related equipment,"Tobacco-containing products, their components, or any related equipment are not allowed",SA,5
+0094541a-87ed-4dbf-8ebd-735b819194d4,مجموعة العودة للروتين,Free listings,,SA,tobacco_policy_violation,DISAPPROVED,,Tobacco products & related equipment,"Tobacco-containing products, their components, or any related equipment are not allowed",SA,5
+0094541a-87ed-4dbf-8ebd-735b819194d4,مجموعة العودة للروتين,Shopping ads,,SA,tobacco_policy_violation,DISAPPROVED,,Tobacco products & related equipment,"Tobacco-containing products, their components, or any related equipment are not allowed",SA,5
+0094541a-87ed-4dbf-8ebd-735b819194d4,مجموعة العودة للروتين,Video ads,,SA,tobacco_policy_violation,DISAPPROVED,,Tobacco products & related equipment,"Tobacco-containing products, their components, or any related equipment are not allowed",SA,5
+f5d89333-817f-4dbc-a633-d27018921d3a,هايلايتر الجسم مارشميللو,Demand gen ads,,SA,attribute_violated_discovery_ads_policy,DISAPPROVED,image link,Inappropriate image,"Product images must be relevant, high-quality, and abide by content restrictions",SA,2
+f5d89333-817f-4dbc-a633-d27018921d3a,هايلايتر الجسم مارشميللو,Demand gen ads on Discover surface,,SA,attribute_violated_discovery_ads_policy,DISAPPROVED,image link,Inappropriate image,"Product images must be relevant, high-quality, and abide by content restrictions",SA,2
+f5d89333-817f-4dbc-a633-d27018921d3a,هايلايتر الجسم مارشميللو,Free listings,SA,,attribute_violated_discovery_ads_policy,DISAPPROVED,image link,Inappropriate image,"Product images must be relevant, high-quality, and abide by content restrictions",SA,2
+f5d89333-817f-4dbc-a633-d27018921d3a,هايلايتر الجسم مارشميللو,Shopping ads,SA,,attribute_violated_discovery_ads_policy,DISAPPROVED,image link,Inappropriate image,"Product images must be relevant, high-quality, and abide by content restrictions",SA,2
+f5d89333-817f-4dbc-a633-d27018921d3a,هايلايتر الجسم مارشميللو,Video ads,SA,,attribute_violated_discovery_ads_policy,DISAPPROVED,image link,Inappropriate image,"Product images must be relevant, high-quality, and abide by content restrictions",SA,2
+05327c05-01cb-4473-8e2b-eb7951c39dc1,شنطة ايمي بني,Demand gen ads,SA,,,,,,,,1
+05327c05-01cb-4473-8e2b-eb7951c39dc1,شنطة ايمي بني,Demand gen ads on Discover surface,SA,,,,,,,,1
+05327c05-01cb-4473-8e2b-eb7951c39dc1,شنطة ايمي بني,Free listings,SA,,,,,,,,1
+05327c05-01cb-4473-8e2b-eb7951c39dc1,شنطة ايمي بني,Shopping ads,SA,,,,,,,,1
+05327c05-01cb-4473-8e2b-eb7951c39dc1,شنطة ايمي بني,Video ads,SA,,,,,,,,1
+09b0eec9-b139-4005-aead-f36ea4ae3935,كيس التوزيعات ( الكبير ),Demand gen ads,SA,,,,,,,,1
+09b0eec9-b139-4005-aead-f36ea4ae3935,كيس التوزيعات ( الكبير ),Demand gen ads on Discover surface,SA,,,,,,,,1
+09b0eec9-b139-4005-aead-f36ea4ae3935,كيس التوزيعات ( الكبير ),Free listings,SA,,,,,,,,1
+09b0eec9-b139-4005-aead-f36ea4ae3935,كيس التوزيعات ( الكبير ),Shopping ads,SA,,,,,,,,1
+09b0eec9-b139-4005-aead-f36ea4ae3935,كيس التوزيعات ( الكبير ),Video ads,SA,,,,,,,,1
+23bf12c7-eaca-4f9e-9b39-783befc5f67b,جلّ لمعة الجسم,Demand gen ads,SA,,,,,,,,1
+23bf12c7-eaca-4f9e-9b39-783befc5f67b,جلّ لمعة الجسم,Demand gen ads on Discover surface,SA,,,,,,,,1
+23bf12c7-eaca-4f9e-9b39-783befc5f67b,جلّ لمعة الجسم,Free listings,SA,,,,,,,,1
+23bf12c7-eaca-4f9e-9b39-783befc5f67b,جلّ لمعة الجسم,Shopping ads,SA,,,,,,,,1
+23bf12c7-eaca-4f9e-9b39-783befc5f67b,جلّ لمعة الجسم,Video ads,SA,,,,,,,,1
+24f918f9-8a91-4d3b-b7c6-1ed2cef7a515,فرشاة الجسم الجافة,Demand gen ads,SA,,,,,,,,1
+24f918f9-8a91-4d3b-b7c6-1ed2cef7a515,فرشاة الجسم الجافة,Demand gen ads on Discover surface,SA,,,,,,,,1
+24f918f9-8a91-4d3b-b7c6-1ed2cef7a515,فرشاة الجسم الجافة,Free listings,SA,,,,,,,,1
+24f918f9-8a91-4d3b-b7c6-1ed2cef7a515,فرشاة الجسم الجافة,Shopping ads,SA,,,,,,,,1
+24f918f9-8a91-4d3b-b7c6-1ed2cef7a515,فرشاة الجسم الجافة,Video ads,SA,,,,,,,,1
+2fb41526-724d-46f1-8863-3a7b8f3e400b,مجموعة لمعة الجسم,Demand gen ads,SA,,,,,,,,1
+2fb41526-724d-46f1-8863-3a7b8f3e400b,مجموعة لمعة الجسم,Demand gen ads on Discover surface,SA,,,,,,,,1
+2fb41526-724d-46f1-8863-3a7b8f3e400b,مجموعة لمعة الجسم,Free listings,SA,,,,,,,,1
+2fb41526-724d-46f1-8863-3a7b8f3e400b,مجموعة لمعة الجسم,Shopping ads,SA,,,,,,,,1
+2fb41526-724d-46f1-8863-3a7b8f3e400b,مجموعة لمعة الجسم,Video ads,SA,,,,,,,,1
+322cd927-2fe3-4ef1-83c7-5e83269b8daa,توزيعات ايمي - مجموعة الشعر 5 حبات,Demand gen ads,SA,,,,,,,,1
+322cd927-2fe3-4ef1-83c7-5e83269b8daa,توزيعات ايمي - مجموعة الشعر 5 حبات,Demand gen ads on Discover surface,SA,,,,,,,,1
+322cd927-2fe3-4ef1-83c7-5e83269b8daa,توزيعات ايمي - مجموعة الشعر 5 حبات,Free listings,SA,,,,,,,,1
+322cd927-2fe3-4ef1-83c7-5e83269b8daa,توزيعات ايمي - مجموعة الشعر 5 حبات,Shopping ads,SA,,,,,,,,1
+322cd927-2fe3-4ef1-83c7-5e83269b8daa,توزيعات ايمي - مجموعة الشعر 5 حبات,Video ads,SA,,,,,,,,1
+34a2433a-c243-4e10-9f90-5c9b647a5f9e,سكراب الجسم اللافندر للبشرة الجافة,Demand gen ads,SA,,,,,,,,1
+34a2433a-c243-4e10-9f90-5c9b647a5f9e,سكراب الجسم اللافندر للبشرة الجافة,Demand gen ads on Discover surface,SA,,,,,,,,1
+34a2433a-c243-4e10-9f90-5c9b647a5f9e,سكراب الجسم اللافندر للبشرة الجافة,Free listings,SA,,,,,,,,1
+34a2433a-c243-4e10-9f90-5c9b647a5f9e,سكراب الجسم اللافندر للبشرة الجافة,Shopping ads,SA,,,,,,,,1
+34a2433a-c243-4e10-9f90-5c9b647a5f9e,سكراب الجسم اللافندر للبشرة الجافة,Video ads,SA,,,,,,,,1
+40032c3d-f4bf-40f8-a669-0648ff73e9cf,كريم اليدين للترطيب,Demand gen ads,SA,,,,,,,,1
+40032c3d-f4bf-40f8-a669-0648ff73e9cf,كريم اليدين للترطيب,Demand gen ads on Discover surface,SA,,,,,,,,1
+40032c3d-f4bf-40f8-a669-0648ff73e9cf,كريم اليدين للترطيب,Free listings,SA,,,,,,,,1
+40032c3d-f4bf-40f8-a669-0648ff73e9cf,كريم اليدين للترطيب,Shopping ads,SA,,,,,,,,1
+40032c3d-f4bf-40f8-a669-0648ff73e9cf,كريم اليدين للترطيب,Video ads,SA,,,,,,,,1
+405c1258-9ccd-455d-9222-d14dea9a34af,توزيعات ايمي — كريم اليدين 10 حبات,Demand gen ads,SA,,,,,,,,1
+405c1258-9ccd-455d-9222-d14dea9a34af,توزيعات ايمي — كريم اليدين 10 حبات,Demand gen ads on Discover surface,SA,,,,,,,,1
+405c1258-9ccd-455d-9222-d14dea9a34af,توزيعات ايمي — كريم اليدين 10 حبات,Free listings,SA,,,,,,,,1
+405c1258-9ccd-455d-9222-d14dea9a34af,توزيعات ايمي — كريم اليدين 10 حبات,Shopping ads,SA,,,,,,,,1
+405c1258-9ccd-455d-9222-d14dea9a34af,توزيعات ايمي — كريم اليدين 10 حبات,Video ads,SA,,,,,,,,1
+412e8f15-cac3-4a60-881f-c8ee213b7dbc,زبدة الجسم بالليمون قراس,Demand gen ads,SA,,,,,,,,1
+412e8f15-cac3-4a60-881f-c8ee213b7dbc,زبدة الجسم بالليمون قراس,Demand gen ads on Discover surface,SA,,,,,,,,1
+412e8f15-cac3-4a60-881f-c8ee213b7dbc,زبدة الجسم بالليمون قراس,Free listings,SA,,,,,,,,1
+412e8f15-cac3-4a60-881f-c8ee213b7dbc,زبدة الجسم بالليمون قراس,Shopping ads,SA,,,,,,,,1
+412e8f15-cac3-4a60-881f-c8ee213b7dbc,زبدة الجسم بالليمون قراس,Video ads,SA,,,,,,,,1
+4c85b0df-bc72-40c8-95eb-d05c4c238baf,مجموعة جلّ لمعة الجسم,Demand gen ads,SA,,,,,,,,1
+4c85b0df-bc72-40c8-95eb-d05c4c238baf,مجموعة جلّ لمعة الجسم,Demand gen ads on Discover surface,SA,,,,,,,,1
+4c85b0df-bc72-40c8-95eb-d05c4c238baf,مجموعة جلّ لمعة الجسم,Free listings,SA,,,,,,,,1
+4c85b0df-bc72-40c8-95eb-d05c4c238baf,مجموعة جلّ لمعة الجسم,Shopping ads,SA,,,,,,,,1
+4c85b0df-bc72-40c8-95eb-d05c4c238baf,مجموعة جلّ لمعة الجسم,Video ads,SA,,,,,,,,1
+4ddb1426-e764-4cab-aece-058ce2766003,مجموعة اللافندر للبشرة الجافة,Demand gen ads,SA,,,,,,,,1
+4ddb1426-e764-4cab-aece-058ce2766003,مجموعة اللافندر للبشرة الجافة,Demand gen ads on Discover surface,SA,,,,,,,,1
+4ddb1426-e764-4cab-aece-058ce2766003,مجموعة اللافندر للبشرة الجافة,Free listings,SA,,,,,,,,1
+4ddb1426-e764-4cab-aece-058ce2766003,مجموعة اللافندر للبشرة الجافة,Shopping ads,SA,,,,,,,,1
+4ddb1426-e764-4cab-aece-058ce2766003,مجموعة اللافندر للبشرة الجافة,Video ads,SA,,,,,,,,1
+4f536c9b-2fa1-4419-be2a-1da4f218ab01,سكراب الجسم بالليمون قراس,Demand gen ads,SA,,,,,,,,1
+4f536c9b-2fa1-4419-be2a-1da4f218ab01,سكراب الجسم بالليمون قراس,Demand gen ads on Discover surface,SA,,,,,,,,1
+4f536c9b-2fa1-4419-be2a-1da4f218ab01,سكراب الجسم بالليمون قراس,Free listings,SA,,,,,,,,1
+4f536c9b-2fa1-4419-be2a-1da4f218ab01,سكراب الجسم بالليمون قراس,Shopping ads,SA,,,,,,,,1
+4f536c9b-2fa1-4419-be2a-1da4f218ab01,سكراب الجسم بالليمون قراس,Video ads,SA,,,,,,,,1
+52a2b754-2644-40a9-978d-9e072a06ad6f,كريم تان رد تشيري,Demand gen ads,SA,,,,,,,,1
+52a2b754-2644-40a9-978d-9e072a06ad6f,كريم تان رد تشيري,Demand gen ads on Discover surface,SA,,,,,,,,1
+52a2b754-2644-40a9-978d-9e072a06ad6f,كريم تان رد تشيري,Free listings,SA,,,,,,,,1
+52a2b754-2644-40a9-978d-9e072a06ad6f,كريم تان رد تشيري,Shopping ads,SA,,,,,,,,1
+52a2b754-2644-40a9-978d-9e072a06ad6f,كريم تان رد تشيري,Video ads,SA,,,,,,,,1
+5753cef6-7460-4003-9c69-2096d612ffc2,فرشاة سليك للشعر,Demand gen ads,SA,,,,,,,,1
+5753cef6-7460-4003-9c69-2096d612ffc2,فرشاة سليك للشعر,Demand gen ads on Discover surface,SA,,,,,,,,1
+5753cef6-7460-4003-9c69-2096d612ffc2,فرشاة سليك للشعر,Free listings,SA,,,,,,,,1
+5753cef6-7460-4003-9c69-2096d612ffc2,فرشاة سليك للشعر,Shopping ads,SA,,,,,,,,1
+5753cef6-7460-4003-9c69-2096d612ffc2,فرشاة سليك للشعر,Video ads,SA,,,,,,,,1
+68c7f369-6ab7-41aa-8fa0-9b61d74c2d45,جل تان قلتري قولد,Demand gen ads,SA,,,,,,,,1
+68c7f369-6ab7-41aa-8fa0-9b61d74c2d45,جل تان قلتري قولد,Demand gen ads on Discover surface,SA,,,,,,,,1
+68c7f369-6ab7-41aa-8fa0-9b61d74c2d45,جل تان قلتري قولد,Free listings,SA,,,,,,,,1
+68c7f369-6ab7-41aa-8fa0-9b61d74c2d45,جل تان قلتري قولد,Shopping ads,SA,,,,,,,,1
+68c7f369-6ab7-41aa-8fa0-9b61d74c2d45,جل تان قلتري قولد,Video ads,SA,,,,,,,,1
+7092241d-63fc-4c30-926f-422578067f2e,كريم القدمين للترطيب العميق,Demand gen ads,SA,,,,,,,,1
+7092241d-63fc-4c30-926f-422578067f2e,كريم القدمين للترطيب العميق,Demand gen ads on Discover surface,SA,,,,,,,,1
+7092241d-63fc-4c30-926f-422578067f2e,كريم القدمين للترطيب العميق,Free listings,SA,,,,,,,,1
+7092241d-63fc-4c30-926f-422578067f2e,كريم القدمين للترطيب العميق,Shopping ads,SA,,,,,,,,1
+7092241d-63fc-4c30-926f-422578067f2e,كريم القدمين للترطيب العميق,Video ads,SA,,,,,,,,1
+7e27f946-8cab-4a11-8d8c-d8be0ca5fafb,مجموعة الصيف,Demand gen ads,SA,,,,,,,,1
+7e27f946-8cab-4a11-8d8c-d8be0ca5fafb,مجموعة الصيف,Demand gen ads on Discover surface,SA,,,,,,,,1
+7e27f946-8cab-4a11-8d8c-d8be0ca5fafb,مجموعة الصيف,Free listings,SA,,,,,,,,1
+7e27f946-8cab-4a11-8d8c-d8be0ca5fafb,مجموعة الصيف,Shopping ads,SA,,,,,,,,1
+7e27f946-8cab-4a11-8d8c-d8be0ca5fafb,مجموعة الصيف,Video ads,SA,,,,,,,,1
+86139cdc-636b-45c8-a36e-96c3a272a626,توزيعات ايمي — مسك 10 حبات,Demand gen ads,SA,,,,,,,,1
+86139cdc-636b-45c8-a36e-96c3a272a626,توزيعات ايمي — مسك 10 حبات,Demand gen ads on Discover surface,SA,,,,,,,,1
+86139cdc-636b-45c8-a36e-96c3a272a626,توزيعات ايمي — مسك 10 حبات,Free listings,SA,,,,,,,,1
+86139cdc-636b-45c8-a36e-96c3a272a626,توزيعات ايمي — مسك 10 حبات,Shopping ads,SA,,,,,,,,1
+86139cdc-636b-45c8-a36e-96c3a272a626,توزيعات ايمي — مسك 10 حبات,Video ads,SA,,,,,,,,1
+8deabd11-c23c-456f-afd4-4809908948eb,عطر الجسم فلورا,Demand gen ads,SA,,,,,,,,1
+8deabd11-c23c-456f-afd4-4809908948eb,عطر الجسم فلورا,Demand gen ads on Discover surface,SA,,,,,,,,1
+8deabd11-c23c-456f-afd4-4809908948eb,عطر الجسم فلورا,Free listings,SA,,,,,,,,1
+8deabd11-c23c-456f-afd4-4809908948eb,عطر الجسم فلورا,Shopping ads,SA,,,,,,,,1
+8deabd11-c23c-456f-afd4-4809908948eb,عطر الجسم فلورا,Video ads,SA,,,,,,,,1
+90b1d926-30e0-48ce-9b5d-5950c7ce5285,ماسكارا للشعر المتطاير,Demand gen ads,SA,,,,,,,,1
+90b1d926-30e0-48ce-9b5d-5950c7ce5285,ماسكارا للشعر المتطاير,Demand gen ads on Discover surface,SA,,,,,,,,1
+90b1d926-30e0-48ce-9b5d-5950c7ce5285,ماسكارا للشعر المتطاير,Free listings,SA,,,,,,,,1
+90b1d926-30e0-48ce-9b5d-5950c7ce5285,ماسكارا للشعر المتطاير,Shopping ads,SA,,,,,,,,1
+90b1d926-30e0-48ce-9b5d-5950c7ce5285,ماسكارا للشعر المتطاير,Video ads,SA,,,,,,,,1
+93a7e970-4adf-4c00-9c4b-40b9234c15cc,مسك ايمي,Demand gen ads,SA,,,,,,,,1
+93a7e970-4adf-4c00-9c4b-40b9234c15cc,مسك ايمي,Demand gen ads on Discover surface,SA,,,,,,,,1
+93a7e970-4adf-4c00-9c4b-40b9234c15cc,مسك ايمي,Free listings,SA,,,,,,,,1
+93a7e970-4adf-4c00-9c4b-40b9234c15cc,مسك ايمي,Shopping ads,SA,,,,,,,,1
+93a7e970-4adf-4c00-9c4b-40b9234c15cc,مسك ايمي,Video ads,SA,,,,,,,,1
+9a475c36-0581-4b0e-aa85-7b46d04b1e80,فرشاة الميك اب,Demand gen ads,SA,,,,,,,,1
+9a475c36-0581-4b0e-aa85-7b46d04b1e80,فرشاة الميك اب,Demand gen ads on Discover surface,SA,,,,,,,,1
+9a475c36-0581-4b0e-aa85-7b46d04b1e80,فرشاة الميك اب,Free listings,SA,,,,,,,,1
+9a475c36-0581-4b0e-aa85-7b46d04b1e80,فرشاة الميك اب,Shopping ads,SA,,,,,,,,1
+9a475c36-0581-4b0e-aa85-7b46d04b1e80,فرشاة الميك اب,Video ads,SA,,,,,,,,1
+9c995e1e-9ea8-452d-8808-bce9c45d85bf,شنطة ايمي,Demand gen ads,SA,,,,,,,,1
+9c995e1e-9ea8-452d-8808-bce9c45d85bf,شنطة ايمي,Demand gen ads on Discover surface,SA,,,,,,,,1
+9c995e1e-9ea8-452d-8808-bce9c45d85bf,شنطة ايمي,Free listings,SA,,,,,,,,1
+9c995e1e-9ea8-452d-8808-bce9c45d85bf,شنطة ايمي,Shopping ads,SA,,,,,,,,1
+9c995e1e-9ea8-452d-8808-bce9c45d85bf,شنطة ايمي,Video ads,SA,,,,,,,,1
+a3bccdee-4b74-4ef9-bc32-9918950728f2,مرآة ايمى,Demand gen ads,SA,,,,,,,,1
+a3bccdee-4b74-4ef9-bc32-9918950728f2,مرآة ايمى,Demand gen ads on Discover surface,SA,,,,,,,,1
+a3bccdee-4b74-4ef9-bc32-9918950728f2,مرآة ايمى,Free listings,SA,,,,,,,,1
+a3bccdee-4b74-4ef9-bc32-9918950728f2,مرآة ايمى,Shopping ads,SA,,,,,,,,1
+a3bccdee-4b74-4ef9-bc32-9918950728f2,مرآة ايمى,Video ads,SA,,,,,,,,1
+a4d42d3b-505e-4d0a-87fb-e9c0749d5bff,زبدة الجسم اللافندر للبشرة الجافة,Demand gen ads,SA,,,,,,,,1
+a4d42d3b-505e-4d0a-87fb-e9c0749d5bff,زبدة الجسم اللافندر للبشرة الجافة,Demand gen ads on Discover surface,SA,,,,,,,,1
+a4d42d3b-505e-4d0a-87fb-e9c0749d5bff,زبدة الجسم اللافندر للبشرة الجافة,Free listings,SA,,,,,,,,1
+a4d42d3b-505e-4d0a-87fb-e9c0749d5bff,زبدة الجسم اللافندر للبشرة الجافة,Shopping ads,SA,,,,,,,,1
+a4d42d3b-505e-4d0a-87fb-e9c0749d5bff,زبدة الجسم اللافندر للبشرة الجافة,Video ads,SA,,,,,,,,1
+ba65ad9b-c99d-44de-869d-2f450ae1fb74,مجموعة هايلايتر الجسم مارشميللو,Demand gen ads,SA,,,,,,,,1
+ba65ad9b-c99d-44de-869d-2f450ae1fb74,مجموعة هايلايتر الجسم مارشميللو,Demand gen ads on Discover surface,SA,,,,,,,,1
+ba65ad9b-c99d-44de-869d-2f450ae1fb74,مجموعة هايلايتر الجسم مارشميللو,Free listings,SA,,,,,,,,1
+ba65ad9b-c99d-44de-869d-2f450ae1fb74,مجموعة هايلايتر الجسم مارشميللو,Shopping ads,SA,,,,,,,,1
+ba65ad9b-c99d-44de-869d-2f450ae1fb74,مجموعة هايلايتر الجسم مارشميللو,Video ads,SA,,,,,,,,1
+c027b20d-b16c-4e05-93af-c7183ce6b7f3,مجموعة هايلايتر الجسم تشوكلت,Demand gen ads,SA,,,,,,,,1
+c027b20d-b16c-4e05-93af-c7183ce6b7f3,مجموعة هايلايتر الجسم تشوكلت,Demand gen ads on Discover surface,SA,,,,,,,,1
+c027b20d-b16c-4e05-93af-c7183ce6b7f3,مجموعة هايلايتر الجسم تشوكلت,Free listings,SA,,,,,,,,1
+c027b20d-b16c-4e05-93af-c7183ce6b7f3,مجموعة هايلايتر الجسم تشوكلت,Shopping ads,SA,,,,,,,,1
+c027b20d-b16c-4e05-93af-c7183ce6b7f3,مجموعة هايلايتر الجسم تشوكلت,Video ads,SA,,,,,,,,1
+c5129731-4ed7-4019-bf09-7a175b039a47,عطر الجسم ناتورا,Demand gen ads,SA,,,,,,,,1
+c5129731-4ed7-4019-bf09-7a175b039a47,عطر الجسم ناتورا,Demand gen ads on Discover surface,SA,,,,,,,,1
+c5129731-4ed7-4019-bf09-7a175b039a47,عطر الجسم ناتورا,Free listings,SA,,,,,,,,1
+c5129731-4ed7-4019-bf09-7a175b039a47,عطر الجسم ناتورا,Shopping ads,SA,,,,,,,,1
+c5129731-4ed7-4019-bf09-7a175b039a47,عطر الجسم ناتورا,Video ads,SA,,,,,,,,1
+d1aeadb7-b224-4dab-8bd8-db1acaeae741,مرطب الشفاه بالعسل,Demand gen ads,SA,,,,,,,,1
+d1aeadb7-b224-4dab-8bd8-db1acaeae741,مرطب الشفاه بالعسل,Demand gen ads on Discover surface,SA,,,,,,,,1
+d1aeadb7-b224-4dab-8bd8-db1acaeae741,مرطب الشفاه بالعسل,Free listings,SA,,,,,,,,1
+d1aeadb7-b224-4dab-8bd8-db1acaeae741,مرطب الشفاه بالعسل,Shopping ads,SA,,,,,,,,1
+d1aeadb7-b224-4dab-8bd8-db1acaeae741,مرطب الشفاه بالعسل,Video ads,SA,,,,,,,,1
+d363c1c0-13a8-48b0-b5df-7206d7580a12,زيت ديب تان,Demand gen ads,SA,,,,,,,,1
+d363c1c0-13a8-48b0-b5df-7206d7580a12,زيت ديب تان,Demand gen ads on Discover surface,SA,,,,,,,,1
+d363c1c0-13a8-48b0-b5df-7206d7580a12,زيت ديب تان,Free listings,SA,,,,,,,,1
+d363c1c0-13a8-48b0-b5df-7206d7580a12,زيت ديب تان,Shopping ads,SA,,,,,,,,1
+d363c1c0-13a8-48b0-b5df-7206d7580a12,زيت ديب تان,Video ads,SA,,,,,,,,1
+d4e7a9a2-752c-44a6-91c3-2acab35ba9b8,مجموعة الليمون قراس للبشرة الجافة,Demand gen ads,SA,,,,,,,,1
+d4e7a9a2-752c-44a6-91c3-2acab35ba9b8,مجموعة الليمون قراس للبشرة الجافة,Demand gen ads on Discover surface,SA,,,,,,,,1
+d4e7a9a2-752c-44a6-91c3-2acab35ba9b8,مجموعة الليمون قراس للبشرة الجافة,Free listings,SA,,,,,,,,1
+d4e7a9a2-752c-44a6-91c3-2acab35ba9b8,مجموعة الليمون قراس للبشرة الجافة,Shopping ads,SA,,,,,,,,1
+d4e7a9a2-752c-44a6-91c3-2acab35ba9b8,مجموعة الليمون قراس للبشرة الجافة,Video ads,SA,,,,,,,,1
+d8c81b60-ad64-4a55-9402-a3b33ffe6de4,بوكس ايمي للاهداء,Demand gen ads,SA,,,,,,,,1
+d8c81b60-ad64-4a55-9402-a3b33ffe6de4,بوكس ايمي للاهداء,Demand gen ads on Discover surface,SA,,,,,,,,1
+d8c81b60-ad64-4a55-9402-a3b33ffe6de4,بوكس ايمي للاهداء,Free listings,SA,,,,,,,,1
+d8c81b60-ad64-4a55-9402-a3b33ffe6de4,بوكس ايمي للاهداء,Shopping ads,SA,,,,,,,,1
+d8c81b60-ad64-4a55-9402-a3b33ffe6de4,بوكس ايمي للاهداء,Video ads,SA,,,,,,,,1
+deb9699d-30f1-413b-96b0-9b9fd1ee7c4f,واكس تصفيف الشعر,Demand gen ads,SA,,,,,,,,1
+deb9699d-30f1-413b-96b0-9b9fd1ee7c4f,واكس تصفيف الشعر,Demand gen ads on Discover surface,SA,,,,,,,,1
+deb9699d-30f1-413b-96b0-9b9fd1ee7c4f,واكس تصفيف الشعر,Free listings,SA,,,,,,,,1
+deb9699d-30f1-413b-96b0-9b9fd1ee7c4f,واكس تصفيف الشعر,Shopping ads,SA,,,,,,,,1
+deb9699d-30f1-413b-96b0-9b9fd1ee7c4f,واكس تصفيف الشعر,Video ads,SA,,,,,,,,1
+e4991fa7-102f-4a21-ac36-7b20bf1fb964,مجموعة القدمين و اليدين,Demand gen ads,SA,,,,,,,,1
+e4991fa7-102f-4a21-ac36-7b20bf1fb964,مجموعة القدمين و اليدين,Demand gen ads on Discover surface,SA,,,,,,,,1
+e4991fa7-102f-4a21-ac36-7b20bf1fb964,مجموعة القدمين و اليدين,Free listings,SA,,,,,,,,1
+e4991fa7-102f-4a21-ac36-7b20bf1fb964,مجموعة القدمين و اليدين,Shopping ads,SA,,,,,,,,1
+e4991fa7-102f-4a21-ac36-7b20bf1fb964,مجموعة القدمين و اليدين,Video ads,SA,,,,,,,,1
+ef3e5c77-6cd0-470c-b9d4-746f541cd7a3,توزيعات ايمي — مرطب الشفاه 10 حبات,Demand gen ads,SA,,,,,,,,1
+ef3e5c77-6cd0-470c-b9d4-746f541cd7a3,توزيعات ايمي — مرطب الشفاه 10 حبات,Demand gen ads on Discover surface,SA,,,,,,,,1
+ef3e5c77-6cd0-470c-b9d4-746f541cd7a3,توزيعات ايمي — مرطب الشفاه 10 حبات,Free listings,SA,,,,,,,,1
+ef3e5c77-6cd0-470c-b9d4-746f541cd7a3,توزيعات ايمي — مرطب الشفاه 10 حبات,Shopping ads,SA,,,,,,,,1
+ef3e5c77-6cd0-470c-b9d4-746f541cd7a3,توزيعات ايمي — مرطب الشفاه 10 حبات,Video ads,SA,,,,,,,,1
+f7dbeb34-9c03-40cb-a623-261e1baa92b9,هايلايتر الجسم تشوكلت,Demand gen ads,SA,,,,,,,,1
+f7dbeb34-9c03-40cb-a623-261e1baa92b9,هايلايتر الجسم تشوكلت,Demand gen ads on Discover surface,SA,,,,,,,,1
+f7dbeb34-9c03-40cb-a623-261e1baa92b9,هايلايتر الجسم تشوكلت,Free listings,SA,,,,,,,,1
+f7dbeb34-9c03-40cb-a623-261e1baa92b9,هايلايتر الجسم تشوكلت,Shopping ads,SA,,,,,,,,1
+f7dbeb34-9c03-40cb-a623-261e1baa92b9,هايلايتر الجسم تشوكلت,Video ads,SA,,,,,,,,1
+faaf095a-257a-48d1-a7e6-3d4835ea2459,كيس التوزيعات ( الصغير ),Demand gen ads,SA,,,,,,,,1
+faaf095a-257a-48d1-a7e6-3d4835ea2459,كيس التوزيعات ( الصغير ),Demand gen ads on Discover surface,SA,,,,,,,,1
+faaf095a-257a-48d1-a7e6-3d4835ea2459,كيس التوزيعات ( الصغير ),Free listings,SA,,,,,,,,1
+faaf095a-257a-48d1-a7e6-3d4835ea2459,كيس التوزيعات ( الصغير ),Shopping ads,SA,,,,,,,,1
+faaf095a-257a-48d1-a7e6-3d4835ea2459,كيس التوزيعات ( الصغير ),Video ads,SA,,,,,,,,1
+fb577395-d0c7-445a-827e-7afe33d3c3f2,مجموعة الشعر,Demand gen ads,SA,,,,,,,,1
+fb577395-d0c7-445a-827e-7afe33d3c3f2,مجموعة الشعر,Demand gen ads on Discover surface,SA,,,,,,,,1
+fb577395-d0c7-445a-827e-7afe33d3c3f2,مجموعة الشعر,Free listings,SA,,,,,,,,1
+fb577395-d0c7-445a-827e-7afe33d3c3f2,مجموعة الشعر,Shopping ads,SA,,,,,,,,1
+fb577395-d0c7-445a-827e-7afe33d3c3f2,مجموعة الشعر,Video ads,SA,,,,,,,,1
