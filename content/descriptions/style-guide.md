@@ -63,7 +63,7 @@ a'mie Hair Wax Stick | واكس الشعر
 طريقة الاستخدام:
 يُمرّر الواكس مباشرة على الشعر الجاف أو الرطب، ثم يُصفّف باستخدام الفرشاة للحصول على النتيجة المطلوبة.
 
-الحجم: 30 جم.
+الحجم: 30 مل.
 
 ## Team edits in this folder (ref-team-*.txt)
 Use for product facts and voice. Only fix: Arabic «ايمي» (→ a'mie) and spacing before commas. Claims in them are owner-approved.
