@@ -67,3 +67,20 @@ a'mie Hair Wax Stick | واكس الشعر
 
 ## Team edits in this folder (ref-team-*.txt)
 Use for product facts and voice. Only fix: Arabic «ايمي» (→ a'mie) and spacing before commas. Claims in them are owner-approved.
+
+## «لماذا a'mie؟» block (owner decision 29 Oct 2026, added at the end of every long description)
+Cosmetic products (incl. sets and favors):
+```
+لماذا a'mie؟
+* صنع في السعودية.
+* منتجات مسجّلة لدى هيئة الغذاء والدواء.
+* تركيبات خالية من المواد الكيميائية.
+* خالية من التجارب على الحيوانات.
+```
+Accessories (bags, favor bags, mirror, brushes):
+```
+لماذا a'mie؟
+* براند سعودي.
+* تصميم مختار بعناية ليكمّل روتينك.
+* جودة واهتمام بأدق التفاصيل.
+```
