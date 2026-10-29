@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>a'mie Content Studio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600&display=swap">
+<style>
+/* Layout: one editorial workspace — product index (filters + rows) and a two-column editor (new copy | live copy) */
+:root{
+  --bg:#F6F0EB; --surface:#FFFFFF; --soft:#EFE6DF; --ink:#2B2321; --muted:#85756E; --line:#E2D6CD;
+  --brand:#663C3C; --head:#5E2E21; --glow:#B98B6E; --blush:#F2E4DF;
+  --ok:#3F6B48; --ok-bg:#E3EEE4; --warn:#8A5F23; --warn-bg:#F5EBD9; --info:#4E5D7A; --info-bg:#E5E9F2; --bad:#9B2C2C; --bad-bg:#F6E1DE;
+  --f:"Readex Pro","Segoe UI",Tahoma,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#171312; --surface:#211B19; --soft:#2A2220; --ink:#F1E9E5; --muted:#B3A29C; --line:#3A302D;
+  --brand:#E1B3A4; --head:#EBC3B4; --glow:#D2A88E; --blush:#3A2A26;
+  --ok:#93CFA0; --ok-bg:#1F3324; --warn:#E5C07D; --warn-bg:#3A2F1C; --info:#AFC0E2; --info-bg:#232A3A; --bad:#F0A39A; --bad-bg:#3D2220; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#171312; --surface:#211B19; --soft:#2A2220; --ink:#F1E9E5; --muted:#B3A29C; --line:#3A302D;
+  --brand:#E1B3A4; --head:#EBC3B4; --glow:#D2A88E; --blush:#3A2A26;
+  --ok:#93CFA0; --ok-bg:#1F3324; --warn:#E5C07D; --warn-bg:#3A2F1C; --info:#AFC0E2; --info-bg:#232A3A; --bad:#F0A39A; --bad-bg:#3D2220; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--bg);color:var(--ink);font-family:var(--f);font-size:15px;line-height:1.7;font-weight:300}
+.wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:22px 60px}
+b,strong{font-weight:500}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.ltr{direction:ltr;unicode-bidi:isolate}
+header.top{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px}
+.brand{direction:ltr;font-weight:300;font-size:30px;color:var(--head);letter-spacing:.01em;line-height:1}
+.brand small{display:block;font-size:10.5px;letter-spacing:.28em;color:var(--glow);margin-top:6px;font-weight:500}
+h1{margin:0;font-size:21px;font-weight:500;color:var(--head);text-wrap:balance}
+.sub{margin:2px 0 0;color:var(--muted);font-size:13.5px}
+.stats{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:8px 14px;display:flex;gap:8px;align-items:baseline}
+.stat .v{font-size:19px;font-weight:600;color:var(--brand);font-variant-numeric:tabular-nums}
+.stat .l{font-size:12.5px;color:var(--muted)}
+.tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:8px 0 14px}
+.tools input,.tools select{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:8px 12px;min-width:0}
+.tools input{flex:1 1 220px}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:5px 12px;font-size:13px}
+.chip[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:var(--surface)}
+.list{display:flex;flex-direction:column;gap:8px}
+.row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,2fr) auto;gap:14px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;text-align:right;width:100%}
+.row:hover{border-color:var(--glow)}
+.row .nm{font-weight:500;color:var(--head)}
+.row .en{font-size:12px;color:var(--muted);direction:ltr;text-align:right}
+.row .pv{font-size:13px;color:var(--muted);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;min-width:0}
+.row .meta{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.grp{font-size:11.5px;color:var(--glow);letter-spacing:.04em}
+@media (max-width:720px){.row{grid-template-columns:1fr}.row .meta{flex-direction:row;align-items:center;justify-content:space-between}}
+.pill{font-size:12px;border-radius:999px;padding:2px 10px;white-space:nowrap;font-weight:400}
+.st-draft{background:var(--soft);color:var(--muted)}
+.st-review{background:var(--info-bg);color:var(--info)}
+.st-approved{background:var(--ok-bg);color:var(--ok)}
+.st-live{background:var(--blush);color:var(--brand)}
+.empty{background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:36px 18px;text-align:center;color:var(--muted)}
+.empty b{display:block;color:var(--ink);font-size:16px;margin-bottom:4px}
+/* editor */
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:16px 0 6px}
+.back{border:1px solid var(--line);background:var(--surface);border-radius:10px;padding:6px 12px;font-size:13.5px}
+.ed-h{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;margin-bottom:12px}
+.ed-h h2{margin:0;font-size:22px;color:var(--head);font-weight:500;text-wrap:balance}
+.ed-h .facts{font-size:13px;color:var(--muted)}
+.ed-h a{color:var(--brand)}
+.cols{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:900px){.cols{grid-template-columns:1fr}}
+.pane{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;min-width:0}
+.pane h3{margin:0 0 10px;font-size:14px;letter-spacing:.06em;color:var(--glow);font-weight:500}
+.fld{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.lab{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13.5px;color:var(--head);font-weight:500}
+.cnt{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.cnt.over{color:var(--bad);font-weight:500}
+textarea{width:100%;background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;line-height:1.9;resize:vertical;font-weight:300}
+textarea#short{min-height:92px}
+textarea#long{min-height:420px}
+textarea[readonly]{background:var(--soft)}
+.live{white-space:pre-wrap;font-size:13.5px;color:var(--ink);background:var(--soft);border-radius:12px;padding:12px 14px;max-height:520px;overflow:auto}
+.live.s{max-height:none}
+.mini{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:2px 10px;font-size:12px;color:var(--brand)}
+.foot{display:flex;gap:10px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:12px;margin-top:4px}
+.foot select{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:7px 10px}
+.save{background:var(--brand);color:var(--surface);border:0;border-radius:10px;padding:9px 20px;font-weight:500}
+.save:disabled{opacity:.45;cursor:default}
+.who{font-size:12.5px;color:var(--muted);margin-inline-start:auto}
+.checks{display:flex;flex-direction:column;gap:6px;margin:0 0 14px;padding:0;list-style:none}
+.checks li{font-size:13px;border-radius:10px;padding:6px 10px}
+.checks .ok{background:var(--ok-bg);color:var(--ok)}
+.checks .warn{background:var(--warn-bg);color:var(--warn)}
+.checks .bad{background:var(--bad-bg);color:var(--bad)}
+.note{font-size:13px;color:var(--muted)}
+.banner{background:var(--warn-bg);color:var(--warn);border-radius:12px;padding:10px 14px;margin:10px 0;font-size:13.5px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.banner button{border:1px solid currentColor;background:transparent;color:inherit;border-radius:8px;padding:3px 10px;font-size:12.5px}
+.toast{position:fixed;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:8px 18px;border-radius:999px;font-size:13.5px;z-index:20}
+.guide{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin:0 0 14px;font-size:13.5px}
+.guide summary{cursor:pointer;color:var(--head);font-weight:500}
+.guide ol{margin:8px 0 0;padding-inline-start:20px}
+@media (prefers-reduced-motion:no-preference){.row{transition:border-color .15s}}
+.login{max-width:380px;margin:40px auto;background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:22px}
+.login h2{margin:0 0 6px;color:var(--head);font-size:18px;font-weight:500}
+.login p{margin:0 0 14px;color:var(--muted);font-size:13.5px}
+.login label{display:block;font-size:13px;margin:10px 0 4px}
+.login input{width:100%;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.login button{margin-top:16px;width:100%;padding:10px;border:0;border-radius:10px;background:var(--brand);color:var(--bg);font:inherit;font-weight:500;cursor:pointer}
+.login .err{color:var(--bad);font-size:13px;margin-top:10px}
+.me{font-size:12.5px;color:var(--muted);margin-top:6px}
+.me button{border:0;background:none;color:var(--brand);font:inherit;cursor:pointer;padding:0;text-decoration:underline}
+</style>
+</head>
+<body>
+
+<div class="wrap" dir="rtl" lang="ar">
+  <header class="top">
+    <div>
+      <h1>محتوى منتجات الموقع</h1>
+      <p class="sub">الوصف المختصر والتفصيلي لكل منتج. اكتبي، احفظي، وغيّري الحالة لما يبقى جاهز.</p>
+    </div>
+    <div><div class="brand">a'mie<small>CONTENT STUDIO</small></div><div class="me" id="me" hidden></div></div>
+  </header>
+
+  <div id="banner" class="banner" hidden></div>
+
+  <form class="login" id="loginView" hidden>
+    <h2>دخول فريق المحتوى</h2>
+    <p>اكتبي اسمك وباسورد الفريق. اسمك بيظهر جنب كل تعديل.</p>
+    <label for="lgName">الاسم</label><input id="lgName" autocomplete="name" required maxlength="40">
+    <label for="lgPass">الباسورد</label><input id="lgPass" type="password" autocomplete="current-password" required>
+    <button type="submit">دخول</button>
+    <div class="err" id="lgErr" hidden></div>
+  </form>
+
+  <section id="indexView" hidden>
+    <div class="stats" id="stats"></div>
+    <details class="guide" id="guide">
+      <summary>الـ 5 حاجات اللي لازم تكون في كل وصف</summary>
+      <ol>
+        <li><b>سطر النتيجة:</b> جملة واحدة هادية، زي «تثبيت متقن، شعر مرتب، ولمعان طبيعي يدوم.»</li>
+        <li><b>فقرة:</b> المنتج بيعمل إيه، وأهم 2 أو 3 مكونات، وقوامه.</li>
+        <li><b>لمين وإمتى:</b> سطر واحد، زي «مثالي لـ Sleek Look».</li>
+        <li><b>المميزات:</b> 5 نقاط بالظبط.</li>
+        <li><b>طريقة الاستخدام والحجم.</b></li>
+      </ol>
+      <p class="note">اسم البراند دايماً a'mie بالإنجليزي. الوصف المختصر 160 حرف بالكتير.</p>
+    </details>
+    <div class="tools">
+      <input id="q" type="search" placeholder="ابحثي باسم المنتج" aria-label="بحث">
+      <select id="st" aria-label="الحالة">
+        <option value="">كل الحالات</option>
+        <option value="draft">مسودة</option>
+        <option value="review">للمراجعة</option>
+        <option value="approved">اتوافق عليه</option>
+        <option value="live">اترفع على زد</option>
+      </select>
+    </div>
+    <div class="chips" id="groups" role="group" aria-label="القسم"></div>
+    <div class="list" id="list" style="margin-top:12px">
+      <div class="empty"><b>بنحمّل المنتجات…</b>لو الصفحة فضلت فاضية، اتأكدي إنك داخلة بحسابك.</div>
+    </div>
+  </section>
+
+  <section id="editView" hidden>
+    <div class="bar"><button class="back" id="back" type="button">→ كل المنتجات</button></div>
+    <div class="ed-h">
+      <div><h2 id="edName"></h2><div class="facts" id="edFacts"></div></div>
+    </div>
+    <div class="cols">
+      <div class="pane">
+        <h3>الوصف الجديد</h3>
+        <ul class="checks" id="checks"></ul>
+        <div class="fld">
+          <div class="lab"><label for="short">الوصف المختصر</label><span><span class="cnt" id="shortCnt"></span> <button class="mini" type="button" data-copy="short">نسخ</button></span></div>
+          <textarea id="short" dir="rtl"></textarea>
+        </div>
+        <div class="fld">
+          <div class="lab"><label for="long">الوصف التفصيلي</label><span><span class="cnt" id="longCnt"></span> <button class="mini" type="button" data-copy="long">نسخ</button></span></div>
+          <textarea id="long" dir="rtl"></textarea>
+        </div>
+        <div class="fld">
+          <div class="lab"><label for="notes">ملاحظات للفريق</label></div>
+          <textarea id="notes" dir="rtl" style="min-height:70px"></textarea>
+        </div>
+        <div class="foot">
+          <label for="status" class="note">الحالة</label>
+          <select id="status">
+            <option value="draft">مسودة</option>
+            <option value="review">للمراجعة</option>
+            <option value="approved">اتوافق عليه</option>
+            <option value="live">اترفع على زد</option>
+          </select>
+          <button class="save" id="save" type="button" disabled>حفظ</button>
+          <button class="back" id="restore" type="button" hidden>رجّعي النسخة اللي قبلها</button>
+          <span class="who" id="who"></span>
+        </div>
+      </div>
+      <div class="pane">
+        <h3>اللي على الموقع دلوقتي</h3>
+        <div class="fld"><div class="lab">الوصف المختصر</div><div class="live s" id="curShort"></div></div>
+        <div class="fld"><div class="lab">الوصف التفصيلي</div><div class="live" id="curLong"></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+const STATUS={draft:"مسودة",review:"للمراجعة",approved:"اتوافق عليه",live:"اترفع على زد"};
+const GROUPS=["الكل","اللمعة","الشعر","العناية بالجسم","العطور","الشفايف واليدين والقدمين","المجموعات والهدايا","التان","أخرى"];
+const BANNED=["علاج","يعالج","تعالج","آمن","آمنة","تنشيط الدورة الدموية","تحريك الدورة الدموية","لا يسد المسام","امتلاء","تكبير","مثبت علمياً","100%","الأول في","لا مثيل"];
+let me=null,canWrite=true,stamp=0,rows=[],byId={},cur=null,dirty=false,group="الكل",lastRemote=null;
+const $=id=>document.getElementById(id);
+function toast(t){const e=$("toast");e.textContent=t;e.hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>e.hidden=true,2200)}
+function esc(s){return (s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+function fmtDate(iso){if(!iso)return"";try{return new Date(iso).toLocaleString("ar-EG",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})}catch(e){return""}}
+
+function renderStats(){
+  const c={draft:0,review:0,approved:0,live:0};rows.forEach(r=>c[r.status||"draft"]++);
+  $("stats").innerHTML=`<div class="stat"><span class="v">${rows.length}</span><span class="l">منتج</span></div>`+
+   Object.keys(c).map(k=>`<div class="stat"><span class="v">${c[k]}</span><span class="l">${STATUS[k]}</span></div>`).join("");
+}
+function renderGroups(){
+  $("groups").innerHTML=GROUPS.map(g=>`<button type="button" class="chip" aria-pressed="${g===group}" data-g="${esc(g)}">${esc(g)}</button>`).join("");
+}
+function renderList(){
+  const q=$("q").value.trim(),st=$("st").value;
+  let list=rows.filter(r=>(group==="الكل"||r.group===group)&&(!st||(r.status||"draft")===st)&&(!q||(r.name_ar+" "+(r.name_en||"")).toLowerCase().includes(q.toLowerCase())));
+  if(!rows.length){$("list").innerHTML=`<div class="empty"><b>لسه مفيش منتجات هنا.</b>المنتجات بتتضاف من زد، وهتظهر هنا أول ما تتحمّل.</div>`;return}
+  if(!list.length){$("list").innerHTML=`<div class="empty"><b>مفيش منتج بالبحث ده.</b>جرّبي كلمة تانية أو شيلي الفلتر.</div>`;return}
+  $("list").innerHTML=list.map(r=>`<button type="button" class="row" data-id="${esc(r.id)}">
+    <div><div class="nm">${esc(r.name_ar)}</div><div class="en">${esc(r.name_en||"")}</div></div>
+    <div class="pv">${esc(r.short_new||r.short_current||"لسه مفيش وصف مختصر")}</div>
+    <div class="meta"><span class="pill st-${r.status||"draft"}">${STATUS[r.status||"draft"]}</span><span class="grp">${esc(r.group||"")}</span></div>
+  </button>`).join("");
+}
+function checks(s,l){
+  const all=s+"\n"+l,out=[];
+  const body=s+"\n"+l.split("\n").filter((x,i)=>!(i===0&&x.includes("|"))).join("\n");
+  const arName=(body.match(/(?:^|[^؀-ۿ])(?:ا|آ|إ)يمي(?![؀-ۿ])/g)||[]).length;
+  if(arName)out.push(["bad",`«ايمي» مكتوبة بالعربي ${arName} مرة. اكتبيها a'mie.`]);
+  const hits=BANNED.filter(w=>all.includes(w));
+  if(hits.length)out.push(["bad","كلمات ممنوعة: "+hits.join("، ")]);
+  if(/ ،| \./.test(all))out.push(["warn","فيه مسافة قبل فاصلة أو نقطة."]);
+  if(s.length>160)out.push(["warn",`الوصف المختصر ${s.length} حرف، والمطلوب 160 بالكتير.`]);
+  const bullets=(l.match(/^\s*[*•\-–]\s+/gm)||[]).length;
+  if(l&&!/المميزات/.test(l))out.push(["warn","مفيش جزء «المميزات»."]);
+  else if(l&&bullets&&bullets<5)out.push(["warn",`المميزات فيها ${bullets} نقاط، والمطلوب 5.`]);
+  if(l&&!/طريقة الاستخدام/.test(l))out.push(["warn","مفيش «طريقة الاستخدام»."]);
+  if(!s)out.push(["warn","الوصف المختصر فاضي."]);
+  if(!out.length)out.push(["ok","الوصف ماشي على الدليل."]);
+  return out;
+}
+function updateEditorState(){
+  const s=$("short").value,l=$("long").value;
+  $("shortCnt").textContent=s.length+" / 160";$("shortCnt").classList.toggle("over",s.length>160);
+  $("longCnt").textContent=l.length+" حرف";
+  $("checks").innerHTML=checks(s,l).map(([c,t])=>`<li class="${c}">${esc(t)}</li>`).join("");
+  const r=byId[cur];dirty=!!r&&(s!==(r.short_new||"")||l!==(r.long_new||"")||$("notes").value!==(r.notes||"")||$("status").value!==(r.status||"draft"));
+  $("save").disabled=!dirty||!canWrite;
+}
+async function renderWho(r){
+  if(!r.updatedBy){$("who").textContent=r.updatedAt?"آخر تعديل "+fmtDate(r.updatedAt):"";return}
+  $("who").textContent="آخر تعديل: "+(r.updatedBy.startsWith("u_")?"Claude":r.updatedBy)+" · "+fmtDate(r.updatedAt);
+}
+function openEditor(id){
+  const r=byId[id];if(!r){showIndex();return}
+  cur=id;$("indexView").hidden=true;$("editView").hidden=false;$("banner").hidden=canWrite;
+  $("edName").textContent=r.name_ar;
+  $("edFacts").innerHTML=`${esc(r.name_en||"")}${r.price?" · "+esc(String(r.price))+" ر.س":""}${r.url?` · <a href="${esc(r.url)}" target="_blank" rel="noopener">افتحي صفحة المنتج</a>`:""}`;
+  $("short").value=r.short_new||"";$("long").value=r.long_new||"";$("notes").value=r.notes||"";$("status").value=r.status||"draft";
+  $("curShort").textContent=r.short_current||"فاضي";$("curLong").textContent=r.long_current||"فاضي";
+  ["short","long","notes"].forEach(k=>$(k).readOnly=!canWrite);$("status").disabled=!canWrite;
+  $("restore").hidden=!(r.prev&&canWrite);
+  lastRemote=r.updatedAt||null;renderWho(r);updateEditorState();
+  try{if(location.hash!=="#p-"+id)history.replaceState(null,"","#p-"+id)}catch(e){location.hash="p-"+id}
+  window.scrollTo(0,0);
+}
+function showIndex(){cur=null;$("editView").hidden=true;$("indexView").hidden=false;$("banner").hidden=canWrite;try{history.replaceState(null,"",location.pathname+location.search)}catch(e){location.hash=""}renderList()}
+
+async function api(action,body){
+  const res=await fetch("api.php?action="+action,{method:body?"POST":"GET",headers:body?{"Content-Type":"application/json"}:{},body:body?JSON.stringify(body):undefined,credentials:"same-origin"});
+  let j={};try{j=await res.json()}catch(e){}
+  if(res.status===401&&action!=="login"){showLogin();throw {code:"auth"}}
+  if(!res.ok)throw Object.assign({code:j.error||"error",status:res.status},j);
+  return j;
+}
+async function save(){
+  if(!cur||!dirty)return;
+  const r=byId[cur],body={id:cur,v:r.v||1,short_new:$("short").value,long_new:$("long").value,notes:$("notes").value,status:$("status").value};
+  $("save").disabled=true;$("save").textContent="بيتحفظ…";
+  try{const j=await api("save",body);applyRow(j.row);lastRemote=j.row.updatedAt;dirty=false;toast("اتحفظ");renderStats();renderWho(j.row);$("restore").hidden=false}
+  catch(e){
+    if(e.code==="conflict"){applyRow(e.row);$("banner").hidden=false;$("banner").innerHTML=`حد تاني عدّل المنتج ده قبلك. نسخته اتحفظت. <button type="button" id="reloadRemote">اعرضي نسخته</button> أو انسخي شغلك قبل ما تفتحيها.`}
+    else if(e.code!=="auth")toast("الحفظ ما اتمّش، جرّبي تاني")
+  }
+  $("save").textContent="حفظ";updateEditorState();
+}
+function applyRow(r){const i=rows.findIndex(x=>x.id===r.id);if(i>=0)rows[i]=r;byId[r.id]=r}
+async function restorePrev(){
+  const r=byId[cur];if(!r||!r.prev)return;
+  $("short").value=r.prev.short_new||"";$("long").value=r.prev.long_new||"";$("status").value=r.prev.status||"draft";updateEditorState();
+  toast("رجعت النسخة اللي قبلها. دوسي حفظ لو عايزاها.");
+}
+function onData(list){
+  rows=list;byId={};rows.forEach(r=>byId[r.id]=r);
+  renderStats();renderGroups();
+  if(cur&&byId[cur]){
+    const r=byId[cur];
+    if(r.updatedAt&&r.updatedAt!==lastRemote){
+      if(dirty){$("banner").hidden=false;$("banner").innerHTML=`حد تاني عدّل المنتج ده دلوقتي. <button type="button" id="reloadRemote">اعرضي نسخته</button>`;}
+      else openEditor(cur);
+    }
+  } else if(!cur){renderList();const h=location.hash.replace("#p-","");if(h&&byId[h])openEditor(h)}
+}
+async function poll(){
+  try{const j=await api("list");if(j.stamp!==stamp||!rows.length){stamp=j.stamp;onData(j.rows)}}catch(e){}
+}
+function showLogin(){me=null;$("indexView").hidden=true;$("editView").hidden=true;$("me").hidden=true;$("loginView").hidden=false}
+function showApp(name){me=name;$("loginView").hidden=true;$("me").hidden=false;$("me").innerHTML=`${esc(name)} · <button type="button" id="logout">خروج</button>`;if(!cur)$("indexView").hidden=false}
+$("loginView").addEventListener("submit",async e=>{
+  e.preventDefault();$("lgErr").hidden=true;
+  try{const j=await api("login",{name:$("lgName").value,password:$("lgPass").value});$("lgPass").value="";showApp(j.name);rows=[];await poll()}
+  catch(err){$("lgErr").hidden=false;$("lgErr").textContent=err.code==="password"?"الباسورد غلط.":"اكتبي اسمك والباسورد."}
+});
+document.addEventListener("click",e=>{
+  const row=e.target.closest(".row");if(row){openEditor(row.dataset.id);return}
+  const g=e.target.closest(".chip");if(g){group=g.dataset.g;renderGroups();renderList();return}
+  const c=e.target.closest("[data-copy]");if(c){const t=$(c.dataset.copy).value;
+    navigator.clipboard.writeText(t).then(()=>toast("اتنسخ")).catch(()=>{$(c.dataset.copy).select();toast("اضغطي Ctrl+C للنسخ")});return}
+  if(e.target.id==="reloadRemote"){dirty=false;$("banner").hidden=true;openEditor(cur)}
+  if(e.target.id==="logout"){api("logout",{}).catch(()=>{});showLogin()}
+});
+$("back").addEventListener("click",()=>{showIndex()});
+$("save").addEventListener("click",save);
+$("restore").addEventListener("click",restorePrev);
+["short","long","notes"].forEach(k=>$(k).addEventListener("input",updateEditorState));
+$("status").addEventListener("change",updateEditorState);
+$("q").addEventListener("input",renderList);$("st").addEventListener("change",renderList);
+document.addEventListener("keydown",e=>{if((e.metaKey||e.ctrlKey)&&e.key==="s"&&cur){e.preventDefault();save()}});
+window.addEventListener("hashchange",()=>{const h=location.hash.replace("#p-","");if(h&&byId[h])openEditor(h);else if(!location.hash)showIndex()});
+window.addEventListener("beforeunload",e=>{if(dirty){e.preventDefault();e.returnValue=""}});
+renderGroups();
+
+(async()=>{
+  try{const j=await api("me");showApp(j.name);await poll();setInterval(()=>{if(me&&!document.hidden)poll()},15000)}
+  catch(e){showLogin();setInterval(()=>{if(me&&!document.hidden)poll()},15000)}
+})();
+</script>
+</body>
+</html>
