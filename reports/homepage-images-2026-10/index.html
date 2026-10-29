@@ -1,0 +1,296 @@
+<title>a'mie Homepage Refresh</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@1,500&display=swap">
+<style>
+/* Layout: a phone-sized replica of the a'mie homepage on the right, a change log on the left with numbered pins that match the phone. */
+:root{
+  --page:#EFE7E1; --panel:#FFFFFF; --ink:#2B2321; --muted:#85756E; --line:#E2D6CD;
+  --brand:#663C3C; --brand-ink:#FFFFFF; --pin:#B98B6E; --new-bg:#F2E4DF;
+  /* store palette: the replica always shows the store's light look */
+  --s-bg:#F7F5F3; --s-white:#FFFFFF; --s-ink:#2B2321; --s-muted:#8A7C76; --s-line:#ECE4DE; --s-dark:#2A2423; --s-dark-ink:#F1E9E5; --s-brand:#663C3C;
+  --f:"Readex Pro","Segoe UI",Tahoma,sans-serif; --f-accent:"Cormorant Garamond",Georgia,serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --page:#171312; --panel:#211B19; --ink:#F1E9E5; --muted:#B3A29C; --line:#3A302D;
+  --brand:#E1B3A4; --brand-ink:#2B1A16; --pin:#D2A88E; --new-bg:#3A2A26; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --page:#171312; --panel:#211B19; --ink:#F1E9E5; --muted:#B3A29C; --line:#3A302D;
+  --brand:#E1B3A4; --brand-ink:#2B1A16; --pin:#D2A88E; --new-bg:#3A2A26; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--page);color:var(--ink);font-family:var(--f);font-size:15px;line-height:1.6}
+.wrap{max-width:1120px;margin:0 auto;padding-block:28px 48px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.top h1{margin:0;font-weight:500;font-size:28px;color:var(--ink);text-wrap:balance}
+.top p{margin:6px 0 0;color:var(--muted);max-width:62ch}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 400px;gap:32px;margin-top:24px;align-items:start}
+@media (max-width:900px){.layout{grid-template-columns:minmax(0,1fr)}.phone-col{order:-1}}
+
+/* change log */
+.log{display:flex;flex-direction:column;gap:14px;min-width:0}
+.chg{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:16px 18px;display:grid;grid-template-columns:34px minmax(0,1fr);gap:4px 12px}
+.n{width:28px;height:28px;border-radius:50%;background:var(--brand);color:var(--brand-ink);display:grid;place-items:center;font-weight:600;font-size:13px;font-variant-numeric:tabular-nums}
+.chg h2{margin:0;font-size:16px;font-weight:500;color:var(--ink)}
+.chg p{margin:2px 0 0;color:var(--muted);font-size:13.5px}
+.chg .body{grid-column:2;min-width:0}
+.ba{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
+.ba figure{margin:0;flex:1 1 120px;max-width:170px}
+.ba img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:8px;display:block;border:1px solid var(--line)}
+.ba figcaption{font-size:12px;color:var(--muted);margin-top:4px}
+.ba .after figcaption{color:var(--brand);font-weight:500}
+.file{font-size:12px;color:var(--muted);direction:ltr;text-align:right;margin-top:6px;word-break:break-all}
+.keep{background:transparent;border-style:dashed}
+.keep .n{background:var(--new-bg);color:var(--ink)}
+
+/* phone */
+.phone-col{position:sticky;top:calc(env(safe-area-inset-top,0px) + 16px)}
+@media (max-width:900px){.phone-col{position:static}}
+.phone{width:100%;max-width:390px;margin:0 auto;border:10px solid #1d1817;border-radius:42px;overflow:hidden;background:var(--s-bg);box-shadow:0 20px 50px rgba(40,20,15,.18)}
+.screen{height:760px;overflow-y:auto;scrollbar-width:thin;color:var(--s-ink);direction:rtl}
+@media (max-width:900px){.screen{height:auto;max-height:none;overflow:visible}}
+.hint{text-align:center;color:var(--muted);font-size:12.5px;margin-top:10px}
+
+.ann{background:var(--s-dark);color:var(--s-dark-ink);font-size:10.5px;text-align:center;padding:6px 10px}
+.hdr{display:flex;align-items:center;justify-content:space-between;padding:8px 14px;background:var(--s-bg);position:sticky;top:0;z-index:3;border-bottom:1px solid var(--s-line)}
+.hdr img{height:30px}
+.icons{display:flex;gap:12px;direction:ltr}
+.icons svg{width:19px;height:19px;stroke:var(--s-ink);fill:none;stroke-width:1.6}
+
+.sec{position:relative}
+.pin{position:absolute;top:10px;left:10px;z-index:2;display:flex;align-items:center;gap:6px;background:var(--s-white);color:var(--s-brand);border-radius:99px;padding:3px 10px 3px 4px;font-size:11px;font-weight:600;box-shadow:0 2px 8px rgba(0,0,0,.15);direction:rtl}
+.pin b{width:20px;height:20px;border-radius:50%;background:var(--s-brand);color:#fff;display:grid;place-items:center;font-size:11px}
+
+.hero{position:relative}
+.hero img{width:100%;height:420px;object-fit:cover;display:block}
+.hero .cap{position:absolute;inset:auto 0 0 0;padding:24px 18px;background:linear-gradient(transparent,rgba(40,20,15,.45));color:#fff}
+.hero small{font-size:11px;letter-spacing:.12em}
+.hero h3{margin:2px 0;font-size:20px;font-weight:500}
+.hero p{margin:0 0 12px;font-size:12.5px}
+.btn-o{display:inline-block;border:1px solid currentColor;border-radius:8px;padding:6px 16px;font-size:12px;font-weight:500}
+.btn-f{display:inline-block;background:var(--s-brand);color:#fff;border-radius:8px;padding:7px 18px;font-size:12px;font-weight:500}
+
+.tabs{display:flex;gap:20px;justify-content:center;padding:18px 0 0;font-size:13px;color:var(--s-muted);background:var(--s-white)}
+.tabs span{padding-bottom:6px}.tabs .on{color:var(--s-ink);border-bottom:2px solid var(--s-brand);font-weight:500}
+.prods{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:14px;background:var(--s-white)}
+.card img{width:100%;aspect-ratio:1;object-fit:cover;display:block;border-radius:6px}
+.card .t{font-size:12.5px;margin-top:6px;line-height:1.5}
+.card .pr{font-size:12.5px;font-weight:600;margin-top:2px}
+.card .st{font-size:10.5px;color:var(--s-muted)}
+.st i{color:var(--s-brand);font-style:normal}
+.center{text-align:center;padding:4px 0 18px;background:var(--s-white)}
+.btn-pill{display:inline-block;border:1px solid var(--s-brand);color:var(--s-brand);border-radius:99px;padding:4px 14px;font-size:11.5px}
+.h-sec{text-align:center;font-size:17px;font-weight:600;padding:22px 0 0;margin:0;background:var(--s-white)}
+.h-sec::after{content:"";display:block;width:90px;height:2px;background:var(--s-brand);margin:8px auto 0}
+
+.banner img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.banner .txt{padding:16px 18px 22px;background:var(--s-white);text-align:center}
+.banner .txt small{font-size:11px;color:var(--s-muted)}
+.banner .txt h3{margin:2px 0 4px;font-size:22px;font-weight:500}
+.banner .txt p{margin:0 0 12px;font-size:12.5px;color:var(--s-muted)}
+
+.grid4{display:grid;grid-template-columns:1fr 1fr;gap:6px;padding:6px;background:var(--s-white)}
+.tile{position:relative}
+.tile img{width:100%;aspect-ratio:1;object-fit:cover;display:block}
+.tile span{position:absolute;bottom:8px;right:8px;background:rgba(255,255,255,.92);color:var(--s-ink);font-size:11px;padding:3px 10px;border-radius:99px;font-weight:500}
+
+.you{background:var(--s-white);padding:22px 16px 18px;text-align:center}
+.you h3{margin:0 0 12px;font-family:var(--f-accent);font-style:italic;font-size:26px;color:var(--s-brand);font-weight:500}
+.rev{text-align:right;border-bottom:1px solid var(--s-line);padding-bottom:12px}
+.rev .who{font-size:12.5px;font-weight:600}.rev .who em{font-style:normal;font-weight:400;color:var(--s-muted);font-size:11px;margin-right:6px}
+.rev .q{font-size:12.5px;margin-top:4px}
+.rev .of{font-size:11px;color:var(--s-muted);margin-top:4px}
+.you img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;margin-top:14px;border-radius:4px}
+
+.faq{background:var(--s-bg);padding:0 0 16px}
+.faq img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
+.q{display:flex;justify-content:space-between;gap:10px;align-items:center;background:var(--s-white);border-radius:12px;margin:10px 12px 0;padding:12px 14px;font-size:12.5px;font-weight:600}
+.q::after{content:"⌄";color:var(--s-muted);font-weight:400}
+
+.story{background:var(--s-dark);color:var(--s-dark-ink);text-align:center;padding-bottom:22px}
+.story img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.story h3{font-weight:400;font-size:20px;margin:16px 0 8px}
+.story p{font-size:12px;line-height:1.8;margin:0 18px 14px;font-weight:300;color:#d9cdc8}
+.story .btn-o{color:var(--s-dark-ink)}
+
+.foot{background:var(--s-white);padding:6px 16px 20px}
+.acc{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--s-line);font-size:12.5px;font-weight:600}
+.acc::before{content:"⌄";order:2;color:var(--s-muted);font-weight:400}
+.about{font-size:11.5px;color:var(--s-muted);line-height:1.8;margin:14px 0 4px}
+.tag{font-family:var(--f-accent);font-style:italic;font-size:15px;color:var(--s-brand);direction:ltr}
+.vat{font-size:11px;color:var(--s-muted);margin-top:10px}
+.pay{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.pay span{font-size:9.5px;border:1px solid var(--s-line);border-radius:4px;padding:2px 6px;color:var(--s-muted);direction:ltr}
+@media (prefers-reduced-motion:no-preference){.screen{scroll-behavior:smooth}}
+a{color:inherit}
+</style>
+
+<div class="wrap" dir="rtl" lang="ar">
+  <header class="top">
+    <h1>الصفحة الرئيسية بعد تغيير الصور</h1>
+    <p>دي نسخة تجريبية من الصفحة الرئيسية لـ amie-sa.com على الموبايل، بالصور الجديدة من الدرايف والنصوص بعد التصحيح. كل رقم على الموبايل له شرح في القايمة. الموقع نفسه لسه ماتغيرش.</p>
+  </header>
+
+  <div class="layout">
+    <section class="log" aria-label="التغييرات">
+      <div class="chg">
+        <span class="n">1</span>
+        <div class="body">
+          <h2>بانر ديب تان</h2>
+          <p>الصورة القديمة ستايل فينتج عام، والعنوان «الصيف يبدأ من ايمي». البانر الجديد فيه منتج ديب تان الحقيقي على دراع متسمّر، وعنوان ينفع طول السنة.</p>
+          <div class="ba">
+            <figure><img src="img/before-deeptan.jpg" alt="بانر ديب تان الحالي"><figcaption>دلوقتي</figcaption></figure>
+            <figure class="after"><img src="img/banner-deeptan-mobile-1080x1080.jpg" alt="بانر ديب تان الجديد"><figcaption>الجديد</figcaption></figure>
+          </div>
+          <div class="file">Summer Products - 2026 / IMG_2864.jpeg</div>
+        </div>
+      </div>
+      <div class="chg">
+        <span class="n">2</span>
+        <div class="body">
+          <h2>شبكة الصور الأربعة</h2>
+          <p>الصور الحالية كل واحدة بستايل وإضاءة مختلفة. الجديدة كلها بالبيج الدافي، وكل صورة لقسم وعليها اسمه، فالعميلة تدوس وتروح للقسم على طول.</p>
+          <div class="ba">
+            <figure><img src="img/before-grid.jpg" alt="الشبكة الحالية"><figcaption>دلوقتي</figcaption></figure>
+            <figure class="after"><img src="img/grid-1-glow-1080.jpg" alt="الشبكة الجديدة"><figcaption>الجديد</figcaption></figure>
+          </div>
+          <div class="file">IMG_1947.JPG · D0944585-….jpeg · IMG_2864.jpeg · IMG_1901.JPG</div>
+        </div>
+      </div>
+      <div class="chg">
+        <span class="n">3</span>
+        <div class="body">
+          <h2>صورة a'mie &amp; you</h2>
+          <p>نفس موديلات الفساتين اللامعة كانوا متكررين 3 مرات في الصفحة. مكانهم في قسم الريفيوهات بنت مبتسمة ماسكة المنتج، فالقسم يبان أقرب للعميلة.</p>
+          <div class="file">Back To Routine / 3CE9227D-6B31-4BF7-9CA5-74C0A90005E5.jpeg</div>
+        </div>
+      </div>
+      <div class="chg">
+        <span class="n">4</span>
+        <div class="body">
+          <h2>الأسئلة الشائعة</h2>
+          <p>صورة المنتجات على خلفية بيضا بدل البنتين. واتصلحت الأسئلة: «a'mie» بدل «ايمي»، و«الغذاء والدواء؟» من غير مسافات زيادة.</p>
+          <div class="file">Back To Routine / A1CEA22B-4AC9-49E2-BF5A-493036859F4C.png</div>
+        </div>
+      </div>
+      <div class="chg">
+        <span class="n">5</span>
+        <div class="body">
+          <h2>قصتنا</h2>
+          <p>القسم كان نص بس على أسود. ضفنا صورة لوجو a'mie على الحيطة والشنطة في الإيد، والزرار بقى أوضح.</p>
+          <div class="file">Into the glow collection / IMG_1911.JPG</div>
+        </div>
+      </div>
+      <div class="chg">
+        <span class="n">6</span>
+        <div class="body">
+          <h2>الفوتر</h2>
+          <p>نبذة قصيرة عن البراند فوق الروابط، بالجملة اللي اتفقنا عليها و«a'mie, in every reflection.».</p>
+        </div>
+      </div>
+      <div class="chg keep">
+        <span class="n">✓</span>
+        <div class="body">
+          <h2>يفضلوا زي ما هم</h2>
+          <p>البانر الرئيسي بتاع Into The Glow (أقوى صورة عندكم)، وكروت المنتجات. اتصلحت بس كلمة «الآن» في الزرار و«أحدث المنتجات».</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="phone-col">
+      <div class="phone" role="img" aria-label="معاينة الصفحة الرئيسية على الموبايل">
+        <div class="screen" tabindex="0">
+          <div class="ann">﴿رَبِّ اجْعَلْ هَٰذَا الْبَلَدَ آمِنًا﴾ اللهم أدم علينا نعمة الأمن والأمان</div>
+          <div class="hdr">
+            <img src="img/logo.png" alt="a'mie">
+            <div class="icons" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8zM9 8a3 3 0 0 1 6 0"/></svg>
+              <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+              <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>
+            </div>
+          </div>
+
+          <div class="hero">
+            <img src="img/hero.jpg" alt="Into The Glow">
+            <div class="cap">
+              <small>Into The Glow</small>
+              <h3>مجموعة اللمعة للجسم</h3>
+              <p>بشرتك تلمع بدون جفاف أو بهتان</p>
+              <span class="btn-o">اشتري المجموعة الآن</span>
+            </div>
+          </div>
+
+          <div class="tabs"><span class="on">الأكثر مبيعًا</span><span>العناية بالجسم</span></div>
+          <div class="prods">
+            <div class="card"><img src="img/p-wax.jpg" alt=""><div class="t">واكس تصفيف الشعر</div><div class="pr">129.00 ر.س</div><div class="st"><i>★★★★★</i> (176 تقييم)</div></div>
+            <div class="card"><img src="img/p-marsh.jpg" alt=""><div class="t">مجموعة هايلايتر الجسم مارشميللو</div><div class="pr">99.00 ر.س</div><div class="st"><i>★★★★★</i> (2 تقييم)</div></div>
+          </div>
+
+          <div class="sec banner">
+            <span class="pin"><b>1</b>صورة جديدة</span>
+            <img src="img/banner-deeptan-mobile-1080x1080.jpg" alt="ديب تان">
+            <div class="txt">
+              <small>تان a'mie</small>
+              <h3>ديب تان</h3>
+              <p>سمرة ذهبية برونزية بزيت الحناء والجزر، تمتص بسرعة ولا تترك أثرًا على الملابس.</p>
+              <span class="btn-f">اشتري الآن</span>
+            </div>
+          </div>
+
+          <h3 class="h-sec">أحدث المنتجات</h3>
+          <div class="prods">
+            <div class="card"><img src="img/p-glow.jpg" alt=""><div class="t">مجموعة لمعة الجسم</div><div class="pr">294.00 ر.س</div></div>
+            <div class="card"><img src="img/p-foot.jpg" alt=""><div class="t">كريم القدمين للترطيب العميق</div><div class="pr">75.00 ر.س</div><div class="st"><i>★★★★★</i> (23 تقييم)</div></div>
+          </div>
+          <div class="center"><span class="btn-pill">عرض الكل</span></div>
+
+          <div class="sec grid4">
+            <span class="pin"><b>2</b>صور جديدة</span>
+            <div class="tile"><img src="img/grid-1-glow-1080.jpg" alt=""><span>اللمعة</span></div>
+            <div class="tile"><img src="img/grid-2-hair-1080.jpg" alt=""><span>الشعر</span></div>
+            <div class="tile"><img src="img/grid-3-tan-1080.jpg" alt=""><span>التان</span></div>
+            <div class="tile"><img src="img/grid-4-brand-1080.jpg" alt=""><span>a'mie</span></div>
+          </div>
+
+          <div class="sec you">
+            <span class="pin"><b>3</b>صورة جديدة</span>
+            <h3>a'mie &amp; you</h3>
+            <div class="rev">
+              <div class="who">اماني الدوسري<em>مشتري موثق</em></div>
+              <div class="st"><i>★★★★★</i></div>
+              <div class="q">«خيال خيال اتعب وانا اقول تهبل 🥰»</div>
+              <div class="of">مجموعة هايلايتر الجسم تشوكلت</div>
+            </div>
+            <img src="img/reviews-1080x1350.jpg" alt="">
+          </div>
+
+          <div class="sec faq">
+            <span class="pin"><b>4</b>صورة ونص جديد</span>
+            <img src="img/faq-1600x900.jpg" alt="">
+            <div class="q">هل منتجات a'mie مسجلة لدى هيئة الغذاء والدواء؟</div>
+            <div class="q">هل منتجات a'mie خالية من التجارب على الحيوانات؟</div>
+            <div class="q">أين تُصنع منتجات a'mie؟</div>
+          </div>
+
+          <div class="sec story">
+            <span class="pin"><b>5</b>صورة جديدة</span>
+            <img src="img/story-1080x1350.jpg" alt="لوجو a'mie">
+            <h3>قصتنا</h3>
+            <p>بدأت a'mie كعلامة تجميل سعودية متخصصة في منتجات التان، ثم توسعت لتقدم مجموعة مختارة من منتجات العناية بالجسم والشعر والعطور. تُصنع منتجاتنا في المملكة العربية السعودية، ونفخر بحصولنا على علامة «صنع في السعودية»، مع اهتمامنا بجودة التركيبات والتفاصيل التي تميز كل منتج.</p>
+            <span class="btn-o">تسوقي منتجاتنا</span>
+          </div>
+
+          <div class="sec foot">
+            <span class="pin"><b>6</b>نص جديد</span>
+            <p class="about">a'mie علامة تجميل سعودية، منتجاتها مصنوعة في المملكة وحاصلة على علامة «صنع في السعودية». متخصصون في التان، ونقدم منتجات للعناية بالجسم واللمعة والعطور والشعر.</p>
+            <div class="tag">a'mie, in every reflection.</div>
+            <div class="acc">تواصل معنا</div>
+            <div class="acc">قائمة</div>
+            <div class="acc">خدمة العملاء</div>
+            <div class="vat">الرقم الضريبي: 312349044400003</div>
+            <div class="pay"><span>Apple Pay</span><span>VISA</span><span>Mastercard</span><span>mada</span><span>Tamara</span><span>tabby</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="hint">مرّر جوه الموبايل علشان تشوف الصفحة كلها.</p>
+    </div>
+  </div>
+</div>
