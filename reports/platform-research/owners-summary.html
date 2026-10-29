@@ -1,0 +1,155 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>سلة ولا شوبيفاي؟ ملخص للإدارة</title>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600&display=swap" rel="stylesheet"><style>
+:root{--bg:#F6F0EB;--photo:#EADFD7;--ink:#2B2321;--head:#5E2E21;--cta:#663C3C;--muted:#85756E;--line:#E2D6CD;--glow:#B98B6E;--deep:#3A2522;--good:#4F6B4A;--warn:#9A5B2E}
+@page{size:A4;margin:14mm 14mm 15mm}
+@page :first{margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Readex Pro',sans-serif;color:var(--ink);font-size:9.8pt;line-height:1.65;font-weight:300;background:#fff}
+h1,h2,h3{color:var(--head);font-weight:600;line-height:1.35;text-wrap:balance}
+h2{font-size:17pt;margin:0 0 4mm;padding-top:2mm}
+h3{font-size:11.5pt;margin:4mm 0 1.5mm;break-after:avoid}
+section.dense{font-size:8.8pt;line-height:1.5}
+section.dense table{font-size:8.5pt}
+p{margin:0 0 2.5mm}
+b,strong{font-weight:500;color:var(--ink)}
+.lat{font-size:8pt;letter-spacing:3px;color:var(--glow);direction:ltr;text-align:right;font-weight:400}
+section{page-break-before:always}
+section.first{page-break-before:auto}
+.num{font-variant-numeric:tabular-nums}
+ul,ol{margin:0 6mm 3mm 0}
+li{margin-bottom:1.4mm}
+table{width:100%;border-collapse:collapse;margin:2mm 0 4mm;font-size:9.4pt;font-variant-numeric:tabular-nums}
+th{background:var(--photo);color:var(--head);font-weight:500;text-align:right;padding:2mm 2.5mm}
+td{border-bottom:1px solid var(--line);padding:1.4mm 2.2mm;vertical-align:top}
+tr{page-break-inside:avoid}
+.box{background:var(--bg);border-radius:4mm;padding:4mm 5mm;margin:3mm 0 4mm;page-break-inside:avoid}
+.alert{background:#F3E3DC;border-right:3px solid var(--cta)}
+.decision{background:var(--deep);color:#F6F0EB;border-radius:4mm;padding:5mm 6mm;margin:3mm 0 4mm;page-break-inside:avoid}
+.decision h3{color:#fff;margin-top:0}
+.decision b{color:#fff}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:4mm}
+.kpi{background:var(--bg);border-radius:4mm;padding:4mm;text-align:center}
+.kpi .v{font-size:20pt;font-weight:600;color:var(--cta);line-height:1.2}
+.kpi .l{font-size:8.6pt;color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:3mm;margin:4mm 0}
+.tag{display:inline-block;font-size:8pt;padding:.4mm 2.5mm;border-radius:3mm;background:var(--photo);color:var(--head);font-weight:500}
+.tag.r{background:#F3E3DC;color:var(--cta)}
+.muted{color:var(--muted)}
+.small{font-size:8.6pt}
+/* cover */
+.cover{height:296mm;display:flex;flex-direction:column;justify-content:space-between;background:var(--bg);padding:26mm 22mm}
+.cover .logo{font-weight:200;font-size:38pt;direction:ltr;text-align:right;color:var(--deep);letter-spacing:.5px}
+.cover h1{font-size:30pt;margin-top:auto}
+.cover .sub{font-size:12pt;color:var(--muted);margin-top:3mm}
+.cover .meta{font-size:9pt;color:var(--muted);border-top:1px solid var(--line);padding-top:4mm;margin-top:10mm}
+.toc li{margin-bottom:1mm}
+.chooser{display:grid;grid-template-columns:repeat(3,1fr);gap:3mm;margin:3mm 0}
+.chooser div{border:1px solid var(--line);border-radius:3mm;padding:3mm;background:#fff}
+.chooser b{display:block;color:var(--head)}
+
+body{font-size:10.6pt;line-height:1.8}
+ul{margin:0 6mm 3mm 0}li{margin-bottom:2mm}
+.kpi .v{font-size:22pt}
+.kpis.k3{grid-template-columns:repeat(3,1fr)}
+.cmp td,.cmp th{text-align:center;font-size:9.6pt;padding:2.2mm 2mm}
+.cmp td:first-child,.cmp th:first-child{text-align:right;font-weight:500;color:var(--head)}
+.y{color:var(--good);font-weight:500}.n{color:var(--cta);font-weight:500}.m{color:var(--warn);font-weight:500}
+.bar{display:flex;align-items:center;gap:4mm;margin:4mm 0}
+.bar .nm{width:26mm;font-weight:500;color:var(--head)}
+.bar .tr{flex:1;background:var(--bg);border-radius:3mm;height:9mm;position:relative}
+.bar .fl{height:100%;border-radius:3mm;background:var(--cta)}
+.bar .fl.z{background:var(--glow)}.bar .fl.s{background:var(--deep)}
+.bar .sc{width:16mm;font-size:13pt;font-weight:600;color:var(--cta);text-align:left;direction:ltr}
+.steps{display:grid;gap:3mm;margin-top:3mm}
+.st{display:grid;grid-template-columns:26mm 1fr;gap:4mm;background:var(--bg);border-radius:4mm;padding:4mm}
+.st .w{font-weight:600;color:var(--cta);font-size:10pt}
+.st b{display:block;color:var(--head);font-size:11pt;margin-bottom:1mm}
+.st ul{margin:0 5mm 0 0}.st li{margin-bottom:.8mm}
+.chk li{list-style:none;position:relative;padding-right:7mm}
+.chk li:before{content:"☐";position:absolute;right:0;color:var(--cta)}
+.foot{font-size:8.4pt;color:var(--muted);border-top:1px solid var(--line);padding-top:3mm;margin-top:6mm}
+</style>
+</head><body>
+<div class="cover"><div class="logo">a'mie</div><div><div class="lat">PLATFORM DECISION · OWNERS SUMMARY</div><h1>سلة ولا شوبيفاي؟</h1>
+<p class="sub">ملخص للإدارة: نفضل على زد، ولا ننقل لسلة، ولا لشوبيفاي؟ وليه، وبكام، وإزاي.</p></div>
+<div class="meta">29 أكتوبر 2026 · ملخص من بحث كامل مع المصادر (موجود عند الفريق)</div></div>
+
+<section class="first" style="page-break-before:always"><div class="lat">THE DECISION</div><h2>القرار في دقيقة</h2>
+<div class="decision"><h3>التوصية</h3>
+<b>ما ننقلش دلوقتي.</b> نفضل على زد <b>من 60 لـ 90 يوم</b>. في الفترة دي نصلّح مشاكله ونجرّب سلة في نفس الوقت، وبعدها نقرر بالأرقام.<br>
+شوبيفاي مش مناسب كمتجر أساسي دلوقتي، بس ممكن نرجع له بعدين لو قررنا نفتح متجر للخليج.</div>
+<div class="kpis k3">
+<div class="kpi"><div class="v">0</div><div class="l">دراسات بتقول إن العميلة بتثق أكتر لأن المتجر على سلة أو زد</div></div>
+<div class="kpi"><div class="v">+2%</div><div class="l">شوبيفاي بياخد 2% زيادة على كل عملية دفع بالكارت في السعودية</div></div>
+<div class="kpi"><div class="v">402/500</div><div class="l">من أهم صفحاتنا في جوجل نسخ مكررة بسبب زد</div></div></div>
+<h3>ليه؟</h3>
+<ul><li><b>ثقة العميلة</b> جاية من طرق الدفع اللي بتشوفها (مدى، Apple Pay، تابي، تمارا) ومن اسم ايمي، مش من اسم المنصة.</li>
+<li><b>شوبيفاي غالي في السعودية:</b> Shopify Payments مش متاح هنا، فبندفع رسوم بوابة الدفع وفوقها رسوم زيادة لشوبيفاي. ومفيش Shop Pay.</li>
+<li><b>سلة أرخص وقريبة من السوق</b>، بس ما اتثبتش إنها بتحل مشكلة الروابط المكررة اللي عندنا على زد.</li>
+<li><b>أي نقل ليه تمن:</b> بنخسر جزء من زيارات جوجل لفترة، وفيه خطر على إعلانات جوجل والكتالوج.</li>
+<li>التجار اللي بيسيبوا زد بيروحوا لسلة في الغالب، مش لشوبيفاي.</li></ul></section>
+
+<section><div class="lat">QUICK COMPARISON</div><h2>مقارنة سريعة</h2>
+<table class="cmp"><tr><th>البند</th><th>زد (الحالي)</th><th>سلة</th><th>شوبيفاي</th></tr>
+<tr><td>مدى و Apple Pay وتابي وتمارا</td><td class="y">جاهز</td><td class="y">جاهز</td><td class="m">بتطبيقات وبوابة خارجية</td></tr>
+<tr><td>رسوم الدفع</td><td class="y">عادية</td><td class="y">عادية</td><td class="n">+2% زيادة (Basic)</td></tr>
+<tr><td>الشحن داخل السعودية</td><td class="y">مدمج</td><td class="y">مدمج (SMSA و Aramex)</td><td class="m">عقود أو تطبيقات</td></tr>
+<tr><td>الفاتورة الإلكترونية (ZATCA)</td><td class="m">لازم نتأكد</td><td class="y">مدمجة (حسب الوكالات)</td><td class="n">تطبيق مدفوع</td></tr>
+<tr><td>التحكم في الروابط والـ SEO</td><td class="n">ضعيف (نسخ مكررة)</td><td class="m">مش متأكدين، محتاج اختبار</td><td class="y">أقوى أدوات</td></tr>
+<tr><td>ربط سناب وميتا وتيك توك</td><td class="m">موجود</td><td class="y">قوي</td><td class="y">قوي</td></tr>
+<tr><td>التحليلات وبيانات العملاء</td><td class="n">محدودة</td><td class="m">متوسطة</td><td class="y">أقوى</td></tr>
+<tr><td>البيع لدول الخليج</td><td class="m">محدود</td><td class="m">محدود</td><td class="y">الأقوى</td></tr>
+<tr><td>الدعم بالعربي</td><td class="y">موجود</td><td class="y">موجود</td><td class="m">عن طريق وكالات (دبي)</td></tr>
+<tr><td>خطر النقل</td><td class="y">مفيش</td><td class="m">متوسط</td><td class="n">عالي (كل الروابط هتتغير)</td></tr></table>
+<p class="small muted">«جاهز/مدمج» = موجود في المنصة من غير تطبيقات إضافية. «لازم نتأكد» = ما لقيناش مصدر رسمي.</p></section>
+
+<section><div class="lat">COST</div><h2>الفلوس</h2>
+<p><b>مثال:</b> لو مبيعاتنا بالكارت <b>50 ألف ريال في الشهر</b>. ده رقم افتراضي، والإدارة تبعت الرقم الحقيقي ونحسب تاني.</p>
+<table class="cmp"><tr><th>في السنة (بالريال)</th><th>زد</th><th>سلة</th><th>شوبيفاي</th></tr>
+<tr><td>اشتراك المنصة</td><td>~3,600</td><td>~3,000</td><td>1,300 – 3,600</td></tr>
+<tr><td>رسوم شوبيفاي الزيادة</td><td>0</td><td>0</td><td class="n">6,000 – 12,000</td></tr>
+<tr><td>تطبيق الفاتورة الإلكترونية</td><td>—</td><td>0</td><td>900 – 3,600</td></tr>
+<tr><td><b>الإجمالي التقريبي</b></td><td><b>~3,600</b></td><td><b>~3,000</b></td><td class="n"><b>12,650 – 19,100</b></td></tr>
+<tr><td>تكلفة النقل (مرة واحدة)</td><td>0</td><td>0 – 5,000</td><td>8,000 – 25,000</td></tr></table>
+<div class="box"><b>الخلاصة:</b> شوبيفاي هيكلّفنا حوالي <b>10 لـ 16 ألف ريال زيادة كل سنة</b>، وفوقهم تكلفة النقل. سلة وزد تقريباً نفس التكلفة.</div>
+<p><b>مثال على الرسوم:</b> على كل 1,000 ريال بمدى، بندفع حوالي 14 ريال على زد أو سلة، وحوالي 34 ريال على شوبيفاي.</p>
+<p class="small muted">الأسعار من نتائج البحث ومواقع الوكالات، وما اتأكدناش منها على المواقع الرسمية. لازم تتراجع قبل القرار.</p></section>
+
+<section><div class="lat">SCORECARD</div><h2>التقييم من 100</h2>
+<p>قيّمنا كل منصة على 8 حاجات: الدفع، والـ SEO، والتسويق، والتكلفة، وخطر النقل، والعربي وZATCA، والخليج، والتطبيقات. وكل حاجة ليها وزن حسب أهميتها لينا.</p>
+<div class="bar"><div class="nm">سلة</div><div class="tr"><div class="fl s" style="width:73.5%"></div></div><div class="sc">73.5</div></div>
+<div class="bar"><div class="nm">زد (الحالي)</div><div class="tr"><div class="fl z" style="width:70%"></div></div><div class="sc">70</div></div>
+<div class="bar"><div class="nm">شوبيفاي</div><div class="tr"><div class="fl" style="width:65.5%"></div></div><div class="sc">65.5</div></div>
+<h3>إيه اللي ممكن يغيّر النتيجة؟</h3>
+<ul><li><b>لو سلة نجحت في اختبار الروابط والـ SEO:</b> تقييمها يطلع لحوالي <b>78</b>، والنقل لها يبقى يستاهل.</li>
+<li><b>لو سلة فشلت فيه:</b> تبقى زي زد تقريباً، والنقل ما يستاهلش التكلفة والخطر.</li>
+<li><b>شوبيفاي</b> يكسب في حالة واحدة بس: لو البيع للخليج بقى هدف كبير وقريب. ساعتها يبقى متجر منفصل للخليج، والمتجر الأساسي يفضل زي ما هو.</li></ul>
+<div class="box alert"><b>مهم:</b> الفرق بين سلة وزد صغير (3.5 نقطة)، ومبني على حاجات لسه ما اتأكدناش منها. عشان كده بنقول «نجرّب الأول».</div></section>
+
+<section><div class="lat">THE PLAN</div><h2>الخطة</h2>
+<div class="steps">
+<div class="st"><div class="w">أسبوع 1 – 2</div><div><b>نأمّن كل حاجة</b><ul><li>باك أب كامل من زد: المنتجات، والعملاء، والطلبات، والتقييمات، والكوبونات.</li><li>نسجّل كل روابطنا في جوجل، وأرقام البيع الحالية.</li><li>نعرف موعد تجديد اشتراك زد.</li></ul></div></div>
+<div class="st"><div class="w">أسبوع 2 – 8</div><div><b>نصلّح زد ونجرّب سلة في نفس الوقت</b><ul><li>نطلب من زد كتابياً يوقف النسخ المكررة (/ar-eg/ وغيرها)، ويوحّد الروابط، ويدّينا وصول للتحليلات.</li><li>نفتح متجر تجريبي مجاني على سلة، ونعمل عليه الاختبارات.</li></ul></div></div>
+<div class="st"><div class="w">أسبوع 8 – 10</div><div><b>نقرر</b><ul><li>زد صلّح أغلب المشاكل؟ <b>نفضل.</b></li><li>زد ما صلّحش وسلة نجحت؟ <b>ننقل لسلة.</b></li><li>الاتنين فشلوا، والخليج بقى أولوية؟ <b>ندرس شوبيفاي.</b></li></ul></div></div>
+<div class="st"><div class="w">أسبوع 10 – 14</div><div><b>ننقل (لو قررنا)</b><ul><li>نبني المتجر الجديد على دومين تجريبي.</li><li>نحوّل كل لينك قديم للينك الجديد بتاعه.</li><li>نشغّل التتبع القديم والجديد مع بعض.</li><li>ننقل بعد آخر حملة كبيرة، وقبل تجديد زد.</li></ul></div></div>
+<div class="st"><div class="w">3 شهور بعدها</div><div><b>نتابع</b><ul><li>نتابع زيارات جوجل والمبيعات كل أسبوع، والتحويلات القديمة تفضل شغالة سنة كاملة.</li></ul></div></div>
+</div></section>
+
+<section><div class="lat">TESTS &amp; DECISIONS</div><h2>الاختبارات، والمطلوب من الإدارة</h2>
+<h3>سلة لازم تعدّي الاختبارات دي قبل أي نقل</h3>
+<ul class="chk"><li>الروابط: مفيش نسخ مكررة للصفحة الواحدة، والعربي والإنجليزي متربطين صح.</li>
+<li>نقدر نحوّل مئات اللينكات القديمة للجديدة مرة واحدة (301 بالجملة).</li>
+<li>لما نعدّل قسم، الـ SEO title ما يتمسحش (دي مشكلة عندنا على زد).</li>
+<li>طلب تجريبي بيوصل لسناب وميتا وجوجل مرة واحدة، وبالقيمة الصح.</li>
+<li>رسالة السلة المتروكة بتوصل للعميلة خلال ساعة.</li>
+<li>جدول رسوم الدفع رسمي ومكتوب، والفلوس بتتحوّل للبنك خلال 3 أيام أو أقل.</li>
+<li>الفاتورة الإلكترونية (ZATCA) مربوطة ومن غير تكلفة زيادة.</li>
+<li>صفحة المنتج بتفتح على الموبايل في أقل من 2.5 ثانية.</li></ul>
+<h3>محتاجين من الإدارة</h3>
+<ol><li><b>موافقة على خطة الـ 90 يوم:</b> نفضل على زد ونجرّب سلة في نفس الوقت.</li>
+<li><b>متوسط المبيعات الشهرية الحقيقي،</b> عشان نحسب التكلفة صح.</li>
+<li><b>موعد تجديد اشتراك زد.</b></li>
+<li><b>البيع للخليج:</b> هل هو هدف السنة دي؟ (ده اللي بيحدد شوبيفاي ينفع ولا لأ)</li>
+<li><b>شخص واحد مسؤول</b> عن القرار النهائي.</li></ol>
+<p class="foot">الأسعار والأرقام في الملخص ده من نتائج البحث، ومواقع الوكالات، وتصريحات المنصات نفسها. مواقع سلة وزد وشوبيفاي الرسمية ما اتفتحتش وقت البحث، فلازم نتأكد من الأسعار عليها قبل القرار. البحث الكامل بالمصادر موجود عند الفريق.</p></section>
+</body></html>
