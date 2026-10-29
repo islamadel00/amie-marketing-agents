@@ -42,7 +42,7 @@ Short description (الوصف المختصر): 1–2 sentences, ≤ 160 characte
 
 ## Never write (hard rules, product-marketing.md)
 علاج / يعالج · آمن / آمنة · خالٍ من المواد الكيميائية / الضارة · توحيد اللون / يوحّد اللون · تنشيط الدورة الدموية · لا يسد المسام · امتلاء / تكبير (Lip Plump) · نسب مئوية أو «مثبت علمياً» · «100% طبيعي» · «الأول / الأشهر / لا مثيل له» · آمن للحامل أو للأطفال · نتائج طبية · «يزيل التشققات / الخطوط» (use «يخفف مظهر…» / «لملمس أنعم») · sun-protection promises for tan products · COD · competitor names.
-Remove the old «لماذا a'mie؟» block that says «خالية من المواد الكيميائية».
+**Owner decision (29 Oct 2026):** on product pages these are allowed: «يوحّد لون البشرة», «يزيل الخشونة والتشققات», «من أول استخدام», and the «لماذا a'mie؟» block with «تركيبات خالية من المواد الكيميائية». Use them only where product-facts support the product. Everything else in the list above stays banned. In ads, keep the strict list.
 
 ## Reference: Hair Wax (approved style)
 a'mie Hair Wax Stick | واكس الشعر
@@ -66,4 +66,4 @@ a'mie Hair Wax Stick | واكس الشعر
 الحجم: 30 جم.
 
 ## Team edits in this folder (ref-team-*.txt)
-Use for product facts and voice, but fix before publishing: «يوحد لونها / توحيد لون البشرة» (forbidden), «يزيل التشققات» (soften), «تشعرين بالفرق من أول استخدام» (unverified), Arabic «ايمي» (→ a'mie), spacing before commas.
+Use for product facts and voice. Only fix: Arabic «ايمي» (→ a'mie) and spacing before commas. Claims in them are owner-approved.

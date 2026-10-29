@@ -54,6 +54,7 @@ _Last updated: 2026-10-22_
 
 ### Hard rules (all content, ads, pages)
 - No unverified claims: no "علاج/يعالج", no "آمن/آمنة" or "خالي من المواد الضارة/الكيماويات", no "تنشيط الدورة الدموية", no "توحيد اللون", no "لا يسد المسام", no plumping/"امتلاء" for Lip Plump, no "first/most famous/no similar product" claims, no "safe for pregnancy/children", no "negative energy", no medical results, percentages or "clinically proven", no "100% natural".
+- **Owner decision (29 Oct 2026), product pages only:** the brand holds SFDA registration and the owner approved these phrases on product descriptions: «يوحّد لون البشرة / توحيد اللون» (where the product facts support it, e.g. foot cream, scrubs, lavender butter, lip balm), «يزيل الخشونة والتشققات» (foot cream), «من أول استخدام», and «تركيبات خالية من المواد الكيميائية» in the «لماذا a'mie؟» block. All other bans above still apply. In paid ads, keep the stricter rule (Meta/Snap/TikTok may reject these).
 - No cash on delivery. No competitor names. Never reveal internal data sources.
 - Don't change category names or URLs (renaming in Zid changes the URL).
 
