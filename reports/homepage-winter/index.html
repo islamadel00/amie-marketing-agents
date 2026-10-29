@@ -1,0 +1,361 @@
+<title>a'mie Winter Homepage</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600&family=Cormorant+Garamond:ital,wght@0,500;1,400;1,500&display=swap">
+<style>
+/* Layout: an editorial storefront in a'mie's own palette. The thread is "in every reflection": light on skin, so every section pairs one photo of glow or tan with short copy, and the shopping parts stay calm and easy to scan. */
+:root{
+  color-scheme:light;
+  --cream:#F6F0EB; --paper:#FFFFFF; --sand:#EFE6DF; --ink:#2B2321; --muted:#7E6E67; --line:#E4D8CF;
+  --maroon:#663C3C; --cocoa:#3A2522; --bronze:#B98B6E; --bronze-soft:#E8D5C6;
+  --f:"Readex Pro","Segoe UI",Tahoma,sans-serif; --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --gut:max(16px,env(safe-area-inset-left,0px)); --gut-r:max(16px,env(safe-area-inset-right,0px));
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{background:var(--cream);color:var(--ink);font-family:var(--f);font-size:15px;line-height:1.7;font-weight:300}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--cocoa)}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--maroon);outline-offset:3px;border-radius:4px}
+.in{max-width:1200px;margin:0 auto;padding-left:var(--gut);padding-right:var(--gut-r)}
+h1,h2,h3{font-weight:300;text-wrap:balance;margin:0;line-height:1.25}
+.eyebrow{font-family:var(--serif);font-style:italic;font-size:17px;color:var(--bronze);letter-spacing:.02em;direction:ltr;display:inline-block}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--maroon);color:var(--cream);border-radius:999px;padding:12px 26px;font-size:14px;font-weight:400;border:1px solid var(--maroon);transition:background .2s,color .2s}
+.btn:hover{background:var(--cocoa)}
+.btn.ghost{background:transparent;color:var(--maroon)}
+.btn.ghost:hover{background:var(--maroon);color:var(--cream)}
+.btn.light{background:var(--cream);color:var(--cocoa);border-color:var(--cream)}
+
+/* top bar + header */
+.bar{background:var(--cocoa);color:var(--bronze-soft);font-size:12px}
+.bar .in{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;padding-block:7px}
+.bar span{white-space:nowrap}
+header.site{background:var(--cream);position:sticky;top:env(safe-area-inset-top,0px);z-index:5;border-bottom:1px solid var(--line)}
+header.site .in{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:12px}
+.logo img{height:34px;width:auto}
+nav.main{display:flex;gap:26px;font-size:14px;font-weight:400}
+nav.main a{padding-block:4px;border-bottom:1px solid transparent}
+nav.main a:hover{border-color:var(--maroon)}
+.tools{display:flex;gap:16px}
+.tools svg{width:21px;height:21px;stroke:var(--ink);fill:none;stroke-width:1.5}
+.menu-btn{display:none}
+@media (max-width:900px){nav.main{display:none}.menu-btn{display:block}}
+
+/* hero */
+.hero{position:relative;background:var(--cocoa);color:var(--cream);overflow:hidden}
+.hero picture img{width:100%;height:min(78vh,720px);object-fit:cover;opacity:.92}
+.hero .copy{position:absolute;inset:0;display:flex;align-items:flex-end}
+.hero .copy .in{width:100%;padding-block:0 56px;background:none}
+.hero .box{max-width:520px}
+.hero h1{font-size:clamp(34px,5.4vw,64px);font-weight:200;margin:6px 0 14px;color:#fff}
+.hero p{font-size:16px;color:#F3E6DC;margin:0 0 24px;max-width:42ch}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(30,16,13,.72),rgba(30,16,13,.05) 55%);pointer-events:none}
+.hero .copy{z-index:1}
+.hero .eyebrow{color:var(--bronze-soft)}
+@media (max-width:700px){.hero picture img{height:560px}.hero .copy .in{padding-block:0 34px}}
+
+/* promise strip */
+.promise{background:var(--paper);border-bottom:1px solid var(--line)}
+.promise ul{list-style:none;margin:0;padding-block:18px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.promise li{display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:400;justify-content:center;text-align:center}
+.promise svg{width:22px;height:22px;stroke:var(--bronze);fill:none;stroke-width:1.4;flex:none}
+@media (max-width:760px){.promise ul{grid-template-columns:repeat(2,minmax(0,1fr))}.promise li{justify-content:flex-start;text-align:right}}
+
+section{padding-block:72px}
+@media (max-width:700px){section{padding-block:52px}}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;margin-bottom:28px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(26px,3.2vw,38px)}
+.sec-head a.more{font-size:14px;color:var(--maroon);border-bottom:1px solid currentColor;font-weight:400}
+
+/* categories */
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.cat{position:relative;border-radius:4px;overflow:hidden;background:var(--sand)}
+.cat img{width:100%;aspect-ratio:3/4;object-fit:cover;transition:transform .6s}
+.cat:hover img{transform:scale(1.04)}
+.cat .lab{position:absolute;inset:auto 0 0 0;padding:16px;color:#fff;background:linear-gradient(transparent,rgba(30,16,13,.65))}
+.cat b{display:block;font-weight:400;font-size:19px}
+.cat small{font-size:12.5px;color:#F0E2D7}
+@media (max-width:760px){.cats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}}
+
+/* products */
+.tabs{display:flex;gap:8px;margin-bottom:22px;flex-wrap:wrap}
+.tabs button{font:inherit;font-size:14px;font-weight:400;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:999px;padding:7px 18px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--maroon);border-color:var(--maroon);color:var(--cream)}
+.prods{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+@media (max-width:900px){.prods{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+.prod{background:var(--paper);border-radius:4px;overflow:hidden;display:flex;flex-direction:column}
+.prod .ph{position:relative;background:#fff}
+.prod .ph img{width:100%;aspect-ratio:1;object-fit:cover}
+.prod .badge{position:absolute;top:10px;right:10px;background:var(--cocoa);color:var(--cream);font-size:11px;padding:3px 10px;border-radius:999px;font-weight:400}
+.prod .bd{padding:14px 14px 16px;display:flex;flex-direction:column;gap:4px;flex:1}
+.prod .nm{font-size:14.5px;font-weight:400;line-height:1.5}
+.prod .meta{font-size:12.5px;color:var(--muted)}
+.prod .row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:8px}
+.prod .pr{font-weight:500;font-size:15px;font-variant-numeric:tabular-nums}
+.prod .add{border:1px solid var(--maroon);color:var(--maroon);background:transparent;border-radius:999px;font:inherit;font-size:12.5px;padding:5px 12px;cursor:pointer;font-weight:400}
+.prod .add:hover{background:var(--maroon);color:var(--cream)}
+.stars{color:var(--bronze);letter-spacing:1px}
+
+/* editorial feature */
+.feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center}
+.feature.flip .media{order:2}
+.feature .media img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.feature h2{font-size:clamp(28px,3.4vw,44px);margin:8px 0 14px}
+.feature p.lead{color:var(--muted);max-width:46ch;margin:0 0 22px}
+@media (max-width:820px){.feature{grid-template-columns:minmax(0,1fr);gap:26px}.feature.flip .media{order:0}}
+.steps{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:12px;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px minmax(0,1fr);gap:12px;align-items:start;background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:14px 16px}
+.steps li::before{counter-increment:s;content:counter(s);font-family:var(--serif);font-size:30px;line-height:1;color:var(--bronze);font-variant-numeric:lining-nums}
+.steps b{display:block;font-weight:500;font-size:15px}
+.steps span{font-size:13.5px;color:var(--muted)}
+.tan-band{background:var(--sand)}
+.shades{display:flex;gap:12px;flex-wrap:wrap;margin:0 0 24px}
+.shade{display:flex;align-items:center;gap:10px;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:6px 16px 6px 8px;font-size:13.5px}
+.shade i{width:26px;height:26px;border-radius:50%;display:block;box-shadow:inset 0 0 0 1px rgba(0,0,0,.06)}
+.shade small{color:var(--muted);font-size:12px;margin-right:4px}
+
+/* reflection quote */
+.reflect{background:var(--cocoa);color:var(--cream);text-align:center}
+.reflect .tag{font-family:var(--serif);font-style:italic;font-size:clamp(34px,5vw,60px);font-weight:400;direction:ltr;color:var(--bronze-soft);line-height:1.15}
+.reflect p{max-width:52ch;margin:18px auto 0;color:#DCCBC0}
+
+/* reviews */
+.reviews{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:center}
+.reviews .media img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px}
+.quote{font-size:clamp(22px,2.6vw,30px);font-weight:300;line-height:1.55;margin:14px 0 12px}
+.who{font-size:13.5px;color:var(--muted)}
+.who b{color:var(--ink);font-weight:500;margin-left:6px}
+.counts{display:flex;gap:28px;margin-top:28px;flex-wrap:wrap}
+.counts div{border-top:1px solid var(--line);padding-top:10px;min-width:120px}
+.counts strong{display:block;font-size:28px;font-weight:300;font-variant-numeric:tabular-nums;color:var(--maroon)}
+.counts span{font-size:12.5px;color:var(--muted)}
+@media (max-width:820px){.reviews{grid-template-columns:minmax(0,1fr)}}
+
+/* story */
+.story{background:var(--paper)}
+.story .feature p{color:var(--muted)}
+
+/* faq */
+.faq{max-width:760px;margin:0 auto}
+.faq h2{font-size:clamp(26px,3vw,36px);text-align:center;margin-bottom:24px}
+details{border-bottom:1px solid var(--line);padding:16px 2px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;font-size:16px;font-weight:400}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:22px;line-height:1;color:var(--bronze);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{margin:10px 0 0;color:var(--muted);max-width:62ch}
+
+/* footer */
+footer{background:var(--cocoa);color:#DCCBC0;font-size:13.5px}
+footer .in{padding-block:56px 28px}
+.fgrid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:32px}
+@media (max-width:820px){.fgrid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.fgrid .about{grid-column:1/-1}}
+footer h4{color:var(--cream);font-weight:400;font-size:14.5px;margin:0 0 12px}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a:hover{color:var(--cream)}
+footer .about img{height:32px;width:auto;margin-bottom:14px}
+footer .about p{margin:0 0 10px;max-width:44ch}
+footer .about .t{font-family:var(--serif);font-style:italic;font-size:18px;color:var(--bronze-soft);direction:ltr;text-align:right}
+.legal{border-top:1px solid rgba(232,213,198,.18);margin-top:36px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px}
+.pay{display:flex;gap:6px;flex-wrap:wrap;direction:ltr}
+.pay span{border:1px solid rgba(232,213,198,.3);border-radius:4px;padding:2px 8px;font-size:11px}
+.note{background:var(--bronze-soft);color:var(--cocoa);font-size:12.5px;text-align:center}
+.note .in{padding-block:8px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.hero-w{background:var(--paper)}
+.hero-w .in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:center;padding-block:40px}
+.hero-w .media img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.hero-w h1{font-size:clamp(36px,5vw,62px);font-weight:200;margin:8px 0 16px;color:var(--cocoa)}
+.hero-w p{color:var(--muted);font-size:16px;max-width:42ch;margin:0 0 26px}
+.hero-w .ctas{display:flex;gap:12px;flex-wrap:wrap}
+.season{display:inline-flex;align-items:center;gap:8px;background:var(--sand);color:var(--maroon);border-radius:999px;padding:4px 14px;font-size:12.5px;font-weight:400}
+.season svg{width:15px;height:15px;stroke:currentColor;fill:none;stroke-width:1.6}
+@media (max-width:820px){.hero-w .in{grid-template-columns:minmax(0,1fr);gap:22px;padding-block:20px 36px}.hero-w .media{order:-1}}
+.cats.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media (max-width:760px){.cats.three{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.cats.three .cat b{font-size:15px}.cats.three .cat small{display:none}}
+.scents{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+@media (max-width:760px){.scents{grid-template-columns:minmax(0,1fr)}}
+.scent{background:var(--paper);border-radius:4px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.scent img{width:100%;aspect-ratio:1;object-fit:cover}
+.scent .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:6px}
+.scent h3{font-size:20px;font-weight:400}
+.notes{display:flex;gap:6px;flex-wrap:wrap}
+.notes span{font-size:12px;background:var(--sand);border-radius:999px;padding:2px 10px;color:var(--cocoa)}
+.scent .row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:10px}
+.scent .pr{font-weight:500;font-variant-numeric:tabular-nums}
+.pick{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:0 0 22px}
+.pick div{background:var(--paper);border:1px solid var(--line);border-radius:4px;padding:14px 16px}
+.pick b{display:block;font-weight:500;font-size:15px}
+.pick span{font-size:13px;color:var(--muted)}
+.allergy{font-size:12.5px;color:var(--maroon);margin:-8px 0 20px}
+</style>
+<div dir="rtl" lang="ar">
+  <div class="note"><div class="in">تصميم مقترح للصفحة الرئيسية، نسخة الشتاء. لسه ماترفعش على زد.</div></div>
+  <div class="bar"><div class="in"><span>صنع في السعودية</span><span>مسجّلة لدى هيئة الغذاء والدواء</span><span>قسّطيها مع تابي وتمارا</span></div></div>
+
+  <header class="site">
+    <div class="in">
+      <a class="logo" href="#top" aria-label="a'mie"><img src="img/logo.png" alt="a'mie"></a>
+      <nav class="main" aria-label="الأقسام">
+        <a href="#ritual">العناية بالجسم</a><a href="#hands">اليدين والقدمين والشفايف</a><a href="#scents">العطور</a><a href="#gifts">المجموعات والهدايا</a><a href="#top">اللمعة</a><a href="#top">التان</a>
+      </nav>
+      <div class="tools" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8zM9 8a3 3 0 0 1 6 0"/></svg>
+        <svg class="menu-btn" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </div>
+    </div>
+  </header>
+
+  <div class="hero-w" id="top"><div class="in">
+    <div class="txt">
+      <span class="season"><svg viewBox="0 0 24 24"><path d="M12 2v20M4.9 6.5l14.2 11M19.1 6.5L4.9 17.5M9 3.5l3 2.5 3-2.5M9 20.5l3-2.5 3 2.5"/></svg>نسخة الشتاء</span>
+      <h1>شتاء ناعم لبشرتك</h1>
+      <p>تقشير بملح البحر وترطيب عميق بزبدة الشيا والكاكاو، برائحة اللافندر الهادية. روتين بسيط لبشرة تفضل ناعمة مع برد الشتاء.</p>
+      <div class="ctas"><a class="btn" href="#ritual">تسوقي مجموعة اللافندر</a><a class="btn ghost" href="#best">كل منتجات الشتاء</a></div>
+    </div>
+    <div class="media"><img src="img/hero.jpg" alt="بنت لابسة روب ماسكة زبدة الجسم اللافندر من a'mie"></div>
+  </div></div>
+
+  <div class="promise"><div class="in"><ul>
+    <li><svg viewBox="0 0 24 24"><path d="M12 3l2.4 4.9 5.4.8-3.9 3.8.9 5.4L12 15.4 7.2 17.9l.9-5.4L4.2 8.7l5.4-.8z"/></svg>صنع في السعودية</li>
+    <li><svg viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg>مسجّلة لدى هيئة الغذاء والدواء</li>
+    <li><svg viewBox="0 0 24 24"><path d="M12 20c-4-2.5-7-5.5-7-9.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 7 3.5c0 4-3 7-7 9.5z"/></svg>خالية من التجارب على الحيوانات</li>
+    <li><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg>تابي وتمارا ومدى وApple Pay</li>
+  </ul></div></div>
+
+  <section id="needs"><div class="in">
+    <div class="sec-head"><h2>إيه اللي بشرتك محتاجاه الشتا ده؟</h2></div>
+    <div class="cats three">
+      <a class="cat" href="#ritual"><img src="img/cat-dry.jpg" alt=""><span class="lab"><b>البشرة الجافة</b><small>سكراب وزبدة الجسم</small></span></a>
+      <a class="cat" href="#hands"><img src="img/cat-handfoot.jpg" alt=""><span class="lab"><b>اليدين والقدمين</b><small>للخشونة والتشققات</small></span></a>
+      <a class="cat" href="#hands"><img src="img/cat-lips.jpg" alt=""><span class="lab"><b>الشفايف</b><small>مرطب بالعسل</small></span></a>
+    </div>
+  </div></section>
+
+  <section class="tan-band" id="ritual"><div class="in feature">
+    <div class="media"><img src="img/routine.jpg" alt="سكراب وزبدة الجسم وفرشاة الجسم الجافة من a'mie"></div>
+    <div class="txt">
+      <span class="eyebrow">The winter ritual</span>
+      <h2>روتين الشتاء في 3 خطوات</h2>
+      <p class="lead">في مجموعة اللافندر أو مجموعة الليمون قراس، كل خطوة ليها دور، والفرشاة الجافة هدية مع المجموعة.</p>
+      <ol class="steps">
+        <li><div><b>فرشاة الجسم الجافة</b><span>قبل الاستحمام، على بشرة جافة بحركات لطيفة.</span></div></li>
+        <li><div><b>سكراب ملح البحر</b><span>على بشرة مبللة، بحركات دائرية على الأكواع والركب والكعبين.</span></div></li>
+        <li><div><b>زبدة الجسم المخفوقة</b><span>بعد الاستحمام، قوام خفيف يمتص بسرعة من غير ملمس دهني.</span></div></li>
+      </ol>
+      <div class="pick">
+        <div><b>اللافندر</b><span>للبشرة الجافة، رائحة هادية للمسا</span></div>
+        <div><b>الليمون قراس</b><span>رائحة حمضية منعشة للصبح</span></div>
+      </div>
+      <p class="allergy">السكراب يحتوي على قشور مكسرات.</p>
+      <a class="btn" href="#best">اختاري مجموعتك · 238 ر.س</a>
+    </div>
+  </div></section>
+
+  <section id="best"><div class="in">
+    <div class="sec-head"><h2>مختارات الشتاء</h2><a class="more" href="#best">كل منتجات العناية</a></div>
+    <div class="tabs" role="tablist" aria-label="مختارات الشتاء">
+      <button role="tab" id="tab-body" aria-selected="true" aria-controls="p-body">الجسم</button>
+      <button role="tab" id="tab-hand" aria-selected="false" aria-controls="p-hand">اليدين والقدمين والشفايف</button>
+    </div>
+    <div class="prods" id="p-body" role="tabpanel" aria-labelledby="tab-body">
+      <article class="prod"><div class="ph"><span class="badge">الفرشاة هدية</span><img src="img/p-lavset.jpg" alt="مجموعة اللافندر"></div><div class="bd"><div class="nm">مجموعة اللافندر للبشرة الجافة</div><div class="meta">سكراب + زبدة + فرشاة جافة</div><div class="row"><span class="pr">238 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+      <article class="prod"><div class="ph"><span class="badge">الفرشاة هدية</span><img src="img/p-lemonset.jpg" alt="مجموعة الليمون قراس"></div><div class="bd"><div class="nm">مجموعة الليمون قراس للبشرة الجافة</div><div class="meta">سكراب + زبدة + فرشاة جافة</div><div class="row"><span class="pr">238 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+      <article class="prod"><div class="ph"><img src="img/p-butter.jpg" alt="زبدة الجسم اللافندر"></div><div class="bd"><div class="nm">زبدة الجسم اللافندر للبشرة الجافة</div><div class="meta">250 مل · الشيا والكاكاو والهيالورونيك</div><div class="row"><span class="pr">119 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+      <article class="prod"><div class="ph"><img src="img/cat-dry.jpg" alt="سكراب الجسم اللافندر"></div><div class="bd"><div class="nm">سكراب الجسم اللافندر للبشرة الجافة</div><div class="meta">300 جم · ملح البحر وقشور المكسرات</div><div class="row"><span class="pr">119 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+    </div>
+    <div class="prods" id="p-hand" role="tabpanel" aria-labelledby="tab-hand" hidden>
+      <article class="prod"><div class="ph"><img src="img/p-handfoot.jpg" alt="مجموعة القدمين واليدين"></div><div class="bd"><div class="nm">مجموعة القدمين واليدين</div><div class="meta">كريم اليدين 30 مل + كريم القدمين 75 مل</div><div class="row"><span class="pr">124 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+      <article class="prod"><div class="ph"><img src="img/cat-handfoot.jpg" alt="كريم القدمين"></div><div class="bd"><div class="nm">كريم القدمين للترطيب العميق</div><div class="meta"><span class="stars">★★★★★</span> 23 تقييم</div><div class="row"><span class="pr">75 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+      <article class="prod"><div class="ph"><img src="img/p-lip.jpg" alt="مرطب الشفاه بالعسل"></div><div class="bd"><div class="nm">مرطب الشفاه بالعسل</div><div class="meta">10 مل · العسل وزبدة المانجو</div><div class="row"><span class="pr">65 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+      <article class="prod"><div class="ph"><img src="img/p-lemonset.jpg" alt="زبدة الجسم بالليمون قراس"></div><div class="bd"><div class="nm">زبدة الجسم بالليمون قراس</div><div class="meta">250 مل · رائحة حمضية منعشة</div><div class="row"><span class="pr">119 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+    </div>
+  </div></section>
+
+  <section class="story" id="hands"><div class="in feature flip">
+    <div class="media"><img src="img/hands-lips.jpg" alt="إيد ماسكة كوباية قهوة ومرطب الشفاه وكريم اليدين من a'mie"></div>
+    <div class="txt">
+      <span class="eyebrow">Hands, feet &amp; lips</span>
+      <h2>اليدين والقدمين والشفايف أول ما يحسّوا بالبرد</h2>
+      <p class="lead">كريم القدمين باليوريا وحمض اللاكتيك بيزيل الخشونة والتشققات مع الاستمرار. مرطب الشفاه بالعسل وزبدة المانجو بيخفف الجفاف، وحجمه صغير يتشال في الشنطة.</p>
+      <div class="pick">
+        <div><b>كريم القدمين</b><span>75 مل · 75 ر.س</span></div>
+        <div><b>مرطب الشفاه</b><span>10 مل · 65 ر.س</span></div>
+      </div>
+      <a class="btn" href="#best">تسوقي مجموعة القدمين واليدين · 124 ر.س</a>
+    </div>
+  </div></section>
+
+  <section class="reflect"><div class="in">
+    <div class="tag">a'mie, in every reflection.</div>
+    <p>نرى الجمال في التفاصيل: بشرة ناعمة في ليلة باردة، ورائحة دافية تفضل معاكي طول اليوم.</p>
+  </div></section>
+
+  <section id="scents"><div class="in">
+    <div class="sec-head"><h2>روائح الشتاء</h2></div>
+    <div class="scents">
+      <article class="scent"><img src="img/p-natura.jpg" alt="عطر الجسم ناتورا"><div class="bd"><span class="eyebrow">Natura</span><h3>عطر الجسم ناتورا</h3><div class="notes"><span>فانيليا</span><span>جوز الهند</span><span>حبوب التونكا</span></div><p class="meta" style="margin:4px 0 0;color:var(--muted);font-size:13.5px">دافية وكريمية، أنسب رائحة للشتا.</p><div class="row"><span class="pr">129 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+      <article class="scent"><img src="img/p-musk.jpg" alt="مسك a'mie"><div class="bd"><span class="eyebrow">a'musk</span><h3>مسك a'mie</h3><div class="notes"><span>مسك</span><span>يلانغ يلانغ</span></div><p class="meta" style="margin:4px 0 0;color:var(--muted);font-size:13.5px">ناعم ونظيف، 15 مل يتشال في الشنطة.</p><div class="row"><span class="pr">99 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+      <article class="scent"><img src="img/p-flora.jpg" alt="عطر الجسم فلورا"><div class="bd"><span class="eyebrow">Flora</span><h3>عطر الجسم فلورا</h3><div class="notes"><span>حمضيات</span><span>أزهار بيضاء</span><span>مسك</span></div><p class="meta" style="margin:4px 0 0;color:var(--muted);font-size:13.5px">زهري منعش للصبح والدوام.</p><div class="row"><span class="pr">129 ر.س</span><button class="add" type="button">أضيفي للسلة</button></div></div></article>
+    </div>
+  </div></section>
+
+  <section class="tan-band" id="gifts"><div class="in feature">
+    <div class="media"><img src="img/gift.jpg" alt="بوكس a'mie للإهداء بشريطة"></div>
+    <div class="txt">
+      <span class="eyebrow">Winter gifting</span>
+      <h2>هدية دافية لحد بتحبيه</h2>
+      <p class="lead">بوكس a'mie للإهداء جاهز بالشريطة، ومجموعات الشتاء كلها في تغليف a'mie. هدية مناسبة للمناسبات واللمّات.</p>
+      <div class="pick">
+        <div><b>بوكس a'mie للإهداء</b><span>179 ر.س</span></div>
+        <div><b>مجموعة اللافندر</b><span>238 ر.س · الفرشاة هدية</span></div>
+      </div>
+      <a class="btn" href="#gifts">تسوقي الهدايا</a>
+    </div>
+  </div></section>
+
+  <section class="story"><div class="in feature flip">
+    <div class="media"><img src="img/story.jpg" alt="لوجو a'mie على الحيطة وشنطة a'mie"></div>
+    <div class="txt">
+      <span class="eyebrow">Our story</span>
+      <h2>قصتنا</h2>
+      <p>بدأت a'mie كعلامة تجميل سعودية متخصصة في منتجات التان، ثم توسعت لتقدم مجموعة مختارة من منتجات العناية بالجسم والشعر والعطور.</p>
+      <p>تُصنع منتجاتنا في المملكة العربية السعودية، ونفخر بحصولنا على علامة «صنع في السعودية»، مع اهتمامنا بجودة التركيبات والتفاصيل التي تميز كل منتج.</p>
+      <a class="btn ghost" href="#best">تسوقي منتجاتنا</a>
+    </div>
+  </div></section>
+
+  <section><div class="in faq">
+    <h2>أسئلة الشتاء</h2>
+    <details><summary>أختار اللافندر ولا الليمون قراس؟</summary><p>اللافندر للبشرة الجافة ورائحته هادية تناسب روتين المسا. الليمون قراس رائحته حمضية منعشة تناسب الصبح. الاتنين بزبدة الشيا والكاكاو وحمض الهيالورونيك.</p></details>
+    <details><summary>كام مرة أستخدم السكراب؟</summary><p>السكراب مناسب لروتين العناية الأسبوعي، على بشرة مبللة أثناء الاستحمام، وبعده زبدة الجسم على طول.</p></details>
+    <details><summary>هل السكراب مناسب لو عندي حساسية من المكسرات؟</summary><p>السكراب يحتوي على قشور مكسرات، فلو عندك حساسية من المكسرات ما تستخدميهوش.</p></details>
+    <details><summary>هل منتجات a'mie مسجّلة لدى هيئة الغذاء والدواء؟</summary><p>أيوه، منتجاتنا مسجّلة لدى هيئة الغذاء والدواء السعودية، ومصنوعة في المملكة.</p></details>
+  </div></section>
+
+  <footer><div class="in">
+    <div class="fgrid">
+      <div class="about">
+        <img src="img/logo-light.png" alt="a'mie">
+        <p>a'mie علامة تجميل سعودية، منتجاتها مصنوعة في المملكة وحاصلة على علامة «صنع في السعودية». متخصصون في التان، ونقدم منتجات للعناية بالجسم واللمعة والعطور والشعر.</p>
+        <div class="t">a'mie, in every reflection.</div>
+      </div>
+      <div><h4>تسوقي</h4><ul><li><a href="#ritual">العناية بالجسم</a></li><li><a href="#hands">اليدين والقدمين والشفايف</a></li><li><a href="#scents">العطور</a></li><li><a href="#gifts">المجموعات والهدايا</a></li></ul></div>
+      <div><h4>خدمة العملاء</h4><ul><li><a href="#top">الشحن والتوصيل</a></li><li><a href="#top">الاستبدال والاسترجاع</a></li><li><a href="#top">تتبع الطلب</a></li></ul></div>
+      <div><h4>تواصلي معنا</h4><ul><li><a href="#top">واتساب</a></li><li><a href="#top">إنستغرام</a></li><li><a href="#top">سناب شات</a></li></ul></div>
+    </div>
+    <div class="legal"><span>الرقم الضريبي: 312349044400003</span><div class="pay"><span>mada</span><span>Apple Pay</span><span>VISA</span><span>Mastercard</span><span>tabby</span><span>Tamara</span></div></div>
+  </div></footer>
+</div>
+
+<script>
+const tabs=[...document.querySelectorAll('[role="tab"]')];
+tabs.forEach(t=>t.addEventListener('click',()=>{
+  tabs.forEach(x=>{const on=x===t;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on});
+}));
+document.querySelectorAll('.add').forEach(b=>b.addEventListener('click',()=>{b.textContent='اتضافت ✓';setTimeout(()=>b.textContent='أضيفي للسلة',1600)}));
+</script>
