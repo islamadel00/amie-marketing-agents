@@ -1,0 +1,3 @@
+/* 22) كروت الوصف التفصيلي — تبان على الخلفية البيضا */
+.product-description details div[style*="border-radius:16px"]{background:#F3EDE6!important}
+.product-description details div[style*="border-radius:16px"] strong{color:#28272a}
