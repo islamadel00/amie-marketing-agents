@@ -1,16 +1,51 @@
 /* ============================================================
-   20) وصف المنتج — الأقسام اللي بتتفتح وتتقفل (+ / —)
+   20) وصف المنتج — تكملة الشكل اللي محرر زد بيشيله (الخط التقيل، الخطوط، + / —)
    ============================================================ */
-details.amie-acc > summary::-webkit-details-marker {
+.product-page aui-show-more h2,
+.product-page aui-show-more h3,
+.product-page aui-show-more h4 {
+  font-weight: 700 !important;
+}
+/* أول سطر صغير (اسم المنتج بالإنجليزي) */
+.product-page aui-show-more > div > div:first-child > p:first-child {
+  font-weight: 700;
+  letter-spacing: .4px;
+}
+/* خط تحت المقدمة */
+.product-page aui-show-more > div > div:first-child {
+  border-bottom: 1px solid rgba(94, 46, 33, .15);
+}
+/* الأقسام اللي بتتفتح وتتقفل */
+.product-page aui-show-more details {
+  border-bottom: 1px solid rgba(94, 46, 33, .35);
+}
+.product-page aui-show-more details > summary {
+  list-style: none;
+  cursor: pointer;
+  justify-content: space-between !important;
+  align-items: center;
+  font-weight: 700 !important;
+}
+.product-page aui-show-more details > summary::-webkit-details-marker {
   display: none;
 }
-details.amie-acc > summary::marker {
+.product-page aui-show-more details > summary::marker {
   content: "";
 }
-details.amie-acc[open] .amie-acc-sign {
+.product-page aui-show-more details[open] > summary > span:last-child {
   font-size: 0 !important;
 }
-details.amie-acc[open] .amie-acc-sign::after {
+.product-page aui-show-more details[open] > summary > span:last-child::after {
   content: "—";
   font-size: 18px;
+}
+/* خطوات طريقة الاستخدام: خط رفيع بينهم */
+.product-page aui-show-more details > div > div > div[style*="padding:10px 0"],
+.product-page aui-show-more details > div > div > div[style*="padding: 10px 0"] {
+  border-bottom: 1px solid rgba(94, 46, 33, .12);
+}
+/* الحجم: خط تقيل */
+.product-page aui-show-more span[style*="border-radius:999px"],
+.product-page aui-show-more span[style*="border-radius: 999px"] {
+  font-weight: 600;
 }
