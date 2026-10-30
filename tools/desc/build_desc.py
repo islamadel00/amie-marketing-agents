@@ -5,9 +5,12 @@ import sys, os, re, html, docx
 C_TEXT = '#28272a'; C_BODY = '#4a4446'; C_MUTED = '#8a7a72'; C_ACC = '#5E2E21'; C_SOFT = '#EAE2D9'
 AR_DIGITS = '٠١٢٣٤٥٦٧٨٩'
 
-HEAD_AR = {'المكونات الأساسية وفوائدها', 'طريقة الاستخدام', 'المكونات', 'المكونات الرئيسية', 'مميزات الفرشاة', 'العناية بالفرشاة'}
+HEAD_AR = {'المكونات الأساسية وفوائدها', 'المكونات الرئيسية وفوائدها', 'طريقة الاستخدام', 'المكونات', 'المكونات الرئيسية',
+           'مميزات الفرشاة', 'العناية بالفرشاة', 'محتويات المجموعة', 'النوتات العطرية', 'المكونات العطرية الرئيسية', 'تنبيه'}
 HEAD_EN = {'key ingredients & benefits', 'key ingredients and benefits', 'how to use', 'ingredients', 'highlighted ingredients',
-           'brush features', 'brush care'}
+           'brush features', 'brush care', 'key ingredients', 'what’s included', "what's included",
+           'set includes', 'set contents', 'fragrance notes', 'key fragrance notes', 'brush benefits', 'sun safety'}
+HEAD_STYLED = set()  # lines styled as Heading in the .docx
 
 
 def esc(t):
@@ -16,7 +19,12 @@ def esc(t):
 
 def is_heading(line, lang):
     t = line.strip().rstrip(':').strip()
-    return (t in HEAD_AR) if lang == 'ar' else (t.lower() in HEAD_EN)
+    if ' | ' in line:  # 'product | size' lines are item titles inside a section, not section headings
+        return False
+    if len(t) <= 30 and (t.startswith(('مميزات ', 'العناية ب')) or t.lower().endswith(' features')
+                         or t.lower() in ('features', 'care instructions')):  # 'مميزات الشنطة', 'العناية بالمراية', 'Bag Features'
+        return True
+    return line.strip() in HEAD_STYLED or ((t in HEAD_AR) if lang == 'ar' else (t.lower() in HEAD_EN))
 
 
 def split_langs(lines):
@@ -140,9 +148,20 @@ def render(d, lang):
         parts.append(f'<div style="padding:16px 0 10px;">{inner}</div>')
     for h, items in d['sections']:
         low = h.lower()
-        plain_ingredients = low in ('المكونات', 'المكونات الرئيسية', 'ingredients', 'highlighted ingredients')
-        how = low in ('طريقة الاستخدام', 'how to use', 'العناية بالفرشاة', 'brush care')
-        if plain_ingredients:
+        plain_ingredients = low in ('المكونات', 'المكونات الرئيسية', 'ingredients', 'highlighted ingredients',
+                                     'المكونات العطرية الرئيسية', 'key fragrance notes')
+        how = low in ('طريقة الاستخدام', 'how to use', 'brush care', 'care instructions') or low.startswith('العناية ب')
+        included = low in ('محتويات المجموعة', 'what’s included', "what's included", 'set includes', 'set contents')
+        if included:
+            pairs, j = [], 0
+            while j < len(items):
+                t = items[j]
+                if j + 1 < len(items) and len(t) <= 60 and not t.rstrip().endswith(('.', '۔')):
+                    pairs.append((t, items[j + 1])); j += 2
+                else:
+                    pairs.append(('', t)); j += 1
+            inner = ''.join(card(k, a, c, lang) for k, (a, c) in enumerate(pairs, 1))
+        elif plain_ingredients:
             inner = ''.join(f'<p style="margin:8px 0 0;color:{C_BODY};font-size:13.5px;line-height:1.9;">{esc(x)}</p>' for x in items)
             inner = f'<div style="background:#ffffff;border-radius:16px;padding:14px 18px;margin-top:10px;">{inner}</div>'
         elif how:
@@ -162,7 +181,9 @@ def render(d, lang):
 
 
 def main(src, out_dir):
-    lines = [p.text.strip() for p in docx.Document(src).paragraphs if p.text.strip()]
+    paras = [p for p in docx.Document(src).paragraphs if p.text.strip()]
+    HEAD_STYLED.update(p.text.strip() for p in paras if p.style.name.startswith('Heading'))
+    lines = [p.text.strip() for p in paras]
     # document letterhead ('a’mie  |  PRODUCT CONTENT'), not product copy
     lines = [l for l in lines if 'PRODUCT CONTENT' not in l]
     ar, en = split_langs(lines)

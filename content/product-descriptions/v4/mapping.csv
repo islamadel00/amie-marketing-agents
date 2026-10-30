@@ -1,0 +1,24 @@
+file,product_name_ar_in_zid,product_id,status_in_zid,note
+amie_body_glow_ar_en_corrected,جلّ لمعة الجسم,23bf12c7-eaca-4f9e-9b39-783befc5f67b,published,REPLACES live v3 description
+amie_foot_cream_verified_ar_en,كريم القدمين للترطيب العميق,7092241d-63fc-4c30-926f-422578067f2e,published,REPLACES live v3 description
+amie_hand_cream_verified_ar_en,كريم اليدين للترطيب,40032c3d-f4bf-40f8-a669-0648ff73e9cf,published,REPLACES live v3 description
+amie_lip_plump_corrected_ar_en,مرطب الشفاه بالعسل (65 ر.س),d1aeadb7-b224-4dab-8bd8-db1acaeae741,published,REPLACES live v3 description; not the 1130 product
+amie_hair_styling_set_ar_en,مجموعة الشعر,fb577395-d0c7-445a-827e-7afe33d3c3f2,published,contents = wax+mascara+brush+bag (282)
+amie_dry_body_brush_ar_en,فرشاة الجسم الجافة,24f918f9-8a91-4d3b-b7c6-1ed2cef7a515,published,
+amie_lavender_body_scrub_ar_en_updated,سكراب الجسم اللافندر للبشرة الجافة,34a2433a-c243-4e10-9f90-5c9b647a5f9e,published,
+amie_lavender_whipped_body_butter_ar_en,زبدة الجسم اللافندر للبشرة الجافة,a4d42d3b-505e-4d0a-87fb-e9c0749d5bff,published,
+amie_lavender_body_care_set_ar_en,مجموعة اللافندر للبشرة الجافة,4ddb1426-e764-4cab-aece-058ce2766003,published,
+amie_lemongrass_body_care_set_ar_en,مجموعة الليمون قراس للبشرة الجافة,d4e7a9a2-752c-44a6-91c3-2acab35ba9b8,published,
+amie_deep_tan_tanning_oil_ar_en,زيت ديب تان,d363c1c0-13a8-48b0-b5df-7206d7580a12,published,
+amie_glittery_gold_tanning_gel_ar_en,جل تان قلتري قولد,68c7f369-6ab7-41aa-8fa0-9b61d74c2d45,published,
+amie_red_cherry_tan_cream_ar_en,كريم تان رد تشيري,52a2b754-2644-40a9-978d-9e072a06ad6f,published,warning line includes an INCI sentence - confirm
+amie_musk_ar_en,مسك ايمي,93a7e970-4adf-4c00-9c4b-40b9234c15cc,published,
+amie_natura_body_mist_ar_en,عطر الجسم ناتورا,c5129731-4ed7-4019-bf09-7a175b039a47,published,
+amie_flora_body_mist_ar_en,عطر الجسم فلورا,8deabd11-c23c-456f-afd4-4809908948eb,published,
+amie_pocket_mirror_ar_en,مرآة ايمى,a3bccdee-4b74-4ef9-bc32-9918950728f2,published,
+amie_tan_bag_ar_en,شنطة ايمي بني (?),05327c05-01cb-4473-8e2b-eb7951c39dc1,published,CONFIRM: transparent brown bag
+amie_tanning_set_ar_en,مجموعة الصيف (?),7e27f946-8cab-4a11-8d8c-d8be0ca5fafb,published,CONFIRM: contents match (507); alt مجموعة التان 25f8427b hidden 590
+amie_complete_glow_set_corrected_ar_en,مجموعة لمعة الجسم (?),2fb41526-724d-46f1-8863-3a7b8f3e400b,published,CONFIRM: 294 Into The Glow Collection
+amie_natura_flora_body_mist_set_ar_en,NOT FOUND,,,no mist set product in Zid
+amie_chocolate_highlighter_reviewed_ar_en,هايلايتر الجسم تشوكلت,f7dbeb34-9c03-40cb-a623-261e1baa92b9,HIDDEN,
+amie_marshmallow_highlighter_fixed,هايلايتر الجسم مارشميللو,f5d89333-817f-4dbc-a633-d27018921d3a,HIDDEN,
