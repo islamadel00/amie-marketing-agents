@@ -1,0 +1,56 @@
+PROMPT — Claude Desktop
+Task: add the category slider ("تسوّقي حسب القسم") to the a'mie homepage — Zid theme editor, theme الملكي (Royale)
+=================================================================================================================
+
+You are working in the a'mie Zid dashboard theme editor (store 187125), homepage (الصفحة الرئيسية).
+Goal: ONE new section of the theme's image-group type (in the code it's "image-group"; in the add-section list it's
+probably «مجموعة صور» / «مجموعة الصور» / «صور»). It must have 6 items: each item = 1 tall image + 1 button with the
+category name that links to the category. The custom CSS (added by me later) turns it into a swipeable slider with
+the category name as a small white button on each image.
+
+The 6 images are attached to this chat (900x1200, 3:4):
+  amie-cat-1-body-glow.jpg, amie-cat-2-body-care.jpg, amie-cat-3-hair.jpg,
+  amie-cat-4-fragrance.jpg, amie-cat-5-tan.jpg, amie-cat-6-gifts.jpg
+
+HARD RULES
+- Do NOT press "نشر" (Publish) — neither the top button nor the one in the "توجد تغييرات غير منشورة" bar.
+  Stop at the end, take screenshots and wait for my OK.
+- Do NOT touch the custom CSS / JS screens.
+- Do NOT delete, hide, edit or move any other section. Do NOT rename anything.
+- If you can't find an image-group type section, or its fields differ from below, STOP and send me a screenshot of the
+  add-section list / the fields. Don't pick a different section type on your own.
+- Drag one section at a time; if dragging freezes, stop and tell me (retry at most once).
+
+STEPS
+1. إضافة قسم → the image-group section («مجموعة صور» or similar).
+2. Add 6 items (in this order). For each item:
+   - Image: upload the file (desktop image field; if there's a separate mobile image field, upload the SAME file).
+   - Title / description: leave EMPTY if allowed (the CSS hides them anyway). If a title is required, type the category name.
+   - Button text: the category name below.
+   - Button link: the category URL below (choose the category from the link picker if there is one; otherwise paste the URL).
+
+   | # | Image file                | Button text       | Link (category)                                   |
+   |---|---------------------------|-------------------|---------------------------------------------------|
+   | 1 | amie-cat-1-body-glow.jpg  | لمعة الجسم        | /categories/1759672/لمعة-الجسم                     |
+   | 2 | amie-cat-2-body-care.jpg  | العناية بالجسم    | /categories/977204/العناية-بالجسم                  |
+   | 3 | amie-cat-3-hair.jpg       | منتجات الشعر      | /categories/1411716/العناية-بالشعر                 |
+   | 4 | amie-cat-4-fragrance.jpg  | العطور            | /categories/977207/العطور                          |
+   | 5 | amie-cat-5-tan.jpg        | منتجات التان      | /categories/1436861/tanning-product                |
+   | 6 | amie-cat-6-gifts.jpg      | الهدايا والعروض   | /categories/1411717/مجموعة-الهدايا-والعروض         |
+
+3. Section settings: if there's a columns setting, leave the default. Leave all other settings default.
+4. Position: drag the new section so it sits DIRECTLY UNDER «الأكثر مبيعًا» (best sellers),
+   i.e. order: الأكثر مبيعًا → [new category section] → (the title فقرة "تجاربكم مع a'mie") → videos → …
+5. In the preview, click 2 of the buttons and check they go to the right category, then come back.
+
+STOP — don't publish. Send me:
+- Screenshot of the section list (showing the new section right under الأكثر مبيعًا).
+- Screenshot of the new section in mobile preview.
+- The exact name of the section type as it appears in the add-section list.
+- Anything unexpected (missing fields, required titles, link picker issues).
+
+REPORT FORMAT (short):
+- Section type name: …
+- Items 6/6: images ✔/✘, button texts ✔/✘, links ✔/✘
+- Position under الأكثر مبيعًا: ✔/✘
+- Waiting for publish approval.
