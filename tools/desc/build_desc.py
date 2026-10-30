@@ -163,6 +163,8 @@ def render(d, lang):
 
 def main(src, out_dir):
     lines = [p.text.strip() for p in docx.Document(src).paragraphs if p.text.strip()]
+    # document letterhead ('a’mie  |  PRODUCT CONTENT'), not product copy
+    lines = [l for l in lines if 'PRODUCT CONTENT' not in l]
     ar, en = split_langs(lines)
     base = os.path.splitext(os.path.basename(src))[0]
     res = {}
