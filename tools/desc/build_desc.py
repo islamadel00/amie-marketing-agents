@@ -35,7 +35,7 @@ def split_langs(lines):
 def parse(block, lang):
     """-> dict(title, name, tagline, intro[], sections[(heading, items[])], extras[])"""
     b = [l for l in block if l.strip()]
-    notes = [l for l in b if l.startswith('Editorial note') or l.startswith('ملاحظة تحريرية')]
+    notes = [l for l in b if l.startswith('Editorial note') or l.startswith('ملاحظة تحريرية') or (l.startswith('Note:') and 'INCI' in l)]
     b = [l for l in b if l not in notes]
     out = {'title': '', 'name': '', 'tagline': '', 'intro': [], 'sections': [], 'size': [], 'notes': notes}
     i = 0
