@@ -1,0 +1,150 @@
+PROMPT — Claude Desktop
+Task: delete the old WHITE-background product images on the a'mie Zid store (amie-sa.com, store 187125)
+=====================================================================================================
+
+Context: every product now has a new tall 3:4 image on a beige background as its main image.
+The old square images on a plain white background are no longer wanted. You will delete ONLY the
+white-background images listed below, by their exact image ID. Nothing else.
+
+HARD RULES
+- Delete ONLY the image IDs in LIST A. Match the image ID exactly before deleting. If an ID is not
+  found on that product, skip it and note it in the report. Never guess or delete "the second image" by position.
+- Do NOT delete the beige tall main image, and do NOT delete any lifestyle photo (people / scenes).
+- Do NOT touch LIST B (kept on purpose).
+- Do NOT edit product names, descriptions, prices, SEO, categories or anything else. Don't rename anything.
+- Do NOT reorder the remaining images.
+- BACKUP FIRST: before deleting anything, save the full image list of every product in LIST A
+  (product id, image id, display order, image URL, alt text) to a file on my computer named
+  amie-images-backup-<date>.csv (or send it to me here if you can't save files).
+- Work product by product. After each product, check the product still has its beige main image as #1.
+  If anything looks wrong, STOP and tell me.
+- If the Zid MCP tools are available, use zid_products list_product_images to read, and zid_products_manage
+  to delete (it asks for a plan_id — show me the plan for the first product, wait for my OK, then continue
+  with the rest). Otherwise use the Zid dashboard: Products → open product → Images → delete the matching image.
+  To match an image in the dashboard, open it / copy its URL: the image ID is the file name in the URL.
+
+LIST A — DELETE these white-background images (62 images, 37 products)
+1. واكس تصفيف الشعر — product deb9699d-30f1-413b-96b0-9b9fd1ee7c4f
+   - DELETE image 3e755a5b-871f-4e15-a9a3-20c9187c1a87 (now at position 3)
+2. مجموعة الشعر — product fb577395-d0c7-445a-827e-7afe33d3c3f2
+   - DELETE image 3a1632da-0c53-445f-b132-3f9660371031 (now at position 2)
+   - DELETE image 46a7dd83-b9f3-4e66-b726-ba5bbda75cd2 (now at position 3)
+3. كريم تان رد تشيري — product 52a2b754-2644-40a9-978d-9e072a06ad6f
+   - DELETE image c8cdd298-bbae-4375-af43-470172dafaa9 (now at position 2)
+4. مجموعة اللافندر للبشرة الجافة — product 4ddb1426-e764-4cab-aece-058ce2766003
+   - DELETE image 6e645c8c-d621-4a0e-bee7-d8afd0eb0517 (now at position 2)
+   - DELETE image dd300ac6-b1c9-437a-93be-3227ec770d2c (now at position 3)
+   - DELETE image 77ca161c-2404-4502-9d60-3725d395886c (now at position 4)
+5. جلّ لمعة الجسم — product 23bf12c7-eaca-4f9e-9b39-783befc5f67b
+   - DELETE image f930f3be-e08b-4223-bc76-e47a1d3fce2d (now at position 2)
+   - DELETE image e8019526-f27d-4fb6-8f78-cd04ca5f6986 (now at position 3)
+6. مجموعة هايلايتر الجسم مارشميللو — product ba65ad9b-c99d-44de-869d-2f450ae1fb74
+   - DELETE image 59e8e064-45f6-4214-8e1d-605297c10cc9 (now at position 2)
+7. كريم القدمين للترطيب العميق — product 7092241d-63fc-4c30-926f-422578067f2e
+   - DELETE image 6f3fed7e-c6ac-43ba-9115-d8cd756e6f48 (now at position 2)
+   - DELETE image cf083ea7-a690-4d48-8466-c4bb6d29e6ee (now at position 3)
+8. مسك ايمي — product 93a7e970-4adf-4c00-9c4b-40b9234c15cc
+   - DELETE image 641c256a-1517-4d75-ba33-bde5e2faed5c (now at position 2)
+   - DELETE image ef4e98a7-2f9b-42a8-93d3-1411ff3a50bc (now at position 3)
+9. مجموعة جلّ لمعة الجسم — product 4c85b0df-bc72-40c8-95eb-d05c4c238baf
+   - DELETE image a47b4aa4-983a-414d-acdb-96ab62ec23ed (now at position 2)
+   - DELETE image e023e751-539b-4c4d-8c23-276cc3efc6e6 (now at position 3)
+10. عطر الجسم ناتورا — product c5129731-4ed7-4019-bf09-7a175b039a47
+   - DELETE image c7827369-9109-45f6-95a1-880db3b552f6 (now at position 2)
+   - DELETE image b3c32b5c-a1f0-4296-9a03-d60e1781011d (now at position 3)
+11. عطر الجسم فلورا — product 8deabd11-c23c-456f-afd4-4809908948eb
+   - DELETE image 59c4af04-a495-45f5-a7ac-d066b415bcd8 (now at position 2)
+   - DELETE image 183965bc-bc8b-4a4b-9079-0426a9893ed9 (now at position 3)
+12. فرشاة سليك للشعر — product 5753cef6-7460-4003-9c69-2096d612ffc2
+   - DELETE image 862c0f83-9a50-41d2-8135-7f848f7d3141 (now at position 2)
+13. مجموعة الليمون قراس للبشرة الجافة — product d4e7a9a2-752c-44a6-91c3-2acab35ba9b8
+   - DELETE image 585fcaf3-5b6a-4a8b-8884-4a54f11e24b6 (now at position 2)
+   - DELETE image 0d9bf2d3-01ce-4804-a891-0a1faa18a237 (now at position 3)
+   - DELETE image b1d531f8-830f-425d-a3fa-d812ba4c4a23 (now at position 4)
+14. هايلايتر الجسم مارشميللو — product f5d89333-817f-4dbc-a633-d27018921d3a
+   - DELETE image 22dc9880-ae78-45cb-85a6-e9eb0bd28e2b (now at position 3)
+15. مجموعة هايلايتر الجسم تشوكلت — product c027b20d-b16c-4e05-93af-c7183ce6b7f3
+   - DELETE image ef228794-6185-46a6-b32d-eedcee7e4039 (now at position 2)
+16. ماسكارا للشعر المتطاير — product 90b1d926-30e0-48ce-9b5d-5950c7ce5285
+   - DELETE image 91dcb2a4-9867-4ddd-b305-ebab5df4eb74 (now at position 2)
+   - DELETE image 11c90944-c446-4776-9cdb-caf21669be6a (now at position 3)
+17. سكراب الجسم بالليمون قراس — product 4f536c9b-2fa1-4419-be2a-1da4f218ab01
+   - DELETE image c42d965d-9db3-46d5-8372-5e000308d416 (now at position 2)
+   - DELETE image cd4cbe96-7d91-4fd0-9c4b-ee3a49a36889 (now at position 6)
+18. سكراب الجسم اللافندر للبشرة الجافة — product 34a2433a-c243-4e10-9f90-5c9b647a5f9e
+   - DELETE image 21d4e314-f579-4558-bcf8-5d38aa61ae41 (now at position 2)
+   - DELETE image 71775416-5274-46bb-9569-0249d20a9896 (now at position 5)
+   - DELETE image 29390385-4dfd-45d2-b331-e2789998b0d5 (now at position 6)
+19. مجموعة العودة للروتين — product 0094541a-87ed-4dbf-8ebd-735b819194d4
+   - DELETE image 0fee2e41-a7e0-4738-b584-3a02e10e431c (now at position 2)
+20. زبدة الجسم بالليمون قراس — product 412e8f15-cac3-4a60-881f-c8ee213b7dbc
+   - DELETE image 7f7535ea-9204-45ae-8a8a-e21125ea7cd0 (now at position 2)
+   - DELETE image a8f40fe2-e849-4ac6-aaee-28d570703c8a (now at position 3)
+21. مرآة ايمى — product a3bccdee-4b74-4ef9-bc32-9918950728f2
+   - DELETE image 78911f26-1924-47fa-bf31-6292000cb341 (now at position 2)
+   - DELETE image e86e00c4-0415-47dd-85b5-1cee094ec208 (now at position 3)
+22. هايلايتر الجسم تشوكلت — product f7dbeb34-9c03-40cb-a623-261e1baa92b9
+   - DELETE image d6cd8f5b-71a1-41a1-8b41-c88af4c3bd51 (now at position 3)
+23. فرشاة الميك اب — product 9a475c36-0581-4b0e-aa85-7b46d04b1e80
+   - DELETE image b2790655-d011-4ce6-b458-21bc17c632d6 (now at position 2)
+24. زبدة الجسم اللافندر للبشرة الجافة — product a4d42d3b-505e-4d0a-87fb-e9c0749d5bff
+   - DELETE image de5d8222-0cca-4be2-8ccb-4e4aa17d9989 (now at position 2)
+   - DELETE image 5eeabf98-f56a-4572-b1c2-0b70af026251 (now at position 6)
+25. فرشاة الجسم الجافة — product 24f918f9-8a91-4d3b-b7c6-1ed2cef7a515
+   - DELETE image 6c838f9e-1447-4551-bfae-8fbceb673dd4 (now at position 2)
+   - DELETE image a14a8365-009c-409f-add2-b016e9ccecf3 (now at position 3)
+26. شنطة ايمي — product 9c995e1e-9ea8-452d-8808-bce9c45d85bf
+   - DELETE image 7a3cd5ca-08d6-4698-80a0-ec6c3ab0491c (now at position 2)
+27. توزيعات ايمي — مسك 10 حبات — product 86139cdc-636b-45c8-a36e-96c3a272a626
+   - DELETE image ca5b8984-e2ec-4632-95ca-f0a814b11646 (now at position 2)
+28. زيت ديب تان — product d363c1c0-13a8-48b0-b5df-7206d7580a12
+   - DELETE image b627fd6f-b8bd-451a-be3e-e4c97e4b660d (now at position 2)
+29. جل تان قلتري قولد — product 68c7f369-6ab7-41aa-8fa0-9b61d74c2d45
+   - DELETE image 58ff992e-23a5-4903-80ea-f4ab53315d38 (now at position 2)
+30. الصيف — product afeb1392-f7f3-4a22-8dd7-828b841fe460
+   - DELETE image 3b9c0de6-f5bc-4404-8e29-dabd55431fe5 (now at position 2)
+31. مجموعة لمعة الجسم (into-the-glow-collection) — product 2fb41526-724d-46f1-8863-3a7b8f3e400b
+   - DELETE image 6f15e794-4eb1-47b5-a1f5-9e6373db2f14 (now at position 2)
+   - DELETE image 3e1fb1e5-d4de-478a-86e6-51d9f9ff0e5e (now at position 3)
+32. مرطب الشفاه بالعسل — product d1aeadb7-b224-4dab-8bd8-db1acaeae741
+   - DELETE image e3b6639c-6d90-4baa-8a26-e14f1c3767d0 (now at position 2)
+33. توزيعات ايمي — كريم اليدين 10 حبات — product 405c1258-9ccd-455d-9222-d14dea9a34af
+   - DELETE image 7415abfe-2ac9-473e-9ef4-e47b02c1d449 (now at position 2)
+   - DELETE image e140e298-e903-4057-8bcf-e1eaa7183294 (now at position 3)
+34. توزيعات ايمي — مرطب الشفاه 10 حبات — product ef3e5c77-6cd0-470c-b9d4-746f541cd7a3
+   - DELETE image fe531b34-e8e1-4b35-8062-32bdbfe67a7a (now at position 2)
+   - DELETE image c55451c3-87d8-4730-9686-dab746fc85c1 (now at position 3)
+35. بوكس ايمي للاهداء — product d8c81b60-ad64-4a55-9402-a3b33ffe6de4
+   - DELETE image 487fec7e-9e51-4a8d-9ce8-e02553627f94 (now at position 2)
+   - DELETE image c764c97f-b31e-4bc4-a10f-6a056a9b722a (now at position 3)
+   - DELETE image 7b2a0c71-e6ae-4bab-b7d6-0aeb931fab3c (now at position 4)
+36. مجموعة القدمين و اليدين — product e4991fa7-102f-4a21-ac36-7b20bf1fb964
+   - DELETE image cafdcde7-40f6-4d30-8fcc-b2431395d22a (now at position 2)
+37. كريم اليدين للترطيب — product 40032c3d-f4bf-40f8-a669-0648ff73e9cf
+   - DELETE image f4d6ab66-801e-491d-af28-5c1206d85e48 (now at position 2)
+   - DELETE image 331d4342-13f3-44b1-be1d-d39202ea90ce (now at position 3)
+LIST B — KEEP for now (white background, but they carry information or need a decision). Do NOT delete:
+1. واكس تصفيف الشعر — product deb9699d-30f1-413b-96b0-9b9fd1ee7c4f
+   - KEEP for now image 41afac4a-a320-4e17-9f8f-6f6ad72de9ad (now at position 4)
+2. سكراب الجسم بالليمون قراس — product 4f536c9b-2fa1-4419-be2a-1da4f218ab01
+   - KEEP for now image afbe4425-03a4-4d96-a5a0-a638bc258d70 (now at position 3)
+3. سكراب الجسم اللافندر للبشرة الجافة — product 34a2433a-c243-4e10-9f90-5c9b647a5f9e
+   - KEEP for now image bf4a6eda-42e3-4800-a5a4-d1f974f45e51 (now at position 4)
+4. زبدة الجسم بالليمون قراس — product 412e8f15-cac3-4a60-881f-c8ee213b7dbc
+   - KEEP for now image ed1eb417-5a85-46ef-980c-a92ef7d6e4da (now at position 4)
+5. زبدة الجسم اللافندر للبشرة الجافة — product a4d42d3b-505e-4d0a-87fb-e9c0749d5bff
+   - KEEP for now image 25dd16ae-0f48-45a4-a60e-d24cdcc219b1 (now at position 4)
+6. شنطة ايمي بني — product 05327c05-01cb-4473-8e2b-eb7951c39dc1
+   - KEEP for now image cde947e9-1980-4b13-b542-9bfbbd8d0121 (now at position 2)
+7. زيت ديب تان — product d363c1c0-13a8-48b0-b5df-7206d7580a12
+   - KEEP for now image 227b7460-b016-442d-8497-7260215a841c (now at position 4)
+8. جل تان قلتري قولد — product 68c7f369-6ab7-41aa-8fa0-9b61d74c2d45
+   - KEEP for now image 79dd706e-82f2-4757-80fa-e8bdf5bcdd09 (now at position 4)
+9. مجموعة لمعة الجسم (into-the-glow-collection) — product 2fb41526-724d-46f1-8863-3a7b8f3e400b
+   - KEEP for now image da4cbb4a-bc12-4b15-b9b9-bdf312bee1be (now at position 4)(These are infographic / ingredient / shade images, plus the transparent PNG of the brown bag.)
+
+REPORT FORMAT (short):
+- Backup file: <path>
+- Deleted: X of 62 — list any skipped IDs and why
+- Any product where the main image is not the beige one after deleting: (list or "none")
+- Anything unexpected
