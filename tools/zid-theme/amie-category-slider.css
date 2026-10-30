@@ -1,0 +1,90 @@
+/* ============================================================
+   15) سكشن الأقسام — صور طولية بتتسحب وعليها اسم القسم (مجموعة صور)
+   ============================================================ */
+section.image-group--component {
+  background: #F3EDE6;
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
+
+/* الصف بيتسحب يمين وشمال بدل الشبكة */
+section.image-group--component > .grid {
+  display: flex !important;
+  gap: 12px !important;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+section.image-group--component > .grid::-webkit-scrollbar {
+  display: none;
+}
+section.image-group--component .banner-item {
+  flex: 0 0 64%;
+  scroll-snap-align: start;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* الصورة طولية 3:4 */
+section.image-group--component .banner__content__media,
+section.image-group--component .banner__content__media a,
+section.image-group--component picture {
+  display: block;
+  aspect-ratio: 3 / 4;
+}
+section.image-group--component .banner-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+}
+
+/* اسم القسم: زرار صغير في نص الصورة تحت */
+section.image-group--component .banner__content {
+  position: absolute !important;
+  inset: auto 0 16px 0 !important;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+section.image-group--component .banner__content > div {
+  padding: 0 !important;
+}
+section.image-group--component .parallax-content,
+section.image-group--component .parallax-item {
+  opacity: 1 !important;
+  transform: none !important;
+}
+section.image-group--component .banner__content .title,
+section.image-group--component .banner__content .description {
+  display: none !important;
+}
+section.image-group--component .links-container {
+  pointer-events: auto;
+  justify-content: center;
+  margin: 0 !important;
+}
+section.image-group--component .links-container aui-button {
+  margin: 0 !important;
+}
+section.image-group--component .links-container aui-button::part(button-contained) {
+  background: #fff !important;
+  color: #28272a !important;
+  border-radius: 6px !important;
+  padding: 9px 16px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,.12);
+  transition: background .25s ease, color .25s ease;
+}
+section.image-group--component .banner-item:hover aui-button::part(button-contained) {
+  background: #5E2E21 !important;
+  color: #fff !important;
+}
+
+@media (min-width: 1024px) {
+  section.image-group--component .banner-item {
+    flex: 0 0 calc((100% - 36px) / 4);
+  }
+}
