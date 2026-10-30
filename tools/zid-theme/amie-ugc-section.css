@@ -124,3 +124,46 @@ section:has(+ section[id^="instgram-slider"]) + section[id^="instgram-slider"] {
   padding-top: 16px !important;
   margin-top: 0 !important;
 }
+
+/* الفيديو اللي في النص كبير والجناب أصغر (موبايل) */
+@media (max-width: 1023px) {
+  section[id^="instgram-slider"] > .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: none !important;
+  }
+  section[id^="instgram-slider"] swiper-slide > div {
+    transition: transform .35s ease;
+  }
+  section[id^="instgram-slider"] swiper-slide:not(.swiper-slide-active) > div {
+    transform: scale(.86);
+  }
+  section[id^="instgram-slider"] a.product-card {
+    transition: opacity .3s ease;
+  }
+  section[id^="instgram-slider"] swiper-slide:not(.swiper-slide-active) a.product-card {
+    opacity: 0;
+  }
+}
+
+/* العنوان والوصف فوق الفيديوهات */
+section:has(+ section[id^="instgram-slider"]) h1,
+section:has(+ section[id^="instgram-slider"]) h2,
+section:has(+ section[id^="instgram-slider"]) h3 {
+  font-size: 24px !important;
+  line-height: 1.4 !important;
+  font-weight: 700 !important;
+  color: #28272a !important;
+  margin-bottom: 6px !important;
+}
+section:has(+ section[id^="instgram-slider"]) p {
+  font-size: 15px !important;
+  line-height: 1.7 !important;
+  font-weight: 400 !important;
+  color: #6b6461 !important;
+}
+@media (min-width: 1024px) {
+  section:has(+ section[id^="instgram-slider"]) h1,
+  section:has(+ section[id^="instgram-slider"]) h2,
+  section:has(+ section[id^="instgram-slider"]) h3 { font-size: 30px !important; }
+}
