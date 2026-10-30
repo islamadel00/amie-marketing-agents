@@ -1,0 +1,53 @@
+PROMPT — Claude Desktop
+Task: paste the new product descriptions (template v2, Arabic + English) into the a'mie Zid store — OLD dashboard (web.zid.sa)
+==========================================================================================================================
+
+Attached to this chat: the folder v2 (or its files) with one Arabic file (.ar.html) and one English file (.en.html) per product,
+plus mapping.csv. The text inside the files is final and approved — paste it EXACTLY as it is. Do not edit, translate,
+shorten, reformat or "fix" anything in the code or the text.
+
+HARD RULES
+- Work ONLY on the products in the table below, in PHASE order. Do not touch any other product.
+- Change ONLY the product description (Arabic tab + English tab). Do not change name, price, images, SEO, categories,
+  options, stock or anything else. Do not rename anything.
+- BACKUP FIRST, for every product, before deleting anything: open "رمز المصدر" (<>), copy the current code of BOTH
+  languages and send it to me in this chat (or save it to a file named backup-<product>-<ar|en>.html). Never skip this.
+- Always paste inside the "رمز المصدر" (<>) window — never into the normal editor view.
+- If anything looks different from these steps, or a save fails, STOP and tell me.
+
+STEPS FOR ONE PRODUCT
+1. Products → open the product (old dashboard, web.zid.sa) → scroll to «وصف المنتج».
+2. Arabic tab (عربي) → click «رمز المصدر» <> → select all the old code and copy it to the backup → delete it.
+3. Open the product's .ar.html file → copy ALL of it → paste into «رمز المصدر» → click «حفظ» in that window.
+4. English tab (EN) → «رمز المصدر» <> → backup the old code → delete → paste ALL of the .en.html file → «حفظ».
+5. Click «حفظ التغييرات» at the bottom of the product page.
+6. CHECK after saving:
+   a) Re-open «رمز المصدر» for Arabic and English: the code must still contain  <details class="amie-acc"  and  <summary .
+      If Zid removed <details>/<summary> (or the style="" attributes), STOP and tell me exactly what changed.
+   b) Look at the product's SEO title (عنوان SEO / تحسين محركات البحث). If it changed after saving, tell me the old and new value
+      (don't fix it yourself).
+7. Report for that product: backup done ✔, AR pasted ✔, EN pasted ✔, saved ✔, <details> kept ✔/✘, SEO title unchanged ✔/✘.
+
+PHASE 1 — ONE product only, then STOP and wait for my OK:
+| Product in Zid (Arabic name) | Product ID                            | Arabic file                     | English file                    |
+|------------------------------|---------------------------------------|---------------------------------|---------------------------------|
+| واكس تصفيف الشعر              | deb9699d-30f1-413b-96b0-9b9fd1ee7c4f  | amie_hair_wax_ar_en.ar.html     | amie_hair_wax_ar_en.en.html     |
+
+PHASE 2 — only after I write "Phase 2 go" (and only the products I confirm in that message):
+| Product in Zid (Arabic name)            | Product ID                            | Arabic file                              | English file                             |
+|-----------------------------------------|---------------------------------------|------------------------------------------|------------------------------------------|
+| كريم اليدين للترطيب                       | 40032c3d-f4bf-40f8-a669-0648ff73e9cf  | amie_hand_cream_ar_en.ar.html            | amie_hand_cream_ar_en.en.html            |
+| كريم القدمين للترطيب العميق                | 7092241d-63fc-4c30-926f-422578067f2e  | amie_foot_cream_bilingual.ar.html        | amie_foot_cream_bilingual.en.html        |
+| مجموعة القدمين و اليدين                   | e4991fa7-102f-4a21-ac36-7b20bf1fb964  | amie_hand_foot_set_ar_en.ar.html         | amie_hand_foot_set_ar_en.en.html         |
+| جلّ لمعة الجسم                            | 23bf12c7-eaca-4f9e-9b39-783befc5f67b  | amie_body_glow_ar_en.ar.html             | amie_body_glow_ar_en.en.html             |
+| مرطب الشفاه بالعسل  (the one at 65 ر.س)   | d1aeadb7-b224-4dab-8bd8-db1acaeae741  | amie_lip_plump_ar_en.ar.html             | amie_lip_plump_ar_en.en.html             |
+| ماسكارا للشعر المتطاير                     | 90b1d926-30e0-48ce-9b5d-5950c7ce5285  | amie_sleek_secret_ar_en.ar.html          | amie_sleek_secret_ar_en.en.html          |
+Note: there are TWO products named «مرطب الشفاه بالعسل». Use only the one at 65 ر.س (ID d1aeadb7…), not the 1130 one.
+
+NOT NOW (waiting for my decision — do not touch):
+- فرشاة الميك اب / فرشاة الجسم  (amie_body_brush_ar_en.*)
+- هايلايتر الجسم مارشميللو  (amie_marshmallow_highlighter_ar_en.*)
+- هايلايتر الجسم تشوكلت  (amie_chocolate_highlighter_single_ar_en.*)
+
+FINAL REPORT (short), per product:
+- Product: … | backup ✔ | AR ✔ | EN ✔ | saved ✔ | <details> kept ✔/✘ | SEO title unchanged ✔/✘ | anything unexpected
