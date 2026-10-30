@@ -91,3 +91,10 @@ section.products-tags + section.products-tags .taged-product-modal-button::part(
   font-size: 10px !important;
   padding: 5px 9px !important;
 }
+
+/* السكشن ده للموبايل بس — يختفي على الكمبيوتر */
+@media (min-width: 1024px) {
+  section.products-tags {
+    display: none !important;
+  }
+}
