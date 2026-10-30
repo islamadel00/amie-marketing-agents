@@ -1,0 +1,91 @@
+/* ============================================================
+   16) صفحة المنتجات والأقسام — كروت المنتجات (شبكة نضيفة + زرار سلة تحت كل منتج)
+   ============================================================ */
+.products-list {
+  --product-card-buttons-border-radius: 8px;
+  row-gap: 28px !important;
+}
+.products-list .product-card {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* الصورة: خلفية بيج + حواف مدورة */
+.products-list .product-card a[class*="product-card-image-background-color"] {
+  background: #EAE2D9 !important;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+/* إخفاء الأزرار اللي فوق الصورة والسلة الصغيرة والعرض السريع */
+.products-list .product-card .product-card-actions,
+.products-list .product-card .bottom-product-card-actions add-to-cart,
+.products-list .product-card .quick-view-btn-wapper {
+  display: none !important;
+}
+
+/* القلب فوق الصورة يمين */
+.products-list .product-card .bottom-product-card-actions {
+  display: flex !important;
+}
+.products-list .product-card .bottom-product-card-actions .wishlist-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 6;
+}
+
+/* الشارة (يباع سريعًا…) شمال عشان ما تركبش على القلب */
+.products-list .product-card .product-labels {
+  right: auto !important;
+  left: 8px;
+  justify-content: flex-end;
+}
+
+/* الاسم والسعر */
+.products-list .product-card .details-warpper {
+  padding-top: 10px !important;
+}
+.products-list .product-card .product-title {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  color: #28272a !important;
+  min-height: 42px;
+}
+.products-list .product-card .product-title a {
+  color: #28272a !important;
+}
+.products-list .product-card .product-price {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: #28272a !important;
+  margin-top: 2px;
+}
+.products-list .product-card .product-rating {
+  margin-top: 4px !important;
+}
+.products-list .product-card .product-rating .text-xs {
+  font-size: 11px !important;
+}
+
+/* زرار "أضف للسلة" بعرض الكارت تحت كل منتج */
+.products-list .product-card .details,
+.products-list .product-card .details-warpper {
+  display: flex !important;
+  flex-direction: column;
+}
+.products-list .product-card .details { flex: 1 1 auto; }
+.products-list .product-card .details-warpper { flex: 1 1 auto; justify-content: flex-start !important; }
+.products-list .product-card .title-price-rating { margin-bottom: 10px; }
+.products-list .product-card .add-to-cart-warpper {
+  display: block !important;
+  margin-top: auto !important;
+}
+.products-list .product-card .add-to-cart-warpper add-to-cart {
+  display: block;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 600;
+}
