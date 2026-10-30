@@ -1,0 +1,20 @@
+/* ============================================================
+   17) خلفية الموقع كله — بيج a'mie بدل الأبيض
+   ============================================================ */
+html,
+body,
+.main-wrapper,
+.main-content {
+  background-color: #F3EDE6 !important;
+}
+header,
+header > div,
+.header-wrapper,
+.sticky-header {
+  background-color: #F3EDE6 !important;
+}
+footer,
+footer > div,
+.footer-wrapper {
+  background-color: #F3EDE6 !important;
+}
