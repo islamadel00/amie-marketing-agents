@@ -4,7 +4,7 @@ Task: build the homepage video section on the a'mie Zid store (amie-sa.com, stor
 
 You are working in the a'mie Zid dashboard through the browser on my computer.
 Goal: replace homepage section 3 (the "ديب تان / الصيف يبدا من ايمي" banner) with a video section:
-4 vertical videos, each linked to its product (the product card shows on the video).
+7 vertical videos, each linked to its product (the product card shows on the video).
 
 HARD RULES
 - Do NOT press "نشر" (Publish) at the end. Stop, take screenshots (mobile + desktop preview) and wait for my OK.
@@ -19,19 +19,18 @@ FILES
 The videos are on my computer in the folder: amie-ugc-videos  (unzip amie-ugc-videos.zip from Downloads if needed)
 All are vertical 9:16, 720x1280 MP4, already edited and compressed. Each has a matching -poster.jpg (cover image).
 
-THE 4 VIDEOS FOR THE SECTION (in this order, right to left):
-| # | File                      | Product to link (exact name in Zid)        | Product ID                            |
-|---|---------------------------|--------------------------------------------|---------------------------------------|
-| 1 | amie-ugc-marshmallow.mp4  | مجموعة هايلايتر الجسم مارشميللو (99 ر.س)   | ba65ad9b-c99d-44de-869d-2f450ae1fb74  |
-| 2 | amie-ugc-hair-set.mp4     | مجموعة الشعر (282 ر.س)                     | fb577395-d0c7-445a-827e-7afe33d3c3f2  |
-| 3 | amie-ugc-tan.mp4          | زيت ديب تان (159 ر.س)                      | d363c1c0-13a8-48b0-b5df-7206d7580a12  |
-| 4 | amie-ugc-lip.mp4          | مرطب الشفاه بالعسل (65 ر.س)                | d1aeadb7-b224-4dab-8bd8-db1acaeae741  |
+THE 7 VIDEOS FOR THE SECTION (upload ALL 7, in this order, right to left):
+| # | File                       | Product to link (exact name in Zid)        | Product ID                            |
+|---|----------------------------|--------------------------------------------|---------------------------------------|
+| 1 | amie-ugc-marshmallow.mp4   | مجموعة هايلايتر الجسم مارشميللو (99 ر.س)   | ba65ad9b-c99d-44de-869d-2f450ae1fb74  |
+| 2 | amie-ugc-hair-set.mp4      | مجموعة الشعر (282 ر.س)                     | fb577395-d0c7-445a-827e-7afe33d3c3f2  |
+| 3 | amie-ugc-tan.mp4           | زيت ديب تان (159 ر.س)                      | d363c1c0-13a8-48b0-b5df-7206d7580a12  |
+| 4 | amie-ugc-lip.mp4           | مرطب الشفاه بالعسل (65 ر.س)                | d1aeadb7-b224-4dab-8bd8-db1acaeae741  |
+| 5 | amie-ugc-hair-wax.mp4      | واكس تصفيف الشعر (129 ر.س)                 | deb9699d-30f1-413b-96b0-9b9fd1ee7c4f  |
+| 6 | amie-ugc-lip-plump.mp4     | مرطب الشفاه بالعسل (65 ر.س)                | d1aeadb7-b224-4dab-8bd8-db1acaeae741  |
+| 7 | amie-ugc-hair-routine.mp4  | مجموعة الشعر (282 ر.س)                     | fb577395-d0c7-445a-827e-7afe33d3c3f2  |
 Note: there are TWO products named "مرطب الشفاه بالعسل". Pick the one at 65 ر.س (NOT the 1130 one).
-
-SPARE VIDEOS (upload only if the section allows more than 4 — otherwise leave them):
-| amie-ugc-lip-plump.mp4    | مرطب الشفاه بالعسل (65 ر.س)  | d1aeadb7-b224-4dab-8bd8-db1acaeae741 |
-| amie-ugc-hair-routine.mp4 | مجموعة الشعر                 | fb577395-d0c7-445a-827e-7afe33d3c3f2 |
-| amie-ugc-hair-wax.mp4     | واكس تصفيف الشعر (129 ر.س)  | deb9699d-30f1-413b-96b0-9b9fd1ee7c4f |
+If the section has a maximum number of items below 7, upload as many as it allows in this order and tell me the limit.
 
 STEPS
 1) Go to: المتجر الإلكتروني ← الثيمات ← الثيم الحالي (الملكي) ← تخصيص (theme editor).
@@ -47,7 +46,7 @@ STEPS
 
 4) Inside that section:
    - Remove the current items only if they are demo/placeholder ones. If they are real videos, tell me before removing.
-   - Add the 4 videos above in order. For each item: upload the MP4, upload the matching -poster.jpg as cover
+   - Add all 7 videos above in order. For each item: upload the MP4, upload the matching -poster.jpg as cover
      (if there's a cover field), and link the product from the table.
    - Settings: slides per view mobile = 1.4, desktop = 4. Section title (if there's a title field):
      "تجاربكم مع ايمي". Leave autoplay ON if there's an option (videos play muted).
@@ -81,7 +80,7 @@ STEPS
 REPORT FORMAT (short):
 - Section 3 hidden: yes/no
 - Video section moved to position: #
-- Videos uploaded + product linked: 1 ✔/✘ … 4 ✔/✘
+- Videos uploaded + product linked: 1 ✔/✘ … 7 ✔/✘
 - Covers uploaded: yes/no/no field
 - CSS backup: <path> — CSS block added: yes/no
 - Waiting for publish approval.
