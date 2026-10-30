@@ -104,8 +104,17 @@ def split_item(it):
     return '', s
 
 
+ACCORDION = True
+
+
 def section(title, inner, lang):
     side = 'right' if lang == 'ar' else 'left'
+    if ACCORDION:
+        # <details>: closed by default; the customer taps the title to open it. Works without JS.
+        return (f'<details class="amie-acc" style="border-bottom:1px solid rgba(94,46,33,.35);padding:4px 0;text-align:{side};">'
+                f'<summary style="list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:17px;color:{C_TEXT};font-weight:700;">'
+                f'<span>{esc(title)}</span><span class="amie-acc-sign" style="font-size:20px;color:{C_ACC};font-weight:400;line-height:1;">+</span></summary>'
+                f'<div style="padding:0 0 18px;">{inner}</div></details>')
     return (f'<div style="padding:26px 0 2px;text-align:{side};">'
             f'<h3 style="font-size:19px;color:{C_TEXT};margin:0 0 4px;font-weight:700;">{esc(title)}</h3>{inner}</div>')
 
@@ -126,7 +135,7 @@ def render(d, lang):
     parts.append('</div>')
     if d.get('subproducts'):
         inner = ''.join(card(i + 1, t, b, lang) for i, (t, b) in enumerate(d['subproducts']))
-        parts.append(section('ماذا تحتوي المجموعة؟' if lang == 'ar' else "What's in the set", inner, lang) if False else f'<div style="padding:16px 0 2px;">{inner}</div>')
+        parts.append(f'<div style="padding:16px 0 10px;">{inner}</div>')
     for h, items in d['sections']:
         low = h.lower()
         plain_ingredients = low in ('المكونات', 'المكونات الرئيسية', 'ingredients', 'highlighted ingredients')

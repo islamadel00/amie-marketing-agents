@@ -1,0 +1,16 @@
+/* ============================================================
+   20) وصف المنتج — الأقسام اللي بتتفتح وتتقفل (+ / —)
+   ============================================================ */
+details.amie-acc > summary::-webkit-details-marker {
+  display: none;
+}
+details.amie-acc > summary::marker {
+  content: "";
+}
+details.amie-acc[open] .amie-acc-sign {
+  font-size: 0 !important;
+}
+details.amie-acc[open] .amie-acc-sign::after {
+  content: "—";
+  font-size: 18px;
+}
