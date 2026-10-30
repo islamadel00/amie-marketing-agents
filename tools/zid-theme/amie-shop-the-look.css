@@ -1,0 +1,92 @@
+/* ============================================================
+   14) سكشن "تسوّقي اللوك" — صورة بنقط المنتجات (Products Tags)
+   ============================================================ */
+section.products-tags {
+  background: #F3EDE6;
+  padding: 0 16px 12px !important;
+}
+section.products-tags .product-tags-warpper {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* النقطة: دايرة غامقة وجواها نقطة بيج — من غير النبض */
+section.products-tags .tag-button .animate-ping {
+  display: none !important;
+}
+section.products-tags .tag-button,
+section.products-tags .tag-button > span {
+  width: 32px !important;
+  height: 32px !important;
+  min-width: 32px;
+  padding: 0 !important;
+}
+section.products-tags .tag-button > span > span.relative {
+  flex-shrink: 0;
+  width: 32px !important;
+  height: 32px !important;
+  background: #28272a !important;
+  border: 2px solid rgba(255,255,255,.9);
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+section.products-tags .tag-button > span > span.relative i {
+  display: none !important;
+}
+section.products-tags .tag-button > span > span.relative::after {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #F3EDE6;
+}
+
+/* زرار "عرض المجموعة": مربع غامق صغير تحت على الشمال */
+section.products-tags .taged-product-modal-button {
+  left: 14px !important;
+  right: auto !important;
+  bottom: 14px !important;
+  transform: none !important;
+}
+section.products-tags .taged-product-modal-button::part(button-contained) {
+  background: #28272a !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-size: 12px !important;
+  padding: 8px 14px !important;
+}
+
+/* كارت المنتج اللي بيفتح لما تدوسي على النقطة */
+section.products-tags [class*="product-tag"] img {
+  border-radius: 10px;
+  background: #EAE2D9;
+}
+
+/* سكشن ٢ و ٣ جنب بعض (صورتين صغيرين تحت الكبيرة) */
+section.products-tags + section.products-tags {
+  float: right;
+  width: 50%;
+  padding-left: 6px !important;
+}
+section.products-tags + section.products-tags + section.products-tags {
+  float: left;
+  padding-left: 16px !important;
+  padding-right: 6px !important;
+}
+section.products-tags + section.products-tags + section.products-tags + * {
+  clear: both;
+}
+section.products-tags + section.products-tags .tag-button,
+section.products-tags + section.products-tags .tag-button > span,
+section.products-tags + section.products-tags .tag-button > span > span.relative {
+  width: 26px !important;
+  height: 26px !important;
+  min-width: 26px;
+}
+section.products-tags + section.products-tags .taged-product-modal-button {
+  left: 10px !important;
+  bottom: 10px !important;
+}
+section.products-tags + section.products-tags .taged-product-modal-button::part(button-contained) {
+  font-size: 10px !important;
+  padding: 5px 9px !important;
+}
