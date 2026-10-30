@@ -94,3 +94,33 @@ section[id^="instgram-slider"] swiper-container {
 section[id^="instgram-slider"] swiper-container::part(container) {
   padding-bottom: 30px;
 }
+
+/* عنوان السكشن (سكشن النص اللي فوق الفيديوهات مباشرة) — في النص وبنفس الخلفية */
+section:has(+ section[id^="instgram-slider"]) {
+  background: #F3EDE6 !important;
+  padding-top: 28px !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  text-align: center !important;
+}
+section:has(+ section[id^="instgram-slider"]) .text-wrapper,
+section:has(+ section[id^="instgram-slider"]) .container > div {
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+section:has(+ section[id^="instgram-slider"]) h1,
+section:has(+ section[id^="instgram-slider"]) h2,
+section:has(+ section[id^="instgram-slider"]) h3,
+section:has(+ section[id^="instgram-slider"]) p {
+  text-align: center !important;
+  color: #28272a;
+  margin-left: auto;
+  margin-right: auto;
+}
+section:has(+ section[id^="instgram-slider"]) + section[id^="instgram-slider"] {
+  padding-top: 16px !important;
+  margin-top: 0 !important;
+}
