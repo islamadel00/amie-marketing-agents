@@ -1,0 +1,70 @@
+/* ============================================================
+   18) سكشن "أحدث المنتجات" — نفس شكل كروت الأكثر مبيعًا
+   ============================================================ */
+/* الكارت من غير إطار */
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .product-card {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* الصورة: خلفية بيج + حواف مدورة */
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] a[class*="product-card-image-background-color"] {
+  background: #EAE2D9 !important;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* إخفاء أزرار الصورة + زرار السلة الكبير + العرض السريع */
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .product-card-actions,
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .add-to-cart-warpper,
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .quick-view-btn-wapper {
+  display: none !important;
+}
+
+/* القلب فوق الصورة يمين */
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .bottom-product-card-actions .wishlist-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 6;
+}
+
+/* الشارة (يباع سريعًا…) شمال عشان ما تركبش على القلب */
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .product-labels {
+  right: auto !important;
+  left: 10px;
+  justify-content: flex-end;
+}
+
+/* القلب والسلة ظاهرين على الكمبيوتر كمان */
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .bottom-product-card-actions {
+  display: flex !important;
+}
+
+/* الاسم والسعر */
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .details-warpper {
+  justify-content: flex-start !important;
+  padding-top: 12px !important;
+}
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .details {
+  padding: 0 2px !important;
+}
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .product-title {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  line-height: 1.5 !important;
+  color: #28272a !important;
+}
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .product-title a {
+  color: #28272a !important;
+}
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .product-price {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #28272a !important;
+  margin-top: 4px;
+}
+section[section-id="823acdb4-9ea7-47ed-bd63-d7fb27902a9c"] .product-rating .text-xs {
+  font-size: 11px !important;
+}
