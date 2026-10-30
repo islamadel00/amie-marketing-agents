@@ -1,0 +1,111 @@
+/* ============================================================
+   11) سكشن الفيديوهات — تجارب العملاء (المنتج فوق الفيديو)
+   ============================================================ */
+section[id^="instgram-slider"] {
+  background: #F3EDE6;
+  padding: 28px 0 20px !important;
+}
+
+/* عنوان السكشن يمين زي الأكثر مبيعًا */
+section[id^="instgram-slider"] > .container::before {
+  content: "تجاربكم مع a'mie";
+  display: block;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #28272a;
+  margin-bottom: 16px;
+}
+
+/* الكارت كله */
+section[id^="instgram-slider"] swiper-slide > div {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* الفيديو طولي 9:16 بحواف مدورة */
+section[id^="instgram-slider"] swiper-slide a.block > div {
+  aspect-ratio: 9 / 16 !important;
+  border-radius: 18px !important;
+}
+section[id^="instgram-slider"] video-player,
+section[id^="instgram-slider"] video-player > div,
+section[id^="instgram-slider"] video {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: auto !important;
+  object-fit: cover;
+  border-radius: 18px !important;
+}
+
+/* تدرّج غامق تحت عشان الكلام الأبيض يبان */
+section[id^="instgram-slider"] swiper-slide a.block > div::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,.6), rgba(0,0,0,0));
+  pointer-events: none;
+  z-index: 15;
+}
+
+/* إخفاء أيقونة الانستجرام اللي بتظهر مع الهوفر */
+section[id^="instgram-slider"] swiper-slide a.block > div > div.absolute {
+  display: none !important;
+}
+
+/* كارت المنتج فوق الفيديو تحت */
+section[id^="instgram-slider"] a.product-card {
+  position: absolute !important;
+  z-index: 20;
+  top: auto !important;
+  right: 10px;
+  left: 10px;
+  bottom: 12px !important;
+  height: auto !important;
+  border: 0 !important;
+  background: transparent !important;
+  padding: 0 !important;
+  gap: 10px !important;
+}
+section[id^="instgram-slider"] a.product-card img {
+  width: 46px !important;
+  height: 46px !important;
+  min-width: 46px !important;
+  border-radius: 10px !important;
+  background: #EAE2D9 !important;
+  object-fit: cover;
+}
+section[id^="instgram-slider"] a.product-card .font-bold {
+  color: #fff !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+section[id^="instgram-slider"] a.product-card .text-gray-500 {
+  color: rgba(255,255,255,.85) !important;
+  font-size: 12px !important;
+}
+section[id^="instgram-slider"] a.product-card add-to-cart {
+  display: none !important;
+}
+
+/* زرار الصوت فوق */
+section[id^="instgram-slider"] .video-controls {
+  top: 10px !important;
+  bottom: auto !important;
+}
+
+/* النقط */
+section[id^="instgram-slider"] swiper-container {
+  --swiper-pagination-color: #5E2E21;
+  --swiper-pagination-bullet-inactive-color: #5E2E21;
+  --swiper-pagination-bullet-inactive-opacity: .25;
+}
+section[id^="instgram-slider"] swiper-container::part(container) {
+  padding-bottom: 30px;
+}
+
+@media (min-width: 1024px) {
+  section[id^="instgram-slider"] > .container::before { font-size: 26px; }
+}
