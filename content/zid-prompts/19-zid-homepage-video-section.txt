@@ -1,0 +1,87 @@
+PROMPT — Claude Desktop
+Task: build the homepage video section on the a'mie Zid store (amie-sa.com, store 187125, theme: الملكي / Royale)
+==========================================================================================
+
+You are working in the a'mie Zid dashboard through the browser on my computer.
+Goal: replace homepage section 3 (the "ديب تان / الصيف يبدا من ايمي" banner) with a video section:
+4 vertical videos, each linked to its product (the product card shows on the video).
+
+HARD RULES
+- Do NOT press "نشر" (Publish) at the end. Stop, take screenshots (mobile + desktop preview) and wait for my OK.
+- Do NOT delete any section. HIDE only.
+- Do NOT rename, edit or delete any product or category.
+- Do NOT touch any other homepage section.
+- Before touching the custom CSS: copy the whole current CSS into a text file on my desktop named
+  amie-css-backup-<date>.txt. Then only ADD to the end. Do not change or remove any existing line.
+- If something doesn't match this prompt (section missing, different names, upload error), stop and tell me. Don't improvise.
+
+FILES
+The videos are on my computer in the folder: amie-ugc-videos  (unzip amie-ugc-videos.zip from Downloads if needed)
+All are vertical 9:16, 720x1280 MP4, already edited and compressed. Each has a matching -poster.jpg (cover image).
+
+THE 4 VIDEOS FOR THE SECTION (in this order, right to left):
+| # | File                      | Product to link (exact name in Zid)        | Product ID                            |
+|---|---------------------------|--------------------------------------------|---------------------------------------|
+| 1 | amie-ugc-marshmallow.mp4  | مجموعة هايلايتر الجسم مارشميللو (99 ر.س)   | ba65ad9b-c99d-44de-869d-2f450ae1fb74  |
+| 2 | amie-ugc-hair-set.mp4     | مجموعة الشعر (282 ر.س)                     | fb577395-d0c7-445a-827e-7afe33d3c3f2  |
+| 3 | amie-ugc-tan.mp4          | زيت ديب تان (159 ر.س)                      | d363c1c0-13a8-48b0-b5df-7206d7580a12  |
+| 4 | amie-ugc-lip.mp4          | مرطب الشفاه بالعسل (65 ر.س)                | d1aeadb7-b224-4dab-8bd8-db1acaeae741  |
+Note: there are TWO products named "مرطب الشفاه بالعسل". Pick the one at 65 ر.س (NOT the 1130 one).
+
+SPARE VIDEOS (upload only if the section allows more than 4 — otherwise leave them):
+| amie-ugc-lip-plump.mp4    | مرطب الشفاه بالعسل (65 ر.س)  | d1aeadb7-b224-4dab-8bd8-db1acaeae741 |
+| amie-ugc-hair-routine.mp4 | مجموعة الشعر                 | fb577395-d0c7-445a-827e-7afe33d3c3f2 |
+| amie-ugc-hair-wax.mp4     | واكس تصفيف الشعر (129 ر.س)  | deb9699d-30f1-413b-96b0-9b9fd1ee7c4f |
+
+STEPS
+1) Go to: المتجر الإلكتروني ← الثيمات ← الثيم الحالي (الملكي) ← تخصيص (theme editor).
+   Make sure you are editing the HOMEPAGE.
+
+2) Find section 3: the media + text banner "ديب تان" / "الصيف يبدا من ايمي"
+   (section-id f548a3fb-d581-41e4-99d9-12c57a4a8566).
+   → Turn it OFF / hide it (eye icon). Do not delete.
+
+3) Find the section "تجارب العملاء على وسائل التواصل الاجتماعي" (it's near the bottom, around #14).
+   → Drag it up so it sits exactly where section 3 was (right after the section above the hidden banner).
+   If moving it is not possible, add a new section of the same type in that spot instead and tell me.
+
+4) Inside that section:
+   - Remove the current items only if they are demo/placeholder ones. If they are real videos, tell me before removing.
+   - Add the 4 videos above in order. For each item: upload the MP4, upload the matching -poster.jpg as cover
+     (if there's a cover field), and link the product from the table.
+   - Settings: slides per view mobile = 1.4, desktop = 4. Section title (if there's a title field):
+     "تجاربكم مع ايمي". Leave autoplay ON if there's an option (videos play muted).
+
+5) Custom CSS: المتجر الإلكتروني ← الثيمات ← ⋮ ← "تعديل التصميم باستخدام CSS".
+   - Take the backup file first (see HARD RULES).
+   - Paste this block at the VERY END, after everything else, then save:
+
+/* 11) سكشن الفيديوهات — تجارب العملاء (المنتج فوق الفيديو) */
+.section-instagram-slider { background: #F3EDE6 !important; padding: 28px 0 !important; }
+.section-instagram-slider swiper-slide > div { position: relative; border-radius: 18px; overflow: hidden; }
+.section-instagram-slider swiper-slide > div > div:first-child { position: relative; aspect-ratio: 9 / 16 !important; border-radius: 18px !important; }
+.section-instagram-slider video-player,
+.section-instagram-slider video-player > div,
+.section-instagram-slider video { width: 100% !important; height: 100% !important; aspect-ratio: auto !important; object-fit: cover; border-radius: 18px !important; }
+.section-instagram-slider swiper-slide > div > div:first-child::after { content: ""; position: absolute; inset: auto 0 0 0; height: 45%; background: linear-gradient(to top, rgba(0,0,0,.55), rgba(0,0,0,0)); pointer-events: none; z-index: 15; }
+.section-instagram-slider a.product-card { position: absolute !important; z-index: 20; top: auto !important; right: 10px; bottom: 12px !important; left: 10px; height: auto !important; border: 0 !important; background: transparent !important; padding: 0 !important; gap: 10px !important; }
+.section-instagram-slider a.product-card img { width: 46px !important; height: 46px !important; min-width: 46px !important; border-radius: 10px !important; background: #EAE2D9 !important; }
+.section-instagram-slider a.product-card .font-bold { color: #fff !important; font-size: 13px !important; font-weight: 600 !important; }
+.section-instagram-slider a.product-card .text-gray-500 { color: rgba(255,255,255,.85) !important; font-size: 12px !important; }
+.section-instagram-slider a.product-card add-to-cart { display: none !important; }
+.section-instagram-slider .video-controls { top: 10px !important; bottom: auto !important; }
+
+6) STOP before publishing. Send me:
+   - Screenshot of the editor section list (showing section 3 hidden + the video section in its place).
+   - Screenshot of the video section in mobile preview and desktop preview.
+   - Path of the CSS backup file.
+   - Any problem you hit (upload size limit, missing cover field, etc.).
+   Note: the editor preview may show old images/cache and the SA market — that's normal.
+
+REPORT FORMAT (short):
+- Section 3 hidden: yes/no
+- Video section moved to position: #
+- Videos uploaded + product linked: 1 ✔/✘ … 4 ✔/✘
+- Covers uploaded: yes/no/no field
+- CSS backup: <path> — CSS block added: yes/no
+- Waiting for publish approval.
