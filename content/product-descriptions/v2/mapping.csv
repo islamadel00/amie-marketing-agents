@@ -1,0 +1,11 @@
+file,product_name_ar_in_zid,product_id,status_in_zid,note
+amie_hair_wax_ar_en,واكس تصفيف الشعر,deb9699d-30f1-413b-96b0-9b9fd1ee7c4f,published,
+amie_hand_cream_ar_en,كريم اليدين للترطيب,40032c3d-f4bf-40f8-a669-0648ff73e9cf,published,size in file 30 مل vs 75 مل in hand&foot set file
+amie_foot_cream_bilingual,كريم القدمين للترطيب العميق,7092241d-63fc-4c30-926f-422578067f2e,published,
+amie_hand_foot_set_ar_en,مجموعة القدمين و اليدين,e4991fa7-102f-4a21-ac36-7b20bf1fb964,published,
+amie_body_glow_ar_en,جلّ لمعة الجسم,23bf12c7-eaca-4f9e-9b39-783befc5f67b,published,AR title in file says كريم لمعة الجسم
+amie_lip_plump_ar_en,مرطب الشفاه بالعسل,d1aeadb7-b224-4dab-8bd8-db1acaeae741,published,(second product 322cd927 has same name)
+amie_sleek_secret_ar_en,ماسكارا للشعر المتطاير,90b1d926-30e0-48ce-9b5d-5950c7ce5285,published,
+amie_body_brush_ar_en,فرشاة الميك اب (?),9a475c36-0581-4b0e-aa85-7b46d04b1e80,published,CONFIRM: glow brush = فرشاة الميك اب not فرشاة الجسم الجافة
+amie_marshmallow_highlighter_ar_en,هايلايتر الجسم مارشميللو,f5d89333-817f-4dbc-a633-d27018921d3a,HIDDEN,file has editorial note: ingredients pending verification
+amie_chocolate_highlighter_single_ar_en,هايلايتر الجسم تشوكلت,f7dbeb34-9c03-40cb-a623-261e1baa92b9,HIDDEN,
