@@ -1,10 +1,13 @@
 /* ============================================================
    15) سكشن الأقسام — صور طولية بتتسحب وعليها اسم القسم (مجموعة صور)
    ============================================================ */
+/* خلفية غامقة زي سكشن "قصتنا" — بعرض الشاشة كلها */
 section.image-group--component {
-  background: #F3EDE6;
-  padding-top: 24px !important;
-  padding-bottom: 24px !important;
+  background: #28272a;
+  box-shadow: 0 0 0 100vmax #28272a;
+  clip-path: inset(0 -100vmax);
+  padding-top: 28px !important;
+  padding-bottom: 28px !important;
 }
 
 /* الصف بيتسحب يمين وشمال بدل الشبكة */
