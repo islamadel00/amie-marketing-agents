@@ -1,0 +1,51 @@
+PROMPT — Claude Desktop
+Task: paste the v4 product descriptions (Arabic + English) into the a'mie Zid store — OLD dashboard (web.zid.sa)
+=================================================================================================================
+
+Attached: amie-descriptions-v4.zip (one .ar.html + one .en.html per product, plus mapping.csv).
+The text is final and approved — paste it EXACTLY as it is. Don't edit, translate, shorten or "fix" anything,
+even if a title in the description differs from the product name in Zid.
+
+HARD RULES (same as last time)
+- Only the products in the table below. Change ONLY «وصف المنتج» (Arabic + English). Don't touch name, price, images,
+  SEO, categories, options, stock, publish state. Don't rename anything.
+- BACKUP FIRST for every product: «رمز المصدر» (<>) → copy the current code of BOTH languages → save it as
+  backups/v3-before-v4/backup-<product>-<ar|en>.html. Never skip this.
+- Always paste inside «رمز المصدر» (<>), never into the normal editor view.
+- Before clicking «حفظ التغييرات»: close the «جرّب واجهة زد الجديدة» popup if it's showing (last time it blocked the save).
+- After saving, re-open the product and check the code still has: <details, <summary, <strong>, margin-right:auto
+  (Arabic) / margin-left:auto (English), and the 1px dividers. Check the SEO title didn't change.
+- If anything fails or looks different, STOP and tell me.
+
+START with product #1 only as a test, report, then continue with the rest without waiting (unless something failed).
+
+| #  | Product in Zid (Arabic name)          | Product ID                            | Files (.ar.html / .en.html)                  | Note                     |
+|----|---------------------------------------|---------------------------------------|----------------------------------------------|--------------------------|
+| 1  | جلّ لمعة الجسم                         | 23bf12c7-eaca-4f9e-9b39-783befc5f67b  | amie_body_glow_ar_en_corrected               | replaces current         |
+| 2  | كريم القدمين للترطيب العميق             | 7092241d-63fc-4c30-926f-422578067f2e  | amie_foot_cream_verified_ar_en               | replaces current         |
+| 3  | كريم اليدين للترطيب                     | 40032c3d-f4bf-40f8-a669-0648ff73e9cf  | amie_hand_cream_verified_ar_en               | replaces current         |
+| 4  | مرطب الشفاه بالعسل (65 ر.س فقط)         | d1aeadb7-b224-4dab-8bd8-db1acaeae741  | amie_lip_plump_corrected_ar_en               | NOT the 1130 one         |
+| 5  | مجموعة الشعر                            | fb577395-d0c7-445a-827e-7afe33d3c3f2  | amie_hair_styling_set_ar_en                  |                          |
+| 6  | فرشاة الجسم الجافة                      | 24f918f9-8a91-4d3b-b7c6-1ed2cef7a515  | amie_dry_body_brush_ar_en                    |                          |
+| 7  | سكراب الجسم اللافندر للبشرة الجافة       | 34a2433a-c243-4e10-9f90-5c9b647a5f9e  | amie_lavender_body_scrub_ar_en_updated       |                          |
+| 8  | زبدة الجسم اللافندر للبشرة الجافة        | a4d42d3b-505e-4d0a-87fb-e9c0749d5bff  | amie_lavender_whipped_body_butter_ar_en      |                          |
+| 9  | مجموعة اللافندر للبشرة الجافة            | 4ddb1426-e764-4cab-aece-058ce2766003  | amie_lavender_body_care_set_ar_en            |                          |
+| 10 | مجموعة الليمون قراس للبشرة الجافة        | d4e7a9a2-752c-44a6-91c3-2acab35ba9b8  | amie_lemongrass_body_care_set_ar_en          |                          |
+| 11 | زيت ديب تان                             | d363c1c0-13a8-48b0-b5df-7206d7580a12  | amie_deep_tan_tanning_oil_ar_en              | NOT «زيت التشميس»        |
+| 12 | جل تان قلتري قولد                       | 68c7f369-6ab7-41aa-8fa0-9b61d74c2d45  | amie_glittery_gold_tanning_gel_ar_en         |                          |
+| 13 | مجموعة الصيف (507 ر.س)                  | 7e27f946-8cab-4a11-8d8c-d8be0ca5fafb  | amie_tanning_set_ar_en                       | NOT the hidden «مجموعة التان» / not «الصيف» 637 |
+| 14 | مجموعة لمعة الجسم (294 ر.س)             | 2fb41526-724d-46f1-8863-3a7b8f3e400b  | amie_complete_glow_set_corrected_ar_en       | NOT «مجموعة جلّ لمعة الجسم» 215 |
+| 15 | مسك ايمي                                | 93a7e970-4adf-4c00-9c4b-40b9234c15cc  | amie_musk_ar_en                              | NOT the 10-piece favors  |
+| 16 | عطر الجسم ناتورا                        | c5129731-4ed7-4019-bf09-7a175b039a47  | amie_natura_body_mist_ar_en                  |                          |
+| 17 | عطر الجسم فلورا                         | 8deabd11-c23c-456f-afd4-4809908948eb  | amie_flora_body_mist_ar_en                   |                          |
+| 18 | مرآة ايمى                               | a3bccdee-4b74-4ef9-bc32-9918950728f2  | amie_pocket_mirror_ar_en                     |                          |
+| 19 | شنطة ايمي بني (69 ر.س)                  | 05327c05-01cb-4473-8e2b-eb7951c39dc1  | amie_tan_bag_ar_en                           | NOT «شنطة ايمي» 49       |
+
+DO NOT TOUCH (waiting for my decision):
+- amie_red_cherry_tan_cream_ar_en (كريم تان رد تشيري)
+- amie_natura_flora_body_mist_set_ar_en (no product yet)
+- amie_chocolate_highlighter_reviewed_ar_en, amie_marshmallow_highlighter_fixed (hidden highlighters)
+- Everything else.
+
+FINAL REPORT, one line per product:
+# | product | backup ✔ | AR ✔ | EN ✔ | saved ✔ | strong/margin/dividers kept ✔/✘ | SEO title unchanged ✔/✘ | notes

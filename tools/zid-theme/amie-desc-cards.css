@@ -1,3 +1,7 @@
-/* 22) كروت الوصف التفصيلي — تبان على الخلفية البيضا */
-.product-description details div[style*="border-radius:16px"]{background:#F3EDE6!important}
-.product-description details div[style*="border-radius:16px"] strong{color:#28272a}
+/* 22) صفحة المنتج — خلفية بيج والكروت البيضا تبان (زي المعاينة) */
+body:has(.product-page),
+body:has(.product-page) .main-wrapper,
+body:has(.product-page) .main-content,
+.product-page,
+.product-page .product-details,
+.product-page .img-and-details--warpper{background-color:#F3EDE6!important}
