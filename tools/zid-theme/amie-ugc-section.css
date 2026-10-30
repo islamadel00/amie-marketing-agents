@@ -6,17 +6,6 @@ section[id^="instgram-slider"] {
   padding: 28px 0 20px !important;
 }
 
-/* عنوان السكشن يمين زي الأكثر مبيعًا */
-section[id^="instgram-slider"] > .container::before {
-  content: "تجاربكم مع a'mie";
-  display: block;
-  font-size: 22px;
-  line-height: 32px;
-  font-weight: 700;
-  color: #28272a;
-  margin-bottom: 16px;
-}
-
 /* الكارت كله */
 section[id^="instgram-slider"] swiper-slide > div {
   position: relative;
@@ -104,8 +93,4 @@ section[id^="instgram-slider"] swiper-container {
 }
 section[id^="instgram-slider"] swiper-container::part(container) {
   padding-bottom: 30px;
-}
-
-@media (min-width: 1024px) {
-  section[id^="instgram-slider"] > .container::before { font-size: 26px; }
 }
