@@ -86,7 +86,7 @@ def num(n, lang):
 
 def card(n, title, body, lang):
     side = 'right' if lang == 'ar' else 'left'
-    t = f'<h4 style="font-size:15.5px;color:{C_TEXT};margin:0;font-weight:700;">{esc(title)}</h4>' if title else ''
+    t = f'<h4 style="font-size:15.5px;color:{C_TEXT};margin:0;"><strong>{esc(title)}</strong></h4>' if title else ''
     bd = f'<p style="margin:{"6px" if title else "0"} 0 0;color:{C_BODY};font-size:13.5px;line-height:1.9;">{esc(body)}</p>' if body else ''
     return (f'<div style="background:#ffffff;border-radius:16px;padding:16px 18px;margin-top:10px;text-align:{side};">'
             f'{t}{bd}</div>')
@@ -110,10 +110,12 @@ def section(title, inner, lang):
     side = 'right' if lang == 'ar' else 'left'
     if ACCORDION:
         # <details>: closed by default; the customer taps the title to open it. Works without JS.
-        return (f'<details class="amie-acc" style="border-bottom:1px solid rgba(94,46,33,.35);padding:4px 0;text-align:{side};">'
-                f'<summary style="list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-size:17px;color:{C_TEXT};font-weight:700;">'
-                f'<span>{esc(title)}</span><span class="amie-acc-sign" style="font-size:20px;color:{C_ACC};font-weight:400;line-height:1;">+</span></summary>'
-                f'<div style="padding:0 0 18px;">{inner}</div></details>')
+        push = 'margin-right:auto' if lang == 'ar' else 'margin-left:auto'
+        return (f'<details class="amie-acc" style="padding:4px 0;text-align:{side};">'
+                f'<summary style="display:flex;padding:16px 0;font-size:17px;color:{C_TEXT};">'
+                f'<strong>{esc(title)}</strong><span class="amie-acc-sign" style="{push};font-size:20px;color:{C_ACC};line-height:1;">+</span></summary>'
+                f'<div style="padding:0 0 18px;">{inner}</div></details>'
+                f'<div style="height:1px;background:rgba(94,46,33,.35);margin:0;"></div>')
     return (f'<div style="padding:26px 0 2px;text-align:{side};">'
             f'<h3 style="font-size:19px;color:{C_TEXT};margin:0 0 4px;font-weight:700;">{esc(title)}</h3>{inner}</div>')
 
@@ -124,14 +126,15 @@ def render(d, lang):
     parts = []
     head = d['title'] or d['name']
     sub = d['name'] if d['title'] else ''
-    parts.append(f'<div style="padding:6px 0 20px;border-bottom:1px solid rgba(94,46,33,.15);text-align:{side};">')
+    parts.append(f'<div style="padding:6px 0 20px;text-align:{side};">')
     if sub:
-        parts.append(f'<p style="margin:0 0 6px;color:{C_ACC};font-size:12px;font-weight:700;letter-spacing:.4px;" dir="ltr">{esc(sub)}</p>')
-    parts.append(f'<h2 style="font-size:23px;line-height:1.35;color:{C_TEXT};margin:0;font-weight:700;">{esc(head)}</h2>')
-    parts.append(f'<p style="font-size:15px;color:{C_TEXT};margin:8px 0 0;font-weight:600;line-height:1.8;">{esc(d["tagline"])}</p>')
+        parts.append(f'<p style="margin:0 0 6px;color:{C_ACC};font-size:12px;"><strong>{esc(sub)}</strong></p>')
+    parts.append(f'<h2 style="font-size:23px;line-height:1.35;color:{C_TEXT};margin:0;"><strong>{esc(head)}</strong></h2>')
+    parts.append(f'<p style="font-size:15px;color:{C_TEXT};margin:8px 0 0;line-height:1.8;"><strong>{esc(d["tagline"])}</strong></p>')
     for p in d['intro']:
         parts.append(f'<p style="margin:10px 0 0;color:{C_BODY};font-size:13.5px;line-height:2;">{esc(p)}</p>')
     parts.append('</div>')
+    parts.append('<div style="height:1px;background:rgba(94,46,33,.15);margin:0;"></div>')
     if d.get('subproducts'):
         inner = ''.join(card(i + 1, t, b, lang) for i, (t, b) in enumerate(d['subproducts']))
         parts.append(f'<div style="padding:16px 0 10px;">{inner}</div>')
@@ -145,16 +148,17 @@ def render(d, lang):
         elif how:
             rows = []
             for k, x in enumerate(items, 1):
-                rows.append(f'<div style="padding:10px 0;border-bottom:1px solid rgba(94,46,33,.12);">'
-                            f'<p style="margin:0;color:{C_BODY};font-size:13.5px;line-height:1.9;">{esc(x)}</p></div>')
+                rows.append(f'<div style="padding:10px 0;">'
+                            f'<p style="margin:0;color:{C_BODY};font-size:13.5px;line-height:1.9;">{esc(x)}</p></div>'
+                            + (f'<div style="height:1px;background:rgba(94,46,33,.12);margin:0;"></div>' if k < len(items) else ''))
             inner = f'<div style="margin-top:6px;">{"".join(rows)}</div>'
         else:
             inner = ''.join(card(k, *split_item(x), lang) for k, x in enumerate(items, 1))
         parts.append(section(h, inner, lang))
     if d['size']:
-        chips = ''.join(f'<span style="display:inline-block;background:{C_SOFT};color:{C_ACC};border-radius:999px;padding:6px 14px;margin:4px;font-size:13px;font-weight:600;">{esc(s)}</span>' for s in d['size'])
+        chips = ''.join(f'<span style="display:inline-block;background:{C_SOFT};color:{C_ACC};border-radius:999px;padding:6px 14px;margin:4px;font-size:13px;"><strong>{esc(s)}</strong></span>' for s in d['size'])
         parts.append(f'<div style="padding:22px 0 8px;text-align:{side};">{chips}</div>')
-    return f'<div dir="{dirn}" style="text-align:{side};max-width:720px;margin:0 auto;color:{C_TEXT};">' + ''.join(parts) + '</div>'
+    return f'<div style="text-align:{side};direction:{dirn};max-width:720px;margin:0 auto;color:{C_TEXT};">' + ''.join(parts) + '</div>'
 
 
 def main(src, out_dir):
