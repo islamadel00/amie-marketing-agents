@@ -1,0 +1,76 @@
+PROMPT — Claude Desktop
+Task: build the "تسوّقي اللوك" (shop the look) area on the a'mie homepage — Zid theme editor, theme الملكي (Royale)
+=====================================================================================================
+
+You are working in the a'mie Zid dashboard theme editor (store 187125), homepage (الصفحة الرئيسية).
+Goal: 3 sections of type «علامات المنتجات», one after the other, placed directly under the video section
+«تجارب العملاء على وسائل التواصل الاجتماعي». Section 1 = one big image, sections 2 and 3 = two small images
+(the custom CSS already lays them out: big on top, two small side by side). Each section = 1 background image
++ product tags (dots) linked to products.
+
+The 3 images are attached to this chat:
+  - amie-look-a-1-vanity.jpg    (1080x1350)  → section 1 (big)
+  - amie-look-a-2-arm.jpg       (1080x1080)  → section 2 (small, right)
+  - amie-look-a-3-lavender.jpg  (1080x1080)  → section 3 (small, left)
+
+HARD RULES
+- Do NOT press "نشر" (Publish). Stop at the end, take screenshots and wait for my OK.
+- Do NOT touch the custom CSS / JS screens. I'll handle the CSS myself.
+- Do NOT delete, hide or edit any other section. Do NOT rename anything.
+- Don't edit any product. You only pick products inside the tags.
+- If a field name or option is different from what's described here, stop and tell me. Don't improvise.
+- Note: there are already unpublished changes in the editor ("توجد تغييرات غير منشورة"). Leave them as they are.
+
+SECTION SETTINGS (same for all 3 sections)
+- صورة الخلفية (كمبيوتر): the section's image.
+- صورة الخلفية (جوال): the SAME image.
+- لون العلامات: white (#ffffff).
+- CTA / button text: «تسوّقي اللوك». If there is a border-radius / rounded option for the image, leave it OFF.
+- Any other setting: leave the default.
+
+TAGS (عناصر «علامات المنتجات») — for each tag: choose the product, then set the position in % for BOTH
+desktop and mobile (same numbers): "top" = من فوق, "left" = من الشمال.
+
+SECTION 1 — image amie-look-a-1-vanity.jpg (big)
+  The editor already has one «علامات المنتجات» section with 1 empty item, at the bottom of the page above the footer.
+  Use THAT section as section 1 (fill it in, don't add a new one for it).
+  | # | Product (exact name in Zid)              | Product ID                            | top | left |
+  |---|------------------------------------------|---------------------------------------|-----|------|
+  | 1 | هايلايتر الجسم تشوكلت (79 ر.س)            | f7dbeb34-9c03-40cb-a623-261e1baa92b9  | 37  | 41   |
+  | 2 | شنطة ايمي (49 ر.س)                        | 9c995e1e-9ea8-452d-8808-bce9c45d85bf  | 81  | 14   |
+  | 3 | عطر الجسم فلورا (129 ر.س)                 | 8deabd11-c23c-456f-afd4-4809908948eb  | 71  | 29   |
+  Note: there are two products named "شنطة ايمي بني" — NOT those. Pick «شنطة ايمي» (49 ر.س).
+
+SECTION 2 — image amie-look-a-2-arm.jpg (small, right)
+  Add a new section: إضافة قسم → «علامات المنتجات».
+  | # | Product                                  | Product ID                            | top | left |
+  |---|------------------------------------------|---------------------------------------|-----|------|
+  | 1 | زيت ديب تان (159 ر.س)                     | d363c1c0-13a8-48b0-b5df-7206d7580a12  | 70  | 38   |
+
+SECTION 3 — image amie-look-a-3-lavender.jpg (small, left)
+  Add a new section: إضافة قسم → «علامات المنتجات».
+  | # | Product                                  | Product ID                            | top | left |
+  |---|------------------------------------------|---------------------------------------|-----|------|
+  | 1 | مجموعة اللافندر للبشرة الجافة (238 ر.س)   | 4ddb1426-e764-4cab-aece-058ce2766003  | 80  | 40   |
+
+ORDER (very important)
+- Drag the 3 sections so they sit DIRECTLY under the video section «تجارب العملاء على وسائل التواصل الاجتماعي»,
+  in the order 1 → 2 → 3, with NO other section between them.
+- If there's an empty «فقرة» (paragraph) section right under the video section, put the 3 sections ABOVE it
+  (right after the videos). Don't delete or hide that paragraph.
+
+CHECK IN THE PREVIEW
+- Each dot sits on (or right next to) its product. If a dot is clearly off, move it by 2–3% and tell me what you changed.
+- Clicking a dot opens the right product card.
+
+STOP — don't publish. Send me:
+- Screenshot of the section list (showing the 3 sections right under the videos).
+- Screenshot of the 3 sections in mobile preview and in desktop preview.
+- Any dot you moved (old → new numbers) and anything unexpected.
+
+REPORT FORMAT (short):
+- Section 1: image ✔/✘, tags 3/3, position under videos ✔/✘
+- Section 2: image ✔/✘, tag 1/1
+- Section 3: image ✔/✘, tag 1/1
+- Dots adjusted: …
+- Waiting for publish approval.
