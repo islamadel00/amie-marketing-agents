@@ -86,11 +86,10 @@ def num(n, lang):
 
 def card(n, title, body, lang):
     side = 'right' if lang == 'ar' else 'left'
-    t = f'<h4 style="font-size:15.5px;color:{C_TEXT};margin:5px 0 0;font-weight:700;">{esc(title)}</h4>' if title else ''
-    bd = f'<p style="margin:{"6px" if title else "5px"} 0 0;color:{C_BODY};font-size:13.5px;line-height:1.9;">{esc(body)}</p>' if body else ''
-    return (f'<div style="display:flex;gap:14px;align-items:flex-start;background:#ffffff;border-radius:16px;padding:16px 18px;margin-top:10px;text-align:{side};">'
-            f'<div style="flex:0 0 34px;width:34px;height:34px;border-radius:50%;background:{C_SOFT};color:{C_ACC};font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;">{num(n, lang)}</div>'
-            f'<div style="flex:1;">{t}{bd}</div></div>')
+    t = f'<h4 style="font-size:15.5px;color:{C_TEXT};margin:0;font-weight:700;">{esc(title)}</h4>' if title else ''
+    bd = f'<p style="margin:{"6px" if title else "0"} 0 0;color:{C_BODY};font-size:13.5px;line-height:1.9;">{esc(body)}</p>' if body else ''
+    return (f'<div style="background:#ffffff;border-radius:16px;padding:16px 18px;margin-top:10px;text-align:{side};">'
+            f'{t}{bd}</div>')
 
 
 def split_item(it):
@@ -146,9 +145,8 @@ def render(d, lang):
         elif how:
             rows = []
             for k, x in enumerate(items, 1):
-                rows.append(f'<div style="display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid rgba(94,46,33,.12);">'
-                            f'<span style="flex:0 0 26px;width:26px;height:26px;border-radius:50%;background:{C_ACC};color:#fff;font-size:12.5px;font-weight:700;display:flex;align-items:center;justify-content:center;">{num(k, lang)}</span>'
-                            f'<p style="margin:2px 0 0;color:{C_BODY};font-size:13.5px;line-height:1.9;">{esc(x)}</p></div>')
+                rows.append(f'<div style="padding:10px 0;border-bottom:1px solid rgba(94,46,33,.12);">'
+                            f'<p style="margin:0;color:{C_BODY};font-size:13.5px;line-height:1.9;">{esc(x)}</p></div>')
             inner = f'<div style="margin-top:6px;">{"".join(rows)}</div>'
         else:
             inner = ''.join(card(k, *split_item(x), lang) for k, x in enumerate(items, 1))
