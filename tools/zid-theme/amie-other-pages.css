@@ -1,0 +1,83 @@
+/* ============================================================
+   19) باقي الصفحات — نفس ستايل الهوم (صفحة المنتج، السلة، المدونة، الصفحات)
+   ============================================================ */
+
+/* ---------- صفحة المنتج ---------- */
+.product-page .product-details {
+  background: transparent !important;
+}
+.product-page .product-details .title {
+  color: #28272a !important;
+  font-weight: 700 !important;
+}
+.product-page .product-formatted-price {
+  color: #28272a !important;
+  font-weight: 700 !important;
+  font-size: 20px !important;
+}
+
+/* عناوين: منتجات شاهدتها / التقييمات / أسئلة المنتج */
+.products-you-have-seen h2,
+.reviews-and-questions-tabs .aui-tab-header h3 {
+  color: #28272a !important;
+}
+.products-you-have-seen h2 {
+  border-bottom-color: #5E2E21 !important;
+}
+.products-you-have-seen > div:first-child {
+  border-color: rgba(94, 46, 33, .15) !important;
+}
+
+/* كروت التقييمات: أبيض بحواف مدورة بدل الرمادي */
+.single-review {
+  background: #fff !important;
+  border-radius: 14px !important;
+}
+
+/* زرار "إضافة تقييم": غامق بحواف مدورة بدل الأسود الحاد */
+.reviews-overveiw aui-button::part(button-contained) {
+  background: #28272a !important;
+  border-radius: 8px !important;
+}
+/* زرار "عرض جميع التقييمات" */
+.rewiews-list aui-button::part(button-outlined) {
+  border-color: #28272a !important;
+  color: #28272a !important;
+  border-radius: 8px !important;
+}
+
+/* صندوق الوصف: من غير خلفية بيضا */
+.product-page aui-show-more > div {
+  background: transparent !important;
+}
+
+/* ---------- السلة ---------- */
+.order-summary {
+  background: #fff !important;
+  border-radius: 14px !important;
+  border-color: rgba(94, 46, 33, .12) !important;
+}
+.order-summary aui-button::part(button-contained),
+.order-summary aui-button::part(button-outlined) {
+  background: #28272a !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+}
+
+/* ---------- المدونة ---------- */
+.blog-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.blog-card .blog-card__body {
+  padding: 16px !important;
+}
+.blog-card h2,
+.blog-card h3 {
+  color: #28272a !important;
+}
+.blog-card .blog-card__body a {
+  color: #5E2E21 !important;
+}
