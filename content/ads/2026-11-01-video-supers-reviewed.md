@@ -23,3 +23,14 @@ Rules from review: no super on giant jar/tube shots; never name the brush; SPF 1
 5. Which brush is in the Body Glow footage — is it sold?
 6. Can "الذهبية" go back into the Body Glow hook (gold shimmer confirmed)?
 7. Arabic name of the Hair Set on Zid.
+
+## Voice-over scripts (amie-writer → amie-reviewer, pending human approval)
+For ElevenLabs TTS: female, Saudi/light Gulf voice, ~14s each. Brand spoken as «إيمي». ق in «قلو/قراس» = Gulf "g" (test the voice). «…» = pause.
+
+1. **Body Glow (25):** وش سر هاللمعة؟ بقول لِك… بودي قلو. كمية صغيرة تكفي جسمك كله، ولمعة فورية على بشرتك مع ريحة فانيليا. لمناسبتك الجاية، اطلبي لمعتك من إيمي.
+1-alt. **Body Glow (24):** إطلالتك جاهزة وناقصها لمعة؟ خلّيها على بودي قلو. كمية صغيرة تكفي جسمك كله، وتعطيك لمعة فورية على بشرتك وريحة فانيليا. اطلبي لمعتك من إيمي.
+2. **Chocolate highlighter set (26):** تمريرة وحدة بس… وشوفي وش يصير. ستيك برونزي بزبدة الشيا والكاكاو، يعطيك لون بارز من أول تمريرة، ولمعة بحبيبات ناعمة. اطلبي مجموعة هايلايتر تشوكلت من إيمي.
+3. **Hair set (28):** شُعيرات تطير طول اليوم؟ السر هنا… واكس ستيك بشمع العسل وزيت اللوز، وماسكارا للشعر تثبّت بتمريرة وحدة بدون قشور. شعر مرتّب بدون حرارة. اطلبي مجموعة الشعر من إيمي.
+4. **Lemongrass butter (25):** جفاف الشتاء بدأ؟ شوفي هالقوام… زبدة مخفوقة خفيفة، تمتص بسرعة وترطّب بعمق بدون ملمس دُهني. فيها الشيا والكاكاو والهيالورونيك. اطلبي زبدة الليمون قراس من إيمي.
+
+Open: should Body Glow be spoken «بودي قلو» or «لمعة الجسم» (match the Zid page name)? Hair Set Arabic name on Zid.
