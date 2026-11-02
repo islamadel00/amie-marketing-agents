@@ -1,0 +1,48 @@
+مهمة: أطلع كل إعلانات سناب شات بتاعة ايمي من 1 مايو 2026 لـ 30 أكتوبر 2026: كل إعلان صرف كام وجاب كام، وكان بيعلن عن أنهي منتج. الهدف إننا نعرف كل منتج اتصرف عليه إعلانات قد إيه.
+
+قواعد صارمة:
+- اقرأ وصدّر بس. ممنوع توقف أو تشغّل أو تعدّل أي إعلان أو حملة أو ميزانية، وممنوع تعمل حملة جديدة، وممنوع تدفع أي حاجة.
+- ماتنسخش بيانات شخصية لعملاء أو أرقام كروت.
+- لو صفحة محتاجة صلاحية أو مش بتفتح، اكتب ده وكمّل.
+
+الفترة: من 2026-05-01 لـ 2026-10-30. سيب الـ Attribution windows زي ما هي في الحساب واكتبها (مثلاً 28-day swipe, 1-day view).
+
+1) الحسابات
+- افتح ads.snapchat.com. من قايمة الحسابات فوق، اكتب كل الـ Organizations والـ Ad Accounts (الاسم + الـ ID + العملة). نعرف منهم: Amie Self Service.
+- اعمل الخطوات من 2 لـ 4 لكل حساب صرف فلوس في الفترة دي.
+
+2) جدول الإعلانات (مستوى Ad)
+- روح على Manage Ads، واختار تبويب Ads (مش Campaigns أو Ad Sets).
+- الفلتر: كل الحالات (Active, Paused, Completed, Deleted لو متاح).
+- Columns > Customize، وخلّي الأعمدة دي:
+  Campaign name, Ad Set name, Ad name, Ad ID, Objective, Status, Start date, End date,
+  Spend, Impressions, Paid Reach, Swipe Ups, Swipe Up Rate, eCPSU,
+  Add Cart, Start Checkout, Purchases, Purchase Value, ROAS, Cost per Purchase.
+- صدّر CSV (Export / Download). سمّيه snap-ads-<اسم الحساب>-total.csv.
+- بعدين من Reports (أو Create Report)، اعمل تقرير على مستوى Ad بنفس الأعمدة، والتقسيم بالشهر (Granularity: Month أو Day لو Month مش موجود)، وصدّره باسم snap-ads-<اسم الحساب>-monthly.csv.
+
+3) الإعلان كان بيعلن عن أنهي منتج
+لكل إعلان صرف أكتر من 0، افتح الإعلان (Preview أو Edit من غير ما تحفظ أي تغيير) واعرف المنتج من:
+  أ) الصورة أو الفيديو (المنتج اللي ظاهر)، ب) الـ Headline والـ Brand name، ج) رابط الـ Attachment / Website URL (لو /products/... يبقى المنتج ده)، د) لو إعلان كتالوج (Dynamic Product Ads / Collection ads): اسم الـ Product set.
+اكتب المنتج بنفس الاسم بالظبط من القايمة دي (أسماء المنتجات في زد):
+  Summer Set | Red Cherry Tanning Cream 200ml | Hair Set | a'mie Hair Wax 30ml | Deep Tan Tanning Oil 150ml | Glow Set | Body Glow | a'mie Into The Glow Collection | Lemongrass Set | Marshmello Body Highlighter Set | Natura Body Mist | Glittery Gold Tanning Gel 120ml | a'musk | Flora Body Mist | Chocolate Body Highlighter Set | Foot Cream | Lemongrass Sea Salt Body Scrub 300ml | Sleek Secret Hair Mascara 15ml | a'mie Marshmello body highlighter | Back to Routine Set | Lemongrass Whipped Body Butter 250ml | Lavender Set | a'mie Chocolate Body Highlighter | Lip Plump Balm 10ml | a'mie Sleek Brush | Makeup brush | Dry body brush | a'mie Bag | a'mie Signature Gift Box | Lavender Butter | Lavender scrub
+لو الإعلان فيه أكتر من منتج: اكتبهم كلهم مفصولين بـ " + ".
+لو إعلان كتالوج لكل المنتجات، أو إعلان للبراند/المتجر من غير منتج معين: اكتب "كتالوج/عام".
+لو مش متأكد: اكتب أقرب تخمين وجنبه "(غير مؤكد)".
+اعمل ملف snap-ad-product-map.csv فيه الأعمدة دي:
+  account, ad_id, ad_name, campaign_name, product, how_identified (صورة / نص / رابط / product set), destination_url, notes
+
+4) إعلانات الكتالوج: الصرف لكل منتج
+- لو فيه إعلانات Dynamic Product Ads أو Collection: شوف في Reports أو في الإعلان نفسه هل فيه تقسيم بالمنتج (By Product / Product ID).
+- لو موجود، صدّر CSV فيه: Product ID, Product name, Spend, Impressions, Swipe Ups, Purchases, Purchase Value. سمّيه snap-catalog-by-product-<اسم الحساب>.csv.
+- لو مش موجود (وده وارد في سناب)، اكتب ده بوضوح، ونحسبها احنا بعدين.
+
+5) ملف الملخص
+اعمل ملف snap-ads-by-product-summary.md فيه:
+- الحسابات اللي اتراجعت، والعملة، والـ Attribution windows.
+- إجمالي الصرف والمشتريات وقيمة المشتريات لكل حساب، وللكل.
+- جدول: المنتج | عدد الإعلانات | الصرف | المشتريات | قيمة المشتريات | ROAS | تكلفة الشراء. صف لكل منتج، وصف "كتالوج/عام"، وصف "غير مؤكد".
+- أعلى 10 إعلانات صرفاً، وأعلى 10 إعلانات ROAS (اللي صرفهم أكتر من 500 من عملة الحساب)، وأسوأ 10 (صرفوا كتير وجابوا قليل).
+- أي ملاحظة: إعلانات محذوفة، حسابات مافيهاش بيانات، شهور فيها الإعلانات وقفت.
+
+حط كل الملفات في فولدر ads-by-product/snap على سطح المكتب. وفي الآخر قولي أسماء الملفات وعدد الصفوف في كل CSV.

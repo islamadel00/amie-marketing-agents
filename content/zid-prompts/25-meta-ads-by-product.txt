@@ -1,0 +1,49 @@
+مهمة: أطلع كل إعلانات ميتا (فيسبوك + إنستجرام) بتاعة ايمي من 1 مايو 2026 لـ 30 أكتوبر 2026: كل إعلان صرف كام وجاب كام، وكان بيعلن عن أنهي منتج. الهدف إننا نعرف كل منتج اتصرف عليه إعلانات قد إيه.
+
+قواعد صارمة:
+- اقرأ وصدّر بس. ممنوع توقف أو تشغّل أو تعدّل أي إعلان أو حملة أو ميزانية، وممنوع تعمل حملة جديدة، وممنوع تدفع أي حاجة.
+- ماتنسخش بيانات شخصية لعملاء أو أرقام كروت.
+- لو صفحة محتاجة صلاحية أو مش بتفتح، اكتب ده وكمّل.
+
+الفترة: من 2026-05-01 لـ 2026-10-30 (Custom date range). سيب الـ Attribution setting زي ما هو في الحساب واكتبه (مثلاً 7-day click, 1-day view).
+
+1) الحسابات
+- افتح adsmanager.facebook.com، وافتح قايمة الحسابات (Ad account switcher).
+- اكتب كل حسابات الإعلانات اللي ظاهرة (الاسم + الـ ID + العملة). نعرف منهم: A'MI 96 (act_1246095824229223)، Ami Ads، A'MI Read-Only.
+- اعمل الخطوات من 2 لـ 4 لكل حساب صرف فلوس في الفترة دي.
+
+2) جدول الإعلانات (مستوى Ad)
+- روح على تبويب Ads (مش Campaigns)، والفلتر: كل الإعلانات حتى الموقوفة والمحذوفة (Delivery: All، وفعّل "Include deleted" لو موجودة).
+- Columns > Customize columns، وخلّي الأعمدة دي بالترتيب:
+  Campaign name, Ad set name, Ad name, Ad ID, Objective, Delivery status, Starts, Ends,
+  Amount spent, Impressions, Reach, Link clicks, CTR (link), CPC (link),
+  Adds to cart, Checkouts initiated, Purchases, Purchases conversion value, Purchase ROAS, Cost per purchase.
+- Breakdown > By Time > Month (عشان يبقى فيه صف لكل إعلان لكل شهر).
+- Reports > Export table data > CSV. سمّيه meta-ads-<اسم الحساب>-monthly.csv.
+- صدّر نفس الجدول تاني من غير Breakdown، وسمّيه meta-ads-<اسم الحساب>-total.csv.
+
+3) الإعلان كان بيعلن عن أنهي منتج
+لكل إعلان صرف أكتر من 0، افتح الإعلان (Edit أو Preview، من غير ما تحفظ أي تغيير) واعرف المنتج من:
+  أ) الصورة أو الفيديو (المنتج اللي ظاهر)، ب) النص والعنوان، ج) رابط الوجهة (Website URL: لو /products/... يبقى المنتج ده)، د) لو إعلان كتالوج (Advantage+ catalog / Dynamic): اسم الـ Product set.
+اكتب المنتج بنفس الاسم بالظبط من القايمة دي (أسماء المنتجات في زد):
+  Summer Set | Red Cherry Tanning Cream 200ml | Hair Set | a'mie Hair Wax 30ml | Deep Tan Tanning Oil 150ml | Glow Set | Body Glow | a'mie Into The Glow Collection | Lemongrass Set | Marshmello Body Highlighter Set | Natura Body Mist | Glittery Gold Tanning Gel 120ml | a'musk | Flora Body Mist | Chocolate Body Highlighter Set | Foot Cream | Lemongrass Sea Salt Body Scrub 300ml | Sleek Secret Hair Mascara 15ml | a'mie Marshmello body highlighter | Back to Routine Set | Lemongrass Whipped Body Butter 250ml | Lavender Set | a'mie Chocolate Body Highlighter | Lip Plump Balm 10ml | a'mie Sleek Brush | Makeup brush | Dry body brush | a'mie Bag | a'mie Signature Gift Box | Lavender Butter | Lavender scrub
+لو الإعلان فيه أكتر من منتج: اكتبهم كلهم مفصولين بـ " + ".
+لو إعلان كتالوج لكل المنتجات، أو إعلان للبراند/المتجر من غير منتج معين: اكتب "كتالوج/عام".
+لو مش متأكد: اكتب أقرب تخمين وجنبه "(غير مؤكد)".
+اعمل ملف meta-ad-product-map.csv فيه الأعمدة دي:
+  account, ad_id, ad_name, campaign_name, product, how_identified (صورة / نص / رابط / product set), destination_url, notes
+
+4) إعلانات الكتالوج: الصرف لكل منتج
+- للإعلانات أو الحملات اللي نوعها كتالوج (Advantage+ catalog ads / Dynamic ads / Catalog sales): ارجع لجدول Ads، واختارهم، وBreakdown > By Dynamic Creative Element أو By Product ID / Product name (حسب المتاح في الحساب).
+- صدّر CSV فيه: Product ID, Product name, Amount spent, Impressions, Link clicks, Purchases, Purchases conversion value. سمّيه meta-catalog-by-product-<اسم الحساب>.csv.
+- لو الـ Breakdown بالمنتج مش متاح، اكتب ده بوضوح، ونحسبها احنا بعدين.
+
+5) ملف الملخص
+اعمل ملف meta-ads-by-product-summary.md فيه:
+- الحسابات اللي اتراجعت، والعملة، والـ Attribution setting.
+- إجمالي الصرف والمشتريات وقيمة المشتريات لكل حساب، وللكل.
+- جدول: المنتج | عدد الإعلانات | الصرف | المشتريات | قيمة المشتريات | ROAS | تكلفة الشراء. صف لكل منتج، وصف "كتالوج/عام"، وصف "غير مؤكد".
+- أعلى 10 إعلانات صرفاً، وأعلى 10 إعلانات ROAS (اللي صرفهم أكتر من 500 من عملة الحساب)، وأسوأ 10 (صرفوا كتير وجابوا قليل).
+- أي ملاحظة: إعلانات محذوفة، حسابات مافيهاش بيانات، شهور فيها الإعلانات وقفت.
+
+حط كل الملفات في فولدر ads-by-product/meta على سطح المكتب. وفي الآخر قولي أسماء الملفات وعدد الصفوف في كل CSV.
