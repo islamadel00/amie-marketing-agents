@@ -1,0 +1,47 @@
+مهمة: أطلع كل إعلانات جوجل بتاعة ايمي من 1 مايو 2026 لـ 30 أكتوبر 2026: كل حملة وكل منتج صرف كام وجاب كام. الهدف إننا نعرف كل منتج اتصرف عليه إعلانات قد إيه. في جوجل، تقرير المنتجات (Products) بيدي الصرف والتحويلات لكل منتج في حملات Shopping و Performance Max، وده أهم جزء.
+
+قواعد صارمة:
+- اقرأ وحمّل بس. ممنوع توقف أو تشغّل أو تعدّل أي حملة أو إعلان أو ميزانية أو كلمة بحث أو Asset group، وممنوع تقبل أي Recommendation، وممنوع تدفع أي حاجة.
+- ممنوع تدوس Edit أو تفتح أي حملة أو إعلان في وضع التعديل. اقرا من الجداول والتقارير بس.
+- ماتغيّرش الأعمدة المحفوظة في الحساب. استخدم Reports > Report editor (تقرير جديد مش بيأثر على الحساب). لو اضطريت تغيّر أعمدة جدول، رجّعها زي ما كانت واكتب إيه اللي اتغير.
+- لو ظهر أي Draft أو "unsaved changes"، اقفل من غير حفظ واكتب ده.
+- لو صفحة محتاجة صلاحية أو مش بتفتح، اكتب ده وكمّل.
+
+الفترة: من 2026-05-01 لـ 2026-10-30. اكتب الـ Attribution model وعمود التحويل اللي بيتحسب (Conversions و Conv. value) زي ما هو في الحساب، واكتب أنهي Conversion actions داخلة فيه (لازم نعرف هل Purchase بس ولا فيه Add to cart أو Page view داخلين).
+
+1) الحسابات
+- افتح ads.google.com، واكتب كل الحسابات الظاهرة (الاسم + Customer ID + العملة + المنطقة الزمنية). نعرف منها: Ami.
+- لو فيه Manager account (MCC)، اكتب الحسابات اللي تحته.
+
+2) تقرير الحملات
+- Report editor > جدول، الأبعاد: Campaign, Campaign type, Month. المقاييس: Cost, Impressions, Clicks, CTR, Avg. CPC, Conversions, Conv. value, Conv. value / cost, Cost / conv.
+- حمّله CSV باسم google-campaigns-monthly.csv، ومن غير Month باسم google-campaigns-total.csv.
+
+3) تقرير المنتجات (Shopping + Performance Max) — أهم جزء
+- Report editor > جدول، الأبعاد: Item ID, Product title, Campaign, Campaign type. المقاييس: Cost, Impressions, Clicks, Conversions, Conv. value, Conv. value / cost.
+  (لو مش لاقي الأبعاد دي في Report editor: من القايمة الشمال Products / Insights & reports > Products، أو جوة الحملة: Products tab.)
+- حمّله CSV باسم google-products-total.csv، ونسخة مقسمة بالشهر باسم google-products-monthly.csv.
+- لو فيه منتجات ظاهرة بالـ Item ID بس من غير اسم، سيبها زي ما هي واكتب كام واحد.
+
+4) حملات البحث (Search) والحملات اللي مش بالمنتج
+- لكل حملة Search أو Demand Gen أو Video: الإعلان بيودي على أنهي صفحة؟ استخدم Report editor بالأبعاد: Campaign, Ad group, Final URL (أو Landing page من Landing pages report)، والمقاييس: Cost, Clicks, Conversions, Conv. value.
+- حمّله باسم google-landing-pages.csv.
+- اعرف المنتج من الرابط: لو /products/... يبقى المنتج ده. مهم: الرابط amie-glow-skincare-set هو "مجموعة الصيف" (Summer Set)، مش Glow Set. لو الرابط صفحة رئيسية أو قسم: "كتالوج/عام". حملات البحث باسم البراند (Brand): "براند".
+- للـ Performance Max: الصرف اللي مش ظاهر في تقرير المنتجات (فرق بين صرف الحملة ومجموع المنتجات) اكتبه كـ "PMax غير منسوب لمنتج".
+
+5) ربط بأسماء زد
+اعمل ملف google-product-map.csv فيه: item_id, product_title, zid_product, how_identified, notes
+واكتب zid_product بنفس الاسم بالظبط من القايمة دي:
+  Summer Set | Red Cherry Tanning Cream 200ml | Hair Set | a'mie Hair Wax 30ml | Deep Tan Tanning Oil 150ml | Glow Set | Body Glow | a'mie Into The Glow Collection | Lemongrass Set | Marshmello Body Highlighter Set | Natura Body Mist | Glittery Gold Tanning Gel 120ml | a'musk | Flora Body Mist | Chocolate Body Highlighter Set | Foot Cream | Lemongrass Sea Salt Body Scrub 300ml | Sleek Secret Hair Mascara 15ml | a'mie Marshmello body highlighter | Back to Routine Set | Lemongrass Whipped Body Butter 250ml | Lavender Set | a'mie Chocolate Body Highlighter | Lip Plump Balm 10ml | a'mie Sleek Brush | Makeup brush | Dry body brush | a'mie Bag | a'mie Signature Gift Box | Lavender Butter | Lavender scrub
+لو مش متأكد: أقرب تخمين وجنبه "(غير مؤكد)".
+
+6) ملف الملخص
+اعمل ملف google-ads-by-product-summary.md فيه:
+- الحسابات، والعملة، والـ Attribution، وأنهي Conversion actions داخلة في الأرقام.
+- إجمالي الصرف والتحويلات وقيمتها، وتأكيد إن مجموع الشهور = الإجمالي = رقم لوحة جوجل للفترة.
+- جدول حسب نوع الحملة: PMax | Shopping | Search | غيره.
+- جدول حسب المنتج: المنتج | الصرف | التحويلات | القيمة | ROAS. وصف "كتالوج/عام"، وصف "براند"، وصف "PMax غير منسوب لمنتج"، وصف "غير مؤكد".
+- أعلى 10 منتجات صرفاً، وأسوأ 10 (صرفوا كتير وجابوا قليل).
+- أي ملاحظة، وأي حاجة اتغيرت في الحساب.
+
+لو مش قادر تحفظ الملفات على سطح المكتب في فولدر ads-by-product/google، ارفعهم هنا في المحادثة. وفي الآخر قولي أسماء الملفات وعدد الصفوف في كل CSV.
