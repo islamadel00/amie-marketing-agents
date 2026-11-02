@@ -1,0 +1,5 @@
+﻿campaign,campaign_type,cost_sar,impressions,clicks,ctr_pct,avg_cpc_sar,conversions,conv_value_sar,conv_value_per_cost,cost_per_conv_sar
+ACQ-Sales-P.max,Performance Max,11693.06,238244,8396,3.52,1.39,331.28,100128.04,8.56,35.3
+ACQ-Sales-Shopping,Shopping,3701.86,176528,1016,0.58,3.64,86.72,23399.93,6.32,42.69
+ACQ-Search-Brand,Search,195.23,105,35,33.33,5.58,1.0,143.0,0.73,195.23
+Ami - P.MAx,Performance Max,0,0,0,,,0,0,,

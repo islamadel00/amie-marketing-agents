@@ -1,0 +1,25 @@
+﻿month,campaign,campaign_type,cost_sar,impressions,clicks,ctr_pct,avg_cpc_sar,conversions,conv_value_sar,conv_value_per_cost,cost_per_conv_sar
+2026-05,ACQ-Sales-P.max,Performance Max,0,0,0,,,0,0,,
+2026-06,ACQ-Sales-P.max,Performance Max,0,0,0,,,0,0,,
+2026-07,ACQ-Sales-P.max,Performance Max,0,0,0,,,0,0,,
+2026-08,ACQ-Sales-P.max,Performance Max,2117.83,89335,3448,3.86,0.61,63.36,19235.87,9.08,33.43
+2026-09,ACQ-Sales-P.max,Performance Max,3689.3,68845,2944,4.28,1.25,122.0,37031.34,10.04,30.24
+2026-10,ACQ-Sales-P.max,Performance Max,5885.93,80064,2004,2.5,2.94,145.92,43860.83,7.45,40.34
+2026-05,ACQ-Sales-Shopping,Shopping,0,0,0,,,0,0,,
+2026-06,ACQ-Sales-Shopping,Shopping,0,0,0,,,0,0,,
+2026-07,ACQ-Sales-Shopping,Shopping,0,0,0,,,0,0,,
+2026-08,ACQ-Sales-Shopping,Shopping,787.06,40814,170,0.42,4.63,13.64,3833.2,4.87,57.7
+2026-09,ACQ-Sales-Shopping,Shopping,1448.16,64944,424,0.65,3.42,50.0,13709.33,9.47,28.96
+2026-10,ACQ-Sales-Shopping,Shopping,1466.64,70770,422,0.6,3.48,23.08,5857.4,3.99,63.55
+2026-05,ACQ-Search-Brand,Search,0,0,0,,,0,0,,
+2026-06,ACQ-Search-Brand,Search,0,0,0,,,0,0,,
+2026-07,ACQ-Search-Brand,Search,0,0,0,,,0,0,,
+2026-08,ACQ-Search-Brand,Search,195.23,105,35,33.33,5.58,1.0,143.0,0.73,195.23
+2026-09,ACQ-Search-Brand,Search,0,0,0,,,0,0,,
+2026-10,ACQ-Search-Brand,Search,0,0,0,,,0,0,,
+2026-05,Ami - P.MAx,Performance Max,0,0,0,,,0,0,,
+2026-06,Ami - P.MAx,Performance Max,0,0,0,,,0,0,,
+2026-07,Ami - P.MAx,Performance Max,0,0,0,,,0,0,,
+2026-08,Ami - P.MAx,Performance Max,0,0,0,,,0,0,,
+2026-09,Ami - P.MAx,Performance Max,0,0,0,,,0,0,,
+2026-10,Ami - P.MAx,Performance Max,0,0,0,,,0,0,,
