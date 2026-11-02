@@ -1,0 +1,101 @@
+﻿Month,Campaign name,Ad set name,Ad name,Ad ID,Objective,Ad delivery,Starts,Ends,Amount spent (USD),Impressions,Reach,Link clicks,CTR (link click-through rate),CPC (cost per link click) (USD),Adds to cart,Checkouts initiated,Purchases,Purchases conversion value,Purchase ROAS (return on ad spend),Cost per purchase (USD)
+2026-10,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-07,6918413965279,Sales,not_delivering,2026-06-12,Ongoing,578.28,48920,36828,950,1.941946,0.608716,212,90,39,3336.91,5.770405,14.827692
+2026-10,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-02,6913413691879,Sales,inactive,2026-06-12,Ongoing,17.74,1841,1580,16,0.869093,1.10875,13,4,,,,
+2026-10,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-08,6917585898079,Sales,inactive,2026-06-12,Ongoing,19.51,1809,1630,15,0.829187,1.300667,,,,,,
+2026-10,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-01–NDV-PDP,6916985707079,Sales,inactive,2026-08-08,Ongoing,0,0,0,,,,3,1,1,266.93,,0
+2026-10,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,2,6880665370879,Sales,inactive,2026-06-12,Ongoing,6.59,583,526,1,0.171527,6.59,,,,,,
+2026-10,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,Singleimage-21–NDV-PDP,6916464097879,Sales,inactive,2026-08-08,Ongoing,556.15,43490,20835,317,0.728903,1.754416,78,58,23,1978.66,3.557781,24.180435
+2026-10,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingleImage-ND-04-PDP,6915722869079,Sales,inactive,2026-08-08,Ongoing,65.47,4739,2888,45,0.949567,1.454889,22,13,4,339.31,5.182679,16.3675
+2026-10,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-ND-03-PDP,6915693541679,Sales,inactive,2026-08-17,Ongoing,197.73,21780,13069,166,0.762167,1.191145,44,33,8,503.13,2.54453,24.71625
+2026-10,ACQ-Sales-Catalog,Cold-Female-Broad-All products,Carousel Ad,6809724209279,Sales,not_delivering,2026-02-21,Ongoing,599.35,51968,20645,504,0.969828,1.189187,181,93,32,2302.1,3.840994,18.729688
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-ND-01-PDP,6915689858079,Sales,inactive,2026-08-17,Ongoing,54.32,2746,1709,51,1.857247,1.065098,49,35,4,261.76,4.818851,13.58
+2026-09,Retention-Conversion-Sales,VC-14D,SingleImage-04 – Copy,6918472745479,Sales,not_delivering,2026-09-17,Ongoing,1.63,122,104,3,2.459016,0.543333,2,5,1,56.97,34.95092,1.63
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-ND-02-PDP,6915665001079,Sales,inactive,2026-08-17,Ongoing,22.55,1385,1169,23,1.66065,0.980435,20,16,1,82.45,3.656319,22.55
+2026-09,Retention-Conversion-Sales,VC-14D,SingleImage-07 – Copy,6918472745279,Sales,not_delivering,2026-09-17,Ongoing,2.37,136,112,,,,1,,,,,
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-05-PLP –Edited,6915661257679,Sales,inactive,2026-08-17,Ongoing,1.48,117,108,,,,,,,,,
+2026-09,Retention-Conversion-Sales,VC-14D,SingleImage-06 – Copy,6918472745079,Sales,not_delivering,2026-09-17,Ongoing,1.14,82,60,1,1.219512,1.14,,,,,,
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-22,6914276805479,Sales,inactive,2026-08-08,Ongoing,21.6,1124,909,8,0.711744,2.7,6,6,1,65.69,3.041204,21.6
+2026-09,Retention-Conversion-Sales,VC-14D,SingleImage-05 – Copy,6918472744879,Sales,not_delivering,2026-09-17,Ongoing,8.1,388,270,5,1.28866,1.62,2,3,,,,
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-05-PLP,6911496920279,Sales,inactive,2026-08-17,Ongoing,8.7,410,329,6,1.463415,1.45,,,1,48.35,5.557471,8.7
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-21,6914276279279,Sales,inactive,2026-08-08,Ongoing,177.66,8306,4379,100,1.203949,1.7766,159,76,20,1860.24,10.470787,8.883
+2026-09,Retention-Conversion-Sales,ATC-30D,SingleImage-07,6918470973279,Sales,not_delivering,2026-09-17,Ongoing,3.67,109,78,3,2.752294,1.223333,,,,,,
+2026-09,ACQ-Sales-Catalog,Cold-Female-Broad-Top CVR Products,Carousel Ad,6913438158479,Sales,not_delivering,2026-08-25,Ongoing,84.91,4494,2376,65,1.446373,1.306308,49,37,9,723.26,8.51796,9.434444
+2026-09,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-07,6918413965279,Sales,not_delivering,2026-06-12,Ongoing,52.79,4540,4033,59,1.299559,0.894746,33,14,3,261.35,4.950748,17.596667
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-11-PDP,6913417917679,Sales,inactive,2026-08-17,Ongoing,116.19,8999,6404,111,1.23347,1.046757,88,72,16,1284.02,11.051037,7.261875
+2026-09,Retention-Conversion-Sales,VC-14D,SingleImage-04,6917768543079,Sales,inactive,2026-09-17,Ongoing,8.87,598,357,10,1.672241,0.887,3,,,,,
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-12-PDP,6913417136679,Sales,inactive,2026-08-17,Ongoing,5.38,284,234,3,1.056338,1.793333,1,2,,,,
+2026-09,Retention-Conversion-Sales,VC-14D,SingleImage-05,6917768542679,Sales,inactive,2026-09-17,Ongoing,6.8,498,295,6,1.204819,1.133333,4,,,,,
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-04-PLP,6913415468679,Sales,inactive,2026-08-17,Ongoing,1.67,88,74,1,1.136364,1.67,2,,,,,
+2026-09,Retention-Conversion-Sales,VC-14D,SingleImage-06,6917768542079,Sales,inactive,2026-09-17,Ongoing,23.13,1800,773,10,0.555556,2.313,10,6,2,157.9,6.826632,11.565
+2026-09,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-02,6913413691879,Sales,inactive,2026-06-12,Ongoing,561.76,37758,19797,372,0.985222,1.510108,323,207,71,5180.6,9.222088,7.912113
+2026-09,Retention-Conversion-Sales,ATC-30D,SingleImage-04,6917768115279,Sales,not_delivering,2026-09-17,Ongoing,12.58,408,184,5,1.22549,2.516,4,1,,,,
+2026-09,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-05,6913413525879,Sales,inactive,2026-06-12,Ongoing,10.61,456,377,8,1.754386,1.32625,10,10,,,,
+2026-09,Retention-Conversion-Sales,ATC-30D,SingleImage-05,6917768115079,Sales,not_delivering,2026-09-17,Ongoing,3.38,129,76,,,,,,,,,
+2026-09,Retention-Conversion-Sales,ATC-30D,SingleImage-06,6917768114879,Sales,not_delivering,2026-09-17,Ongoing,22.07,781,239,12,1.536492,1.839167,10,6,1,29.83,1.351609,22.07
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-03,6909361710279,Sales,inactive,2026-08-08,Ongoing,30.05,1088,754,13,1.194853,2.311538,16,10,4,386.2,12.851913,7.5125
+2026-09,Retention-Conversion-Sales,"Past Buyers - 28,800<>33,900",SingleImage-06,6917701941879,Sales,not_delivering,2026-08-25,Ongoing,23.4,1467,1008,23,1.567825,1.017391,18,7,,,,
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-01,6909361709879,Sales,inactive,2026-08-08,Ongoing,7.46,223,173,1,0.44843,7.46,4,1,1,117.52,15.753351,7.46
+2026-09,Retention-Conversion-Sales,"Past Buyers - 28,800<>33,900",SingleImage-05,6917701543279,Sales,not_delivering,2026-08-25,Ongoing,0.71,72,59,,,,,,,,,
+2026-09,Retention-Conversion-Sales,"Past Buyers - 28,800<>33,900",SingleImage-04,6917699234279,Sales,not_delivering,2026-08-25,Ongoing,6.58,389,337,4,1.028278,1.645,11,10,1,102.26,15.541033,6.58
+2026-09,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-09,6917598140479,Sales,inactive,2026-06-12,Ongoing,1.92,122,107,1,0.819672,1.92,,,,,,
+2026-09,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-08,6917585898079,Sales,inactive,2026-06-12,Ongoing,56.1,2829,1562,17,0.600919,3.3,31,22,4,304.7,5.431373,14.025
+2026-09,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad-Aur,SingleVideo-07,6917291386079,Sales,not_delivering,2026-09-15,Ongoing,124.18,10784,9024,162,1.502226,0.766543,66,40,13,774.56,6.237397,9.552308
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,Singleimage-03-NDV-PDP,6916986149679,Sales,inactive,2026-08-08,Ongoing,44.69,3027,2213,38,1.255368,1.176053,36,11,3,196.14,4.388901,14.896667
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-01–NDV-PDP,6916985707079,Sales,inactive,2026-08-08,Ongoing,166.95,9900,5414,106,1.070707,1.575,112,61,21,1647.07,9.865648,7.95
+2026-09,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,2,6880665370879,Sales,inactive,2026-06-12,Ongoing,45.92,2687,1939,22,0.818757,2.087273,13,10,6,338.54,7.372387,7.653333
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,Singleimage-21–NDV-PDP,6916464097879,Sales,inactive,2026-08-08,Ongoing,277.47,17511,8114,218,1.244932,1.272798,167,90,30,2450.56,8.831802,9.249
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingleImage-ND-04-PDP,6915722869079,Sales,inactive,2026-08-08,Ongoing,68.31,3735,2388,49,1.311914,1.394082,45,28,10,597.9,8.752745,6.831
+2026-09,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-ND-03-PDP,6915693541679,Sales,inactive,2026-08-17,Ongoing,334.06,25693,13241,256,0.99638,1.304922,270,113,35,2410.13,7.214662,9.544571
+2026-09,ACQ-Sales-Catalog,Cold-Female-Broad-All products,Carousel Ad,6809724209279,Sales,not_delivering,2026-02-21,Ongoing,570.35,37927,11218,484,1.276136,1.178409,406,205,79,5377.38,9.428211,7.21962
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,Single Image-09-PDP,6911499925679,Sales,inactive,2026-08-17,Ongoing,4.98,343,290,2,0.58309,2.49,,,,,,
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,Single Image-08-PLP,6911499542879,Sales,inactive,2026-08-17,Ongoing,30.86,1796,966,17,0.946548,1.815294,9,7,1,136.67,4.42871,30.86
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,Single Image-07-PLP,6911499281679,Sales,inactive,2026-08-17,Ongoing,2.48,174,154,,,,,,,,,
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,Single Image-06,6911497944679,Sales,inactive,2026-08-17,Ongoing,1.93,119,106,1,0.840336,1.93,,,,,,
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-22,6914276805479,Sales,inactive,2026-08-08,Ongoing,3.55,248,210,4,1.612903,0.8875,,,,,,
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-05-PLP,6911496920279,Sales,inactive,2026-08-17,Ongoing,40.75,2597,1682,29,1.116673,1.405172,12,7,1,117.5,2.883436,40.75
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-21,6914276279279,Sales,inactive,2026-08-08,Ongoing,12.12,888,713,12,1.351351,1.01,5,,1,136.66,11.275578,12.12
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-18/45-Broad,SingleVideo-06,6910006855879,Sales,inactive,2026-08-11,Ongoing,6.99,337,292,2,0.593472,3.495,2,2,,,,
+2026-08,ACQ-Sales-Catalog,Cold-Female-Broad-Top CVR Products,Carousel Ad,6913438158479,Sales,not_delivering,2026-08-25,Ongoing,31.08,1644,950,17,1.034063,1.828235,7,5,1,51.01,1.641248,31.08
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-18/45-Broad,SingleVideo-05,6909860801679,Sales,inactive,2026-08-11,Ongoing,144.86,8249,4445,67,0.81222,2.16209,47,32,15,1298.5,8.963827,9.657333
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-11-PDP,6913417917679,Sales,inactive,2026-08-17,Ongoing,71.47,5852,3842,69,1.179084,1.035797,37,21,7,539.88,7.553939,10.21
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-18/45-Broad,SingleVideo-04,6909860645279,Sales,inactive,2026-08-11,Ongoing,40.71,3502,3140,41,1.17076,0.992927,21,11,2,330.23,8.111766,20.355
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-12-PDP,6913417136679,Sales,inactive,2026-08-17,Ongoing,10.02,580,497,7,1.206897,1.431429,10,2,,,,
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-18/45-Broad,SingleVideo-03,6909860208879,Sales,inactive,2026-08-11,Ongoing,57.47,4547,3783,60,1.319551,0.957833,24,7,2,159.24,2.770837,28.735
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,SingleImage-04-PLP,6913415468679,Sales,inactive,2026-08-17,Ongoing,2.2,99,88,2,2.020202,1.1,3,1,,,,
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-18/45-Broad,SingleVideo-02,6909852973879,Sales,inactive,2026-08-11,Ongoing,23.67,2084,1558,17,0.815739,1.392353,8,7,3,228.29,9.644698,7.89
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-02,6913413691879,Sales,inactive,2026-06-12,Ongoing,52.77,3931,2540,35,0.890359,1.507714,34,10,5,241.31,4.572863,10.554
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,2,6909361710879,Sales,inactive,2026-08-08,Ongoing,0.4,31,30,,,,,,,,,
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingleVideo-05,6913413525879,Sales,inactive,2026-06-12,Ongoing,27.67,1471,1011,16,1.087695,1.729375,12,4,,,,
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-02,6909361710679,Sales,inactive,2026-08-08,Ongoing,249.18,17345,8874,183,1.055059,1.361639,96,69,26,2608.34,10.467694,9.583846
+2026-08,Retention-Conversion-Sales,"Past Buyers - 28,800<>33,900",SingleImage-03,6913392094879,Sales,inactive,2026-08-25,Ongoing,4.45,339,278,4,1.179941,1.1125,3,1,,,,
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-03,6909361710279,Sales,inactive,2026-08-08,Ongoing,99.82,6182,4104,69,1.116144,1.446667,40,35,9,1164.13,11.662292,11.091111
+2026-08,Retention-Conversion-Sales,"Past Buyers - 28,800<>33,900",SingleImage-02,6913391701079,Sales,inactive,2026-08-25,Ongoing,10.87,788,565,6,0.761421,1.811667,1,,,,,
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-01,6909361709879,Sales,inactive,2026-08-08,Ongoing,75.95,4610,3379,48,1.041215,1.582292,17,10,3,302.29,3.980119,25.316667
+2026-08,Retention-Conversion-Sales,"Past Buyers - 28,800<>33,900",SingleImage-01,6913377099879,Sales,inactive,2026-08-25,Ongoing,6.4,366,336,4,1.092896,1.6,,1,,,,
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Summer Set,SingelImage-04,6909361709479,Sales,inactive,2026-08-08,Ongoing,41.28,2816,1791,31,1.100852,1.331613,21,11,5,546.31,13.234254,8.256
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#3,Single Image-20-PDP,6913189951479,Sales,not_delivering,2026-08-24,Ongoing,2.85,230,206,2,0.869565,1.425,9,,,,,
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingelImage-04,6909355413679,Sales,inactive,2026-06-12,Ongoing,46.96,2869,1884,41,1.429069,1.145366,23,14,4,194.18,4.135009,11.74
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#3,Single Image-19-PLP,6913175352079,Sales,not_delivering,2026-08-24,Ongoing,5.27,383,346,4,1.044386,1.3175,7,2,1,27.98,5.309298,5.27
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingelImage-03,6909355292479,Sales,inactive,2026-06-12,Ongoing,18.39,1210,988,11,0.909091,1.671818,10,4,1,137.99,7.503535,18.39
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#2 – Copy,Single Image-18-PDP,6913135242279,Sales,not_delivering,2026-08-24,Ongoing,5.16,295,263,1,0.338983,5.16,,,,,,
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingelImage-02,6909354972479,Sales,inactive,2026-06-12,Ongoing,30.2,2134,1716,19,0.890347,1.589474,9,12,1,37.92,1.255629,30.2
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#2 – Copy,Single Image-17-PDP,6913135097879,Sales,not_delivering,2026-08-24,Ongoing,3.75,286,277,1,0.34965,3.75,,,,,,
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,SingelImage-01,6909354251279,Sales,inactive,2026-06-12,Ongoing,43.43,2335,1634,23,0.985011,1.888261,19,7,3,149.18,3.434953,14.476667
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#2 – Copy,Single Image-16-PDP,6913134918479,Sales,not_delivering,2026-08-24,Ongoing,2.36,193,169,,,,,,,,,
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#2 – Copy,Single Image-15-PDP,6913133386879,Sales,not_delivering,2026-08-24,Ongoing,1.96,162,149,2,1.234568,0.98,,1,,,,
+2026-08,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,2,6880665370879,Sales,inactive,2026-06-12,Ongoing,330.97,26617,15229,132,0.495924,2.507348,175,110,35,2964.05,8.955646,9.456286
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#2,Single Image-14-PDP,6913132483079,Sales,inactive,2026-08-24,Ongoing,0.9,62,56,,,,,,,,,
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#2,Single Image-13-PDP,6913132374079,Sales,inactive,2026-08-24,Ongoing,4.04,261,229,2,0.766284,2.02,,,,,,
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#2,SingleImage-12-PDP,6913132273079,Sales,inactive,2026-08-24,Ongoing,2.64,173,159,2,1.156069,1.32,,,,,,
+2026-08,ACQ-Sales-Conversion–Testing,SingleImage-Cold-(cosmetics)-Female-18/45-#2,SingleImage-11-PDP,6913131622279,Sales,inactive,2026-08-24,Ongoing,3.53,333,310,3,0.900901,1.176667,,,,,,
+2026-08,ACQ-Sales-Catalog,Cold-Female-Broad-All products,Carousel Ad,6809724209279,Sales,not_delivering,2026-02-21,Ongoing,575.03,42526,11808,685,1.610779,0.83946,301,203,54,4787.3,8.325305,10.648704
+2026-08,ACQ-Sales-Conversion,SingleImage-Cold-(cosmetics)-Female-18/45-Hair Set,Multiple Images-10-PDP,6911751540279,Sales,inactive,2026-08-17,Ongoing,18.22,1068,753,4,0.374532,4.555,1,,,,,
+2026-07,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,2,6880665370879,Sales,inactive,2026-06-12,Ongoing,1246.65,80108,35088,561,0.700305,2.222193,731,428,161,16669.88,13.37174,7.743168
+2026-07,ACQ-Sales-Catalog,Cold-Female-Broad-All products,Carousel Ad,6809724209279,Sales,not_delivering,2026-02-21,Ongoing,1311.95,89470,20498,1511,1.688834,0.868266,943,513,198,18045.2,13.754488,6.62601
+2026-06,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,3,6880665371079,Sales,inactive,2026-06-12,Ongoing,184.36,13022,10814,104,0.798648,1.772692,32,17,3,451.81,2.450694,61.453333
+2026-06,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,2,6880665370879,Sales,inactive,2026-06-12,Ongoing,409.72,30242,16161,198,0.654719,2.069293,172,77,27,2990.62,7.29918,15.174815
+2026-06,ACQ-Sales-Conversion,SingleVideo-Cold-Female-Broad,1,6880655396079,Sales,inactive,2026-06-12,Ongoing,258.41,23777,18149,90,0.378517,2.871222,32,19,6,633.21,2.450408,43.068333
+2026-06,ACQ-Sales-Catalog,Cold-Female-Broad-All products,Carousel Ad,6809724209279,Sales,not_delivering,2026-02-21,Ongoing,2532.53,420488,137219,3179,0.756026,0.796644,1353,719,251,27323.84,10.789148,10.089761
+2026-05,Sales 2 Vids 20/4,New Sales Ad Set,2,6841565335679,Sales,not_delivering,2026-04-20,Ongoing,91.19,7605,5553,97,1.275477,0.940103,17,14,1,127.12,1.394013,91.19
+2026-05,Sales 2 Vids 20/4,New Sales Ad Set,1,6841564563079,Sales,not_delivering,2026-04-20,Ongoing,110.71,8770,6707,84,0.957811,1.317976,35,27,2,203.47,1.837865,55.355
+2026-05,ACQ-Sales-Catalog,Cold-Female-Broad-All products,Carousel Ad,6809724209279,Sales,not_delivering,2026-02-21,Ongoing,1652.57,120401,38436,2246,1.865433,0.735784,968,568,174,18804.92,11.379197,9.497529
