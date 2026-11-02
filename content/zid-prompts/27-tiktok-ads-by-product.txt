@@ -1,0 +1,59 @@
+مهمة: أطلع كل إعلانات تيك توك بتاعة ايمي من 1 مايو 2026 لـ 30 أكتوبر 2026: كل إعلان صرف كام وجاب كام، وكان بيعلن عن أنهي منتج. الهدف إننا نعرف كل منتج اتصرف عليه إعلانات قد إيه.
+
+قواعد صارمة:
+- اقرأ وصدّر بس. ممنوع توقف أو تشغّل أو تعدّل أي إعلان أو حملة أو ميزانية، وممنوع تعمل حملة جديدة، وممنوع تدفع أي حاجة.
+- ممنوع تدوس Edit على أي إعلان أو مجموعة أو حملة، حتى لو عشان تقرا الرابط. استخدم بس Preview، أو "View details"، أو صفحة الإعلان اللي بتتفتح من غير وضع تعديل. (في ميتا، فتح المحرر عمل مسودة لوحده، فمش عايزين ده يتكرر.)
+- لو ظهرت أي مسودة (Draft) أو رسالة "unsaved changes"، اقفل الصفحة من غير حفظ، واكتب ده في الملخص، وكمّل من غير ما تفتح إعلانات تانية بالطريقة دي.
+- ماتغيّرش الأعمدة المحفوظة في الحساب (Custom columns) ولا تحفظ preset جديد. لو لازم تغيّر الأعمدة، رجّعها زي ما كانت في الآخر، واكتب إيه اللي اتغير.
+- ماتنسخش بيانات شخصية لعملاء أو أرقام كروت.
+- لو صفحة محتاجة صلاحية أو مش بتفتح، اكتب ده وكمّل.
+
+الفترة: من 2026-05-01 لـ 2026-10-30. سيب الـ Attribution زي ما هو في الحساب واكتبه (مثلاً 7-day click, 1-day view).
+
+1) الحسابات
+- افتح ads.tiktok.com، ومن قايمة الحسابات اكتب كل حسابات الإعلانات (الاسم + الـ ID + العملة + المنطقة الزمنية). نعرف منهم: A'mi0618 و Ami TikTok Ads.
+- اعمل الخطوات من 2 لـ 4 لكل حساب صرف فلوس في الفترة دي.
+- لو الحساب فيه حملات GMV Max أو TikTok Shop، اكتب ده لوحده.
+
+2) جدول الإعلانات (مستوى Ad)
+- روح على Campaign > تبويب Ads (مش Campaigns أو Ad groups)، وخلّي الفلتر يعرض كل الحالات (Active, Inactive, Not delivering, Deleted لو متاح).
+- الأعمدة اللي محتاجينها:
+  Campaign name, Ad group name, Ad name, Ad ID, Objective, Status, Start time, End time,
+  Cost, Impressions, Reach, Clicks (destination), CTR (destination), CPC (destination),
+  Video views at 2 seconds, Video views at 6 seconds, Average play time per video view,
+  Add to cart, Initiate checkout, Complete payment (Purchases), Total complete payment value (Purchase value), Complete payment ROAS, Cost per complete payment.
+  أسهل طريقة من غير ما تلمس أعمدة الحساب: Reporting > Create report (Custom report)، ومستوى البيانات Ad، والأبعاد: Ad ID + Ad name + Campaign name + Ad group name، والمقاييس اللي فوق.
+- صدّر التقرير ده مرتين:
+  أ) من غير تقسيم زمني، باسم tiktok-ads-<اسم الحساب>-total.csv
+  ب) مقسّم بالشهر (أو باليوم لو الشهر مش متاح)، باسم tiktok-ads-<اسم الحساب>-monthly.csv
+
+3) الإعلان كان بيعلن عن أنهي منتج
+لكل إعلان صرف أكتر من 0، اعرف المنتج من (بالترتيب):
+  أ) رابط الوجهة (Destination URL / Landing page) من Preview أو من تقرير فيه بُعد الـ URL لو متاح: لو /products/... يبقى المنتج ده،
+  ب) الفيديو نفسه (المنتج اللي ظاهر) ونص الإعلان (Ad text)،
+  ج) لو Spark Ad من حساب مؤثرة: اسم الحساب، وأي كود خصم مكتوب في الفيديو أو النص (مثلاً RGD20)،
+  د) لو إعلان كتالوج (Catalog / Video Shopping Ads): اسم الـ Product set.
+مهم: الرابط amie-glow-skincare-set هو "مجموعة الصيف" (Summer Set)، مش Glow Set.
+اكتب المنتج بنفس الاسم بالظبط من القايمة دي (أسماء المنتجات في زد):
+  Summer Set | Red Cherry Tanning Cream 200ml | Hair Set | a'mie Hair Wax 30ml | Deep Tan Tanning Oil 150ml | Glow Set | Body Glow | a'mie Into The Glow Collection | Lemongrass Set | Marshmello Body Highlighter Set | Natura Body Mist | Glittery Gold Tanning Gel 120ml | a'musk | Flora Body Mist | Chocolate Body Highlighter Set | Foot Cream | Lemongrass Sea Salt Body Scrub 300ml | Sleek Secret Hair Mascara 15ml | a'mie Marshmello body highlighter | Back to Routine Set | Lemongrass Whipped Body Butter 250ml | Lavender Set | a'mie Chocolate Body Highlighter | Lip Plump Balm 10ml | a'mie Sleek Brush | Makeup brush | Dry body brush | a'mie Bag | a'mie Signature Gift Box | Lavender Butter | Lavender scrub
+لو الإعلان فيه أكتر من منتج: اكتبهم كلهم مفصولين بـ " + ".
+لو إعلان كتالوج لكل المنتجات، أو إعلان للبراند/المتجر من غير منتج معين: اكتب "كتالوج/عام".
+لو مش متأكد: اكتب أقرب تخمين وجنبه "(غير مؤكد)".
+اعمل ملف tiktok-ad-product-map.csv فيه الأعمدة دي:
+  account, ad_id, ad_name, campaign_name, product, how_identified (رابط / فيديو / نص / كود مؤثرة / product set), destination_url, creator_or_code, notes
+
+4) إعلانات الكتالوج: الصرف لكل منتج
+- لو فيه Catalog ads أو Video Shopping Ads: شوف في Reporting هل فيه بُعد Product / SKU / Product ID.
+- لو موجود، صدّر CSV فيه: Product ID, Product name, Cost, Impressions, Clicks, Purchases, Purchase value. سمّيه tiktok-catalog-by-product-<اسم الحساب>.csv.
+- لو مش موجود، اكتب ده بوضوح.
+
+5) ملف الملخص
+اعمل ملف tiktok-ads-by-product-summary.md فيه:
+- الحسابات اللي اتراجعت، والعملة، والـ Attribution.
+- إجمالي الصرف والمشتريات وقيمة المشتريات لكل حساب، وللكل، وتأكيد إن مجموع الشهور = الإجمالي = رقم لوحة تيك توك للفترة.
+- جدول: المنتج | عدد الإعلانات | الصرف | المشتريات | قيمة المشتريات | ROAS | تكلفة الشراء. صف لكل منتج، وصف "كتالوج/عام"، وصف "غير مؤكد".
+- جدول إعلانات المؤثرين (Spark Ads): اسم الحساب أو الكود | المنتج | الصرف | المشتريات.
+- أعلى 10 إعلانات صرفاً، وأعلى 10 ROAS (اللي صرفهم أكتر من 500 من عملة الحساب)، وأسوأ 10.
+- أي ملاحظة: إعلانات محذوفة، حسابات مافيهاش بيانات، شهور الإعلانات وقفت فيها، وأي حاجة اتغيرت في الحساب.
+
+حط كل الملفات في فولدر ads-by-product/tiktok على سطح المكتب، ولو مش قادر تحفظ هناك، ارفعهم هنا في المحادثة. وفي الآخر قولي أسماء الملفات وعدد الصفوف في كل CSV.
