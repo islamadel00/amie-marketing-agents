@@ -1,0 +1,59 @@
+مهمة: أطلع من جوجل أناليتكس (GA4) بتاع ايمي، من 1 يوليو 2026 لـ 30 أكتوبر 2026: كل قناة وكل حملة وكل منتج جاب كام زيارة وكام شراء وكام إيراد. الهدف إننا نقارن أرقام GA4 بأرقام منصات الإعلانات (اللي بتحسب نفس الطلب أكتر من مرة)، ونعرف كل منتج جاب كام فعلاً من كل قناة.
+
+قواعد صارمة:
+- اقرأ وصدّر بس. ممنوع تغيّر أي إعداد في الحساب أو الـ Property أو الـ Data stream، أو الأحداث (Events)، أو الـ Conversions/Key events، أو الـ Audiences، أو الربط مع Google Ads، أو الصلاحيات.
+- ممنوع تقبل أي اقتراح أو "Recommendation"، وممنوع تفعّل أي ميزة جديدة.
+- مسموح تعمل Exploration جديد (Explore > Blank) عشان تطلع الجداول، لإنه مش بيغيّر أي داتا. سمّيه "Claude export – لا تحذف" عشان نعرفه. ماتعدّلش أي Exploration أو Report موجود قبل كده.
+- لو صفحة محتاجة صلاحية أو مش بتفتح، اكتب ده وكمّل.
+
+الحساب: analytics.google.com، الـ Property رقم 471311593 (لو ظاهر بأكتر من property، اكتب أساميهم وأرقامهم، واشتغل على اللي فيه amie-sa.com).
+الفترة: 2026-07-01 لـ 2026-10-30. المنطقة الزمنية والعملة زي ما هي في الـ Property، واكتبهم.
+
+0) قبل ما تبدأ
+- Admin > Property details: اكتب المنطقة الزمنية والعملة.
+- Admin > Data display > Events / Key events: اكتب أنهي أحداث معلّمة Key event (لازم نعرف هل purchase بس).
+- Admin > Attribution settings: اكتب الـ Reporting attribution model (مثلاً Data-driven أو Last click) ونافذة الـ lookback.
+- اكتب هل في Data thresholds ظاهرة (أيقونة مثلث برتقالي جنب التقرير) لإنها بتخبّي أرقام صغيرة.
+
+1) القنوات
+Exploration > Free form:
+- الأبعاد: Session default channel group، Session source / medium، Month.
+- المقاييس: Sessions، Engaged sessions، Ecommerce purchases (أو Transactions)، Purchase revenue، Session key event rate.
+- صدّر CSV مرتين:
+  أ) Session default channel group + Session source / medium (من غير الشهر) باسم ga4-channels-total.csv
+  ب) نفس الجدول ومعاه Month باسم ga4-channels-monthly.csv
+
+2) الحملات (UTM)
+Free form جديد (أو تبويب جديد في نفس الـ Exploration):
+- الأبعاد: Session campaign، Session source / medium، Session manual ad content (لو موجود)، Month.
+- المقاييس: Sessions، Ecommerce purchases، Purchase revenue.
+- صدّر باسم ga4-campaigns-monthly.csv، ونسخة من غير Month باسم ga4-campaigns-total.csv.
+- اكتب في الملخص أي حملات اسمها فيه أكواد مؤثرات أو "influencer".
+
+3) المنتجات حسب القناة (أهم جزء)
+Free form جديد:
+- الأبعاد: Item name، Item ID، Session default channel group. (لو Session default channel group مش متاح مع أبعاد المنتج، استخدم First user default channel group، واكتب إنك استخدمته.)
+- المقاييس: Items purchased، Item revenue.
+- صدّر باسم ga4-items-by-channel.csv.
+- وجدول تاني بالمنتج بس (Item name + Item ID) ومعاه Items purchased، Item revenue، Items viewed، Items added to cart، باسم ga4-items-total.csv.
+- لو في منتجات ظاهرة بأسماء مختلفة لنفس المنتج، سيبهم زي ما هم.
+
+4) صفحات الدخول
+Reports > Engagement > Landing page (أو Free form بالبعد Landing page + query string):
+- المقاييس: Sessions، Ecommerce purchases، Purchase revenue، Session key event rate.
+- أعلى 100 صفحة بالزيارات، صدّرهم باسم ga4-landing-pages.csv.
+
+5) المطابقة
+- Reports > Monetization > Ecommerce purchases (أو Overview): اكتب إجمالي المشتريات والإيراد للفترة، وتأكد إنه = مجموع ملف القنوات. لو في فرق، اكتبه.
+- اكتب إجمالي كل شهر (يوليو، أغسطس، سبتمبر، أكتوبر لحد 30).
+
+6) ملف الملخص
+اعمل ملف ga4-summary.md فيه:
+- الـ Property، المنطقة الزمنية، العملة، الـ Attribution model، والـ Key events.
+- إجمالي الزيارات والمشتريات والإيراد للفترة ولكل شهر.
+- جدول القنوات: القناة | الزيارات | المشتريات | الإيراد | نسبة التحويل. ومعاه أعلى 15 source / medium.
+- جدول المنتجات: أعلى 20 منتج بالإيراد، ولكل واحد: الإيراد من Paid Social، Paid Search/Shopping/Cross-network، Organic، Direct، Referral، وغيرهم.
+- أي ملاحظة: Data thresholds، "(not set)" كبير، حملات من غير UTM، أو أي حاجة غريبة.
+- اكتب في الآخر أي حاجة اتغيرت في الحساب (المفروض مفيش غير الـ Exploration الجديد).
+
+لو مش قادر تحفظ الملفات على سطح المكتب في فولدر ads-by-product/ga4، ارفعهم هنا في المحادثة. وفي الآخر قولي أسماء الملفات وعدد الصفوف في كل CSV.
