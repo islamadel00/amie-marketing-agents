@@ -1,0 +1,69 @@
+مهمة: أطلع من Google Keyword Planner (جوه حساب Google Ads بتاع ايمي) حجم البحث الشهري في السعودية لكل فئة من منتجاتنا، عشان نعرف حجم الطلب ونستخدمه في دراسة حجم السوق.
+
+قواعد صارمة:
+- اقرأ وصدّر بس. ممنوع تعمل أو تعدّل أو تشغّل أي حملة أو إعلان أو ميزانية، وممنوع تضيف كلمات لأي حملة أو Plan، وممنوع تقبل أي Recommendation، وممنوع تدفع أي حاجة.
+- Keyword Planner ممكن يقترح "Create campaign" أو "Add to plan": ماتدوسش عليهم.
+- لو صفحة محتاجة صلاحية أو مش بتفتح، اكتب ده وكمّل.
+
+الحساب: ads.google.com، حساب Ami (229-408-0317). روح Tools > Planning > Keyword Planner > Get search volume and forecasts.
+الإعدادات: Location = Saudi Arabia، Language = Arabic and English (اعمل مرتين لو لازم)، Search network = Google، الفترة = آخر 12 شهر (نوفمبر 2025 – أكتوبر 2026).
+
+الكلمات (حطهم كلهم، سطر لكل كلمة):
+تان
+كريم تان
+زيت تان
+زيت تسمير
+كريم تسمير
+منتجات تان
+جل تان
+self tan
+tanning oil
+tan cream
+لمعة جسم
+لمعه جسم
+لمعة الجسم
+بودي جلو
+body glow
+هايلايتر الجسم
+هايلايتر جسم
+body highlighter
+زيت لمعة
+واكس شعر
+واكس للشعر
+واكس الشعر
+hair wax
+hair wax stick
+ماسكارا الشعر
+ماسكارا للشعر المتطاير
+فرشاة سليك
+زبدة الجسم
+زبدة جسم
+مقشر الجسم
+سكراب الجسم
+body butter
+body scrub
+كريم القدمين
+كريم اليدين
+مرطب شفايف
+مرطب شفاه
+lip balm
+عطر جسم
+بودي مست
+body mist
+مسك
+توزيعات
+توزيعات عيد
+بوكس هدايا
+
+المطلوب:
+1) جدول "Search volume and forecasts" أو "Historical metrics": لكل كلمة Avg. monthly searches، Three month change، YoY change، Competition، Top of page bid (low range)، Top of page bid (high range). صدّره CSV باسم keyword-planner-ksa-volumes.csv.
+2) لو متاح، البحث الشهري لكل كلمة (Monthly searches لكل شهر من الـ 12) عشان نشوف الموسم: صدّره باسم keyword-planner-ksa-monthly.csv.
+3) من "Discover new keywords" ادخل الكلمات دي واحدة واحدة: "زيت تان"، "لمعة جسم"، "واكس شعر"، "زبدة الجسم"، "عطر جسم"، وصدّر أعلى 50 كلمة مقترحة لكل واحدة (الكلمة + Avg. monthly searches + Competition) في ملف keyword-planner-ksa-ideas.csv فيه عمود للكلمة الأصلية.
+
+ملف ملخص keyword-planner-summary.md فيه:
+- الإعدادات اللي استخدمتها (الموقع، اللغة، الفترة)، وهل الأرقام نطاقات (مثلاً 1K–10K) ولا أرقام دقيقة. (Keyword Planner بيدي نطاقات لو الحساب صرفه قليل: اكتب ده بوضوح.)
+- مجموع البحث الشهري لكل فئة: التان، اللمعة/الهايلايتر، الشعر، العناية بالجسم، العطور، التوزيعات/الهدايا.
+- أعلى 10 كلمات بحثاً، وأكتر الشهور بحثاً لكل فئة.
+- أي حاجة اتغيرت في الحساب (المفروض مفيش).
+
+لو مش قادر تحفظ على سطح المكتب، ارفع الملفات هنا في المحادثة. وفي الآخر قولي أسماء الملفات وعدد الصفوف.
