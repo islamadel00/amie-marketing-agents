@@ -52,7 +52,7 @@ agenda = [('01', 'الملخص التنفيذي', 'Executive Summary'), ('02', '
           ('03', 'القنوات والمنتجات: الفلوس راحت فين', 'Channels & Products'), ('04', 'حجم السوق السعودي لكل فئة', 'Market Size'),
           ('05', 'موقع a\'mie في السوق والمنافسين', 'Positioning'), ('06', 'التسعير: نطاق السعر لكل منتج', 'Pricing'),
           ('07', 'الخصومات: إمتى، وقد إيه، وعلى إيه', 'Discounts'), ('08', 'فين نصرف: نوفمبر – فبراير', 'Media Plan'),
-          ('09', 'خطة التنفيذ وحدود البيانات', 'Roadmap'), ('10', 'الونرز: صيف وشتا، ومين قابل يبقى ونر', 'Winners')]
+          ('09', 'خطة التنفيذ وحدود البيانات', 'Roadmap'), ('10', 'الونرز: صيف وشتا، ومين قابل يبقى ونر', 'Winners'), ('11', 'ملحق: أسعار المنافسين بالمصادر', 'Appendix')]
 rows = ''.join(f'<div class="tr"><span class="tn">{n}</span><span class="tar">{a}</span><span class="tdots"></span><span class="ten">{e}</span></div>' for n, a, e in agenda)
 pages.append(f'<section class="page">{HDR}<div class="body"><div class="tocwrap"><div class="pen big">AGENDA</div>{rows}</div></div><div class="ftr"><span>amie-sa.com</span><span>02</span></div></section>')
 
@@ -203,6 +203,7 @@ slide('09', 'DATA NOTES · 2/2', 'حدود البيانات', '''<div class="col
 <p class="note">المصادر: زد · Snapchat Ads · Meta Ads · TikTok Ads · Google Ads · GA4 · Search Console · صفحات المنافسين (سيفورا، نهدي، واتسونز، كارفور، نون، أمازون، سلة، زد، تيك توك) · الهيئة العامة للإحصاء · IMARC · TechSci · ECDB.</p></div></div>''')
 
 exec(open(os.path.join(HERE, 'deck_winners.py'), encoding='utf-8').read())
+exec(open(os.path.join(HERE, 'deck_appendix.py'), encoding='utf-8').read())
 
 # ---------- end ----------
 pages.append('''<section class="page cover end"><img class="cimg" src="a/cover_full.jpg"><div class="ctitle"><div class="cen">THANK YOU</div><div class="cline"></div><p>«الجمال لا يُصنع... بل يُعتنى به حتى يتجلّى»</p><img src="a/logo_dark.png" class="lgend"></div>
@@ -267,6 +268,7 @@ table.t tr.cat td{{background:#F2E4DF;color:#5E2E21;font-weight:500;font-size:11
 table.heat td.hc{{text-align:center;font-family:Montserrat;font-size:11px;padding:1px 4px;border-bottom:2px solid #fff}}
 table.heat td{{padding:1px 8px}} table.heat th{{text-align:center}} table.heat td.pi{{width:30px}} table.heat .th{{width:22px;height:22px}}
 table.cand td.mk{{text-align:center;color:#5E2E21;font-size:16px}} table.cand th{{white-space:normal;text-align:center}}
+table.mpt td{{padding:11px 12px;font-size:13.5px}} table.ap{{font-size:10.5px;line-height:1.35}} table.ap td{{padding:2px 7px}} table.ap th{{padding:4px 7px}} table.ap tr.me td{{background:#F2E4DF;color:#5E2E21;font-weight:500}} table.ap td.src{{font-size:10px;color:#6B595C}} table.ap .ix{{white-space:nowrap;font-size:10px}}
 table.cand small.d{{display:block;font-size:10.5px;color:#6B595C}} table.cand .th{{width:40px;height:40px}} table.cand td{{padding:3px 8px}} table.heat{{font-size:11px}} table.heat .ix{{white-space:nowrap;font-size:10px;padding:0 6px}} table.heat td:nth-child(2){{white-space:nowrap}} table.heat .th{{width:28px;height:28px}} table.heat td.hc{{padding:4px 2px}} table.heat th{{padding:5px 3px}}
 .rr{{display:grid;grid-template-columns:70px 1fr 70px;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #F0EFEE}}
 .rn{{font-size:13px;font-weight:400}}.rb{{display:flex;flex-direction:column;gap:5px}}.rb .ht{{height:14px}}
