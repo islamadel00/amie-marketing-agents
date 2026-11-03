@@ -1,0 +1,96 @@
+مهمة: نتأكد من أسعار منافسي ايمي في السعودية من الصفحات الحقيقية. عندنا قايمة فيها 70 منتج منافس، أسعارها جت من ملخصات بحث جوجل وماحدش فتح الصفحات. افتح كل صفحة بالمتصفح واكتب السعر الحقيقي النهارده.
+
+قواعد صارمة:
+- اقرأ بس. ممنوع تشتري أو تضيف للسلة أو تسجل دخول أو تعمل حساب أو تشترك في نشرة.
+- لو الموقع طلب اختيار مدينة، اختار الرياض. لو طلب كوكيز، اقبل الضروري بس.
+- لو الرابط مش شغال أو بيودي لنسخة تجريبية (زي nahdi-sirius-dev)، دوّر على نفس المنتج في الموقع الرسمي (مثلاً nahdionline.com) واستخدم الرابط الجديد.
+- ماتخمنش. لو السعر مش ظاهر، اكتب MISSING.
+
+لكل منتج اكتب:
+- السعر العادي، وسعر العرض لو فيه (والسعر المشطوب)
+- الحجم الحقيقي (مل أو جم) زي ما هو مكتوب على الصفحة
+- متوفر ولا نفد
+- عدد التقييمات ومتوسط التقييم لو ظاهرين
+- الرابط اللي فتحته فعلاً، وتاريخ النهارده
+- هل السعر اتطابق مع اللي في القايمة؟ (نعم / لأ، والفرق)
+
+بعد القايمة، دوّر بنفسك على نون (noon.com/saudi-ar) وأمازون السعودية (amazon.sa) وسيفورا السعودية ونهدي والدواء ووايتس، على الكلمات دي، واكتب أعلى 5 منتجات ظاهرة لكل كلمة (البراند، المنتج، الحجم، السعر، عدد التقييمات، الرابط):
+زيت تان، كريم تان، بودي جلو / زيت لمعة الجسم، هايلايتر الجسم، واكس شعر ستيك، ماسكارا الشعر المتطاير، زبدة الجسم، سكراب الجسم، كريم القدمين، بودي مست.
+
+القايمة:
+1. [tan] Carrot Sun — Carrot Sun Oil Gold — 200 ml — سعر لقيناه: 161 (عرض: 113) — Nahdi — https://fix-nw-0000-performance.nahdi-sirius-dev.pages.dev/en-sa/carrot-sun-oil-gold-200-ml/pdp/100953706
+2. [tan] Carrot Sun — Carrot Sun Sun Tan Oil Papaya — 200 ml — سعر لقيناه: 161 (عرض: 80.95) — Nahdi — https://www.nahdionline.com/en-sa/carrot-sun-sun-tan-oil-papaya-200-ml/pdp/100321135
+3. [tan] Carrot Sun — Carrot Spray — 200 ml — سعر لقيناه: 114 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/253622389-carrot-spray.md
+4. [tan] Carrot Sun — Tanning Accelerator — 350 ml — سعر لقيناه: 154 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/546668843-carrot-sun-tanning-accelerator-350ml.md
+5. [tan] Carrot Sun — Tropical Fruit Tanning Cream — 350 g — سعر لقيناه: MISSING (عرض: MISSING) — Dar Al Amirat — https://daralamirat.com.sa/en/carrot-sun-tropical-fruit-tanning-cream-350g/p1058841105
+6. [tan] Beesline — Suntan Oil Gold — 200 ml — سعر لقيناه: 184 (عرض: -) — Chefaa KSA; Lemon.sa — https://lemon.sa/بيزلين-زيت-للإسمرار-بالذهب-200-مل
+7. [tan] Beesline — Suntan Oil Deep Tan with Carrot — 200 ml — سعر لقيناه: 83.95 (عرض: -) — Chefaa KSA — https://chefaa.com/sa-ar/nowProduct/beeslin-suntan-oil-6016-ay6i
+8. [tan] Beesline — Brown Tan Dry Feel Oil — 150 ml — سعر لقيناه: 76.30 (عرض: -) — Faces KSA — https://faces.sa/en/p/beesline-brown-tan-dry-feel-oil-508016574902.html
+9. [tan] Mia — Brown Tan Dry Feel Tanning Oil — 150 ml — سعر لقيناه: 65 (عرض: -) — Carrefour KSA — https://www.carrefourksa.com/mafsau/ar/body-oil/mia-browntan-dry-feel-oil-150ml/p/754140
+10. [tan] Bondi Sands — Self Tanning Foam Light/Medium — 200 ml — سعر لقيناه: 95 (عرض: 66.50) — Watsons KSA — https://www.watsons.sa/products/bondi-sands-self-tanning-foam-200ml
+11. [tan] Bondi Sands — 1 Hour Express Aero Self Tanning Foam — 225 ml — سعر لقيناه: 115 (عرض: -) — Watsons KSA — https://www.watsons.sa/products/bondi-sands-1-hour-express-aero-aerated-self-tanning-foam-225ml
+12. [tan] Bondi Sands — Liquid Gold Self Tanning Dry-Oil — MISSING  — سعر لقيناه: 67 (عرض: -) — Cloud10 Beauty KSA — https://www.cloud10beauty.com/ar-sa/collections/bondi-sands-self-tan
+13. [tan] Loving Tan — Bronze Shimmer Luminous Cream — 120 ml — سعر لقيناه: 138.50 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/loving-tan/bronze-shimmer-luminous-cream/
+14. [tan] SOSU — Tan Essentials Set (mitt + foam + body highlighter) — MISSING  — سعر لقيناه: 147.50 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/sosu-by-suzanne-jackson/tan-essentials-set/
+15. [tan] Bali Body — Deep Violet Self Tanning Mousse — MISSING  — سعر لقيناه: 211 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/725142892-deep-violet-self-tanning-mousse-self-tanner-mousse-violet-based.md
+16. [tan] Carroten — Tan Express Intensive Tanning Gel — MISSING  — سعر لقيناه: 174 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/267928323-tan-express-intensive-tanning-gel.md
+17. [glow] Kayanee — Seaweed Toning Shimmer — 200 ml — سعر لقيناه: 150 (عرض: -) — kayanee.com (own site) — https://kayanee.com/products/seaweed-toning-shimmer
+18. [glow] Sol de Janeiro — Glowmotions Glow Oil Set (2 x 30 ml) — 60 ml — سعر لقيناه: 134.25 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/sol-de-janeiro/glow-motions-glow-oil-set
+19. [glow] Sol de Janeiro — Glowmotions Glow Anywhere Set — MISSING  — سعر لقيناه: 160 (عرض: -) — Sephora KSA — https://www.sephora.me/sa-ar/p/%D9%85%D8%AC%D9%85%D9%88%D8%B9%D8%A9-%D8%B2%D9%8A%D9%88%D8%AA-%D8%A7%D9%84%D8%AC%D8%B3%D9%85-%D8%AC%D9%84%D9%88-%D9%85%D9%88%D8%B4%D9%86%D8%B2-%D8%AC%D9%84%D9%88-%D8%A5%D9%86%D9%8A-%D9%88%D9%8A%D8%B1/764438
+20. [glow] Anastasia Beverly Hills — Shimmer Body Oil — 45 ml — سعر لقيناه: 174.75 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/anastasia-beverly-hills/shimmer-body-oil
+21. [glow] Tan-Luxe — The Glow Illuminating Body Oil — 80 ml — سعر لقيناه: 129.95 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/tan-luxe/the-glow-illuminating-body-oil/
+22. [glow] SOSU — Born to Shine Shimmer Oil — 85 g — سعر لقيناه: 58 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/sosu-by-suzanne-jackson/born-to-shine-shimmer-oil/
+23. [glow] Freshly Cosmetics — Freshly Glow Edition Illuminating Body Oil (travel) — 50 ml — سعر لقيناه: 73.47 (عرض: 68.63) — Cosmetis (SA) — https://cosmetis.com/sa/freshly-glow-edition-illuminating-body-oil-travel-size-50ml
+24. [glow] Soda — #exploretheocean Shiny Gel Face & Body — MISSING  — سعر لقيناه: 49.25 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/soda/exploretheocean-shiny-gel-for-face-and-body/
+25. [glow] Babor — Soul & Body Shimmer Oil Grounding — 100 ml — سعر لقيناه: 276 (عرض: -) — Bloomingdale's KSA — https://en.bloomingdales.sa/babor-soul-body-shimmer-oil-grounding-BEA218120340.html
+26. [glow] Tom Ford — Soleil Blanc Shimmering Body Oil — 100 ml — سعر لقيناه: 502 (عرض: -) — Bloomingdale's KSA — https://en.bloomingdales.sa/tom-ford-soleil-blanc-shimmering-body-oil-BEA212555948.html
+27. [glow_stick] KASH Beauty — Highlight Sculpt Stick — 8 g — سعر لقيناه: 75.95 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/kash-beauty/highlight-sculpt-stick
+28. [glow_stick] Rimmel — Glow Stick Highlighter — 5 g — سعر لقيناه: 55 (عرض: -) — Watsons KSA — https://www.watsons.sa/products/rimmel-glow-stick-highlighter-5g
+29. [glow_stick] Inglot — Cream Stick Highlighter — MISSING  — سعر لقيناه: 85 (عرض: -) — Cloud10 Beauty KSA — https://www.cloud10beauty.com/en-sa/collections/highlighter
+30. [hair_wax] Slick Hair Company — Wax Stick — 50 g — سعر لقيناه: 110 (عرض: -) — Sephora KSA — https://www.sephora.me/sa-ar/p/wax-stick-styling-hair-wax/700289
+31. [hair_wax] She Is Bomb — Hair Wax Stick (unscented) — 2.7 fl oz (79.8 ml) — سعر لقيناه: 117 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/257229920-hair-wax-stick.md
+32. [hair_wax] KeraCare — Styling Wax Stick — 75 g — سعر لقيناه: 60.25 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/keracare/styling-wax-stick/
+33. [hair_flyaway] Slick Hair Company — Slick Stick Anti-Flyaway Hair Wand — 10 ml — سعر لقيناه: 87 (عرض: -) — Sephora KSA — https://www.sephora.me/sa-en/p/slick-stick-anti-flyaway-hair-wand/P10062208
+34. [hair_set] Slick Hair Company — The Perfect Pair (Wax Stick 50 g + Slick Stick 10 ml) — MISSING  — سعر لقيناه: 155 (عرض: -) — Sephora KSA — https://sephora.me/sa-en/p/the-perfect-pair/P10060907
+35. [hair_flyaway] The Smooth Company — The Smooth Stick — MISSING  — سعر لقيناه: 76 (عرض: -) — Cloud10 Beauty KSA — https://www.cloud10beauty.com/en-sa/collections/frizzy-hair
+36. [hair_flyaway] Giovanni — 2Chic Frizz Be Gone Anti-Frizz Hair Balm — 147 ml — سعر لقيناه: 56.35 (عرض: -) — FirstCry KSA — https://www.firstcry.sa/en/giovanni/giovanni-2chic-frizz-be-gone-anti-frizz-hair-balm-147ml/a7d4dksa058322/product-detail
+37. [hair_brush] Bounce Curl — Define EdgeLift Brush — MISSING  — سعر لقيناه: 183 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/752762969-define-edgelift-brush-5-in-1-tool-for-effortlessly-defined.md
+38. [hair_brush] Bounce Curl — Slick-Flex EdgeLift Brush — MISSING  — سعر لقيناه: 258 (عرض: -) — Ubuy KSA — https://www.ubuy.com.sa/en/product/TUI5PTH5C-slick-flex-edgelift-brush
+39. [scrub] Kayanee — Coffee and Purified Salt Scrub — MISSING  — سعر لقيناه: 100 (عرض: -) — kayanee.com (own site) — https://kayanee.com/products/coffee-and-purified-salt-scrub
+40. [scrub] Kayanee — Brown Sugar and Shea Butter Light Scrub — MISSING  — سعر لقيناه: 100 (عرض: -) — kayanee.com (own site) — https://kayanee.com/products/brown-sugar-and-shea-butter-light-scrub
+41. [scrub] Tree Hut — Shea Sugar Scrub Coco Colada — 510 g — سعر لقيناه: 167 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/725194447-tree-hut-shea-sugar-scrub-coco-colada-tree-hat-18.md
+42. [scrub] Alba Botanica — Sea Salt Body Scrub — 411 g — سعر لقيناه: 112.70 (عرض: -) — Al-Dawaa — https://www.al-dawaa.com/ar/p/241287/alba-botanica-body-scrub-sea-salt-411-gm
+43. [scrub] Celia — Sea Salt & Sugar Shower Scrub — 600 g — سعر لقيناه: 58.01 (عرض: 34.80) — Al-Dawaa — https://www.al-dawaa.com/ar/p/238686/celia-sea-salt-sugar-shower-scrub-600-gm
+44. [scrub] Sunday Rain — Pink Grapefruit & Sea Salt Body Scrub — 265 g — سعر لقيناه: 26.75 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/sunday-rain/pink-grapefruit-and-sea-salt-body-scrub/
+45. [scrub] Soak Sunday — Rose Utopia Body Scrub — 200 g — سعر لقيناه: 71.50 (عرض: -) — Beauty Bay (AR/SAR) — https://www.beautybay.com/ar/p/soak-sunday/rose-utopia-body-scrub/
+46. [butter] The Body Shop — Shea Body Butter — 200 ml — سعر لقيناه: 79 (عرض: -) — The Body Shop KSA (own site) — https://west.thebodyshop.com.sa/en/collections/body-butters
+47. [butter] The Body Shop — Boost Whipped Body Cream — 200 ml — سعر لقيناه: 228 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/495384837-boost-whipped-body-cream-200ml.md
+48. [butter] Tree Hut — Whipped Body Butter Moroccan Rose — MISSING  — سعر لقيناه: 69.25 (عرض: -) — Beauty Bay (AR/SAR) — https://videos.beautybay.com/ar/p/tree-hut/whipped-body-butter/moroccan-rose/
+49. [butter] Tree Hut — Shea Body Butter (holiday) — MISSING  — سعر لقيناه: 122 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/778590983-tree-hut-shea-body-butter.md
+50. [butter] Kiehl's — Creme de Corps (air-whipped) — 226 g — سعر لقيناه: 277 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/48481655-creme-de-corps-body-moisturizer.md
+51. [foot] Eucerin — Intensive Foot Cream 10% Urea — 100 ml — سعر لقيناه: 100 (عرض: 87.50) — Carrefour KSA — https://carrefourksa.com/mafsau/en/face-skin-care/eucerin-intensive-foot-cream-10-urea-100ml/p/4005800036101
+52. [foot] Eucerin — Urea Repair Plus 10% Foot Foam — 150 ml — سعر لقيناه: 133.40 (عرض: 93.38) — Nahdi — https://nahdionline.com/en/eucerin-urea-repair-plus-10-urea-foot-foam-150ml
+53. [foot] Puravie — Urea Foot Cream 10% — 150 ml — سعر لقيناه: 164 (عرض: 114.80) — Watsons KSA — https://www.watsons.sa/products/puravie-urea-foot-cream-10-150-ml
+54. [foot] urea care — Maximum Hydrating Cream 10% Urea — 170 g (6 oz) — سعر لقيناه: 82 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/3958552-maximum-hydrating-cream-10-urea-formula-6-ounce.md
+55. [hand] L'Occitane — Shea Butter Hand Cream — 30 ml — سعر لقيناه: 49 (عرض: -) — Faces KSA — https://www.faces.sa/en/p/loccitane-shea-butter-hand-cream-020415667586.html
+56. [hand] Neutrogena — Norwegian Formula Hand Cream — 50 ml — سعر لقيناه: 46 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/472942965-norwegian-hand-cream-50ml.md
+57. [lip] Laneige — Lip Sleeping Mask — 20 g — سعر لقيناه: 135 (عرض: 94) — Sephora KSA — https://sephora.me/sa-en/p/lip-sleeping-mask/P10058339
+58. [mist] Victoria's Secret — Bare Vanilla Body Mist — 250 ml — سعر لقيناه: 65 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/255323041-bare-vanilla-2016-250ml-body-mist.md
+59. [mist] Victoria's Secret — Coconut Passion Body Mist — 250 ml — سعر لقيناه: 75 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/255323048-coconut-passion-body-mist-250-ml.md
+60. [mist] Victoria's Secret — Temptation Body Mist — 250 ml — سعر لقيناه: 78 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/251939337-temptation-250ml-body-mist-new.md
+61. [mist] Victoria's Secret — Rush Fragrance Mist — 250 ml — سعر لقيناه: 84 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/253333303-authentic-fragrance-mist-rush-250-ml.md
+62. [mist] Victoria's Secret — Emerald Crush Fragrance Mist — 250 ml — سعر لقيناه: 67 (عرض: -) — Pricena KSA (lowest store) — https://sa.pricena.com/ar/product/victorias-secret-emerald-crush-fragrance-mist-250ml-price-in-saudi-arabia-110929017
+63. [mist] Bath & Body Works — Sweet Pea Body Mist — 236 ml — سعر لقيناه: 81 (عرض: 74) — Centrepoint KSA — https://www.centrepointstores.com/sa/en/buy-bath-body-works-sweet-pea-body-mist-236-ml/p/167942355
+64. [mist] Sol de Janeiro — Cheirosa Perfume Mist — MISSING  — سعر لقيناه: 125 (عرض: -) — Sephora KSA — https://www.sephora.me/sa-en/brands/sol-de-janeiro/JANEI
+65. [mist] Riddiance — Body & Hair Mist (Musk Al Roum) — 150 ml — سعر لقيناه: 49.45 (عرض: -) — Lemon.sa — https://lemon.sa/ريديانس-معطر-جسم-وشعر-مسك-الروم-150-مل-رائحة-مستدامة
+66. [mist] Colour Me — Body Mist (Purple) — 150 ml — سعر لقيناه: 23 (عرض: -) — Carrefour KSA — https://www.carrefourksa.com/mafsau/ar/woman-body-mist/colour-me-purple-150ml/p/755098
+67. [musk] Almajed for Oud — Pure Musk All Over Spray — 100 ml — سعر لقيناه: 118 (عرض: 59.01) — Nahdi — https://www.nahdionline.com/ar-sa/almajed-for-oud-pure-musk-all-over-spray-unisex-100-ml/pdp/103952119
+68. [musk] Hamil Al Musk — Altahara (musk oil travel size) — 6 ml — سعر لقيناه: 50 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/256146727-altahara-6ml.md
+69. [musk] Tesori d'Oriente — White Musk — 100 ml — سعر لقيناه: 71 (عرض: -) — Desertcart KSA — https://www.desertcart.com.sa/products/565106665-tesori-doriente-white-musk.md
+70. [musk] Ajmal — Misk Collection — MISSING  — سعر لقيناه: 172.50 (عرض: -) — Ajmal KSA (own site) — https://en-sa.ajmal.com/en/products/misk-collection-new
+
+احفظ النتايج في ملف competitor-prices-verified.csv بالأعمدة دي:
+row_no, brand, product, size_verified, price_regular_verified, price_promo_verified, in_stock, rating, reviews, url_opened, date, matches_list, notes
+ومعاه ملف marketplaces-top5.csv لبحث نون وأمازون والباقي، وملخص verify-summary.md فيه: كام سعر اتطابق، وكام اختلف، وأكبر الفروق.
+
+لو مش قادر تحفظ على سطح المكتب، ارفع الملفات هنا في المحادثة. وفي الآخر قولي أسماء الملفات وعدد الصفوف.

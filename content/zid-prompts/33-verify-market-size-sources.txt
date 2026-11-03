@@ -1,0 +1,35 @@
+مهمة: نتأكد من أرقام حجم السوق اللي في دراسة ايمي. الأرقام دي جت من ملخصات بحث جوجل، وماحدش فتح الصفحات نفسها. افتح كل رابط بالمتصفح، واتأكد إن الرقم مكتوب فعلاً في الصفحة.
+
+قواعد صارمة:
+- اقرأ بس. ممنوع تشتري تقرير أو تعمل حساب أو تملا فورم "Request sample" أو تسيب إيميل.
+- لو الرقم ورا paywall (مثلاً Statista)، اكتب "ورا paywall" وانسخ اللي ظاهر مجاناً بس.
+- لو الصفحة بتقول رقم مختلف عن اللي عندنا، اكتب الرقم اللي في الصفحة بالظبط، والسنة، والعملة.
+- ماتخمنش.
+
+الأرقام اللي محتاجين نتأكد منها:
+1. سكان السعودية نهاية 2024: 35.3 مليون، الإناث 37.9% — argaam.com/en/article/articledetail/id/1827144 و stats.gov.sa (Population Estimates 2024 PDF)
+2. عدد السعوديات 9,807,663، و15–34 سنة = 35.7% منهن — stats.gov.sa/en/w/news/76
+3. سوق الجمال والعناية الشخصية في السعودية 5.95 مليار دولار 2024، نمو 3.89% — statista.com/outlook/emo/beauty-personal-care/saudi-arabia/
+4. نفس السوق: IMARC 4.6 مليار دولار 2024 — imarcgroup.com/saudi-arabia-beauty-personal-care-market
+5. حصة الأونلاين في العناية الشخصية 15–20%، إيرادات أونلاين 1,177 مليون دولار 2025 — ecdb.com/resources/sample-data/market/sa/personal-care
+6. التجارة الإلكترونية للتجميل والعطور 0.82 مليار دولار 2025 → 1.45 مليار 2031 — mordorintelligence.com/industry-reports/saudi-arabia-e-commerce-cosmetics-and-fragrances-market
+7. سوق السيلف تان في الشرق الأوسط وأفريقيا 37.38 مليون دولار 2024 — stellarmr.com/report/MEA-Self-Tanning-products-Market/1265
+8. سوق العناية من الشمس في السعودية 129.93 مليون دولار 2024 → 211.81 مليون 2033 — imarcgroup.com/saudi-arabia-sun-care-products-market
+9. مستحضرات التجميل الملونة في السعودية 773.21 مليون دولار 2024، نمو 6.63% — databridgemarketresearch.com/nucleus/saudi-arabia-colour-cosmetics-market
+10. العناية بالشعر في السعودية: TechSci 704.56 مليون دولار — techsciresearch.com/report/saudi-arabia-hair-care-market/7636.html
+11. العناية بالشعر: Statista ~707 مليون دولار، نمو 3.53% — statista.com/outlook/cmo/beauty-personal-care/personal-care/hair-care/saudi-arabia
+12. العناية بالشعر: IMARC 839.9 مليون دولار — imarcgroup.com/saudi-arabia-hair-care-market
+13. العناية بالشعر: MarkSpark 868 مليون دولار → 1,301 مليون 2030 — marksparksolutions.com/reports/saudi-arabia-hair-care-products-market
+14. العناية بالبشرة: IMARC 1.5 مليار دولار 2024 — imarcgroup.com/saudi-arabia-skin-care-products-market ؛ Statista 1.824 مليار — statista.com/outlook/cmo/beauty-personal-care/skin-care/saudi-arabia
+15. العناية بالجسم والنظافة الشخصية 1.35 مليار دولار 2024 → 1.84 مليار 2032 — databridgemarketresearch.com/reports/saudi-arabia-body-care-and-personal-hygiene-market
+16. مرطب الشفايف 23.2 مليون دولار 2024 — imarcgroup.com/saudi-arabia-lip-care-products-market
+17. معطرات الجسم والشعر في السعودية حوالي 958 مليون ريال 2023 → 1.5 مليار ريال 2027 — statista.com/statistics/1537746/saudi-arabia-hair-and-body-fragrance-products-market-size
+18. سوق العطور: IMARC 1.9 مليار دولار 2024 — imarcgroup.com/saudi-arabia-perfume-market
+
+وبعدها، لو تقدر، دوّر على أي رقم منشور لحجم سوق في السعودية لـ: زيت التان / منتجات التشميس، الشيمر أو الهايلايتر للجسم، واكس الشعر أو منتجات تصفيف الشعر للستات، البودي مست. واكتب المصدر والرابط.
+
+لكل رقم اكتب: الرقم في الصفحة، السنة، العملة، اتطابق مع اللي عندنا ولا لأ، الرابط اللي فتحته، وهل الصفحة كانت مقفولة أو ورا paywall.
+
+احفظ النتايج في market-size-sources-verified.csv بالأعمدة: claim_no, claim, number_on_page, year, currency, matches, url_opened, paywall, notes — وملخص قصير market-size-verify-summary.md.
+
+لو مش قادر تحفظ على سطح المكتب، ارفع الملفات هنا في المحادثة.
