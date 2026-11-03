@@ -52,7 +52,7 @@ agenda = [('01', 'الملخص التنفيذي', 'Executive Summary'), ('02', '
           ('03', 'القنوات والمنتجات: الفلوس راحت فين', 'Channels & Products'), ('04', 'حجم السوق السعودي لكل فئة', 'Market Size'),
           ('05', 'موقع a\'mie في السوق والمنافسين', 'Positioning'), ('06', 'التسعير: نطاق السعر لكل منتج', 'Pricing'),
           ('07', 'الخصومات: إمتى، وقد إيه، وعلى إيه', 'Discounts'), ('08', 'فين نصرف: نوفمبر – فبراير', 'Media Plan'),
-          ('09', 'خطة التنفيذ وحدود البيانات', 'Roadmap')]
+          ('09', 'خطة التنفيذ وحدود البيانات', 'Roadmap'), ('10', 'الونرز: صيف وشتا، ومين قابل يبقى ونر', 'Winners')]
 rows = ''.join(f'<div class="tr"><span class="tn">{n}</span><span class="tar">{a}</span><span class="tdots"></span><span class="ten">{e}</span></div>' for n, a, e in agenda)
 pages.append(f'<section class="page">{HDR}<div class="body"><div class="tocwrap"><div class="pen big">AGENDA</div>{rows}</div></div><div class="ftr"><span>amie-sa.com</span><span>02</span></div></section>')
 
@@ -202,6 +202,8 @@ slide('09', 'DATA NOTES · 2/2', 'حدود البيانات', '''<div class="col
 <div class="card warn"><h4>مستني يتأكد</h4><ul><li>سعر Summer Set: 482 ولا 582؟</li><li>سعر Hair Set: 282 ولا 268؟</li><li>زبدة الليمون قراس: زد بيبيعها بـ 119، والشيت بيقول 199.</li><li>تكلفة القطعة من المحاسب: كل الحسابات هنا على الإيراد، مش الربح.</li><li>مخزون Lip Plump قبل ما نستخدمه هدية.</li><li>Keyword Planner (البرومبت 30) لحجم البحث الحقيقي.</li></ul>
 <p class="note">المصادر: زد · Snapchat Ads · Meta Ads · TikTok Ads · Google Ads · GA4 · Search Console · صفحات المنافسين (سيفورا، نهدي، واتسونز، كارفور، نون، أمازون، سلة، زد، تيك توك) · الهيئة العامة للإحصاء · IMARC · TechSci · ECDB.</p></div></div>''')
 
+exec(open(os.path.join(HERE, 'deck_winners.py'), encoding='utf-8').read())
+
 # ---------- end ----------
 pages.append('''<section class="page cover end"><img class="cimg" src="a/cover_full.jpg"><div class="ctitle"><div class="cen">THANK YOU</div><div class="cline"></div><p>«الجمال لا يُصنع... بل يُعتنى به حتى يتجلّى»</p><img src="a/logo_dark.png" class="lgend"></div>
 <div class="cfoot"><span>amie-sa.com</span><span>a'mie · Market &amp; Pricing</span></div></section>''')
@@ -248,6 +250,24 @@ table.t tr.cat td{{background:#F2E4DF;color:#5E2E21;font-weight:500;font-size:11
 .formula{{border:1px dashed #5E2E21;border-radius:10px;padding:8px 12px;text-align:center;font-size:13px;margin:4px 0 8px}}
 .big2{{flex-wrap:wrap}}
 .hb{{grid-template-columns:110px 1fr 58px 44px}}
+.wcols{{display:grid;grid-template-columns:1fr 1fr;gap:16px}}
+.wcol{{background:#fff;border:1px solid #E3E2E1;border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}}
+.wcol.win{{background:#F2E4DF;border-color:#E8CFC6}}
+.wh{{display:flex;align-items:center;gap:10px}}.wh p{{font-size:12px;color:#6B595C}}
+.wgrid{{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}}
+.wc{{background:#fff;border:1px solid #EEEDEC;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}}
+.wi{{height:92px;display:flex;align-items:center;justify-content:center;position:relative;background:#fff;flex:none}}.wi img{{max-height:86px;max-width:90%;object-fit:contain}}
+.nw{{position:absolute;top:6px;left:6px;font-size:10px;background:#5E2E21;color:#fff;border-radius:999px;padding:1px 7px}}
+.wt{{padding:6px 9px 8px;display:flex;flex-direction:column;gap:2px}}.wt h5{{margin:0;font-weight:500;font-size:12.5px}}
+.wn{{display:flex;align-items:baseline;gap:5px}}.wn b{{font-family:Montserrat;font-weight:300;font-size:22px;color:#5E2E21}}.wn span{{font-size:9.5px;color:#6B595C;line-height:1.2}}
+.wt p{{font-size:10.5px;color:#191919;line-height:1.45}}
+.wall{{display:grid;grid-template-columns:auto 230px 230px 1fr;gap:12px;align-items:center;background:#fff;border:1px solid #E3E2E1;border-radius:14px;padding:10px 14px}}
+.wall .wc{{flex-direction:row}}.wall .wi{{width:70px;height:84px}}.wall .wi img{{max-height:76px}}
+.wall .note{{margin:0}}
+table.heat td.hc{{text-align:center;font-family:Montserrat;font-size:11px;padding:1px 4px;border-bottom:2px solid #fff}}
+table.heat td{{padding:1px 8px}} table.heat th{{text-align:center}} table.heat td.pi{{width:30px}} table.heat .th{{width:22px;height:22px}}
+table.cand td.mk{{text-align:center;color:#5E2E21;font-size:16px}} table.cand th{{white-space:normal;text-align:center}}
+table.cand small.d{{display:block;font-size:10.5px;color:#6B595C}} table.cand .th{{width:40px;height:40px}} table.cand td{{padding:3px 8px}} table.heat{{font-size:11px}} table.heat .ix{{white-space:nowrap;font-size:10px;padding:0 6px}} table.heat td:nth-child(2){{white-space:nowrap}} table.heat .th{{width:28px;height:28px}} table.heat td.hc{{padding:4px 2px}} table.heat th{{padding:5px 3px}}
 .rr{{display:grid;grid-template-columns:70px 1fr 70px;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #F0EFEE}}
 .rn{{font-size:13px;font-weight:400}}.rb{{display:flex;flex-direction:column;gap:5px}}.rb .ht{{height:14px}}
 .rv{{display:flex;flex-direction:column;font-family:Montserrat;direction:ltr;text-align:left;line-height:1.3}}.rv span{{font-size:11px;color:#6B595C}}.rv b{{font-size:16px;font-weight:500;color:#5E2E21}}
