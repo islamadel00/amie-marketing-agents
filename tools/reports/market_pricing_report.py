@@ -4,7 +4,10 @@ SP = '/tmp/claude-0/-home-user/b736310d-3a65-5d5d-94b2-e1f479f6690e/scratchpad'
 OUT = sys.argv[1]
 F = SP + '/fonts'
 
-INK, GOLD, BLUE, GREY, LINE, CREAM, RED = '#111111', '#A8834A', '#5F7A99', '#BDB9B2', '#E4E2DE', '#F6F5F3', '#A24B3B'
+# a'mie web identity: cocoa #3A2522, brown #5E2E21, maroon #663C3C, bronze #B98B6E, taupe #85756E, sand #EADFD7, cream #F6F0EB, text #2B2321
+INK, GOLD, BLUE, GREY, LINE, CREAM, RED = '#3A2522', '#B98B6E', '#85756E', '#DCCBC0', '#E4D8CF', '#F6F0EB', '#663C3C'
+BROWN, SAND, TXT = '#5E2E21', '#EADFD7', '#2B2321'
+IMG = '/home/user/amie-marketing-agents/reports'
 
 def fmt(x, d=0):
     return f"{x:,.{d}f}"
@@ -46,7 +49,7 @@ def chart_monthly():
     for i in range(6):
         cx = W - R - bw * (i + 0.5)  # RTL: May on the right
         h = net[i] / mx * ph
-        g.append(f'<rect x="{cx-26}" y="{T+ph-h}" width="24" height="{h}" fill="{INK}"/>')
+        g.append(f'<rect x="{cx-26}" y="{T+ph-h}" width="24" height="{h}" fill="{BROWN}" rx="1.5"/>')
         y0 = T + ph
         ha = ads_m[i] / mx * ph; hi = inf_m[i] / mx * ph
         g.append(f'<rect x="{cx+2}" y="{y0-ha}" width="24" height="{ha}" fill="{GOLD}"/>')
@@ -55,7 +58,7 @@ def chart_monthly():
         g.append(t(cx + 14, y0 - ha - hi - 5, f'{mk_m[i]/1000:.0f}K', 8, '#555', fam='Montserrat'))
         g.append(t(cx, H - B + 16, months[i], 9.5))
         g.append(t(cx, H - B + 31, f'{mk_pct[i]:.0f}٪ تسويق', 8, RED if mk_pct[i] > 20 else '#555'))
-    lg = [(INK, 'صافي المبيعات (من غير ضريبة)'), (GOLD, 'إعلانات'), (BLUE, 'مؤثرين')]
+    lg = [(BROWN, 'صافي المبيعات (من غير ضريبة)'), (GOLD, 'إعلانات'), (BLUE, 'مؤثرين')]
     x = W - R
     for c, s in lg:
         g.append(f'<rect x="{x-10}" y="8" width="10" height="10" fill="{c}"/>')
@@ -145,9 +148,9 @@ def chart_position():
         g.append(f'<rect x="{X(mkt)-4.5}" y="{y-4.5}" width="9" height="9" fill="{GREY}"/>')
         for v in sa: g.append(f'<circle cx="{X(v)}" cy="{y}" r="4.6" fill="{GOLD}"/>')
         for v in intl: g.append(f'<path d="M{X(v)} {y-5.5} L{X(v)+5.5} {y} L{X(v)} {y+5.5} L{X(v)-5.5} {y} Z" fill="{BLUE}"/>')
-        g.append(f'<circle cx="{X(am)}" cy="{y}" r="7" fill="{INK}"/>')
+        g.append(f'<circle cx="{X(am)}" cy="{y}" r="7" fill="{BROWN}" stroke="#fff" stroke-width="1.5"/>')
         g.append(t(X(am), y - 10, f'{am:g}', 8, INK, fam='Montserrat', w=600))
-    lg = [('sq', GREY, 'وسيط نون/أمازون/الصيدليات'), ('c', GOLD, 'براندات سعودية'), ('d', BLUE, 'براندات عالمية (بعد الخصم)'), ('a', INK, "a'mie")]
+    lg = [('sq', GREY, 'وسيط نون/أمازون/الصيدليات'), ('c', GOLD, 'براندات سعودية'), ('d', BLUE, 'براندات عالمية (بعد الخصم)'), ('a', BROWN, "a'mie")]
     x = W - 8
     for kind, c, s in lg:
         if kind == 'sq': g.append(f'<rect x="{x-9}" y="7" width="9" height="9" fill="{c}"/>')
@@ -279,37 +282,51 @@ css = f"""
 @page {{ size: A4; margin: 15mm 13mm 17mm 13mm; }}
 @page :first {{ margin: 0; }}
 * {{ box-sizing: border-box; }}
-body {{ margin: 0; font-family: 'Readex Pro', sans-serif; color: {INK}; font-size: 9.6pt; line-height: 1.7; background: #fff; }}
-.cover {{ height: 297mm; background: {INK}; color: {CREAM}; padding: 30mm 22mm 20mm; display: flex; flex-direction: column; break-after: page; }}
-.cover img {{ width: 46mm; filter: invert(1); align-self: flex-start; }}
-.cover .kicker {{ margin-top: auto; color: {GOLD}; font-size: 10pt; letter-spacing: .5px; }}
-.cover h1 {{ font-size: 28pt; font-weight: 600; line-height: 1.35; margin: 6mm 0 6mm; }}
-.cover .sub {{ font-size: 12pt; color: #CFCBC4; max-width: 140mm; }}
-.cover .meta {{ margin-top: 18mm; border-top: 1px solid #333; padding-top: 6mm; font-size: 9pt; color: #9C9890; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }}
+body {{ margin: 0; font-family: 'Readex Pro', sans-serif; color: {TXT}; font-size: 9.6pt; line-height: 1.7; background: #fff; }}
+.cover {{ height: 297mm; position: relative; color: {CREAM}; break-after: page; overflow: hidden; background: {INK}; }}
+.cover .ph {{ position: absolute; inset: 0 0 auto 0; height: 190mm; background: url('file://{IMG}/homepage-images-2026-10/story-1080x1350.jpg') center 38% / cover; }}
+.cover .ph::after {{ content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(58,37,34,0) 45%, {INK} 100%); }}
+.cover .body {{ position: absolute; inset: auto 0 0 0; padding: 0 20mm 18mm; }}
+.cover .latin {{ font-family: 'Montserrat'; font-size: 8.5pt; letter-spacing: 3.5px; color: {GOLD}; direction: ltr; text-align: right; }}
+.cover .kicker {{ color: {GOLD}; font-size: 10pt; margin-top: 2mm; }}
+.cover h1 {{ font-size: 27pt; font-weight: 600; line-height: 1.35; margin: 4mm 0 4mm; color: {CREAM}; }}
+.cover .sub {{ font-size: 11pt; color: #DCCBC0; max-width: 150mm; font-weight: 300; }}
+.cover .meta {{ margin-top: 12mm; border-top: 1px solid #5E4A45; padding-top: 5mm; font-size: 9pt; color: #B5A49B; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 4mm; }}
 .cover .meta b {{ display: block; color: {CREAM}; font-weight: 500; font-size: 10pt; }}
-h2 {{ font-size: 16pt; font-weight: 600; margin: 0 0 3mm; padding-top: 1mm; break-after: avoid; }}
+.cover .logo {{ position: absolute; top: 16mm; right: 20mm; width: 40mm; z-index: 2; }}
+.back {{ break-before: page; height: 265mm; background: {INK}; color: {CREAM}; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }}
+.back img {{ width: 44mm; margin-bottom: 10mm; }}
+.back .latin {{ font-family: 'Montserrat'; letter-spacing: 4px; font-size: 9pt; color: {GOLD}; direction: ltr; }}
+.back h3 {{ color: {CREAM}; font-size: 18pt; margin: 4mm 0 3mm; }}
+.back p {{ color: #B5A49B; font-size: 9.5pt; max-width: 120mm; }}
+.band {{ height: 34mm; margin: 0 0 5mm; background-size: cover; background-position: center; border-radius: 3mm; }}
+.trio {{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3mm; margin: 0 0 5mm; }}
+.trio div {{ height: 36mm; background-size: cover; background-position: center; border-radius: 3mm; }}
+.sk {{ font-family: 'Montserrat'; font-size: 7.6pt; letter-spacing: 3px; color: {GOLD}; direction: ltr; text-align: right; margin-bottom: 1mm; text-transform: uppercase; }}
+h2 {{ font-size: 17pt; font-weight: 600; color: {BROWN}; margin: 0 0 3mm; padding-top: 1mm; break-after: avoid; }}
 h2 .no {{ color: {GOLD}; font-family: 'Montserrat'; margin-left: 6px; }}
-h3 {{ font-size: 11pt; font-weight: 600; margin: 6mm 0 2mm; break-after: avoid; }}
+h3 {{ font-size: 11pt; font-weight: 600; color: {BROWN}; margin: 6mm 0 2mm; break-after: avoid; }}
 .sec {{ break-before: page; }}
-.lead {{ font-size: 10.6pt; color: #333; border-right: 3px solid {GOLD}; padding: 1mm 4mm 1mm 0; margin: 0 0 5mm; }}
+.lead {{ font-size: 10.6pt; color: {TXT}; font-weight: 300; border-right: 3px solid {GOLD}; padding: 1mm 4mm 1mm 0; margin: 0 0 5mm; }}
 p {{ margin: 0 0 2.5mm; }}
 .kpis {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin: 4mm 0 5mm; }}
-.kpi {{ background: {CREAM}; padding: 3.5mm 4mm; border-top: 2px solid {INK}; }}
+.kpi {{ background: {CREAM}; padding: 3.5mm 4mm; border-radius: 3mm; }}
+.kpi .v {{ color: {BROWN}; }}
 .kpi .v {{ font-family: 'Montserrat'; font-size: 17pt; font-weight: 600; direction: ltr; text-align: right; line-height: 1.3; }}
 .kpi .l {{ font-size: 8.4pt; color: #555; line-height: 1.45; }}
-.kpi.warn {{ border-top-color: {RED}; }}
+.kpi.warn {{ background: {SAND}; }}
 .kpi.warn .v {{ color: {RED}; }}
 .decisions {{ counter-reset: d; margin: 2mm 0; padding: 0; }}
 .decisions li {{ list-style: none; position: relative; padding: 2.5mm 11mm 2.5mm 0; border-bottom: 1px solid {LINE}; }}
-.decisions li::before {{ counter-increment: d; content: counter(d); position: absolute; right: 0; top: 2.4mm; width: 7mm; height: 7mm; background: {INK}; color: #fff; font-family: 'Montserrat'; font-weight: 600; font-size: 9pt; text-align: center; line-height: 7mm; }}
+.decisions li::before {{ counter-increment: d; content: counter(d); position: absolute; right: 0; top: 2.4mm; width: 7mm; height: 7mm; background: {RED}; color: #fff; font-family: 'Montserrat'; font-weight: 600; font-size: 9pt; text-align: center; line-height: 7mm; border-radius: 50%; }}
 table {{ width: 100%; border-collapse: collapse; margin: 2mm 0 2mm; font-size: 8.5pt; line-height: 1.5; }}
 th {{ background: {INK}; color: #fff; font-weight: 500; text-align: right; padding: 2mm 2mm; vertical-align: bottom; }}
 td {{ padding: 1.7mm 2mm; border-bottom: 1px solid {LINE}; text-align: right; vertical-align: top; }}
 tr {{ break-inside: avoid; }}
-tbody tr:nth-child(even) td {{ background: #FAF9F7; }}
+tbody tr:nth-child(even) td {{ background: #FBF8F5; }}
 td.num {{ font-family: 'Montserrat'; white-space: nowrap; font-size: 8.3pt; }}
-td.bad {{ color: {RED}; font-weight: 600; }}
-td.good {{ color: #3D6B4A; font-weight: 600; }}
+td.bad {{ color: {RED}; font-weight: 700; background: {SAND} !important; }}
+td.good {{ color: {BROWN}; font-weight: 600; background: {CREAM} !important; }}
 td.up {{ color: {GOLD}; font-weight: 700; }}
 td.small {{ font-size: 7.9pt; color: #444; }}
 tr.tot td {{ border-top: 1.5px solid {INK}; font-weight: 600; background: #fff !important; }}
@@ -317,7 +334,7 @@ tr.cat td {{ background: {CREAM} !important; font-weight: 600; color: {GOLD}; pa
 table.price td {{ padding: 1.5mm 1.6mm; }}
 .fig {{ margin: 3mm 0 1mm; break-inside: avoid; }}
 .cap {{ font-size: 8pt; color: #666; margin: 1mm 0 4mm; }}
-.box {{ background: {CREAM}; padding: 4mm 5mm; margin: 4mm 0; break-inside: avoid; }}
+.box {{ border-radius: 3mm; background: {CREAM}; padding: 4mm 5mm; margin: 4mm 0; break-inside: avoid; }}
 .box h4 {{ margin: 0 0 1.5mm; font-size: 10pt; font-weight: 600; }}
 .box.dark {{ background: {INK}; color: {CREAM}; }}
 .box.dark h4 {{ color: {GOLD}; }}
@@ -342,19 +359,22 @@ tn = sum(net)
 html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>a'mie — السوق والتسعير والأداء</title><style>{css}</style></head><body>
 
 <section class="cover">
-  <img src="file://{logo}" alt="a'mie">
-  <div class="kicker">تقرير داخلي · السوق السعودي</div>
-  <h1>السوق، والمنافسين، والتسعير،<br>وأداء آخر 6 شهور</h1>
-  <div class="sub">حجم السوق لكل فئة، وموقع a'mie وسط المنافسين، ونطاق السعر المسموح لكل منتج، وحدود الخصم، وصرفنا كام وجبنا كام من مايو لأكتوبر 2026.</div>
-  <div class="meta">
-    <div><b>الفترة</b>1 مايو – 30 أكتوبر 2026</div>
-    <div><b>تاريخ التقرير</b>3 نوفمبر 2026</div>
-    <div><b>السوق</b>السعودية (الخليج لاحقاً)</div>
+  <div class="ph"></div>
+  <div class="body">
+    <div class="latin">MARKET · PRICING · PERFORMANCE</div>
+    <div class="kicker">تقرير داخلي · السوق السعودي</div>
+    <h1>السوق، والمنافسين، والتسعير،<br>وأداء آخر 6 شهور</h1>
+    <div class="sub">حجم السوق لكل فئة، وموقع a'mie وسط المنافسين، ونطاق السعر المسموح لكل منتج، وحدود الخصم، وصرفنا كام وجبنا كام من مايو لأكتوبر 2026.</div>
+    <div class="meta">
+      <div><b>الفترة</b>1 مايو – 30 أكتوبر 2026</div>
+      <div><b>تاريخ التقرير</b>3 نوفمبر 2026</div>
+      <div><b>السوق</b>السعودية (الخليج لاحقاً)</div>
+    </div>
   </div>
 </section>
 
 <section>
-<h2><span class="no">01</span>الملخص التنفيذي</h2>
+<div class="sk">01 · EXECUTIVE SUMMARY</div><h2><span class="no">01</span>الملخص التنفيذي</h2>
 <p class="lead">a'mie باعت بـ <b>1.85 مليون ريال صافي</b> في 6 شهور، وصرفت على التسويق <b>355 ألف ريال</b> (19٪ من المبيعات). التان شال نص المبيعات، وبعد ما موسمه خلص في أغسطس، المبيعات نزلت حوالي 40٪، والطلبات بكوبون طلعت لـ 81٪، والتسويق بقى ربع المبيعات. a'mie براند <b>بريميوم سعودي</b>: أغلى من البراندات السعودية والماركت بليس، وفي مستوى البراندات العالمية أو أعلى. <b>يعني مافيش مساحة نرفع الأسعار بشكل عام،</b> والفلوس الحقيقية في إننا نقلل الكوبونات.</p>
 
 <div class="kpis">
@@ -379,7 +399,7 @@ html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
 </section>
 
 <section class="sec">
-<h2><span class="no">02</span>آخر 6 شهور: صرفنا كام وجبنا كام</h2>
+<div class="sk">02 · LAST 6 MONTHS</div><h2><span class="no">02</span>آخر 6 شهور: صرفنا كام وجبنا كام</h2>
 <p class="lead">المبيعات كانت ثابتة حوالي 360–400 ألف في الشهر لحد يوليو، وبعدين نزلت لحوالي 230–265 ألف من أغسطس. ومع النزول ده، الصرف على التسويق ماقلش، فنسبته من المبيعات طلعت من 7٪ لـ 26٪.</p>
 <div class="fig">{chart_monthly()}</div>
 <div class="cap">صافي المبيعات من غير ضريبة وشحن (من طلبات زد، من غير الملغية). الإعلانات: سناب وميتا وتيك توك وجوجل. المؤثرين حسب تاريخ النشر.</div>
@@ -397,7 +417,7 @@ html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
 </section>
 
 <section class="sec">
-<h2><span class="no">03</span>القنوات والمنتجات: الفلوس راحت فين</h2>
+<div class="sk">03 · CHANNELS &amp; PRODUCTS</div><h2><span class="no">03</span>القنوات والمنتجات: الفلوس راحت فين</h2>
 <p class="lead">كل منصة بتحسب نفس الطلب لنفسها، فمجموع اللي المنصات بتقول إنها جابته (2.0 مليون) قريب من كل مبيعات المتجر. GA4 بيحسب الطلب مرة واحدة، فهو الأقرب للحقيقة.</p>
 <div class="fig">{chart_roas()}</div>
 <div class="cap">من 20 يوليو لـ 30 أكتوبر، لإن GA4 بدأ يسجل المشتريات صح من 20 يوليو. GA4 بيحسب آخر ضغطة، فممكن يظلم القنوات اللي بتعرّف العميلة على البراند (سناب وتيك توك).</div>
@@ -430,7 +450,7 @@ html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
 </section>
 
 <section class="sec">
-<h2><span class="no">04</span>حجم السوق السعودي لكل فئة</h2>
+<div class="sk">04 · MARKET SIZE</div><h2><span class="no">04</span>حجم السوق السعودي لكل فئة</h2>
 <p class="lead">الفئات اللي a'mie أقوى فيها (التان، واللمعة، والشعر) أسواق متخصصة وصغيرة (60–160 مليون ريال في السنة)، وحصتنا فيها 0.3–2٪. الأسواق الكبيرة (العناية بالجسم والمعطرات، أكتر من مليار) حصتنا فيها أقل من 0.05٪، والمنافسة فيها على السعر.</p>
 <div class="fig">{chart_market()}</div>
 <div class="cap">حجم السوق في السنة بالمليون ريال. الشريط من التقدير المنخفض للعالي، والخط في النص هو التقدير المتوسط.</div>
@@ -464,13 +484,13 @@ html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
 </section>
 
 <section class="sec">
-<h2><span class="no">05</span>موقع a'mie في السوق: إحنا في أنهي فئة؟</h2>
+<div class="trio"><div style="background-image:url('file://{IMG}/homepage-images-2026-10/grid-3-tan-1080.jpg')"></div><div style="background-image:url('file://{IMG}/homepage-images-2026-10/grid-1-glow-1080.jpg')"></div><div style="background-image:url('file://{IMG}/homepage-images-2026-10/grid-2-hair-1080.jpg')"></div></div><div class="sk">05 · POSITIONING</div><h2><span class="no">05</span>موقع a'mie في السوق: إحنا في أنهي فئة؟</h2>
 <p class="lead">في كل فئة تقريباً، سعر a'mie أعلى من الماركت بليس بـ 2–5 مرات، وأعلى من أغلب البراندات السعودية، وفي مستوى البراندات العالمية أو أعلى منها بعد خصوماتها. يعني a'mie في شريحة <b>البريميوم السعودي</b>، والعميلة بتدفع زيادة عشان البراند والتغليف والتجربة، مش عشان السعر.</p>
 <div class="ladder">
-  <div style="background:#ECEAE6"><b>1. الماركت بليس</b>نون، أمازون، الصيدليات. وسيط 25–56 ريال. منتجات رخيصة ومن غير براند. <b style="display:inline;font-size:8.4pt">a'mie مش بتنافس هنا.</b></div>
-  <div style="background:#E7DCC9"><b>2. براندات سعودية</b>Clara، Hearts، Surge، Jayla، Ladeena، MZN. 35–195 ريال، وعندهم عروض وخصومات طول الوقت.</div>
+  <div style="background:#EFE6DF"><b>1. الماركت بليس</b>نون، أمازون، الصيدليات. وسيط 25–56 ريال. منتجات رخيصة ومن غير براند. <b style="display:inline;font-size:8.4pt">a'mie مش بتنافس هنا.</b></div>
+  <div style="background:#E8D5C6"><b>2. براندات سعودية</b>Clara، Hearts، Surge، Jayla، Ladeena، MZN. 35–195 ريال، وعندهم عروض وخصومات طول الوقت.</div>
   <div style="background:{INK};color:{CREAM}"><b style="color:{GOLD}">3. a'mie</b>65–482 ريال (من غير الإكسسوارات). براند سعودي، تغليف يصلح هدية، ومجموعات روتين كاملة.</div>
-  <div style="background:#DCE2EA"><b>4. براندات عالمية</b>Sol de Janeiro، Tan-Luxe، Slick، Carrot Sun، Beesline، Eucerin. 48–164 ريال، وكتير منها بخصم 25–50٪ دلوقتي.</div>
+  <div style="background:#E4DDD8"><b>4. براندات عالمية</b>Sol de Janeiro، Tan-Luxe، Slick، Carrot Sun، Beesline، Eucerin. 48–164 ريال، وكتير منها بخصم 25–50٪ دلوقتي.</div>
 </div>
 <div class="fig">{chart_position()}</div>
 <div class="cap">سعر القطعة بالريال يوم 3 نوفمبر (من صفحات المنافسين). الأحجام مختلفة، فده موقع السعر في عين العميلة، مش سعر المل. الماركت بليس = وسيط أعلى 5 نتايج على نون وأمازون والصيدليات.</div>
@@ -487,7 +507,7 @@ html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
 </section>
 
 <section class="sec">
-<h2><span class="no">06</span>التسعير: نطاق السعر لكل منتج</h2>
+<div class="sk">06 · PRICING</div><h2><span class="no">06</span>التسعير: نطاق السعر لكل منتج</h2>
 <p class="lead">لكل منتج: السعر الحالي، ونسبة القطع اللي بتتباع بكوبون، وأقرب منافس، والقرار، ونطاق السعر المسموح (من–لـ)، وأقصى خصم نسمح بيه. <b>القاعدة:</b> أي منتج أكتر من نص قطعه بتتباع بكوبون، مانرفعش سعره قبل ما نسبة قطعه بكوبون تنزل تحت 50٪.</p>
 {price_table()}
 <div class="cap">الأسعار شاملة الضريبة زي ما هي على المتجر. «تثبيت» يعني الحد الأقصى هو السعر الحالي. اللون الدهبي = منتج مرشح للرفع. أقصى خصم: 15٪ للمجموعات ومنتجات الموسم في موسمها بس، و10٪ للمنتجات اللي بتتباع لوحدها أو اللي نسبة الكوبون فيها قليلة (زي Red Cherry 28٪)، و0٪ للمنتجات اللي في اختبار رفع. نسبة الكوبون للنسخة الأساسية من المنتج. باقي المنتجات (Lemongrass Set، اللافندر، Back to Routine، كريم اليدين، الإكسسوارات): تثبيت، وأقصى خصم 10٪.</div>
@@ -504,7 +524,7 @@ html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
 </section>
 
 <section class="sec">
-<h2><span class="no">07</span>الخصومات: إمتى، وقد إيه، وعلى إيه</h2>
+<div class="band" style="background-image:url('file://{IMG}/homepage-winter/img/texture.jpg')"></div><div class="sk">07 · DISCOUNTS</div><h2><span class="no">07</span>الخصومات: إمتى، وقد إيه، وعلى إيه</h2>
 <p class="lead">47٪ من الطلبات كانت بكوبون، وفي سبتمبر وصلت 81٪. Summer26 لوحده جاب 1,178 طلب، وND96 جاب 970. لما الكوبون بيبقى موجود طول الوقت، العميلة بتتعود ماتشتريش من غيره، والسعر المعلن بيبقى مجرد رقم.</p>
 
 <div class="two">
@@ -543,7 +563,7 @@ html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
 </section>
 
 <section class="sec">
-<h2><span class="no">08</span>فين نصرف: نوفمبر 2026 – فبراير 2027</h2>
+<div class="sk">08 · MEDIA PLAN</div><h2><span class="no">08</span>فين نصرف: نوفمبر 2026 – فبراير 2027</h2>
 <p class="lead">نفس الميزانية تقريباً (حوالي 30 ألف ريال إعلانات في الشهر)، بس متوزعة على القنوات والفئات اللي بتجيب فعلاً حسب GA4. ده مقترح لازم يتختبر: كل شهر ننقل 10 نقط من القناة الأضعف في GA4 للأقوى، ومافيش قناة تعدي 50٪ من الميزانية. وROAS جوجل محسوب على 15.6 ألف صرف بس، فممكن ينزل لما نزود.</p>
 <div class="two">
 <div>
@@ -577,7 +597,7 @@ html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
 </section>
 
 <section class="sec">
-<h2><span class="no">09</span>خطة التنفيذ، وحدود البيانات</h2>
+<div class="sk">09 · ROADMAP</div><h2><span class="no">09</span>خطة التنفيذ، وحدود البيانات</h2>
 <table><thead><tr><th>إمتى</th><th>إيه</th><th>مين</th></tr></thead><tbody>
 <tr><td>الأسبوع ده</td><td>نوقف أو نغير إعلانات ستيك ومجموعة Chocolate. ونقفل أو نقصّر الأكواد اللي شغالة لحد 2027 (Y10 وSh10 لحد يونيو، وHS15 بخصم 15٪ لحد مايو)، ونخلي أكواد المؤثرين 10٪. كود 00002 (لطلبات UGC بره السعودية) يفضل.</td><td>الإعلانات</td></tr>
 <tr><td>نوفمبر</td><td>نطبق سقف الخصم (15٪ / 10٪) قبل الجمعة البيضا، ونعمل مجموعة للشعر ومجموعة للهدايا بدل الخصم.</td><td>التسويق + المتجر</td></tr>
@@ -600,6 +620,7 @@ html = f"""<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
 </ul>
 <p class="src">المصادر: طلبات زد · Snapchat Ads · Meta Ads · TikTok Ads · Google Ads · GA4 · Google Search Console · صفحات المنافسين (سيفورا، نهدي، واتسونز، كارفور، نون، أمازون، سلة، زد، تيك توك) · الهيئة العامة للإحصاء · IMARC · TechSci · ECDB.</p>
 </section>
+<section class="back"><img src="file://{IMG}/homepage-winter/img/logo-light.png" alt="a'mie"><div class="latin">ROOTED IN NATURE · DEFINED BY LUXURY</div><h3>عناية تبدأ من الطبيعة</h3><p>تقرير داخلي لفريق a'mie. أي تغيير في الأسعار أو الكوبونات على زد بيتعمل بعد موافقة الفريق.</p></section>
 </body></html>"""
 
 open(OUT, 'w', encoding='utf-8').write(html)
