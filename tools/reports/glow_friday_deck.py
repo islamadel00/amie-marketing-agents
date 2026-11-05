@@ -69,6 +69,7 @@ offer = [('Hair Set', 'hairset.jpg', 'مجموعة الشعر', 'واكس + Slee
 oc = ''.join(f'''<div class="rz"><div class="rzi"><img src="img/{im}"></div><span class="role" style="background:#F2E4DF;color:#5E2E21">{tag}</span><h4>{name}</h4><p class="sub">{items}</p>
 <div class="big2"><div><b>{was.rstrip('*')}</b><span>{'سعرها دلوقتي' if not was.endswith('*') else 'قيمة القطع منفصلة'}</span></div><div><b class="to">{now}</b><span>Glow Friday</span></div></div><p class="note">{why}</p></div>''' for _, im, name, items, was, now, tag, why in offer)
 S('04', 'THE OFFER', 'العرض: 4 مجموعات بسعر ثابت', f'''<div class="cols4 rzs">{oc}</div>
+<p class="note" style="color:#5E2E21;font-weight:600">أسعار Glow Friday مقترحة، والنهائي بعد ما المحاسب صالح يعتمدها على تكلفة القطع.</p>
 <p class="note">القواعد: مافيش كود يتجمع مع العرض · Into The Glow ومارشميلو بسعرهم · الأسعار ترجع يوم 2 ديسمبر · «قيمة القطع منفصلة» للمجموعات الجديدة بدل السعر المشطوب (قواعد وزارة التجارة).</p>''')
 
 # ---------- 05 targets ----------
