@@ -1,0 +1,148 @@
+# Glow Friday 2026 — Copy (amie-writer → amie-reviewer: approved with fixes, applied) · pending human approval
+
+Reviewer HOLDs before publishing: MoC discount licence (ترخيص التخفيضات); "was" price only where Zid showed it before 25 Nov (Hair Set 282, Lemongrass 238 — both live on Zid on 5 Nov; Chocolate Highlighter Set 99 confirmed on Zid, so 275 basis holds); early-access mechanism; landing page location; bundle names chosen by a human. Reviewer suggestion: put Into The Glow (294 = Body Glow + Chocolate stick + brush) on offer at 219 instead of a new SKU, to avoid cannibalisation (owner's call).
+
+Dates: teaser 18–23 Nov · early access (past customers) 24 Nov · offer 25 Nov – 1 Dec 2026, ends 1 Dec 23:59 (Saudi time, assumed). Fixed bundle prices. No coupon code, and no code can be combined with the offer.
+Language: product pages, landing page and FAQ in simple MSA (style guide). Ads, banners and messages in light white Saudi dialect.
+
+Open points from the writer:
+1. Into The Glow (294, full price) already contains Body Glow + a highlighter + a brush; the new 219 bundle is nearly the same thing → cannibalisation risk.
+2. The two new bundles never sold at 275/357 → use «قيمتها منفصلة» instead of a strike-through; confirm the Ministry of Commerce discount licence (ترخيص التخفيضات).
+3. Lemongrass Set contents (old SEO title mentions a dry body brush) and its 238 price need confirming.
+4. Early access on 24 Nov has no code — how do past customers buy before everyone?
+5. Brand name: style guide bans Arabic «ايمي» → «مسك a'mie», «شنطة a'mie».
+6. Brush name: «فرشاة الميك أب» (sales sheet). Video supers never name the brush.
+7. Ads show savings in SAR, not %. Savings: hair 43, lemongrass 39, chocolate 56, scents 72. No «حتى نفاد الكمية». «ذهبي» avoided.
+8. Arabic SMS = 70 chars/segment; needs opt-out + short link.
+9. Landing page location open (new category = store change needing approval, or existing «مجموعة الهدايا والعروض»).
+
+## 1. Campaign name + tagline
+Name options:
+1. **Glow Friday · جمعة القلو** ← recommended («جمعة الجلو» also works)
+2. Glow Friday · أسبوع اللمعة
+3. Glow Friday · موسم القلو
+
+Tagline options:
+1. **لمعتك كاملة، بسعر أخف.** ← recommended
+2. مجموعاتك المفضلة، بسعر يلمع.
+3. أسبوع كامل من العناية واللمعة.
+
+## 2. New bundles
+### Bundle A: Body Glow + Chocolate set (275 → 219)
+Names: 1. **مجموعة سهرة تشوكلت | Chocolate Night Set** ← recommended · 2. مجموعة لمعة تشوكلت | Chocolate Glow Set · 3. مجموعة اللمعة البرونزية | Bronze Glow Set
+
+Description:
+> مجموعة سهرة تشوكلت من a'mie تجمع لمعة الجسم Body Glow (120 مل) مع مجموعة تشوكلت: ستيك هايلايتر الجسم البرونزي (30 مل) وفرشاة الميك أب. ابدئي بـ Body Glow، فكمية صغيرة منه تكفي الجسم كله وتمنحك لمعة فورية برائحة ناتورا الدافئة. بعدها مرّري ستيك تشوكلت على عظمة الترقوة والكتفين والساقين، ووزّعيه بالفرشاة للمسة برونزية بارزة من أول تمريرة. وفي القطعتين زبدة الشيا والكاكاو، لإطلالة متكاملة في مناسباتك.
+
+- SEO title (56): مجموعة سهرة تشوكلت | لمعة الجسم وهايلايتر برونزي | a'mie
+- Meta (133): مجموعة سهرة تشوكلت من a'mie: لمعة الجسم Body Glow مع ستيك هايلايتر تشوكلت البرونزي وفرشاة الميك أب، لمعة فورية ولمسة برونزية لإطلالتك.
+
+### Bundle B: Flora + Natura + a'musk (357 → 285)
+Names: 1. **ثلاثي العطور | a'mie Scent Trio** ← recommended · 2. مجموعة هدية العطور | Scent Gift Set · 3. مجموعة روائح a'mie | a'mie Scent Collection
+
+Description:
+> ثلاثي العطور من a'mie يجمع ثلاث روائح في هدية واحدة: بودي ميست فلورا (150 مل) ببداية حمضية منعشة وقلب من الأزهار البيضاء ولمسة مسك، وبودي ميست ناتورا (150 مل) بالفانيليا وجوز الهند وحبوب التونكا، ومسك a'mie (15 مل) بالمسك واليلانغ يلانغ بحجم يناسب الشنطة. رشّي فلورا في الصباح، واختاري ناتورا للمساء، واحملي المسك معك لتجديد رائحتك خلال اليوم. كل قطعة بتغليفها الأنيق، فتكون هدية مناسبة لمن تحبين، أو لكِ أنتِ.
+
+- SEO title (42): ثلاثي العطور | مجموعة عطور للإهداء | a'mie
+- Meta (147): ثلاثي العطور من a'mie: بودي ميست فلورا وبودي ميست ناتورا ومسك a'mie في مجموعة واحدة، ثلاث روائح للصباح والمساء والشنطة، وهدية أنيقة لمن تحبين.
+
+## 3. Landing / category page
+H1: Glow Friday من a'mie | جمعة القلو
+
+Intro:
+> من 25 نوفمبر حتى 1 ديسمبر، اخترنا لكِ مجموعات من a'mie بأسعار Glow Friday: لشعر مرتب بدون حرارة، ولبشرة ناعمة في الشتاء، وللمعة مناسباتك، ولهدايا من تحبين. كل مجموعة بسعر ثابت، بدون أكواد.
+
+Cards:
+- مجموعة الشعر: واكس الشعر + ماسكارا Sleek Secret + فرشاة سليك + شنطة a'mie · ~~282 ر.س~~ **239 ر.س**
+- مجموعة الليمون قراس (للبشرة الجافة): سكراب ملح البحر + زبدة الجسم المخفوقة · ~~238 ر.س~~ **199 ر.س**
+- (optional) مجموعة اللافندر (للبشرة الجافة): سكراب ملح البحر + زبدة الجسم المخفوقة · ~~238 ر.س~~ **199 ر.س** · يحتوي السكراب على قشور مكسرات.
+- مجموعة سهرة تشوكلت (جديدة): لمعة الجسم Body Glow 120 مل + ستيك هايلايتر تشوكلت 30 مل + فرشاة الميك أب · قيمة القطع منفصلة 275 ر.س · **219 ر.س**
+- ثلاثي العطور (جديدة): بودي ميست فلورا 150 مل + بودي ميست ناتورا 150 مل + مسك a'mie 15 مل · قيمة القطع منفصلة 357 ر.س · **285 ر.س**
+
+Terms:
+> العرض من 25 نوفمبر حتى 1 ديسمبر 2026 الساعة 11:59 مساءً بتوقيت السعودية. الأسعار ثابتة على المجموعات المذكورة، ولا يمكن استخدام أي كود خصم معها. الدفع إلكتروني بالبطاقة أو Apple Pay.
+
+FAQ:
+1. متى يبدأ Glow Friday ومتى ينتهي؟ — يبدأ 25 نوفمبر وينتهي 1 ديسمبر 2026 الساعة 11:59 مساءً بتوقيت السعودية، وبعدها ينتهي سعر العرض على المجموعات.
+2. هل أقدر أستخدم كود خصم مع العرض؟ — لا. أسعار Glow Friday ثابتة على المجموعات، ولا تُجمع مع أي كود خصم.
+3. هل العرض يشمل كل المنتجات؟ — العرض على المجموعات الموجودة في هذه الصفحة فقط، وباقي المنتجات بأسعارها المعتادة.
+4. هل ثلاثي العطور مناسب كهدية؟ — نعم، يجمع ثلاث روائح مختلفة: فلورا الزهرية المنعشة، وناتورا الدافئة بالفانيليا وجوز الهند، ومسك a'mie بحجم الشنطة، وكل قطعة بتغليفها الأنيق.
+
+## 4. Homepage banner
+| Phase | Device | Headline | Sub | CTA |
+|---|---|---|---|---|
+| Teaser 18–23 Nov | Desktop | Glow Friday قرّبت | مجموعاتك المفضلة بأسعار خاصة من 25 نوفمبر | شوفي المجموعات |
+| Teaser | Mobile | Glow Friday قرّبت | أسعار خاصة من 25 نوفمبر | اكتشفي |
+| Offer 25 Nov–1 Dec | Desktop | Glow Friday بدأت | مجموعات مختارة بأسعار خاصة حتى 1 ديسمبر | تسوقي الآن |
+| Offer | Mobile | Glow Friday بدأت | أسعار خاصة حتى 1 ديسمبر | تسوقي الآن |
+| Last day 1 Dec | Both | آخر يوم لـ Glow Friday | العرض ينتهي الليلة 11:59 مساءً | تسوقي الآن |
+
+## 5. Ads
+### Snapchat (headline ≤34)
+- Teaser: Glow Friday قرّبت (17) · أسعار خاصة من 25 نوفمبر (23) · احفظي التاريخ: 25 نوفمبر (23)
+- Offer: مجموعة الشعر 239 ر.س بدل 282 (28) · Glow Friday بدأت، اختاري مجموعتك (32) · مجموعة سهرة تشوكلت بـ219 ر.س (28)
+- Last chance: آخر يوم لـGlow Friday (21) · العرض ينتهي الليلة 11:59 م (26, 1 Dec only) · أسعار Glow Friday لين 1 ديسمبر (30)
+- CTA: teaser "More"; offer/last chance "Shop Now".
+
+### Meta (primary ≤125, headline ≤40)
+Teaser:
+- P1: Glow Friday من a'mie قرّبت. من 25 نوفمبر، مجموعاتك المفضلة بأسعار خاصة لأسبوع واحد بس.
+- P2 (past customers, HOLD until early access is decided): عميلتنا، لكِ أولوية: العرض يفتح لكِ 24 نوفمبر قبل الكل بيوم. تابعي رسائلنا.
+- P3: مجموعة الشعر، مجموعة الليمون قراس، ومجموعتين جديدة نطلقها لأول مرة. كلها بأسعار Glow Friday من 25 نوفمبر.
+- H: Glow Friday تبدأ 25 نوفمبر · أسعار خاصة على مجموعاتك المفضلة · مجموعات جديدة بالطريق
+Offer:
+- P1: Glow Friday بدأت. مجموعة الشعر (واكس + ماسكارا Sleek Secret + فرشاة سليك + شنطة) بـ239 ر.س بدل 282.
+- P2: لمعة لجسمك كله ولمسة برونزية للتفاصيل: Body Glow مع مجموعة تشوكلت بـ219 ر.س، وقيمة قطعها منفصلة 275 ر.س.
+- P3: هدية لمن تحبين: فلورا وناتورا ومسك a'mie في ثلاثي العطور بـ285 ر.س، وقيمة قطعها منفصلة 357 ر.س.
+- P4 (optional): جفاف الشتاء؟ مجموعة الليمون قراس (سكراب + زبدة) بـ199 ر.س بدل 238. [+ ومجموعة اللافندر بنفس السعر.]
+- H: Glow Friday: مجموعة الشعر بـ239 ر.س · مجموعة سهرة تشوكلت بـ219 ر.س · ثلاثي العطور بـ285 ر.س
+Last chance:
+- P1: آخر فرصة لأسعار Glow Friday. العرض ينتهي 1 ديسمبر الساعة 11:59 مساءً.
+- P2: مجموعة الشعر بـ239 ومجموعة الليمون قراس بـ199 ر.س، لين نهاية 1 ديسمبر بس.
+- P3: لسا ما اخترتي هديتك؟ ثلاثي العطور بـ285 ر.س لين 1 ديسمبر بس.
+- H: آخر يوم: Glow Friday تنتهي الليلة (1 Dec only) · العرض ينتهي 1 ديسمبر · آخر فرصة لأسعار Glow Friday
+
+### TikTok (ad text ≤100; hook ≤6 words)
+| Phase | Ad text | Hook |
+|---|---|---|
+| Teaser | Glow Friday من a'mie تبدأ 25 نوفمبر. احفظي التاريخ | شي حلو جاي 25 نوفمبر |
+| Teaser | مجموعتين جديدة جاية مع Glow Friday، وحدة للمعة ووحدة للهدايا | Glow Friday قرّبت |
+| Teaser | مجموعة الشعر بسعر خاص من 25 نوفمبر. جهّزي سلتك | احفظي هالفيديو لـ25 نوفمبر |
+| Offer | شعيرات تطير؟ مجموعة الشعر كاملة بـ239 ر.س بدل 282 في Glow Friday | شعيرات تطير طول اليوم؟ |
+| Offer | Body Glow مع ستيك تشوكلت والفرشاة بـ219 ر.س. لمعة كاملة لمناسبتك الجاية | تمريرة وحدة وشوفي وش يصير |
+| Offer | فلورا وناتورا ومسك a'mie بـ285 ر.س، وقطعها منفصلة 357. ثلاث روائح بهدية وحدة | هدية وحدة، ثلاث روائح |
+| Last chance | آخر يوم لـGlow Friday. العرض ينتهي الليلة 11:59 م | آخر يوم، لا يفوتك |
+| Last chance | مجموعة الشعر بـ239 وسهرة تشوكلت بـ219 ر.س، باقي لها ساعات | باقي ساعات على نهاية العرض |
+| Last chance | آخر فرصة: ثلاثي العطور بـ285 ر.س لين 1 ديسمبر | سلتك لسا فيها شي؟ |
+
+### Google Search RSA
+Headlines (≤30): Glow Friday من a'mie · عروض Glow Friday · مجموعة الشعر بـ239 ر.س · مجموعة الليمون قراس بـ199 ر.س · مجموعة سهرة تشوكلت بـ219 ر.س · ثلاثي العطور بـ285 ر.س · لمعة الجسم وهايلايتر تشوكلت · مجموعة عطور للإهداء · واكس وماسكارا شعر وفرشاة · سكراب وزبدة جسم للبشرة الجافة · العرض حتى 1 ديسمبر · صنع في السعودية · براند سعودي للعناية بالجسم · اختاري هديتك من a'mie · وفّري حتى 72 ر.س (only after the MoC discount licence; else «أسعار ثابتة بدون أكواد»)
+Descriptions (≤90):
+1. مجموعات a'mie بأسعار Glow Friday من 25 نوفمبر حتى 1 ديسمبر. اطلبي مجموعتك الآن.
+2. مجموعة الشعر بـ239 ر.س بدل 282: واكس وماسكارا Sleek Secret وفرشاة سليك وشنطة.
+3. Body Glow مع ستيك تشوكلت وفرشاة الميك أب بـ219 ر.س. لمعة للجسم ولمسة برونزية.
+4. ثلاثي العطور بـ285 ر.س: بودي ميست فلورا وناتورا ومسك a'mie. هدية لمن تحبين.
+Sitelinks: مجموعة الشعر · مجموعة سهرة تشوكلت · ثلاثي العطور · مجموعة الليمون قراس
+
+## 6. Video supers (Readex Pro; never name the brush)
+Approved hooks — A: «وش سر هاللمعة؟» · «لما فستانك يكون بدون أكمام» · «ضغطة وتمريرة وجاهزة للسهرة» (+ «إطلالتك جاهزة وناقصها لمعة؟»). B: «شعر مرتب بدون حرارة؟ شوفي» · «لما تشيلين الشيلة وشعرك يطير» · «وش السر ورا هالتسريحة؟» (+ «شعيرات تطير طول اليوم؟»).
+Video A — مجموعة سهرة تشوكلت:
+1. Hook: إطلالتك جاهزة وناقصها لمعة؟
+2. Body Glow لجسمك كله
+3. تمريرة تشوكلت على الترقوة
+4. بـ219 ر.س، وقطعها منفصلة 275
+5. CTA (end card): اطلبي مجموعة سهرة تشوكلت
+
+Video B — مجموعة الشعر:
+1. Hook: شعيرات تطير طول اليوم؟
+2. واكس ستيك بشمع العسل وزيت اللوز
+3. ماسكارا بتمريرة وحدة بدون قشور
+4. مجموعة الشعر 239 بدل 282 ر.س
+5. CTA (end card): اطلبي مجموعة الشعر قبل 1 ديسمبر
+
+## 7. WhatsApp / SMS
+- Early access 24 Nov (HOLD until the early-access mechanism is decided): a'mie: Glow Friday فتحت لكِ اليوم قبل الكل، مجموعة الشعر بـ239 ر.س [الرابط] لإلغاء الاشتراك: [STOP]
+- Last chance 1 Dec: a'mie: آخر يوم لـGlow Friday، أسعار المجموعات تنتهي الليلة 11:59م [الرابط] لإلغاء الاشتراك: [STOP]
+
+## 8. Message to the accountant
+> هلا [الاسم]، نجهّز لعرض Glow Friday (من 25 نوفمبر إلى 1 ديسمبر) بأسعار ثابتة على أربع مجموعات (أو خمس مع اللافندر)، ونحتاج نتأكد من ربح كل مجموعة قبل الإطلاق. ممكن ترسل لنا تكلفة الوحدة الحالية (شاملة التعبئة إن وجدت) لكل من: واكس الشعر، ماسكارا Sleek Secret، فرشاة سليك، شنطة a'mie، سكراب الليمون قراس، زبدة الليمون قراس، سكراب اللافندر وزبدة اللافندر، ستيك هايلايتر تشوكلت، فرشاة الميك أب، لمعة الجسم Body Glow، بودي ميست فلورا، بودي ميست ناتورا، ومسك a'mie؟ ولو عندك متوسط تكلفة الشحن ورسوم الدفع لكل طلب يكون أفضل، عشان نحسب الربح الصافي. نحتاجها لو أمكن قبل 15 نوفمبر، وشكرًا لك.
