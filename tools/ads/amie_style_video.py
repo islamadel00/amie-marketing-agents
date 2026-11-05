@@ -81,7 +81,8 @@ for i, clip in enumerate(SPEC['clips']):
             vf = 'zscale=t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,' + vf
         run(['ffmpeg', '-v', 'error', '-y', '-ss', str(a), '-t', str(read), '-i', src, '-an', '-vf', f'{vf},fps=30,format=yuv420p,setsar=1,{TAG}', '-t', str(dur),
              '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', o])
-    segs.append((o, dur))
+    real = float(subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', o], capture_output=True, text=True, stdin=subprocess.DEVNULL).stdout or dur)
+    segs.append((o, min(dur, real) - 0.02))
 card_png(f'{D}/card.png', SPEC['card'])
 run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-t', '3.0', '-i', f'{D}/card.png', '-vf', f'fps=30,format=yuv420p,{TAG}',
      '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', f'{D}/card.mp4'])
@@ -101,6 +102,17 @@ for j, (head, sub, t0, t1) in enumerate(SPEC.get('states', [])):
 if SPEC.get('script'):
     script_png(f'{D}/script.png', SPEC['script']); inputs += ['-i', f'{D}/script.png']
     fc.append(f"[{prev}][{n + len(SPEC.get('states', []))}:v]overlay=0:0:enable='between(t,0,{tend:.2f})'[sc]"); prev = 'sc'
+if SPEC.get('top'):
+    from PIL import ImageFilter
+    im = Image.new('RGBA', (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im); sh = Image.new('RGBA', (W, H), (0, 0, 0, 0)); ds = ImageDraw.Draw(sh)
+    y = SPEC.get('top_y', 200); fsz = SPEC.get('top_size', 46)
+    for line in SPEC['top'].split('\n'):
+        f = fit(line, AR_B, fsz, W - 90); l, t, r, b = d.textbbox((0, 0), line, font=f, direction='rtl', language='ar'); x = (W - (r - l)) / 2 - l
+        ds.text((x + 2, y - t + 3), line, font=f, fill=(0, 0, 0, 150), direction='rtl', language='ar')
+        d.text((x, y - t), line, font=f, fill='white', direction='rtl', language='ar'); y += int(fsz * 1.45)
+    sh = sh.filter(ImageFilter.GaussianBlur(4)); sh.alpha_composite(im); sh.save(f'{D}/top.png')
+    inputs += ['-i', f'{D}/top.png']; ti = len(inputs) // 2 - 1
+    fc.append(f"[{prev}][{ti}:v]overlay=0:0:enable='between(t,0,{tend:.2f})'[tp]"); prev = 'tp'
 fc.append(f'[{prev}]format=yuv420p,{TAG}[v]')
 out = f"{WD}/amie-{name}{SPEC.get('suffix', '')}.mp4"
 run(['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', ';'.join(fc), '-map', '[v]', '-t', f'{total:.2f}', '-c:v', 'libx264',
