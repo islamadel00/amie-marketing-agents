@@ -48,17 +48,16 @@ def script_png(path, txt):
     lay = lay.rotate(5, resample=Image.BICUBIC); im.alpha_composite(lay, (0, 70)); im.save(path)
 
 def card_png(path, c):
+    # minimal end card: script, logo, bundle name, quiet price line, dates, CTA
     im = Image.new('RGB', (W, H), PANEL); d = ImageDraw.Draw(im)
-    f = ImageFont.truetype(SCRIPT, 96); tw = d.textlength('Glow Friday', font=f); d.text(((W - tw) / 2, 250), 'Glow Friday', font=f, fill=INK)
-    lg = Image.open(LOGO).convert('RGBA'); lw = 300; lg = lg.resize((lw, int(lg.height * lw / lg.width))); im.paste(lg, ((W - lw) // 2, 400), lg)
-    ar_center(d, 560, c['bundle'], fit(c['bundle'], AR_B, 44, W - 100), TAUPE)
-    ar_center(d, 625, c['items'], fit(c['items'], AR_R, 27, W - 100), GREY)
-    ar_center(d, 720, c['price'], font(AR_B, 60), INK)
-    if c.get('note'): ar_center(d, 810, c['note'], font(AR_R, 26), GREY)
-    ar_center(d, 880, c['dates'], font(AR_R, 28), INK)
-    pill(d, W / 2, 960, 'اطلبي الآن', TAUPE, 'white', font(AR_B, 30), h=62)
-    tw = d.textlength('amie-sa.com', font=font(f'{FONTS}/Montserrat-Light.ttf', 26))
-    d.text(((W - tw) / 2, 1060), 'amie-sa.com', font=font(f'{FONTS}/Montserrat-Light.ttf', 26), fill=GREY)
+    f = ImageFont.truetype(SCRIPT, 84); tw = d.textlength('Glow Friday', font=f); d.text(((W - tw) / 2, 330), 'Glow Friday', font=f, fill=INK)
+    lg = Image.open(LOGO).convert('RGBA'); lw = 240; lg = lg.resize((lw, int(lg.height * lw / lg.width))); im.paste(lg, ((W - lw) // 2, 470), lg)
+    ar_center(d, 625, c['bundle'], fit(c['bundle'], AR_B, 38, W - 120), TAUPE)
+    ar_center(d, 690, c['price_line'], font(AR_R, 28), GREY)
+    ar_center(d, 740, c['dates'], font(AR_R, 24), GREY)
+    pill(d, W / 2, 815, 'اطلبي الآن', TAUPE, 'white', font(AR_B, 26), h=54)
+    tw = d.textlength('amie-sa.com', font=font(f'{FONTS}/Montserrat-Light.ttf', 22))
+    d.text(((W - tw) / 2, 905), 'amie-sa.com', font=font(f'{FONTS}/Montserrat-Light.ttf', 22), fill=GREY)
     im.save(path)
 
 # footage segments -> 720x1280 (footage area is the top VH px)
