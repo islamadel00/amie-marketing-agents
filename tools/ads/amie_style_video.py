@@ -65,11 +65,13 @@ def card_png(path, c):
 segs = []
 for i, clip in enumerate(SPEC['clips']):
     src, a, dur = clip[:3]; opt = clip[3] if len(clip) > 3 else {}
-    o = f'{D}/c{i}' + ''.join(f'_{k}{v}' for k, v in sorted(opt.items())) + '.mp4'
+    o = f'{D}/c{i}' + ''.join(f'_{k}{v}' for k, v in sorted(opt.items())).replace(' ', '').replace('[', '').replace(']', '').replace(',', '-') + '.mp4'
     if not os.path.exists(o):
         tr = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=color_transfer', '-of', 'csv=p=0', src],
                             capture_output=True, text=True, stdin=subprocess.DEVNULL).stdout.strip()
         vf = f'scale={W}:{VH}:force_original_aspect_ratio=increase,crop={W}:{VH},pad={W}:{H}:0:0:color=0xF7F7F5'
+        if opt.get('crop'):
+            x, y, w, h = opt['crop']; vf = f'crop=iw*{w}:ih*{h}:iw*{x}:ih*{y},' + vf
         read = dur
         if opt.get('slow'): vf += f",setpts={opt['slow']}*PTS"; read = dur / opt['slow']
         nf = int(dur * 30)
