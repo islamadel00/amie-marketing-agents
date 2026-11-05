@@ -15,6 +15,7 @@ PANEL, TAUPE, GREY, INK = (247, 247, 245), '#7A6957', '#8C8782', '#191919'
 TAG = 'setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709'
 OUTTAG = ['-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709']
 name = SPEC['name']; D = f'{WD}/{name}'; os.makedirs(D, exist_ok=True)
+if SPEC.get('full'): VH = H   # full-bleed footage, no text panel
 
 def run(cmd): subprocess.run(cmd, check=True, stdin=subprocess.DEVNULL)
 def font(p, s): return ImageFont.truetype(p, s, layout_engine=ImageFont.Layout.RAQM)
@@ -62,15 +63,21 @@ def card_png(path, c):
 
 # footage segments -> 720x1280 (footage area is the top VH px)
 segs = []
-for i, (src, a, dur) in enumerate(SPEC['clips']):
-    o = f'{D}/c{i}.mp4'
+for i, clip in enumerate(SPEC['clips']):
+    src, a, dur = clip[:3]; opt = clip[3] if len(clip) > 3 else {}
+    o = f'{D}/c{i}' + ''.join(f'_{k}{v}' for k, v in sorted(opt.items())) + '.mp4'
     if not os.path.exists(o):
         tr = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=color_transfer', '-of', 'csv=p=0', src],
                             capture_output=True, text=True, stdin=subprocess.DEVNULL).stdout.strip()
         vf = f'scale={W}:{VH}:force_original_aspect_ratio=increase,crop={W}:{VH},pad={W}:{H}:0:0:color=0xF7F7F5'
+        read = dur
+        if opt.get('slow'): vf += f",setpts={opt['slow']}*PTS"; read = dur / opt['slow']
+        nf = int(dur * 30)
+        if opt.get('zoom') == 'in': vf += f",fps=30,zoompan=z='1+0.12*on/{nf}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps=30"
+        if opt.get('zoom') == 'punch': vf += f",fps=30,zoompan=z='if(lt(on,6),1.18-0.03*on,1)':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s={W}x{H}:fps=30"
         if tr == 'arib-std-b67':
             vf = 'zscale=t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,' + vf
-        run(['ffmpeg', '-v', 'error', '-y', '-ss', str(a), '-t', str(dur), '-i', src, '-an', '-vf', f'{vf},fps=30,format=yuv420p,setsar=1,{TAG}',
+        run(['ffmpeg', '-v', 'error', '-y', '-ss', str(a), '-t', str(read), '-i', src, '-an', '-vf', f'{vf},fps=30,format=yuv420p,setsar=1,{TAG}', '-t', str(dur),
              '-c:v', 'libx264', '-preset', 'fast', '-crf', '18', o])
     segs.append((o, dur))
 card_png(f'{D}/card.png', SPEC['card'])
@@ -86,12 +93,12 @@ for k in range(1, len(segs)):
     fc.append(f'[{prev}][{k}:v]xfade=transition=fade:duration={xf}:offset={off:.2f}[x{k}]'); prev = f'x{k}'
 total = off + segs[-1][1]; tend = total - segs[-1][1]
 n = len(segs)
-for j, (head, sub, t0, t1) in enumerate(SPEC['states']):
+for j, (head, sub, t0, t1) in enumerate(SPEC.get('states', [])):
     panel_png(f'{D}/p{j}.png', head, sub); inputs += ['-i', f'{D}/p{j}.png']
     fc.append(f"[{prev}][{n + j}:v]overlay=0:0:enable='between(t,{t0},{min(t1, tend):.2f})'[o{j}]"); prev = f'o{j}'
 if SPEC.get('script'):
     script_png(f'{D}/script.png', SPEC['script']); inputs += ['-i', f'{D}/script.png']
-    fc.append(f"[{prev}][{n + len(SPEC['states'])}:v]overlay=0:0:enable='between(t,0,{tend:.2f})'[sc]"); prev = 'sc'
+    fc.append(f"[{prev}][{n + len(SPEC.get('states', []))}:v]overlay=0:0:enable='between(t,0,{tend:.2f})'[sc]"); prev = 'sc'
 fc.append(f'[{prev}]format=yuv420p,{TAG}[v]')
 out = f"{WD}/amie-{name}{SPEC.get('suffix', '')}.mp4"
 run(['ffmpeg', '-v', 'error', '-y', *inputs, '-filter_complex', ';'.join(fc), '-map', '[v]', '-t', f'{total:.2f}', '-c:v', 'libx264',
