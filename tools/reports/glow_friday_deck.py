@@ -35,7 +35,7 @@ S('01', 'ONE-PAGE SUMMARY', 'الفكرة في صفحة واحدة', '''<p class
 <div class="kpis k4"><div class="kpi"><b>4</b><span>مجموعات بسعر ثابت (الشعر، الليمون قراس، سهرة تشوكلت، ثلاثي العطور)</span></div><div class="kpi"><b>7</b><span>أيام بس: 25 نوفمبر – 1 ديسمبر، ودخول مبكر للعميلات يوم 24</span></div><div class="kpi"><b>~100K</b><span>ريال صافي في الأسبوع (حوالي ضعف الأسبوع العادي)</span></div><div class="kpi"><b>320+</b><span>متوسط قيمة الطلب المستهدف (كان 285 في أكتوبر)</span></div></div>
 <div class="dec5"><div class="step"><span>1</span><h4>مانكسرش السعر</h4><p>a'mie بريميوم سعودي. المنافسين بيخصموا 25–50٪، وإحنا ندخل بمجموعات بقيمة واضحة.</p></div>
 <div class="step"><span>2</span><h4>المجموعات بدل الكوبون</h4><p>العرض على 4 مجموعات بس، وأي كود مايشتغلش معاها. Into The Glow ومارشميلو برا العرض لإنهم بيبيعوا لوحدهم.</p></div>
-<div class="step"><span>3</span><h4>جوجل الأول</h4><p>أحسن عائد حقيقي عندنا (5.1× حسب GA4)، وفي بحث على «سكراب» و«هدايا» و«مسك». سناب لإعادة الاستهداف.</p></div>
+<div class="step"><span>3</span><h4>سناب الأول</h4><p>الحصة الأكبر (35–40٪) لسناب: وصول وإعادة استهداف. عائد جوجل (5.1×) كان عالي بسبب أيام المؤثرين، فجوجل 30٪ للبحث على «سكراب» و«هدايا» و«مسك».</p></div>
 <div class="step"><span>4</span><h4>العميلات القدام الأول</h4><p>دخول مبكر يوم 24 برسالة. أرخص طلبات، ومن غير ما نصرف إعلانات.</p></div>
 <div class="step"><span>5</span><h4>بعدها نرجع للسعر</h4><p>يوم 2 ديسمبر الأسعار ترجع زي ما هي، ومن غير تمديد. ده اللي هيحمي البراند بعد الحملة.</p></div></div>''')
 
@@ -46,7 +46,7 @@ S('02', 'WHERE WE START', 'إحنا فين دلوقتي: الأرقام والس
 <tr><td>متوسط قيمة الطلب</td><td class="nm">408 ← 285</td><td>نزل 30٪ مع الكوبونات: الحملة لازم ترفعه</td></tr>
 <tr><td>طلبات بكوبون في سبتمبر</td><td><span class="ix b">81%</span></td><td>ND96 فضل 40 يوم بخصم 20٪: مانكررهاش</td></tr>
 <tr><td>التسويق ÷ المبيعات</td><td class="nm">19.2%</td><td>كان 7٪ في الموسم و26٪ بعده: سقف الحملة 20٪</td></tr>
-<tr><td>ROAS حقيقي (GA4)</td><td class="nm">جوجل 5.1 · سناب 2.2 · ميتا 1.3 · تيك توك 1.25</td><td>الفلوس تروح لجوجل وسناب</td></tr></table></div>
+<tr><td>ROAS حقيقي (GA4)</td><td class="nm">جوجل 5.1 · سناب 2.2 · ميتا 1.3 · تيك توك 1.25</td><td>عائد جوجل كان عالي بسبب أيام المؤثرين: سناب ياخد الحصة الأكبر</td></tr></table></div>
 <div class="col"><div class="card"><h4>الونرز بتوع الشتا (أكتوبر)</h4><table class="t sm"><tr><th></th><th>المنتج</th><th>قطع في أكتوبر</th><th>في العرض؟</th></tr>
 <tr><td class="pi">{pic('Into The Glow')}</td><td>Into The Glow</td><td class="nm">330</td><td>لأ: بيبيع لوحده</td></tr>
 <tr><td class="pi"><img class="th" src="img/hlms.jpg"></td><td>Marshmallow Set</td><td class="nm">132</td><td>لأ: بيبيع لوحده</td></tr>
@@ -69,7 +69,7 @@ offer = [('Hair Set', 'hairset.jpg', 'مجموعة الشعر', 'واكس + Slee
 oc = ''.join(f'''<div class="rz"><div class="rzi"><img src="img/{im}"></div><span class="role" style="background:#F2E4DF;color:#5E2E21">{tag}</span><h4>{name}</h4><p class="sub">{items}</p>
 <div class="big2"><div><b>{was.rstrip('*')}</b><span>{'سعرها دلوقتي' if not was.endswith('*') else 'قيمة القطع منفصلة'}</span></div><div><b class="to">{now}</b><span>Glow Friday</span></div></div><p class="note">{why}</p></div>''' for _, im, name, items, was, now, tag, why in offer)
 S('04', 'THE OFFER', 'العرض: 4 مجموعات بسعر ثابت', f'''<div class="cols4 rzs">{oc}</div>
-<p class="note">القواعد: مافيش كود يتجمع مع العرض · Into The Glow ومارشميلو بسعرهم · الأسعار ترجع يوم 2 ديسمبر · «قيمة القطع منفصلة» للمجموعات الجديدة بدل السعر المشطوب (قواعد وزارة التجارة) · ترخيص التخفيضات قبل الإعلان.</p>''')
+<p class="note">القواعد: مافيش كود يتجمع مع العرض · Into The Glow ومارشميلو بسعرهم · الأسعار ترجع يوم 2 ديسمبر · «قيمة القطع منفصلة» للمجموعات الجديدة بدل السعر المشطوب (قواعد وزارة التجارة).</p>''')
 
 # ---------- 05 targets ----------
 S('05', 'TARGETS', 'الأهداف بالأرقام', '''<div class="cols2"><div class="card"><h4>الهدف لأسبوع العرض (25 نوفمبر – 1 ديسمبر)</h4><table class="t"><tr><th>المؤشر</th><th>الأساس (أسبوع عادي في أكتوبر)</th><th>الهدف</th></tr>
@@ -91,8 +91,8 @@ S('05', 'TARGETS', 'الأهداف بالأرقام', '''<div class="cols2"><div
 # ---------- 06 media ----------
 S('06', 'AUDIENCES & MEDIA', 'الجمهور والقنوات والميزانية', '''<div class="cols3"><div class="card"><h4>الجمهور بالترتيب</h4><ol><li><b>العميلات القدام:</b> رسالة واتساب يوم 24 فيها رابط المجموعات قبل الإعلانات.</li><li><b>اللي زاروا الموقع أو سابوا السلة</b> (آخر 60 يوم): سناب وميتا.</li><li><b>اللي بيدوروا على جوجل:</b> «سكراب» و«هدايا» و«مسك» و«واكس للشعر» و«لمعة جسم».</li><li><b>جمهور جديد:</b> تيك توك وسناب بمحتوى UGC وفيديوهات الحركة.</li></ol></div>
 <div class="chart"><h4>الميزانية: 12–15 ألف ريال للأسبوعين</h4>
-<div class="hb"><span>جوجل</span><div class="ht"><i style="width:40%;background:#5E2E21"></i></div><span class="hv">35–40%</span><span class="hn">بحث وPMax</span></div>
-<div class="hb"><span>سناب</span><div class="ht"><i style="width:30%;background:#5E2E21"></i></div><span class="hv">30%</span><span class="hn">إعادة استهداف</span></div>
+<div class="hb"><span>سناب</span><div class="ht"><i style="width:40%;background:#5E2E21"></i></div><span class="hv">35–40%</span><span class="hn">وصول + إعادة استهداف</span></div>
+<div class="hb"><span>جوجل</span><div class="ht"><i style="width:30%;background:#5E2E21"></i></div><span class="hv">30%</span><span class="hn">بحث وPMax</span></div>
 <div class="hb"><span>ميتا</span><div class="ht"><i style="width:15%;background:#6B595C"></i></div><span class="hv">15%</span><span class="hn">ريلز + كتالوج</span></div>
 <div class="hb"><span>تيك توك</span><div class="ht"><i style="width:15%;background:#6B595C"></i></div><span class="hv">15%</span><span class="hn">UGC</span></div>
 <p class="note">حسب المرحلة: 20٪ تشويق (18–23) · 70٪ أسبوع العرض · 10٪ آخر فرصة (30 نوفمبر – 1 ديسمبر).</p></div>
@@ -104,7 +104,7 @@ S('07', 'CREATIVE', 'المحتوى والإعلانات', '''<div class="cols3"
 <div class="card"><h4>قواعد</h4><ul><li>3 نسخ لكل إعلان، بنفس الميزانية أول 2–3 أيام، وبعدين الصرف يروح على الأحسن.</li><li>الكلام مايغطيش الوش، وزرار «اطلبي الآن» بلون #663C3C.</li><li>من غير «أرخص» أو نسب خصم كبيرة: نتكلم عن المجموعة وقيمتها.</li></ul></div></div>''')
 
 # ---------- 08 timeline ----------
-S('08', 'TIMELINE', 'الجدول الزمني', '''<div class="cal six"><div><b>لحد 17 نوفمبر · تجهيز</b><span>ترخيص التخفيضات · المخزون (تشوكلت، المعطرات، المسك) · منتجات المجموعات الجديدة على زد (بعد الموافقة) · صفحة الحملة · الكريتيفز.</span><small>الفريق + المتجر</small></div>
+S('08', 'TIMELINE', 'الجدول الزمني', '''<div class="cal six"><div><b>لحد 17 نوفمبر · تجهيز</b><span>المخزون (تشوكلت، المعطرات، المسك) · منتجات المجموعات الجديدة على زد (بعد الموافقة) · صفحة الحملة · الكريتيفز.</span><small>الفريق + المتجر</small></div>
 <div><b>18 – 23 نوفمبر · تشويق</b><span>«Glow Friday قرّبت». فيديوهات من غير سعر، وقايمة انتظار، ونجمع جمهور لإعادة الاستهداف. 20٪ من الميزانية.</span><small>الإعلانات</small></div>
 <div><b>24 نوفمبر · دخول مبكر</b><span>المجموعات تتنشر، ورسالة واتساب للعميلات القدام بالرابط. مافيش إعلانات لسه.</span><small>المتجر + الواتساب</small></div>
 <div><b>25 – 29 نوفمبر · العرض</b><span>كل القنوات شغالة. كل يوم نراجع الأرقام وننقل الصرف للي بيجيب. 70٪ من الميزانية.</span><small>الإعلانات</small></div>
@@ -125,10 +125,10 @@ S('09', 'MEASUREMENT', 'القياس وقواعد القرار اليومي', ''
 S('10', 'RISKS & CHECKLIST', 'المخاطر وقبل الإطلاق', '''<div class="cols2"><div class="card warn"><h4>المخاطر</h4><table class="t sm"><tr><th>الخطر</th><th>نعمل إيه</th></tr>
 <tr><td>سهرة تشوكلت (219) تاكل من Into The Glow (294) لإن فيها نفس القطع تقريباً</td><td>قرار: نعرض Into The Glow نفسها بـ 219 بدل مجموعة جديدة، أو نخلي الفرق واضح في الكريتيف</td></tr>
 <tr><td>المخزون يخلص في نص العرض</td><td>نعدّ المخزون قبل 17 نوفمبر، ونحدد كمية لكل مجموعة</td></tr>
-<tr><td>السعر المرجعي والترخيص</td><td>ترخيص التخفيضات، و«قيمة القطع منفصلة» للمجموعات الجديدة</td></tr>
+<tr><td>السعر المرجعي</td><td>«قيمة القطع منفصلة» للمجموعات الجديدة بدل السعر المشطوب</td></tr>
 <tr><td>الشحن يتأخر من الضغط</td><td>نأكد مع Isnaad على عدد الطلبات المتوقع</td></tr>
 <tr><td>المبيعات تقع بعد الحملة</td><td>مافيش تمديد، ورسالة شكر من غير خصم</td></tr></table></div>
-<div class="card"><h4>قبل الإطلاق (لازم كلها ✓)</h4><ul class="check"><li>ترخيص التخفيضات من وزارة التجارة</li><li>تكلفة القطعة من المحاسب، عشان نتأكد من الربح</li><li>أسامي المجموعات الجديدة متوافق عليها</li><li>المنتجات الجديدة على زد (بعد الموافقة) وصفحة الحملة</li><li>المخزون متعدّ</li><li>الأكواد القديمة مقفولة (Y10، Sh10، HS15)</li><li>الكريتيفز والنصوص متوافق عليها</li><li>UTM على كل الروابط</li></ul></div></div>''')
+<div class="card"><h4>قبل الإطلاق (لازم كلها ✓)</h4><ul class="check"><li>أسامي المجموعات الجديدة متوافق عليها</li><li>المنتجات الجديدة على زد (بعد الموافقة) وصفحة الحملة</li><li>المخزون متعدّ</li><li>الأكواد القديمة مقفولة (Y10، Sh10، HS15)</li><li>الكريتيفز والنصوص متوافق عليها</li><li>UTM على كل الروابط</li></ul></div></div>''')
 
 pages.append('''<section class="page cover end"><img class="cimg" src="a/cover_full.jpg"><div class="ctitle"><div class="cen">THANK YOU</div><div class="cline"></div><p>«الجمال لا يُصنع... بل يُعتنى به حتى يتجلّى»</p><img src="a/logo_dark.png" class="lgend"></div>
 <div class="cfoot"><span>amie-sa.com</span><span>a'mie · Glow Friday Strategy</span></div></section>''')
