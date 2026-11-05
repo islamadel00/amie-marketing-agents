@@ -1,0 +1,143 @@
+<!doctype html><html lang="ar"><head><meta charset="utf-8"><title>a'mie · Glow Friday Strategy</title><link rel="stylesheet" href="base.css"><link rel="stylesheet" href="extra.css"><style>
+@font-face{font-family:"Readex Pro";src:url("file:///tmp/claude-0/-home-user/b736310d-3a65-5d5d-94b2-e1f479f6690e/scratchpad/fonts/ReadexPro-VF.ttf");font-weight:160 700}
+@font-face{font-family:"Montserrat";src:url("file:///tmp/claude-0/-home-user/b736310d-3a65-5d5d-94b2-e1f479f6690e/scratchpad/fonts/Montserrat-Light.ttf");font-weight:200 300}
+@font-face{font-family:"Montserrat";src:url("file:///tmp/claude-0/-home-user/b736310d-3a65-5d5d-94b2-e1f479f6690e/scratchpad/fonts/Montserrat-Regular.ttf");font-weight:400 700}
+.kpis{grid-template-columns:repeat(6,1fr)}
+.kpi.w b{color:#9E3B32}
+.dec5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;flex:1;min-height:0}
+.dec5 .step{padding:14px 16px}.dec5 .step p{font-size:12.5px;color:#191919}.dec5 h4{font-size:14px}
+.col{display:flex;flex-direction:column;gap:14px;min-height:0}
+.chart svg{display:block;max-height:330px;width:100%}
+.cols2.w2{grid-template-columns:.85fr 1.15fr}
+table.t.sm{font-size:11.5px} table.t.sm th{white-space:normal;padding:6px 8px} table.t.sm td{padding:4px 8px}
+.chart.grow{flex:1;justify-content:center} .chart.big svg{max-height:440px} .kpis.k4{grid-template-columns:repeat(4,1fr)} table.t{font-size:13px} .chart.grow svg{max-height:290px}
+table.t .tt td{font-weight:500;border-top:1px solid #191919}
+table.t td.pi{width:46px;padding:3px 6px}
+.th{width:38px;height:38px;object-fit:contain;display:block;background:#fff;border-radius:8px}
+table.t.pr td{padding:4px 8px} table.t.pr small.d{display:block;font-size:9.5px;color:#6B595C;line-height:1.35}
+table.t tr.cat td{background:#F2E4DF;color:#5E2E21;font-weight:500;font-size:11.5px;padding:4px 12px}
+.lad{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.lad div{background:#fff;border:1px solid #E3E2E1;border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+.lad div.me{background:#F2E4DF;border-color:#5E2E21}
+.lad b{font-weight:500}.lad p{font-size:12px;color:#6B595C}
+.comps{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;flex:1;min-height:0}
+.comp{background:#fff;border:1px solid #E3E2E1;border-radius:14px;overflow:hidden;display:flex;flex-direction:column}
+.comp>div:last-child{padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.cimgw{height:190px;background:#fff;display:flex;align-items:center;justify-content:center;border-bottom:1px solid #F0EFEE}
+.cimgw img{max-height:170px;max-width:85%;object-fit:contain}
+.comp h4{margin:0;font-size:16px}.comp p{font-size:12.5px}.comp .vs{background:#F2F2F2;border-radius:8px;padding:6px 8px;font-size:12px}
+.rzs{grid-template-columns:1fr 1fr 1fr 1.1fr}
+.rz{background:#fff;border:1px solid #E3E2E1;border-radius:14px;padding:14px 16px;display:flex;flex-direction:column;gap:6px}
+.rzi{height:120px;display:flex;align-items:center;justify-content:center}.rzi img{max-height:116px;max-width:80%;object-fit:contain}
+.rz h4{margin:0;font-size:16px}
+.big2 b.to{color:#5E2E21}
+.rzm{display:grid;gap:4px}.rzm div{display:flex;justify-content:space-between;gap:8px;font-size:11.5px;border-top:1px solid #F0EFEE;padding-top:4px}
+.rzm span{color:#6B595C}.rzm b{font-family:Montserrat;font-weight:500;direction:ltr;white-space:nowrap}
+.rules4{flex:none}
+.rules4 div{padding:16px 18px}.rules4 p{font-size:13px}
+.cal.six{grid-template-columns:repeat(3,1fr);flex:1}
+.cal.six div{padding:16px 18px;gap:6px}.cal.six span{font-size:13px}.cal.six small{margin-top:auto;color:#5E2E21}
+.formula{border:1px dashed #5E2E21;border-radius:10px;padding:8px 12px;text-align:center;font-size:13px;margin:4px 0 8px}
+.big2{flex-wrap:wrap}
+.hb{grid-template-columns:110px 1fr 58px 44px}
+.wcols{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.wcol{background:#fff;border:1px solid #E3E2E1;border-radius:14px;padding:12px 14px;display:flex;flex-direction:column;gap:8px}
+.wcol.win{background:#F2E4DF;border-color:#E8CFC6}
+.wh{display:flex;align-items:center;gap:10px}.wh p{font-size:12px;color:#6B595C}
+.wgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.wc{background:#fff;border:1px solid #EEEDEC;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.wi{height:92px;display:flex;align-items:center;justify-content:center;position:relative;background:#fff;flex:none}.wi img{max-height:86px;max-width:90%;object-fit:contain}
+.nw{position:absolute;top:6px;left:6px;font-size:10px;background:#5E2E21;color:#fff;border-radius:999px;padding:1px 7px}
+.wt{padding:6px 9px 8px;display:flex;flex-direction:column;gap:2px}.wt h5{margin:0;font-weight:500;font-size:12.5px}
+.wn{display:flex;align-items:baseline;gap:5px}.wn b{font-family:Montserrat;font-weight:300;font-size:22px;color:#5E2E21}.wn span{font-size:9.5px;color:#6B595C;line-height:1.2}
+.wt p{font-size:10.5px;color:#191919;line-height:1.45}
+.wall{display:grid;grid-template-columns:auto 230px 230px 1fr;gap:12px;align-items:center;background:#fff;border:1px solid #E3E2E1;border-radius:14px;padding:10px 14px}
+.wall .wc{flex-direction:row}.wall .wi{width:70px;height:84px}.wall .wi img{max-height:76px}
+.wall .note{margin:0}
+table.heat td.hc{text-align:center;font-family:Montserrat;font-size:11px;padding:1px 4px;border-bottom:2px solid #fff}
+table.heat td{padding:1px 8px} table.heat th{text-align:center} table.heat td.pi{width:30px} table.heat .th{width:22px;height:22px}
+table.cand td.mk{text-align:center;color:#5E2E21;font-size:16px} table.cand th{white-space:normal;text-align:center}
+table.mpt td{padding:7px 12px;font-size:13px} table.ap{font-size:10.5px;line-height:1.35} table.ap td{padding:2px 7px} table.ap th{padding:4px 7px} table.ap tr.me td{background:#F2E4DF;color:#5E2E21;font-weight:500} table.ap td.src{font-size:10px;color:#6B595C} table.ap .ix{white-space:nowrap;font-size:10px}
+table.cand small.d{display:block;font-size:10.5px;color:#6B595C} table.cand .th{width:40px;height:40px} table.cand td{padding:3px 8px} table.heat{font-size:11px} table.heat .ix{white-space:nowrap;font-size:10px;padding:0 6px} table.heat td:nth-child(2){white-space:nowrap} table.heat .th{width:28px;height:28px} table.heat td.hc{padding:4px 2px} table.heat th{padding:5px 3px}
+.rr{display:grid;grid-template-columns:70px 1fr 70px;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid #F0EFEE}
+.rn{font-size:13px;font-weight:400}.rb{display:flex;flex-direction:column;gap:5px}.rb .ht{height:14px}
+.rv{display:flex;flex-direction:column;font-family:Montserrat;direction:ltr;text-align:left;line-height:1.3}.rv span{font-size:11px;color:#6B595C}.rv b{font-size:16px;font-weight:500;color:#5E2E21}
+.mr{display:grid;grid-template-columns:120px 1fr 70px;gap:12px;align-items:center;padding:9px 0}
+.mt{position:relative;height:16px;background:#F2F2F2;border-radius:8px}.mt i{position:absolute;top:0;bottom:0;background:#D9C2B8;border-radius:8px}
+.mt em{position:absolute;top:-4px;bottom:-4px;width:3px;background:#5E2E21;border-radius:2px}
+.mr b{font-size:13px;font-weight:500}
+.axl{display:flex;justify-content:space-between;font-family:Montserrat;font-size:10px;color:#9A9897}
+.chart .note{margin-top:auto}
+.card h4{margin-bottom:8px}
+</style><style>.check li{list-style:none}.check li::before{content:"☐ ";color:#5E2E21}.rz .sub{font-size:11.5px;color:#6B595C}.rz .role{align-self:flex-start}</style></head><body><section class="page cover"><img class="cimg" src="a/cover_full.jpg"><div class="ctop"><img src="a/logo_dark.png" class="lgc"></div>
+<div class="ctitle"><div class="cen">GLOW FRIDAY <span>STRATEGY 2026</span></div><div class="cline"></div><h1>استراتيجية Glow Friday</h1><p>عرض a'mie للجمعة البيضا · 25 نوفمبر – 1 ديسمبر 2026 · مبنية على أرقام آخر 6 شهور وموقع a'mie في السوق</p></div>
+<div class="cfoot"><span>amie-sa.com</span><span>نوفمبر 2026</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="tocwrap"><div class="pen big">AGENDA</div><div class="tr"><span class="tn">01</span><span class="tar">الفكرة في صفحة واحدة</span><span class="tdots"></span><span class="ten">One-page summary</span></div><div class="tr"><span class="tn">02</span><span class="tar">إحنا فين دلوقتي: الأرقام والسوق</span><span class="tdots"></span><span class="ten">Where we start</span></div><div class="tr"><span class="tn">03</span><span class="tar">موقعنا: ليه مانكسرش السعر</span><span class="tdots"></span><span class="ten">Positioning</span></div><div class="tr"><span class="tn">04</span><span class="tar">العرض: 4 مجموعات بسعر ثابت</span><span class="tdots"></span><span class="ten">The offer</span></div><div class="tr"><span class="tn">05</span><span class="tar">الأهداف بالأرقام</span><span class="tdots"></span><span class="ten">Targets</span></div><div class="tr"><span class="tn">06</span><span class="tar">الجمهور والقنوات والميزانية</span><span class="tdots"></span><span class="ten">Audiences & media</span></div><div class="tr"><span class="tn">07</span><span class="tar">المحتوى والإعلانات</span><span class="tdots"></span><span class="ten">Creative</span></div><div class="tr"><span class="tn">08</span><span class="tar">الجدول الزمني</span><span class="tdots"></span><span class="ten">Timeline</span></div><div class="tr"><span class="tn">09</span><span class="tar">القياس وقواعد القرار اليومي</span><span class="tdots"></span><span class="ten">Measurement</span></div><div class="tr"><span class="tn">10</span><span class="tar">المخاطر وقبل الإطلاق</span><span class="tdots"></span><span class="ten">Risks & checklist</span></div></div></div><div class="ftr"><span>amie-sa.com</span><span>02</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">01</span><div><div class="pen">ONE-PAGE SUMMARY</div><h2>الفكرة في صفحة واحدة</h2></div></div><p class="lede">Glow Friday هي جمعة a'mie البيضا، بس بطريقتنا: <b>مجموعات مختارة بسعر ثابت لمدة 7 أيام</b>، من غير كوبونات ومن غير خصم على المتجر كله. الهدف إننا نكبّر قيمة الطلب ونحرّك مجموعات الشتا، من غير ما نعلّم العميلة تستنى الكوبون تاني.</p>
+<div class="kpis k4"><div class="kpi"><b>4</b><span>مجموعات بسعر ثابت (الشعر، الليمون قراس، سهرة تشوكلت، ثلاثي العطور)</span></div><div class="kpi"><b>7</b><span>أيام بس: 25 نوفمبر – 1 ديسمبر، ودخول مبكر للعميلات يوم 24</span></div><div class="kpi"><b>~100K</b><span>ريال صافي في الأسبوع (حوالي ضعف الأسبوع العادي)</span></div><div class="kpi"><b>320+</b><span>متوسط قيمة الطلب المستهدف (كان 285 في أكتوبر)</span></div></div>
+<div class="dec5"><div class="step"><span>1</span><h4>مانكسرش السعر</h4><p>a'mie بريميوم سعودي. المنافسين بيخصموا 25–50٪، وإحنا ندخل بمجموعات بقيمة واضحة.</p></div>
+<div class="step"><span>2</span><h4>المجموعات بدل الكوبون</h4><p>العرض على 4 مجموعات بس، وأي كود مايشتغلش معاها. Into The Glow ومارشميلو برا العرض لإنهم بيبيعوا لوحدهم.</p></div>
+<div class="step"><span>3</span><h4>جوجل الأول</h4><p>أحسن عائد حقيقي عندنا (5.1× حسب GA4)، وفي بحث على «سكراب» و«هدايا» و«مسك». سناب لإعادة الاستهداف.</p></div>
+<div class="step"><span>4</span><h4>العميلات القدام الأول</h4><p>دخول مبكر يوم 24 برسالة. أرخص طلبات، ومن غير ما نصرف إعلانات.</p></div>
+<div class="step"><span>5</span><h4>بعدها نرجع للسعر</h4><p>يوم 2 ديسمبر الأسعار ترجع زي ما هي، ومن غير تمديد. ده اللي هيحمي البراند بعد الحملة.</p></div></div></div><div class="ftr"><span>amie-sa.com</span><span>03</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">02</span><div><div class="pen">WHERE WE START</div><h2>إحنا فين دلوقتي: الأرقام والسوق</h2></div></div><div class="cols2"><div class="card"><h4>أرقامنا (مايو – أكتوبر 2026)</h4>
+<table class="t sm"><tr><th>المؤشر</th><th>الرقم</th><th>يعني إيه للحملة</th></tr>
+<tr><td>صافي المبيعات في أكتوبر</td><td class="nm">230,632</td><td>حوالي 7.7 ألف في اليوم: ده الأساس اللي هنقيس عليه</td></tr>
+<tr><td>متوسط قيمة الطلب</td><td class="nm">408 ← 285</td><td>نزل 30٪ مع الكوبونات: الحملة لازم ترفعه</td></tr>
+<tr><td>طلبات بكوبون في سبتمبر</td><td><span class="ix b">81%</span></td><td>ND96 فضل 40 يوم بخصم 20٪: مانكررهاش</td></tr>
+<tr><td>التسويق ÷ المبيعات</td><td class="nm">19.2%</td><td>كان 7٪ في الموسم و26٪ بعده: سقف الحملة 20٪</td></tr>
+<tr><td>ROAS حقيقي (GA4)</td><td class="nm">جوجل 5.1 · سناب 2.2 · ميتا 1.3 · تيك توك 1.25</td><td>الفلوس تروح لجوجل وسناب</td></tr></table></div>
+<div class="col"><div class="card"><h4>الونرز بتوع الشتا (أكتوبر)</h4><table class="t sm"><tr><th></th><th>المنتج</th><th>قطع في أكتوبر</th><th>في العرض؟</th></tr>
+<tr><td class="pi"><img class="th" src="img/itg.jpg"></td><td>Into The Glow</td><td class="nm">330</td><td>لأ: بيبيع لوحده</td></tr>
+<tr><td class="pi"><img class="th" src="img/hlms.jpg"></td><td>Marshmallow Set</td><td class="nm">132</td><td>لأ: بيبيع لوحده</td></tr>
+<tr><td class="pi"><img class="th" src="img/wax.jpg"></td><td>واكس الشعر</td><td class="nm">144</td><td>جوه مجموعة الشعر</td></tr>
+<tr><td class="pi"><img class="th" src="img/bodyglow.jpg"></td><td>Body Glow</td><td class="nm">106</td><td>جوه سهرة تشوكلت</td></tr>
+<tr><td class="pi"><img class="th" src="img/hairset.jpg"></td><td>Hair Set</td><td class="nm">82</td><td><span class="ix g">239</span></td></tr></table></div>
+<div class="callout"><b>السوق:</b> المنافسين داخلين بخصومات كبيرة: Hearts معلنة Black Friday، وClara مخصّمة على كل حاجة، وCarrot Sun وBeesline بنص السعر. لو دخلنا حرب سعر هنخسر، فنكسب بالمجموعة والقيمة والتغليف.</div></div></div></div><div class="ftr"><span>amie-sa.com</span><span>04</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">03</span><div><div class="pen">POSITIONING</div><h2>موقعنا: ليه مانكسرش السعر</h2></div></div><div class="cols3"><div class="card"><h4>إحنا مين في السوق</h4><p>a'mie أغلى من البراندات السعودية والماركت بليس بـ 2–5 مرات، وفي مستوى العالمية أو أعلى. العميلة بتشتري البراند والتجربة والتغليف اللي يصلح هدية.</p></div>
+<div class="card warn"><h4>الخطر لو خصمنا على كله</h4><ul><li>متوسط الطلب ينزل أكتر (حصل في سبتمبر).</li><li>العميلة تتعود ماتشتريش من غير كود.</li><li>بعد الحملة المبيعات تقع لحد الكود الجاي.</li></ul></div>
+<div class="card good"><h4>اللي هنعمله</h4><ul><li>«Glow Friday»: مناسبتنا إحنا، مش «بلاك فرايدي» زي الكل.</li><li>مجموعات بسعر ثابت، قيمتها واضحة.</li><li>كلام هادي وواثق: «اكتشفي مجموعاتنا لفترة محدودة».</li><li>المنتجات اللي بتبيع لوحدها تفضل بسعرها.</li></ul></div></div>
+<div class="callout">الرسالة الأساسية: <b>«لمعتك كاملة، بسعر أخف»</b>، وجنبها جمل الإعلانات المعتمدة: «لمعة جسمك في دقايق» و«شعر مرتب لساعات» و«روتين شعرك في شنطة وحدة».</div></div><div class="ftr"><span>amie-sa.com</span><span>05</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">04</span><div><div class="pen">THE OFFER</div><h2>العرض: 4 مجموعات بسعر ثابت</h2></div></div><div class="cols4 rzs"><div class="rz"><div class="rzi"><img src="img/hairset.jpg"></div><span class="role" style="background:#F2E4DF;color:#5E2E21">بطل الحملة</span><h4>مجموعة الشعر</h4><p class="sub">واكس + Sleek Secret + فرشاة + شنطة</p>
+<div class="big2"><div><b>282</b><span>سعرها دلوقتي</span></div><div><b class="to">239</b><span>Glow Friday</span></div></div><p class="note">بيتباع طول السنة، وتاني أعلى بحث على جوجل. Clara أقوى منافس هنا (189 بعد الخصم).</p></div><div class="rz"><div class="rzi"><img src="img/hlcs.jpg"></div><span class="role" style="background:#F2E4DF;color:#5E2E21">للسهرات</span><h4>مجموعة سهرة تشوكلت (جديدة)</h4><p class="sub">Body Glow + ستيك تشوكلت + الفرشاة</p>
+<div class="big2"><div><b>275</b><span>قيمة القطع منفصلة</span></div><div><b class="to">219</b><span>Glow Friday</span></div></div><p class="note">بتحرّك مجموعة تشوكلت الضعيفة عن طريق Body Glow. مارشميلو برا.</p></div><div class="rz"><div class="rzi"><img src="img/lemset.png"></div><span class="role" style="background:#F2E4DF;color:#5E2E21">سعر الدخول</span><h4>مجموعة الليمون قراس</h4><p class="sub">سكراب + زبدة</p>
+<div class="big2"><div><b>238</b><span>سعرها دلوقتي</span></div><div><b class="to">199</b><span>Glow Friday</span></div></div><p class="note">«سكراب» أعلى كلمة بحث عندنا (74 ألف في الشهر). واللافندر بنفس السعر لو المخزون يسمح.</p></div><div class="rz"><div class="rzi"><img src="img/flora.jpg"></div><span class="role" style="background:#F2E4DF;color:#5E2E21">للهدايا</span><h4>ثلاثي العطور (جديدة)</h4><p class="sub">فلورا + ناتورا + مسك a'mie</p>
+<div class="big2"><div><b>357</b><span>قيمة القطع منفصلة</span></div><div><b class="to">285</b><span>Glow Friday</span></div></div><p class="note">«هدايا» 60 ألف و«مسك» 50 ألف بحث في الشهر. 3 قطع في طلب واحد، بشحن مرة واحدة.</p></div></div>
+<p class="note">القواعد: مافيش كود يتجمع مع العرض · Into The Glow ومارشميلو بسعرهم · الأسعار ترجع يوم 2 ديسمبر · «قيمة القطع منفصلة» للمجموعات الجديدة بدل السعر المشطوب (قواعد وزارة التجارة) · ترخيص التخفيضات قبل الإعلان.</p></div><div class="ftr"><span>amie-sa.com</span><span>06</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">05</span><div><div class="pen">TARGETS</div><h2>الأهداف بالأرقام</h2></div></div><div class="cols2"><div class="card"><h4>الهدف لأسبوع العرض (25 نوفمبر – 1 ديسمبر)</h4><table class="t"><tr><th>المؤشر</th><th>الأساس (أسبوع عادي في أكتوبر)</th><th>الهدف</th></tr>
+<tr><td>صافي المبيعات</td><td class="nm">~54,000</td><td class="nm"><b>~100,000</b></td></tr>
+<tr><td>متوسط قيمة الطلب</td><td class="nm">285</td><td class="nm"><b>320+</b></td></tr>
+<tr><td>الطلبات</td><td class="nm">~225</td><td class="nm"><b>~350</b></td></tr>
+<tr><td>طلبات بكوبون</td><td class="nm">71%</td><td class="nm"><b>أقل من 35%</b></td></tr>
+<tr><td>التسويق ÷ المبيعات</td><td class="nm">26%</td><td class="nm"><b>20% بحد أقصى</b></td></tr>
+<tr><td>ROAS حسب GA4 (كل القنوات)</td><td class="nm">2.2</td><td class="nm"><b>3+</b></td></tr></table>
+<p class="note">تقديرات مبنية على أكتوبر. مبيعات نوفمبر اللي فات (البرومبت 34) هتظبطها.</p></div>
+<div class="card"><h4>القطع المستهدفة من كل مجموعة</h4><table class="t"><tr><th>المجموعة</th><th>قطع</th><th>المبيعات (شامل الضريبة)</th></tr>
+<tr><td>مجموعة الشعر · 239</td><td class="nm">120</td><td class="nm">28,680</td></tr>
+<tr><td>سهرة تشوكلت · 219</td><td class="nm">100</td><td class="nm">21,900</td></tr>
+<tr><td>الليمون قراس · 199</td><td class="nm">100</td><td class="nm">19,900</td></tr>
+<tr><td>ثلاثي العطور · 285</td><td class="nm">80</td><td class="nm">22,800</td></tr>
+<tr class="tt"><td>الإجمالي</td><td class="nm">400</td><td class="nm">93,280</td></tr></table>
+<p class="note">والباقي من المنتجات اللي بسعرها الكامل (Into The Glow، مارشميلو، الواكس) اللي بتتضاف للسلة.</p></div></div></div><div class="ftr"><span>amie-sa.com</span><span>07</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">06</span><div><div class="pen">AUDIENCES & MEDIA</div><h2>الجمهور والقنوات والميزانية</h2></div></div><div class="cols3"><div class="card"><h4>الجمهور بالترتيب</h4><ol><li><b>العميلات القدام:</b> رسالة واتساب يوم 24 فيها رابط المجموعات قبل الإعلانات.</li><li><b>اللي زاروا الموقع أو سابوا السلة</b> (آخر 60 يوم): سناب وميتا.</li><li><b>اللي بيدوروا على جوجل:</b> «سكراب» و«هدايا» و«مسك» و«واكس للشعر» و«لمعة جسم».</li><li><b>جمهور جديد:</b> تيك توك وسناب بمحتوى UGC وفيديوهات الحركة.</li></ol></div>
+<div class="chart"><h4>الميزانية: 12–15 ألف ريال للأسبوعين</h4>
+<div class="hb"><span>جوجل</span><div class="ht"><i style="width:40%;background:#5E2E21"></i></div><span class="hv">35–40%</span><span class="hn">بحث وPMax</span></div>
+<div class="hb"><span>سناب</span><div class="ht"><i style="width:30%;background:#5E2E21"></i></div><span class="hv">30%</span><span class="hn">إعادة استهداف</span></div>
+<div class="hb"><span>ميتا</span><div class="ht"><i style="width:15%;background:#6B595C"></i></div><span class="hv">15%</span><span class="hn">ريلز + كتالوج</span></div>
+<div class="hb"><span>تيك توك</span><div class="ht"><i style="width:15%;background:#6B595C"></i></div><span class="hv">15%</span><span class="hn">UGC</span></div>
+<p class="note">حسب المرحلة: 20٪ تشويق (18–23) · 70٪ أسبوع العرض · 10٪ آخر فرصة (30 نوفمبر – 1 ديسمبر).</p></div>
+<div class="card"><h4>المؤثرين</h4><ul><li>2–3 بس، ومحتواهم لمعة وهدايا وشعر.</li><li>من غير كود خصم (العرض مايتجمعش مع الأكواد). كل واحدة ليها رابط UTM.</li><li>نختار من اللي جابوا مبيعات قبل كده (زي NAJLA وLULU)، ونقيس تكلفة كل تعاون باللي جابه.</li></ul></div></div></div><div class="ftr"><span>amie-sa.com</span><span>08</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">07</span><div><div class="pen">CREATIVE</div><h2>المحتوى والإعلانات</h2></div></div><div class="cols3"><div class="card"><h4>جاهز</h4><ul><li>6 فيديوهات حركة من غير كلام (3 هوكات لكل مجموعة): سهرة تشوكلت والشعر.</li><li>فيديو بستايل UGC سريع للمعة، بموديلز ومنتجات، ونص ثابت تحت.</li><li>نصوص الإعلانات لسناب وميتا وتيك توك وجوجل، وصفحة الحملة، وبانرات، ورسايل واتساب: كلها اتراجعت.</li></ul></div>
+<div class="card"><h4>محتاج يتعمل</h4><ul><li>فيديو ثلاثي العطور (مافيش لقطات رش، يا نصوّر يا نستخدم صور منتج).</li><li>صور المجموعات الجديدة لصفحات المنتج.</li><li>بانر الصفحة الرئيسية (تشويق وعرض).</li><li>فيديو بمشاهد الباليه للهدايا (عندنا 32 لقطة).</li></ul></div>
+<div class="card"><h4>قواعد</h4><ul><li>3 نسخ لكل إعلان، بنفس الميزانية أول 2–3 أيام، وبعدين الصرف يروح على الأحسن.</li><li>الكلام مايغطيش الوش، وزرار «اطلبي الآن» بلون #663C3C.</li><li>من غير «أرخص» أو نسب خصم كبيرة: نتكلم عن المجموعة وقيمتها.</li></ul></div></div></div><div class="ftr"><span>amie-sa.com</span><span>09</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">08</span><div><div class="pen">TIMELINE</div><h2>الجدول الزمني</h2></div></div><div class="cal six"><div><b>لحد 17 نوفمبر · تجهيز</b><span>ترخيص التخفيضات · المخزون (تشوكلت، المعطرات، المسك) · منتجات المجموعات الجديدة على زد (بعد الموافقة) · صفحة الحملة · الكريتيفز.</span><small>الفريق + المتجر</small></div>
+<div><b>18 – 23 نوفمبر · تشويق</b><span>«Glow Friday قرّبت». فيديوهات من غير سعر، وقايمة انتظار، ونجمع جمهور لإعادة الاستهداف. 20٪ من الميزانية.</span><small>الإعلانات</small></div>
+<div><b>24 نوفمبر · دخول مبكر</b><span>المجموعات تتنشر، ورسالة واتساب للعميلات القدام بالرابط. مافيش إعلانات لسه.</span><small>المتجر + الواتساب</small></div>
+<div><b>25 – 29 نوفمبر · العرض</b><span>كل القنوات شغالة. كل يوم نراجع الأرقام وننقل الصرف للي بيجيب. 70٪ من الميزانية.</span><small>الإعلانات</small></div>
+<div><b>30 نوفمبر – 1 ديسمبر · آخر فرصة</b><span>«آخر يوم». إعادة استهداف للي زاروا ومااشتروش، ورسالة آخر فرصة. 10٪ من الميزانية.</span><small>الإعلانات + الواتساب</small></div>
+<div><b>2 – 8 ديسمبر · بعد الحملة</b><span>الأسعار ترجع. رسالة شكر من غير خصم، ونقترح المنتجات اللي بسعرها (Into The Glow، مارشميلو). نراجع النتايج.</span><small>الفريق</small></div></div></div><div class="ftr"><span>amie-sa.com</span><span>10</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">09</span><div><div class="pen">MEASUREMENT</div><h2>القياس وقواعد القرار اليومي</h2></div></div><div class="cols2"><div class="card"><h4>نتابع كل يوم الساعة 10 الصبح</h4><table class="t"><tr><th>المؤشر</th><th>المصدر</th><th>لو أقل من كده</th></tr>
+<tr><td>صافي المبيعات اليومي</td><td>زد</td><td>أقل من 12 ألف يومين ورا بعض: نزوّد إعادة الاستهداف</td></tr>
+<tr><td>متوسط قيمة الطلب</td><td>زد</td><td>أقل من 300: نبرز المجموعات أكتر في الصفحة الرئيسية</td></tr>
+<tr><td>قطع كل مجموعة</td><td>زد</td><td>مجموعة أقل من نص هدفها: نغير الكريتيف بتاعها</td></tr>
+<tr><td>ROAS لكل منصة</td><td>GA4</td><td>أقل من 1 يومين: نقلل صرفها 50٪</td></tr>
+<tr><td>طلبات بكوبون</td><td>زد</td><td>أكتر من 35٪: نشوف الأكواد المفتوحة ونقفلها</td></tr></table></div>
+<div class="col"><div class="card"><h4>قواعد ثابتة</h4><ul><li>نقيس بـ GA4 مش بأرقام المنصة، وكل رابط عليه UTM.</li><li>مافيش قناة تعدي 50٪ من الميزانية.</li><li>ماحدش يمدّ العرض بعد 1 ديسمبر.</li></ul></div>
+<div class="callout"><b>بعد الحملة بأسبوعين:</b> هل المبيعات رجعت لمستواها العادي ولا وقعت؟ ده المقياس الحقيقي إن الحملة ماعلّمتش العميلة تستنى الخصم.</div></div></div></div><div class="ftr"><span>amie-sa.com</span><span>11</span></div></section><section class="page"><div class="hdr"><img src="a/logo_dark.png" class="lg"><i></i><span>Glow Friday Strategy</span><i></i><span>VOL 1.0</span><i></i><span>Nov 2026</span></div><div class="body"><div class="ph"><span class="pnum">10</span><div><div class="pen">RISKS & CHECKLIST</div><h2>المخاطر وقبل الإطلاق</h2></div></div><div class="cols2"><div class="card warn"><h4>المخاطر</h4><table class="t sm"><tr><th>الخطر</th><th>نعمل إيه</th></tr>
+<tr><td>سهرة تشوكلت (219) تاكل من Into The Glow (294) لإن فيها نفس القطع تقريباً</td><td>قرار: نعرض Into The Glow نفسها بـ 219 بدل مجموعة جديدة، أو نخلي الفرق واضح في الكريتيف</td></tr>
+<tr><td>المخزون يخلص في نص العرض</td><td>نعدّ المخزون قبل 17 نوفمبر، ونحدد كمية لكل مجموعة</td></tr>
+<tr><td>السعر المرجعي والترخيص</td><td>ترخيص التخفيضات، و«قيمة القطع منفصلة» للمجموعات الجديدة</td></tr>
+<tr><td>الشحن يتأخر من الضغط</td><td>نأكد مع Isnaad على عدد الطلبات المتوقع</td></tr>
+<tr><td>المبيعات تقع بعد الحملة</td><td>مافيش تمديد، ورسالة شكر من غير خصم</td></tr></table></div>
+<div class="card"><h4>قبل الإطلاق (لازم كلها ✓)</h4><ul class="check"><li>ترخيص التخفيضات من وزارة التجارة</li><li>تكلفة القطعة من المحاسب، عشان نتأكد من الربح</li><li>أسامي المجموعات الجديدة متوافق عليها</li><li>المنتجات الجديدة على زد (بعد الموافقة) وصفحة الحملة</li><li>المخزون متعدّ</li><li>الأكواد القديمة مقفولة (Y10، Sh10، HS15)</li><li>الكريتيفز والنصوص متوافق عليها</li><li>UTM على كل الروابط</li></ul></div></div></div><div class="ftr"><span>amie-sa.com</span><span>12</span></div></section><section class="page cover end"><img class="cimg" src="a/cover_full.jpg"><div class="ctitle"><div class="cen">THANK YOU</div><div class="cline"></div><p>«الجمال لا يُصنع... بل يُعتنى به حتى يتجلّى»</p><img src="a/logo_dark.png" class="lgend"></div>
+<div class="cfoot"><span>amie-sa.com</span><span>a'mie · Glow Friday Strategy</span></div></section></body></html>
