@@ -11,6 +11,7 @@ FONTS = '/tmp/claude-0/-home-user/b736310d-3a65-5d5d-94b2-e1f479f6690e/scratchpa
 LOGO = '/tmp/claude-0/-home-user/b736310d-3a65-5d5d-94b2-e1f479f6690e/scratchpad/brand/logo.png'
 AR_B, AR_R, SCRIPT = f'{FONTS}/ReadexPro-AR-Bold.ttf', f'{FONTS}/ReadexPro-AR-Regular.ttf', f'{FONTS}/ReenieBeanie.ttf'
 W, H, VH = 720, 1280, 990          # footage height; panel below
+BTN = '#663C3C'
 PANEL, TAUPE, GREY, INK = (247, 247, 245), '#7A6957', '#8C8782', '#191919'
 TAG = 'setparams=color_primaries=bt709:color_trc=bt709:colorspace=bt709'
 OUTTAG = ['-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709']
@@ -39,7 +40,7 @@ def panel_png(path, head, sub):
     d.rectangle((0, VH, W, H), fill=PANEL)
     ar_center(d, VH + 42, head, fit(head, AR_B, 40, W - 90), TAUPE)
     if sub: ar_center(d, VH + 108, sub, fit(sub, AR_R, 28, W - 100), GREY)
-    pill(d, W / 2, VH + 172, 'اطلبي الآن', TAUPE, 'white', font(AR_B, 28))
+    pill(d, W / 2, VH + 172, 'اطلبي الآن', BTN, 'white', font(AR_B, 28))
     im.save(path)
 
 def script_png(path, txt):
@@ -56,7 +57,7 @@ def card_png(path, c):
     ar_center(d, 625, c['bundle'], fit(c['bundle'], AR_B, 38, W - 120), TAUPE)
     ar_center(d, 690, c['price_line'], font(AR_R, 28), GREY)
     ar_center(d, 740, c['dates'], font(AR_R, 24), GREY)
-    pill(d, W / 2, 815, 'اطلبي الآن', TAUPE, 'white', font(AR_B, 26), h=54)
+    pill(d, W / 2, 815, 'اطلبي الآن', BTN, 'white', font(AR_B, 26), h=54)
     tw = d.textlength('amie-sa.com', font=font(f'{FONTS}/Montserrat-Light.ttf', 22))
     d.text(((W - tw) / 2, 905), 'amie-sa.com', font=font(f'{FONTS}/Montserrat-Light.ttf', 22), fill=GREY)
     im.save(path)
