@@ -4,40 +4,44 @@ Writes <banners_dir>/glow-friday-<name>-<discount>.png (1080x1350) and moodboard
 import sys, os, json, subprocess
 D = os.path.abspath(sys.argv[1]); P = sys.argv[2] if len(sys.argv) > 2 else '20'
 ROSE, INK = '#8E5A55', '#141414'
-FONTS = '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">'
-BASE = f"""*{{margin:0;padding:0;box-sizing:border-box}} body{{width:1080px;height:1350px;overflow:hidden;font-family:'IBM Plex Sans Arabic',sans-serif;color:{INK}}}
-.bg{{position:absolute;inset:0;background-size:cover;background-position:center bottom}} .logo{{position:absolute;height:46px}}
-.num{{font-family:'Cormorant Garamond',serif;font-weight:600;line-height:.85;letter-spacing:-4px}} .ar{{direction:rtl}}
-.eyebrow{{font-family:Inter;font-weight:500;letter-spacing:.45em;font-size:20px}} .pill{{display:inline-block;border:1.5px solid {INK};border-radius:40px;padding:12px 34px;font-size:26px}}"""
+FONTS = '<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">'
+FOIL = "background:linear-gradient(100deg,#3c3c3c 0%,#9b9b9b 20%,#4a4a4a 38%,#c4c4c4 55%,#454545 75%,#8e8e8e 100%);-webkit-background-clip:text;background-clip:text;color:transparent"
+GRAIN = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E\")"
+BASE = f"""*{{margin:0;padding:0;box-sizing:border-box}} body{{width:1080px;height:1350px;overflow:hidden;font-family:'IBM Plex Sans Arabic',sans-serif;color:{INK};position:relative}}
+.bg{{position:absolute;inset:0;background-size:cover;background-position:center bottom}}
+.fx{{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.10) 100%),{GRAIN};opacity:.32;mix-blend-mode:multiply}}
+.frame{{position:absolute;inset:30px;border:1px solid rgba(20,20,20,.28)}}
+.logo{{position:absolute;height:38px;top:70px;left:50%;transform:translateX(-50%)}}
+.num{{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:.82;letter-spacing:-3px}} .ar{{direction:rtl}}
+.foil{{font-family:Inter;font-weight:500;letter-spacing:.55em;font-size:19px;{FOIL};filter:drop-shadow(0 1px 0 rgba(255,255,255,.6))}}
+.rule{{display:flex;align-items:center;justify-content:center;gap:22px}} .rule i{{display:block;width:70px;height:1px;background:linear-gradient(90deg,transparent,#8d8d8d,transparent)}}
+.eye{{font-family:Inter;font-weight:500;letter-spacing:.55em;font-size:19px;color:#1c1c1c}}
+.sub{{font-weight:300;font-size:30px;letter-spacing:.01em}}"""
 
-def a(bg):   # Forte style: huge number centred, eyebrow bar
-    return f"""<div class=bg style="background-image:url('src/{bg}')"></div>
-<img class=logo src="src/logo-dark.png" style="top:56px;left:50%;transform:translateX(-50%)">
-<div style="position:absolute;top:126px;width:100%;text-align:center">
- <div class=eyebrow style="display:inline-block;background:{INK};color:#fff;padding:12px 26px 12px 34px">GLOW FRIDAY</div>
- <div style="display:flex;justify-content:center;align-items:flex-end;gap:22px;margin-top:26px">
-  <div class=num style="font-size:250px">{P}%</div>
-  <div class=ar style="font-size:60px;font-weight:600;padding-bottom:28px">خصم</div></div>
- <div class=ar style="font-size:32px;margin-top:0">على منتجات مختارة فقط</div></div>"""
+def shell(bg, inner):
+    return f"""<div class=bg style="background-image:url('src/{bg}')"></div><div class=fx></div><div class=frame></div>
+<img class=logo src="src/logo-dark.png">{inner}"""
 
-def b(bg):   # Gisou style: headline left/right, bottom bar
-    return f"""<div class=bg style="background-image:url('src/{bg}')"></div>
-<img class=logo src="src/logo-dark.png" style="top:56px;left:50%;transform:translateX(-50%)">
-<div style="position:absolute;top:150px;width:100%;display:flex;justify-content:center;align-items:center;gap:34px">
- <div class=num style="font-size:190px">{P}%</div>
- <div class=ar style="text-align:right"><div style="font-size:58px;font-weight:600;line-height:1.15">خصم Glow Friday</div>
- <div style="font-size:32px;margin-top:8px">على منتجات مختارة فقط</div></div></div>
-<div class=ar style="position:absolute;bottom:0;width:100%;height:120px;background:{INK};color:#fff;display:flex;align-items:center;justify-content:center;font-size:30px;gap:18px">
- <span>مجموعة الليمون قراس</span><span style="color:{ROSE}">●</span><span style="font-family:Inter;letter-spacing:.2em;font-size:22px">AMIE-SA.COM</span></div>"""
+def a(bg):   # centred number, foil eyebrow
+    return shell(bg, f"""<div style="position:absolute;top:150px;width:100%;text-align:center">
+ <div class=rule><i></i><span class=eye>GLOW FRIDAY</span><i></i></div>
+ <div class=num style="font-size:230px;margin-top:30px">{P}%</div>
+ <div class="ar sub" style="margin-top:18px">خصم على منتجات مختارة فقط</div></div>""")
 
-def c(bg):   # editorial: eyebrow, number, pill
-    return f"""<div class=bg style="background-image:url('src/{bg}')"></div>
-<img class=logo src="src/logo-dark.png" style="top:56px;left:72px">
-<div class=eyebrow style="position:absolute;top:70px;right:72px;color:{ROSE}">GLOW FRIDAY</div>
-<div style="position:absolute;top:140px;left:72px">
- <div class=num style="font-size:200px">{P}<span style="font-size:120px">%</span></div>
- <div class=ar style="font-size:40px;font-weight:600;margin-top:6px;text-align:left">خصم على مجموعة الشعر</div>
- <div class=ar style="font-size:26px;margin-top:4px;text-align:left;color:#444">منتجات مختارة فقط · لفترة محدودة</div></div>"""
+def b(bg):   # number + line side by side, slim foil footer
+    return shell(bg, f"""<div style="position:absolute;top:160px;width:100%;text-align:center"><div class=rule><i></i><span class=foil>GLOW FRIDAY</span><i></i></div></div>
+<div style="position:absolute;top:220px;width:100%;display:flex;justify-content:center;align-items:center;gap:40px">
+ <div class=num style="font-size:170px">{P}%</div><div style="width:1px;height:110px;background:#9a9a9a"></div>
+ <div class=ar style="text-align:right"><div style="font-size:44px;font-weight:400">خصم</div><div class=sub style="font-size:28px;margin-top:4px">على منتجات مختارة فقط</div></div></div>
+<div style="position:absolute;bottom:30px;left:30px;right:30px;height:92px;background:{INK};display:flex;align-items:center;justify-content:center;gap:20px">
+ <span class=foil style="font-size:17px;background:linear-gradient(100deg,#9a9a9a,#f2f2f2 35%,#a8a8a8 60%,#e6e6e6);-webkit-background-clip:text;background-clip:text;filter:none">AMIE-SA.COM</span></div>""")
+
+def c(bg):   # left editorial
+    return shell(bg, f"""<div style="position:absolute;top:128px;left:90px">
+ <div class=eye style="letter-spacing:.5em">GLOW FRIDAY</div>
+ <div class=num style="font-size:165px;margin-top:22px">{P}%</div>
+ <div class=ar style="font-size:34px;font-weight:400;margin-top:10px;text-align:left">خصم على مجموعة الشعر</div>
+ <div class="ar sub" style="font-size:23px;margin-top:2px;text-align:left;color:#3a3a3a">منتجات مختارة فقط · لفترة محدودة</div></div>""")
 
 BANNERS = [('scrub-butter', a, 'bg-scrub-butter.png'), ('lemongrass-set', b, 'bg-lemongrass-set.png'), ('hair-set', c, 'bg-hair-set.png')]
 
