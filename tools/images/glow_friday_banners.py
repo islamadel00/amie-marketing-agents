@@ -11,7 +11,7 @@ BASE = f"""*{{margin:0;padding:0;box-sizing:border-box}} body{{width:1080px;heig
 .bg{{position:absolute;inset:0;background-size:cover;background-position:center bottom}}
 .fx{{position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse at 50% 45%,rgba(0,0,0,0) 55%,rgba(0,0,0,.10) 100%),{GRAIN};opacity:.32;mix-blend-mode:multiply}}
 .frame{{position:absolute;inset:30px;border:1px solid rgba(20,20,20,.28)}}
-.logo{{position:absolute;height:38px;top:70px;left:50%;transform:translateX(-50%)}}
+.logo{{position:absolute;height:38px;top:70px;left:50%;transform:translateX(-50%);filter:brightness(0)}}
 .num{{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:.82;letter-spacing:-3px}} .ar{{direction:rtl}}
 .foil{{font-family:Inter;font-weight:500;letter-spacing:.55em;font-size:19px;{FOIL};filter:drop-shadow(0 1px 0 rgba(255,255,255,.6))}}
 .rule{{display:flex;align-items:center;justify-content:center;gap:22px}} .rule i{{display:block;width:70px;height:1px;background:linear-gradient(90deg,transparent,#8d8d8d,transparent)}}
