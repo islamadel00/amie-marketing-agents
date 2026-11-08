@@ -280,51 +280,6 @@ ${productUrl}`;
 
 
 /* ------------------------------------------------------------
-   7) صفحة المنتج — ملاحظة الهدية (مجموعة اللافندر والليمون قراس)
-   ------------------------------------------------------------ */
-(function () {
-  var GIFT_PRODUCTS = {
-    '4ddb1426-e764-4cab-aece-058ce2766003': 'عند شرائكِ مجموعة اللافندر، احصلي على فرشاة الجسم الجافة هدية',
-    'd4e7a9a2-752c-44a6-91c3-2acab35ba9b8': 'عند شرائكِ مجموعة الليمون قراس، احصلي على فرشاة الجسم الجافة هدية'
-  };
-
-  function addGiftNote() {
-    var idInput = document.getElementById('product-id');
-    if (!idInput) return;
-    var text = GIFT_PRODUCTS[idInput.value];
-    if (!text) return;
-    if (document.querySelector('.amie-gift-note')) return;
-
-    if (!document.getElementById('amie-gift-style')) {
-      var style = document.createElement('style');
-      style.id = 'amie-gift-style';
-      style.textContent =
-        '.amie-gift-note{display:block!important;margin:16px 0 6px!important;padding:14px 18px!important;' +
-        'background:#28272a!important;color:#fff!important;border-radius:14px!important;font-size:15px!important;' +
-        'font-weight:700!important;line-height:1.6!important;text-align:center!important;}' +
-        '@media (max-width:768px){.amie-gift-note{font-size:13.5px!important;padding:12px 14px!important;}}';
-      document.head.appendChild(style);
-    }
-
-    var desc = document.querySelector('.product-short-description');
-    if (!desc) return;
-
-    var note = document.createElement('div');
-    note.className = 'amie-gift-note';
-    note.textContent = text;
-    desc.insertAdjacentElement('afterend', note);
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', addGiftNote);
-  } else {
-    addGiftNote();
-  }
-  setTimeout(addGiftNote, 1500);
-})();
-
-
-/* ------------------------------------------------------------
    8) السلايدرات — تشغيل الحركة التلقائية
    الثيم بيكتب إعداد autoplay غلط (autoplayautoplay-delay)
    فالسلايدرات بتقف. الجزء ده بيشغّل الحركة لأي سلايدر
