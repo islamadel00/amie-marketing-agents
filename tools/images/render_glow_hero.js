@@ -4,7 +4,7 @@ const { spawn } = require('child_process');
 const path = require('path');
 (async () => {
   const [layout, text, out] = process.argv.slice(2);
-  const size = layout === 'desktop' ? { width: 1920, height: 1080 } : layout === 'slider' ? { width: 1080, height: 1620 } : { width: 720, height: 1280 };
+  const size = (layout === 'desktop' || layout === 'desktoplight') ? { width: 1920, height: 1080 } : layout === 'slider' ? { width: 1080, height: 1620 } : { width: 720, height: 1280 };
   const scale = layout === 'mobile' ? 1.5 : 1;               // mobile out = 1080x1920
   const b = await chromium.launch();
   const p = await b.newPage({ viewport: size, deviceScaleFactor: scale });
