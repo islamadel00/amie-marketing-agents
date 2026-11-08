@@ -1,12 +1,10 @@
 /* ============================================================
-   a'mie — Custom JS (نسخة نضيفة)
-   زد ← المتجر الإلكتروني ← الثيمات ← ⋮ ← تعديل JS
-   امسحي كل اللي في الخانة وحطي الملف ده مكانه.
+   a'mie — Custom JS
    ============================================================ */
 
 
 /* ------------------------------------------------------------
-   1) تحديد عرض الوصف في السلايدر الرئيسي
+   1) تحديد عرض الوصف في السلايدر
    ------------------------------------------------------------ */
 document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll(".slide-content .description").forEach(function (el) {
@@ -16,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 /* ------------------------------------------------------------
-   2) زرار الواتساب العائم (الشكل في الـCSS — جزء 7)
+   2) زرار الواتساب العائم
    ------------------------------------------------------------ */
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -24,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
   waBtn.target = "_blank";
   waBtn.className = "wa-btn";
 
-  // سحب اسم المنتج
+  // 🧠 سحب اسم المنتج
   const productName = document.querySelector("h1")?.innerText || "هذا المنتج";
 
-  // سحب لينك الصفحة
+  // 🔗 سحب لينك الصفحة
   const productUrl = window.location.href;
 
-  // الرسالة
+  // 💬 الرسالة
   const message = `مرحبا 👋
 اريد الاستفسار عن المنتج:
 ${productName}
@@ -39,10 +37,10 @@ ${productUrl}`;
 
   const encodedMessage = encodeURIComponent(message);
 
-  // لينك واتساب
+  // 📲 لينك واتساب
   waBtn.href = `https://wa.me/966506922203?text=${encodedMessage}`;
 
-  // أيقونة واتساب
+  // 🎨 أيقونة واتساب
   waBtn.innerHTML = `
   <svg viewBox="0 0 32 32" width="22" height="22" fill="white">
     <path d="M16 .4C7.4.4.4 7.3.4 15.9c0 2.8.7 5.5 2.1 7.9L.4 31.6l8-2.1c2.3 1.3 4.9 2 7.6 2 8.6 0 15.6-7 15.6-15.6S24.6.4 16 .4zm0 28.5c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.7 1.2 1.3-4.6-.3-.5c-1.3-2-2-4.4-2-6.8C3.1 8.5 9 2.6 16 2.6s12.9 5.9 12.9 13.1S23 28.9 16 28.9z"/>
@@ -51,7 +49,7 @@ ${productUrl}`;
 
   document.body.appendChild(waBtn);
 
-  // يظهر بعد 1.5 ثانية
+  // ⏱️ يظهر بعد 1.5 ثانية
   setTimeout(function () {
     waBtn.style.opacity = "1";
   }, 1500);
@@ -59,73 +57,10 @@ ${productUrl}`;
 });
 
 
-/* ------------------------------------------------------------
-   3) كروت المدونة (صورة + مقتطف + رابط) — الشكل في الـCSS جزء 6
-   ------------------------------------------------------------ */
-(function () {
-  var LIST_SEL = '.blog-list', ITEM_SEL = '.blog-item';
-
-  // رابط المقال ← صورة الداش بورد (الأضمن). أضيفي سطر لكل مقال جديد.
-  var THUMBS = {
-    '/blogs/summer-tanning-routine':
-      'https://media.zid.store/thumbs/blogs/019e83bd-80bd-70b0-ad30-c138aa746ff7-thumbnail-800x800-70.jpg'
-  };
-
-  function ready(fn) { document.readyState !== 'loading' ? fn() : document.addEventListener('DOMContentLoaded', fn); }
-  function cGet(k) { try { return JSON.parse(sessionStorage.getItem('amieBlog:' + k)); } catch (e) { return null; } }
-  function cSet(k, v) { try { sessionStorage.setItem('amieBlog:' + k, JSON.stringify(v)); } catch (e) {} }
-
-  function parseDoc(html) {
-    var d = new DOMParser().parseFromString(html, 'text/html');
-    var pick = function (s, a) { var e = d.querySelector(s); return e ? e.getAttribute(a) : null; };
-    // الأولوية: صورة الثمبنيل اللي اترفعت في الداش بورد
-    var m = html.match(/https?:\/\/media\.zid\.store\/thumbs\/blogs\/[^"'\s)]+\.(?:jpe?g|png|webp)/i);
-    var img = m ? m[0] : null;
-    if (!img) img = pick('meta[property="og:image"]', 'content') || pick('meta[name="twitter:image"]', 'content');
-    var desc = pick('meta[property="og:description"]', 'content') || pick('meta[name="description"]', 'content');
-    return { img: img, desc: desc };
-  }
-
-  function fill(item, data) {
-    var img = item.querySelector('.blog-thumb img');
-    if (img && data.img) img.src = data.img;
-    if (data.desc && !item.querySelector('.blog-excerpt')) {
-      var h = item.querySelector('h2');
-      if (h) { var p = document.createElement('p'); p.className = 'blog-excerpt'; p.textContent = data.desc; h.parentNode.insertBefore(p, h.nextSibling); }
-    }
-    if (!item.querySelector('.blog-more')) { var mo = document.createElement('div'); mo.className = 'blog-more'; mo.textContent = 'اقرئي المقال ←'; item.appendChild(mo); }
-  }
-
-  function enhance(item) {
-    var link = item.querySelector('a[href]'); if (!link || item.querySelector('.blog-thumb')) return;
-    var href = link.getAttribute('href');
-
-    var thumb = document.createElement('a'); thumb.className = 'blog-thumb'; thumb.href = href;
-    var img = document.createElement('img'); img.alt = (link.textContent || '').trim(); img.loading = 'lazy';
-    thumb.appendChild(img); item.insertBefore(thumb, item.firstChild);
-
-    if (THUMBS[href]) img.src = THUMBS[href];
-
-    var cached = cGet(href);
-    if (cached) { fill(item, THUMBS[href] ? { desc: cached.desc } : cached); return; }
-    fetch(href, { credentials: 'same-origin' }).then(function (r) { return r.text(); })
-      .then(function (html) {
-        var data = parseDoc(html); cSet(href, data);
-        fill(item, THUMBS[href] ? { desc: data.desc } : data);
-      })
-      .catch(function () {});
-  }
-
-  function run() {
-    var items = document.querySelectorAll(LIST_SEL + ' ' + ITEM_SEL);
-    if (!items.length) return false; items.forEach(enhance); return true;
-  }
-  ready(function () { if (run()) return; var n = 0, t = setInterval(function () { if (run() || ++n > 20) clearInterval(t); }, 300); });
-})();
 
 
 /* ------------------------------------------------------------
-   4) صفحة الدفع — ملاحظة العنوان الوطني
+   4) ملاحظة العنوان الوطني في صفحة الدفع
    ------------------------------------------------------------ */
 (function () {
   var ID = "amie-na-note";
@@ -151,8 +86,12 @@ ${productUrl}`;
 })();
 
 
+
+
+
+
 /* ------------------------------------------------------------
-   5) صفحة المنتج — سطر الشحن المبرّد + لينك لصفحة المدن
+   9) صفحة المنتج — سطر الشحن المبرّد + لينك لصفحة المدن
    بيظهر في المنتجات اللي في ONLY_PRODUCTS بس.
    ------------------------------------------------------------ */
 (function () {
@@ -160,7 +99,7 @@ ${productUrl}`;
 
   var PAGE_PATH = "/pages/Cold%20Delivery";
 
-  // المنتجات اللي السطر يظهر فيها (slug من لينك المنتج)
+  // ✏️ المنتجات اللي السطر يظهر فيها (slug من لينك المنتج)
   var ONLY_PRODUCTS = [
     "ريد",                                  // الرد تشيري
     "amie-chocolate-body-highlighter-set",  // هايلايتر الشوكولاتة
@@ -241,12 +180,11 @@ ${productUrl}`;
     boot();
   }
 })();
-
-
 /* ------------------------------------------------------------
-   6) تصغير ارتفاع التوب بار على الموبايل
+   10) تصغير ارتفاع التوب بار على الموبايل
    ------------------------------------------------------------ */
 (function () {
+  // على الديسكتوب مفيش داعي يشتغل أصلًا
   if (!window.matchMedia("(max-width: 640px)").matches) return;
 
   var ID = "amie-topbar-fix";
@@ -262,7 +200,9 @@ ${productUrl}`;
   }
 
   function find() {
+    // 1) الأسرع: الصفحة العادية
     if (document.querySelector(SEL)) { inject(document); return true; }
+    // 2) لو مش لاقيه، يدوّر جوه الـ shadow roots بس
     var hosts = document.querySelectorAll("*");
     for (var i = 0; i < hosts.length; i++) {
       var r = hosts[i].shadowRoot;
@@ -277,22 +217,18 @@ ${productUrl}`;
     if (find() || ++tries >= 15) clearInterval(timer);
   }, 300);
 })();
-
-
 /* ------------------------------------------------------------
-   8) السلايدرات — تشغيل الحركة التلقائية
+   11) السلايدرات — تشغيل الحركة التلقائية
    الثيم بيكتب إعداد autoplay غلط (autoplayautoplay-delay)
    فالسلايدرات بتقف. الجزء ده بيشغّل الحركة لأي سلايدر
    مفعّل فيه autoplay من زد (البانر + الآراء + أي سلايدر تاني).
-   سكشن "الأكثر مبيعًا" متساب في حاله (بيمشي بإعدادات زد بس).
    + سكشن الآراء: سرعة أهدى + تلوين النجوم + نقط تحت السلايدر.
-   شكل سكشن الآراء في الـCSS — جزء 9.
+   شكل سكشن الآراء في ملف الـ CSS — جزء 8.
    ------------------------------------------------------------ */
 (function () {
   "use strict";
 
   var REVIEWS = 'section[section-id="432de894-a7ea-402a-98cf-2e2d73d6d2bf"]';
-  var SKIP = 'section[section-id="f371d893-770e-4813-b8d7-d7d8564d1ecb"]'; // الأكثر مبيعًا
   var DEFAULT_DELAY = 3500;
   var REVIEWS_DELAY = 6000; // سرعة سكشن الآراء (6 ثواني) — كل 1000 = ثانية
   var REVIEWS_SPEED = 700;  // مدة الانتقال بين الآراء
@@ -391,7 +327,6 @@ ${productUrl}`;
     var sliders = document.querySelectorAll("aui-slider");
     var pending = 0;
     sliders.forEach(function (slider) {
-      if (slider.closest(SKIP)) return; // الأكثر مبيعًا: ماتلمسوش
       var el = slider.querySelector("swiper-container");
       var sw = el && el.swiper;
       if (!sw || !sw.slides || !sw.slides.length) { pending++; return; }
@@ -419,6 +354,188 @@ ${productUrl}`;
       if (!slidersOk) slidersOk = startSliders();
       if ((starsOk && slidersOk) || ++tries > 75) clearInterval(timer);
     }, 200);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+})();
+/* 12) سكشن الفيديوهات — الفيديو اللي في النص كبير والجناب أصغر (موبايل) */
+(function () {
+  function setup() {
+    if (window.matchMedia('(min-width: 1024px)').matches) return;
+    document.querySelectorAll('section[id^="instgram-slider"] swiper-container').forEach(function (sc) {
+      var sw = sc.swiper;
+      if (!sw || sw.__amieCentered) return;
+      sw.__amieCentered = true;
+      sw.params.centeredSlides = true;
+      sw.update();
+      if (sw.slides.length > 2) sw.slideTo(1, 0);
+    });
+  }
+  var n = 0, t = setInterval(function () { setup(); if (++n > 40) clearInterval(t); }, 250);
+})();
+/* 21) صفحة المنتج — إظهار الوصف كامل من غير "عرض المزيد" (الأقسام بتتفتح وتتقفل أصلًا) */
+(function () {
+  function fix() {
+    document.querySelectorAll('.product-page aui-show-more').forEach(function (el) {
+      var root = el.shadowRoot;
+      if (!root || root.__amieFull) return;
+      root.__amieFull = true;
+      var s = document.createElement('style');
+      s.textContent =
+        '.show-more-content{max-height:none!important;overflow:visible!important;cursor:auto!important;color:inherit!important}' +
+        '.show-more-content::after{display:none!important}' +
+        '.show-more-btn{display:none!important}';
+      root.appendChild(s);
+    });
+  }
+  var n = 0, t = setInterval(function () { fix(); if (++n > 40) clearInterval(t); }, 250);
+})();
+/* ------------------------------------------------------------
+   13) صفحة المدونة — إعادة تحميل صور المقالات اللي فضلت فاضية
+   ------------------------------------------------------------ */
+(function () {
+  "use strict";
+
+  function getBlog(slug, attempt) {
+    attempt = attempt || 0;
+    return fetch("/api/v1/blogs/" + encodeURIComponent(slug), { headers: { Accept: "application/json" } })
+      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(function (res) {
+        var blog = res && (res.blog || res.data || res);
+        if (!blog || typeof blog !== "object") throw new Error("Bad response");
+        return blog;
+      })
+      .catch(function (err) {
+        if (attempt >= 3) throw err;
+        return new Promise(function (ok) { setTimeout(ok, 500 * Math.pow(2, attempt)); })
+          .then(function () { return getBlog(slug, attempt + 1); });
+      });
+  }
+
+  function fix(card) {
+    if (card.__amieFix) return;
+    card.__amieFix = true;
+    getBlog(card.getAttribute("data-blog-slug")).then(function (blog) {
+      var c = blog.cover && blog.cover.image;
+      var url = c && (c.medium || c.small || c.large || c.full_size);
+      var img = card.querySelector(".blog-card__img");
+      if (url && img) {
+        img.addEventListener("load", function () {
+          img.classList.remove("opacity-0");
+          card.classList.add("has-cover");
+          var ph = card.querySelector(".blog-card__placeholder");
+          if (ph) ph.classList.add("hidden");
+        });
+        img.src = url;
+      }
+      var ex = card.querySelector(".blog-card__excerpt");
+      if (ex && !ex.textContent.trim() && blog.snippet) ex.textContent = blog.snippet;
+    }).catch(function () {});
+  }
+
+  function scan() {
+    var cards = document.querySelectorAll(".blog-card[data-blog-slug]");
+    var waiting = 0;
+    cards.forEach(function (card) {
+      if (card.classList.contains("is-loading")) { waiting++; return; }
+      if (!card.classList.contains("has-cover")) fix(card);
+    });
+    return cards.length > 0 && waiting === 0;
+  }
+
+  var n = 0, t = setInterval(function () {
+    if ((scan() && n > 5) || ++n > 60) clearInterval(t);
+  }, 500);
+})();
+/* ------------------------------------------------------------
+   22) القائمة الجانبية — ترتيب شبه Moonglaze
+   الرئيسية / الأقسام (بتفتح وتقفل) / جميع المنتجات
+   الأقسام بتتسحب من القائمة اللي في زد، فأي قسم يتضاف هناك
+   هيظهر هنا لوحده. الشكل في ملف الـ CSS — جزء 14.
+   ------------------------------------------------------------ */
+(function () {
+  "use strict";
+
+  var ID = "amie-nav";
+
+  function isEnglish() {
+    return /^\/en-/i.test(location.pathname) || (document.documentElement.lang || "").toLowerCase().indexOf("en") === 0;
+  }
+
+  function localePrefix() {
+    var m = location.pathname.match(/^\/((?:en|ar)-[a-z]{2})(?=\/|$)/i);
+    return m ? "/" + m[1] : "";
+  }
+
+  function link(href, text, cls) {
+    var a = document.createElement("a");
+    a.href = href;
+    a.className = cls;
+    a.textContent = text;
+    return a;
+  }
+
+  function build() {
+    var content = document.querySelector(".side-menu .menu-content");
+    if (!content) return false;
+    if (content.querySelector("#" + ID)) return true;
+
+    var buttons = content.querySelectorAll(".menu-item > button[data-url]");
+    if (!buttons.length) return false;
+
+    var en = isEnglish();
+    var pre = localePrefix();
+    var allUrl = "/products";
+    var cats = [];
+
+    Array.prototype.forEach.call(buttons, function (b) {
+      var url = b.getAttribute("data-url") || "";
+      var text = (b.textContent || "").trim();
+      if (/^\/products\/?$/.test(url)) { allUrl = url; return; }
+      cats.push({ url: url, text: text });
+    });
+
+    var nav = document.createElement("nav");
+    nav.id = ID;
+
+    nav.appendChild(link(pre + "/", en ? "Home" : "الرئيسية", "amie-nav__link"));
+
+    var group = document.createElement("div");
+    group.className = "amie-nav__group";
+    var toggle = document.createElement("button");
+    toggle.type = "button";
+    toggle.className = "amie-nav__link amie-nav__toggle";
+    toggle.setAttribute("aria-expanded", "false");
+    toggle.innerHTML = "<span>" + (en ? "Categories" : "الأقسام") + '</span><span class="amie-nav__icon" aria-hidden="true"></span>';
+    var sub = document.createElement("div");
+    sub.className = "amie-nav__sub";
+    cats.forEach(function (c) {
+      sub.appendChild(link(c.url.indexOf("/") === 0 ? pre + c.url : c.url, c.text, "amie-nav__sublink"));
+    });
+    toggle.addEventListener("click", function () {
+      var open = group.classList.toggle("is-open");
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    group.appendChild(toggle);
+    group.appendChild(sub);
+    nav.appendChild(group);
+
+    nav.appendChild(link(pre + allUrl, en ? "Shop all" : "جميع المنتجات", "amie-nav__link"));
+
+    content.insertBefore(nav, content.firstChild);
+    content.classList.add("amie-nav-ready");
+    return true;
+  }
+
+  function boot() {
+    build();
+    // الثيم ممكن يرسم القائمة من جديد، فنرجّع الترتيب بتاعنا لو اختفى
+    new MutationObserver(function () { build(); })
+      .observe(document.body, { childList: true, subtree: true });
   }
 
   if (document.readyState === "loading") {
