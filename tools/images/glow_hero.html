@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:100%;height:100%;overflow:hidden;background:#e9e4dc}
+#stage{position:relative;overflow:hidden}
+.plate{position:absolute;background-size:cover;background-position:center;will-change:transform;transform-origin:50% 40%}
+.t{position:absolute;font-family:'Jost',sans-serif;font-weight:300;color:#141210;line-height:1;white-space:nowrap}
+.logo{position:absolute;height:auto}
+.mobile .logo{left:283px;top:1143px;width:142px}
+.desktop .logo{left:1462px;top:917px;width:106px}
+#sheen{position:absolute;top:-30%;height:160%;width:22%;pointer-events:none;mix-blend-mode:screen;
+ background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,248,240,.42) 50%,rgba(255,255,255,0));transform:rotate(18deg)}
+/* mobile 720x1280 */
+.mobile #stage{width:720px;height:1280px}
+.mobile .plate{inset:0;background-image:url(../../content/campaigns/2026-11-glow-friday/hero/src/hero-plate-nologo.png)}
+.mobile .p20{left:30px;top:48px;font-size:96px}
+.mobile .pto{left:148px;top:156px;font-size:42px}
+.mobile .p40{left:226px;top:70px;font-size:176px;letter-spacing:-2px}
+.mobile .poff{left:596px;top:214px;font-size:48px}
+.mobile .psel{left:264px;top:236px;font-size:21px;font-weight:400}
+/* desktop 1920x1080 */
+.desktop #stage{width:1920px;height:1080px;background:#efe9e1}
+.desktop .platewrap{position:absolute;left:1250px;top:60px;width:540px;height:960px;overflow:hidden;border-radius:22px;box-shadow:0 30px 60px -30px rgba(60,40,30,.35),0 2px 10px rgba(60,40,30,.08)}
+.desktop .plate{inset:0;background-image:url(../../content/campaigns/2026-11-glow-friday/hero/src/hero-plate-nologo.png)}
+.desktop .p20{left:190px;top:300px;font-size:120px}
+.desktop .pto{left:190px;top:440px;font-size:56px}
+.desktop .p40{left:300px;top:380px;font-size:250px;letter-spacing:-3px}
+.desktop .poff{left:860px;top:556px;font-size:68px}
+.desktop .psel{left:196px;top:668px;font-size:30px;font-weight:400}
+</style></head>
+<body><div id="stage"><div class="platewrap"><div class="plate" id="plate"></div></div>
+<div id="txt"><div class="t p20">20%</div><div class="t pto">TO</div><div class="t p40">40%</div><div class="t poff">OFF</div><div class="t psel">on selected items</div></div>
+<img class="logo" src="../../content/campaigns/2026-11-glow-friday/hero/src/logo-dark.png"><div id="sheen"></div></div>
+<script>
+const q=new URLSearchParams(location.search);
+document.body.className=q.get('layout')||'mobile';
+if(q.get('text')==='0')document.getElementById('txt').style.display='none';
+const D=6, stage=document.getElementById('stage'), plate=document.getElementById('plate'), sheen=document.getElementById('sheen');
+const ease=x=>x<.5?2*x*x:1-Math.pow(-2*x+2,2)/2;
+window.render=t=>{
+  const s=1.0125+0.0125*Math.sin(2*Math.PI*t/D-Math.PI/2);       // breathe 1.00-1.025, seamless
+  plate.style.transform=`scale(${s})`;
+  const a=Math.min(Math.max((t-1.6)/2.2,0),1);                // sheen passes once, 1.6s-3.8s
+  sheen.style.left=(-35+ease(a)*170)+'%';
+};
+render(0);
+</script></body></html>

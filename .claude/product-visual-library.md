@@ -14,7 +14,7 @@ What every product and its packaging looks like. It is for image prompts and ima
 | Logo | «a'mie» wordmark (lowercase, with the apostrophe accent) and the «a'» monogram on lids. Spell it a'mie, never amie, AMIE or ايمي, in brand text. |
 | Logo file | `content/link-card/logo-dark.png` (dark brown #3A2522) and `logo-white.png`. |
 | Logo on shopping bags | Silver metallic foil. ✅ (`shopping-bag-real.jpg`) |
-| Campaign accent (Glow Friday) | Dusty-rose satin ribbon, #8E5A55. "GLOW FRIDAY" printed in silver on the ribbon. |
+| Campaign accent (Glow Friday) | Deep burgundy satin ribbon with "GLOW FRIDAY" in white/light silver, as in the real campaign photo (`content/campaigns/2026-11-glow-friday/hero/src/hero-original.webp`). Earlier AI banners used dusty-rose #8E5A55; match the real ribbon from now on. |
 | Packaging palette | Blush pink (body care jars), black (hair care), cream/ivory (Body Glow, Sleek Secret), dark-brown gradient (Chocolate stick). |
 
 ## Shopping bag ✅
