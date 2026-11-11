@@ -1,0 +1,54 @@
+<!doctype html><html dir="rtl"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=IBM+Plex+Sans+Arabic:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{width:2400px;height:1560px;font-family:'IBM Plex Sans Arabic',sans-serif;overflow:hidden}
+.A{background:#111010;color:#ece7e0;--acc:#7a1830;--mut:#8e8780;--card:#1b1919}
+.B{background:#f1ebe3;color:#231f1c;--acc:#7a1830;--mut:#8b7f76;--card:#fff}
+.wrap{display:grid;grid-template-columns:1320px 1fr;gap:44px;padding:56px 64px;height:100%}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);gap:14px;direction:ltr}
+.grid div{background-size:cover;background-position:center;border-radius:6px}
+.grid .tall{grid-row:span 2}
+.side{display:flex;flex-direction:column;gap:26px}
+.k{font-family:Jost;font-weight:300;letter-spacing:8px;font-size:22px;color:var(--mut);direction:ltr;text-align:right}
+h1{font-family:'Cormorant Garamond';font-weight:300;font-size:118px;line-height:.95;direction:ltr;text-align:right}
+h1 i{color:var(--acc);font-style:italic}
+.idea{font-size:34px;font-weight:300;line-height:1.6}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box{background:var(--card);border-radius:10px;padding:22px 26px}
+.box h3{font-family:Jost;font-weight:400;letter-spacing:4px;font-size:17px;color:var(--mut);direction:ltr;text-align:right;margin-bottom:12px}
+.box p,.box li{font-size:23px;line-height:1.75;font-weight:300}
+.box ul{list-style:none}
+.sw{display:flex;gap:10px;direction:ltr;justify-content:flex-end}.sw span{width:74px;height:74px;border-radius:50%;border:1px solid rgba(128,128,128,.35)}
+.type .en{font-family:Jost;font-weight:200;font-size:64px;letter-spacing:10px;direction:ltr;text-align:right;line-height:1.1}
+.type .ar{font-size:36px;font-weight:200;margin-top:6px}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;direction:ltr}
+.flow div{background:var(--card);border-radius:8px;padding:12px 12px 14px;direction:rtl}
+.flow b{font-family:Jost;font-weight:400;font-size:15px;letter-spacing:2px;color:var(--acc);display:block;direction:ltr;text-align:right}
+.flow span{font-size:19px;line-height:1.5;font-weight:300;display:block;margin-top:4px}
+</style></head><body><div class="wrap" id="w"></div><script>
+const D={A:{k:'DIRECTION A · MOOD BOARD',t:'Tied with <i>glow</i>',dir:'a',
+ idea:'شريطة الباليه هي نفسها شريطة Glow Friday. فيلم قصير أبيض وأسود، هادي وبطيء، واللون الوحيد فيه هو البورجندي.',
+ imgs:['hero','107','39','105','59','108','101'],tall:0,
+ sw:['#111010','#3a3836','#8e8780','#ece7e0','#7a1830'],
+ look:['أبيض وأسود ناعم، وحبيبات فيلم خفيفة','البورجندي بس هو اللي ملوّن: الشريطة والعنوان','ضوء شباك جانبي ودخان خفيف','حركة بطيئة (Slow motion) ولقطات طويلة'],
+ no:['مفيش سيلفي ولا UGC','مفيش ستوب موشن ولا قفزات سريعة','سطرين كلام بالكتير في الفيديو كله','مفيش نسبة خصم غير في آخر ثانيتين'],
+ flow:[['01','إيد بتربط شريطة حذاء الباليه'],['02','الباليرينا عند البار، ظل الشجر على الحيطة'],['03','دوران التوتو بالسلو موشن في الدخان'],['04','لمسة منتج واحدة: لمعة على الكتف'],['05','الشريطة البورجندي بتتربط على السلة'],['06','GLOW FRIDAY · اللوجو · العرض']],
+ music:'بيانو أو وتريات هادية، 70–80 BPM، من غير إيقاع عالي'},
+B:{k:'DIRECTION B · MOOD BOARD',t:'The <i>a\'mie</i> studio',dir:'b',
+ idea:'عالم a\'mie الأبيض: الموديل والمنتجات العملاقة في استوديو عاجي نضيف. ألوان هادية، كادرات ثابتة، وإحساس مجلة.',
+ imgs:['47','2','100','93','109','87','hero'],tall:0,
+ sw:['#f1ebe3','#d9cdc4','#c9b3ab','#231f1c','#7a1830'],
+ look:['عاجي وبلاش وبيج، بألوانها الطبيعية','المنتج العملاق هو البطل في كل لقطة','ضوء استوديو ناعم من غير ظلال حادة','حركة كاميرا بطيئة للأمام (Dolly) وقطع هادي'],
+ no:['مفيش سيلفي ولا UGC','مفيش خلفيات بيت أو حمام','الكلام رفيع وصغير، في مكان واحد ثابت','مفيش نسبة خصم غير في آخر ثانيتين'],
+ flow:[['01','الكاميرا بتقرب من برطمان Lemongrass العملاق'],['02','الموديل فوقه، حركة واحدة هادية'],['03','أنبوبة Lip Plump العملاقة'],['04','لقطة قريبة: المنتج في الإيد'],['05','السلة بالشريطة البورجندي'],['06','GLOW FRIDAY · اللوجو · العرض']],
+ music:'إيقاع ناعم وأنيق، 95–105 BPM'}};
+const q=new URLSearchParams(location.search).get('d')||'A', d=D[q]; document.body.className=q;
+document.getElementById('w').innerHTML=`<div class="grid">${d.imgs.map((n,i)=>`<div class="${i==d.tall?'tall':''}" style="background-image:url(${d.dir}/${n}.jpg);${i==d.tall?'grid-column:span 2;':''}"></div>`).join('')}</div>
+<div class="side"><div class="k">${d.k} · GLOW FRIDAY 2026</div><h1>${d.t}</h1><div class="idea">${d.idea}</div>
+<div class="row"><div class="box"><h3>PALETTE</h3><div class="sw">${d.sw.map(c=>`<span style="background:${c}"></span>`).join('')}</div></div>
+<div class="box type"><h3>TYPE</h3><div class="en">GLOW FRIDAY</div><div class="ar">أسعار خاصة على منتجات مختارة</div></div></div>
+<div class="row"><div class="box"><h3>LOOK</h3><ul>${d.look.map(x=>`<li>${x}</li>`).join('')}</ul></div><div class="box"><h3>RULES</h3><ul>${d.no.map(x=>`<li>${x}</li>`).join('')}</ul></div></div>
+<div class="box"><h3>FLOW · 15s</h3><div class="flow">${d.flow.map(f=>`<div><b>${f[0]}</b><span>${f[1]}</span></div>`).join('')}</div></div>
+<div class="box"><h3>SOUND</h3><p>${d.music}</p></div></div>`;
+</script></body></html>
