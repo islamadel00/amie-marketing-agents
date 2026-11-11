@@ -50,7 +50,7 @@ _Last updated: 2026-10-22_
 - Warm and close, refined without affectation, confident without exaggeration.
 - Simple language everyone understands; encourages, never dictates. Feminine address (اختاري، بشرتك).
 - Personality: elegant, warm, confident, feminine, modern, conscious, detail-oriented. Calm and balanced.
-- Visual identity: black, smoky white, silver; secondary nature/floral palette. Fonts: Readex Pro (AR), Montserrat (EN). Minimal emoji.
+- Visual identity: black, smoky white, silver; secondary nature/floral palette. Fonts (brand guidelines v1.0, pages 16–18): Somar for Arabic (Regular, SemiBold); Baguile for English headlines; Montserrat for English body copy. Somar is not a free web font: the font file must come from the team. Minimal emoji.
 
 ### Hard rules (all content, ads, pages)
 - No unverified claims: no "علاج/يعالج", no "آمن/آمنة" or "خالي من المواد الضارة/الكيماويات", no "تنشيط الدورة الدموية", no "توحيد اللون", no "لا يسد المسام", no plumping/"امتلاء" for Lip Plump, no "first/most famous/no similar product" claims, no "safe for pregnancy/children", no "negative energy", no medical results, percentages or "clinically proven", no "100% natural".
