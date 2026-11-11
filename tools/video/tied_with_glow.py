@@ -10,13 +10,14 @@ ENC = ['-c:v', 'libx264', '-crf', '16', '-preset', 'medium', '-pix_fmt', 'yuv420
 FILM = "noise=alls=7:allf=t+u,vignette=PI/5.5"
 BW = "hue=s=0,eq=contrast=1.16:brightness=-0.015:gamma=0.96,colorbalance=rm=0.015:bm=-0.02"
 def run(a): subprocess.run(['ffmpeg', '-loglevel', 'error', '-y'] + a, check=True)
-def real(i, n, ss, out_d, push=0.04, xoff=0.5, yoff=0.5, z=1.0, lift=''):
-    """60 fps source played at half speed, slow push-in, B&W film look"""
+def real(i, n, ss, out_d, push=0.04, xoff=0.5, yoff=0.5, z=1.0, lift='', slow=2.0):
+    """source slowed by `slow` (2.0 for 60 fps footage; other values use frame blending), slow push-in, B&W film look"""
     o = f'{WD}/s{i}.mp4'
-    vf = (f"setpts=2*PTS,fps=30,scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920,"
+    sm = "setpts=2*PTS,fps=30" if slow == 2.0 else f"setpts={slow}*PTS,minterpolate=fps=30:mi_mode=blend"
+    vf = (f"{sm},scale=1080:1920:force_original_aspect_ratio=increase:flags=lanczos,crop=1080:1920,"
           f"scale=eval=frame:w='2*trunc(540*{z}*(1+{push}*t/{out_d}))':h=-2:flags=bicubic,"
           f"crop=1080:1920:(iw-1080)*{xoff}:(ih-1920)*{yoff},setsar=1,{BW}{lift},{FILM}")
-    run(['-ss', str(ss), '-t', str(out_d/2 + 0.1), '-i', f'{ORIG}/{n}.mov', '-vf', vf, '-t', str(out_d)] + ENC + [o]); return o
+    run(['-ss', str(ss), '-t', str(out_d/slow + 0.1), '-i', f'{ORIG}/{n}.mov', '-vf', vf, '-t', str(out_d)] + ENC + [o]); return o
 def bow(i, d):
     """the real basket photo: everything B&W except the burgundy ribbon; slow push, light sweep, title fades in"""
     o = f'{WD}/s{i}.mp4'; R = cv2.imread(PLATE).astype(np.float32); H, W = R.shape[:2]
@@ -46,8 +47,8 @@ def pack(i, d, path):
     for k in range(n):
         t = k/(n-1); e = t*t*(3-2*t)
         c = -400 + min(max((t-0.15)/0.6, 0), 1)*(W*0.9+H*0.35+800)
-        f = R + np.exp(-((xx*0.9+yy*0.35-c)/190.0)**2)[..., None]*30
-        M = cv2.getRotationMatrix2D((540, 1250), 0, 1.30 + 0.10*e)
+        f = 255*(R/255)**0.88 + np.exp(-((xx*0.9+yy*0.35-c)/190.0)**2)[..., None]*30
+        M = cv2.getRotationMatrix2D((540, 1330), 0, 1.62 + 0.12*e)
         f = cv2.warpAffine(f, M, (W, H), flags=cv2.INTER_LINEAR, borderMode=cv2.BORDER_REPLICATE)
         ff.stdin.write(np.clip(f, 0, 255).astype(np.uint8).tobytes())
     ff.stdin.close(); ff.wait(); return o
@@ -55,9 +56,9 @@ def card(i, d):
     o = f'{WD}/s{i}.mp4'
     run(['-loop', '1', '-t', str(d), '-i', f'{WD}/end.png', '-vf', f'fps=30,format=yuv420p,{FILM}', '-t', str(d)] + ENC + [o]); return o
 X = 0.45   # dissolve length
-D = [2.95, 2.95, 3.45, 2.3, 2.9, 3.6, 2.8]
+D = [2.95, 2.95, 3.45, 3.3, 2.7, 3.6, 2.8]
 clips = [real(1, 114, 5.0, D[0], 0.05, 0.08, 0.15, z=1.2), real(2, 39, 3.0, D[1], 0.04), real(3, 113, 36.5, D[2], 0.035, 0.5, 0.62, z=1.28, lift=',eq=brightness=0.05:gamma=1.12'),
-         real(4, 101, 9.4, D[3], 0.05, 0.30, 0.22, z=1.6),
+         real(4, 12, 4.05, D[3], 0.04, 0.5, 0.45, z=1.0, lift=',eq=gamma=1.12', slow=1.35),   # real close-up: Hair Wax label, cap comes off
          pack(5, D[4], f'{ROOT}/content/campaigns/2026-11-glow-friday/video/start-frames/sf-03-hairset-9x16.png'),
          bow(6, D[5]), card(7, D[6])]
 ins = sum((['-i', c] for c in clips), []); fc = []; cur = '[0:v]'; off = 0.0
