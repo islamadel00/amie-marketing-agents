@@ -1,0 +1,17 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=IBM+Plex+Sans+Arabic:wght@300;400;500&display=swap" rel="stylesheet">
+<style>html,body{margin:0;background:transparent}#s{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:'IBM Plex Sans Arabic',sans-serif;color:#fff}
+.sh{text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.tag{position:absolute;left:0;right:0;bottom:330px;text-align:center;font-size:84px;font-weight:500;direction:rtl}
+.grad{position:absolute;left:0;right:0;bottom:0;height:760px;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.42))}
+.big{position:absolute;left:0;right:0;top:250px;text-align:center;font-family:Jost;font-weight:300;font-size:150px;letter-spacing:6px;line-height:1}
+.sub{position:absolute;left:0;right:0;top:430px;text-align:center;font-size:58px;font-weight:300;direction:rtl}
+.dark{color:#1d1a18;text-shadow:none}
+.q{position:absolute;left:0;right:0;top:300px;text-align:center;font-size:84px;font-weight:400;direction:rtl}
+</style></head><body><div id="s"></div><script>
+const O={hook:'<div class="big dark" style="top:200px">GLOW<br>FRIDAY</div><div class="sub dark" style="top:540px;font-weight:400">سلّتك جاهزة؟</div>',
+empty:'<div class="q dark">نعبّيها لك</div>',
+body:'<div class="grad"></div><div class="tag sh">للجسم</div>',hair:'<div class="grad"></div><div class="tag sh">للشعر</div>',glow:'<div class="grad"></div><div class="tag sh">للّمعة</div>',lip:'<div class="grad"></div><div class="tag sh">للشفايف</div>',
+ribbon:'<div class="q dark" style="top:270px;font-family:Jost;font-weight:300;font-size:120px;letter-spacing:5px;direction:ltr">GLOW FRIDAY</div>'};
+window.show=k=>{document.getElementById('s').innerHTML=O[k]};window.keys=Object.keys(O);
+</script></body></html>
