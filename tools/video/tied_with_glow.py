@@ -56,9 +56,9 @@ def card(i, d):
     o = f'{WD}/s{i}.mp4'
     run(['-loop', '1', '-t', str(d), '-i', f'{WD}/end.png', '-vf', f'fps=30,format=yuv420p,{FILM}', '-t', str(d)] + ENC + [o]); return o
 X = 0.45   # dissolve length
-D = [2.05, 2.05, 2.5, 3.3, 2.7, 3.6, 2.8]   # shots 1-3 (no product) are shorter and faster
+D = [1.7, 1.7, 2.1, 2.7, 2.2, 2.9, 2.4]   # 13.0 s in total   # shots 1-3 (no product) are shorter and faster
 clips = [real(1, 114, 5.0, D[0], 0.05, 0.08, 0.15, z=1.2, slow=1.25), real(2, 39, 3.0, D[1], 0.04, slow=1.25), real(3, 113, 36.5, D[2], 0.035, 0.5, 0.62, z=1.28, lift=',eq=brightness=0.05:gamma=1.12', slow=1.25),
-         real(4, 12, 4.05, D[3], 0.04, 0.5, 0.45, z=1.0, lift=',eq=gamma=1.12', slow=1.35, blend=True),   # real close-up: Hair Wax label, cap comes off
+         real(4, 12, 4.05, D[3], 0.04, 0.5, 0.45, z=1.0, lift=',eq=gamma=1.12', slow=1.15, blend=True),   # real close-up: Hair Wax label, cap comes off
          pack(5, D[4], f'{ROOT}/content/campaigns/2026-11-glow-friday/video/start-frames/sf-03-hairset-9x16.png'),
          bow(6, D[5]), card(7, D[6])]
 ins = sum((['-i', c] for c in clips), []); fc = []; cur = '[0:v]'; off = 0.0
@@ -72,7 +72,7 @@ silent = f'{WD}/silent.mp4'
 run(ins + ['-filter_complex', ';'.join(fc), '-map', '[o]', '-c:v', 'libx264', '-crf', '21', '-preset', 'medium', '-pix_fmt', 'yuv420p', '-an', silent])
 if os.path.exists(VO):
     # the audio track is built on its own, then muxed (mixing it inside the video graph stalled ffmpeg)
-    cuts = [(0.0, 2.15, 0.4), (2.15, 5.05, sum(D[:2]) - 2*X + 0.3), (5.05, None, sum(D[:5]) - 5*X + 0.35)]
+    cuts = [(0.0, 2.15, 0.3), (2.15, 5.05, sum(D[:2]) - 2*X + 0.2), (5.05, None, sum(D[:5]) - 5*X - 0.15)]
     a_in, a_fc = [], []
     for j, (a, b, at) in enumerate(cuts):
         part = f'{WD}/a{j}.wav'; run(['-i', VO, '-ss', str(a)] + (['-to', str(b)] if b else []) + [part])
