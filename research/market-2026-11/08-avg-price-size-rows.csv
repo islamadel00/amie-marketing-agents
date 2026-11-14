@@ -1,6 +1,5 @@
 ﻿amie_product,source,brand,product,size,unit,price_now_sar,price_regular_sar,price_per_100_now,flag
-Deep Tan (زيت تان),W,Carrot Sun,Oil Gold,200,ml,104.65,161,52.3,price changed since 3 Nov (was 80.5)
-Deep Tan (زيت تان),W,Carrot Sun,Sun Tan Oil Papaya,200,ml,104.65,161,52.3,price changed since 3 Nov (was 80.5)
+Deep Tan (زيت تان),W,Carrot Sun,Oil Gold / Papaya (2 variants),200,ml,104.65,161,52.3,price changed since 3 Nov (was 80.5)
 Deep Tan (زيت تان),V+M,Carrot Sun,"Carrot Spray (Desertcart 64, Amazon 40)",200,ml,52,82,26.0,import
 Deep Tan (زيت تان),V,Beesline,Suntan Oil Gold,200,ml,92,184,46.0,
 Deep Tan (زيت تان),V+M,Beesline,"Deep Tan Carrot (Chefaa 83.95, Amazon 21.42, Nahdi 31.05)",200,ml,45.5,70.6,22.8,
@@ -29,8 +28,7 @@ Red Cherry (كريم تان),M,Carrot Sun,Carrot cream oil (Amazon),350,ml,53,68
 Red Cherry (كريم تان),M,Carrot Sun,Cherry Bomb cream,350,ml,115,115,32.9,
 Glittery Gold (جل تان),V,Carroten,Tan Express Intensive Gel,150,ml,143,143,95.3,import
 Glittery Gold (جل تان),M,Babaria,Bronze jelly coco,75,ml,31.05,51.75,41.4,
-Glittery Gold (جل تان),M,Babaria,Exotic bronze jelly,300,ml,48.3,80.5,16.1,
-Glittery Gold (جل تان),M,Babaria,Tropical jelly,300,ml,55.2,92,18.4,
+Glittery Gold (جل تان),M,Babaria,Bronze jelly 300 ml (2 variants),300,ml,51.75,86.25,17.2,
 Glittery Gold (جل تان),M,(no brand),Coconut tanning accelerator gel,MISSING,ml,60,80.5,MISSING,
 Glittery Gold (جل تان),W,Surge,Glitter Tan,250,ml,207,207,82.8,saudi; size found
 Body Glow (لمعة الجسم),V,Anastasia Beverly Hills,Shimmer Body Oil,MISSING,ml,96.1,174.75,MISSING,
@@ -48,13 +46,13 @@ Body Glow (لمعة الجسم),M,(no brand),Rose gold body shimmer spray,MISSIN
 Body Glow (لمعة الجسم),M,Vaseline,"Bronze shimmer gel oil (Nahdi 62.1, Al-Dawaa 42.75)",200,ml,52.4,59.5,26.2,
 Body Glow (لمعة الجسم),M,Vaseline,"Vanilla Glow gel oil (Nahdi 55.89, Al-Dawaa 42.75)",200,ml,49.3,59.5,24.6,
 Body Glow (لمعة الجسم),M,Bali Body,Body highlighter lotion,100,ml,40,137.67,40.0,
-Body Glow (لمعة الجسم),M+S,Hearts,"Body Glow (Nahdi 88.32, own store 96)",120,ml,92.2,103.2,76.8,saudi?
+Body Glow (لمعة الجسم),M+S,Hearts,"Body Glow (Nahdi 88.32, own store 96)",120,ml,92.2,103.2,76.8,saudi (nationality not confirmed)
 Body Glow (لمعة الجسم),W,Besito Body,Besito Shimmer,MISSING,ml,96,160,MISSING,saudi; price changed since 3 Nov (was 160)
 Body Glow (لمعة الجسم),W,Waves Beauty,Glowies body shimmer,120,ml,156.52,156.52,130.4,saudi; new
 Body Highlighter stick (هايلايتر),V,KASH Beauty,Highlight Sculpt Stick,MISSING,g,75.95,75.95,MISSING,face
 Body Highlighter stick (هايلايتر),V,Rimmel,Glow Stick Highlighter,5,g,55,55,1100.0,face
 Body Highlighter stick (هايلايتر),V,Inglot,Cream Stick Highlighter,6.2,g,83,103,1338.7,face
-Body Highlighter stick (هايلايتر),S,Hearts,Highlighter stick,MISSING,g,35.7,42,MISSING,saudi?
+Body Highlighter stick (هايلايتر),S,Hearts,Highlighter stick,MISSING,g,35.7,42,MISSING,saudi (nationality not confirmed)
 Body Highlighter stick (هايلايتر),M,Essence,Baby Got Glow highlighter stick,MISSING,g,19,19,MISSING,face
 Body Highlighter stick (هايلايتر),M,Revolution,Blush & Highlight Stick,MISSING,g,55,55,MISSING,face
 Hair Wax (واكس),V,Slick Hair Company,Wax Stick,50,g,110,110,220.0,
@@ -101,19 +99,15 @@ Whipped Body Butter (زبدة الجسم),V,The Body Shop,Boost Whipped Body Cre
 Whipped Body Butter (زبدة الجسم),V,Tree Hut,Whipped Body Butter,MISSING,g,69.25,69.25,MISSING,
 Whipped Body Butter (زبدة الجسم),V,Kiehl's,Creme de Corps whipped,230,g,281,281,122.2,import
 Whipped Body Butter (زبدة الجسم),M,Ashri Natural,Coconut body butter,100,g,52,60,52.0,
-Whipped Body Butter (زبدة الجسم),M,Taha,African shea butter,150,g,29,29,19.3,
-Whipped Body Butter (زبدة الجسم),M,African Shea Butter,Shea butter,250,ml,24.99,24.99,10.0,
 Whipped Body Butter (زبدة الجسم),M,Palmer's,"Cocoa butter formula (Noon 23.5, Amazon 24.73)",100,g,24.1,26.9,24.1,
 Whipped Body Butter (زبدة الجسم),M,Skin Me,Taif rose body butter,200,g,18.99,23.95,9.5,
 Whipped Body Butter (زبدة الجسم),M,Dew,Body butter (2 variants),250,ml,15,15,6.0,
 Whipped Body Butter (زبدة الجسم),M,Celia,"Body butter (Nahdi 24.5, Al-Dawaa 20)",300,g,22.25,40.4,7.4,
 Whipped Body Butter (زبدة الجسم),M,Sorbet,Body butter (2 variants),400,ml,17.31,26.63,4.3,
-Whipped Body Butter (زبدة الجسم),M,Fay,Body yogurt (2 variants),280,ml,32.78,43.7,11.7,
 Whipped Body Butter (زبدة الجسم),W,Jayla,La Poudrerie body butter,350,g,92,92,26.3,saudi
 Whipped Body Butter (زبدة الجسم),M,Tatcha,Indigo body butter,MISSING,g,247,247,MISSING,
 Whipped Body Butter (زبدة الجسم),M,Sol de Janeiro,Delicia Drench body butter (smaller size),MISSING,g,120,120,MISSING,
 Whipped Body Butter (زبدة الجسم),M,Glossier,Creme de You body butter,MISSING,g,195,195,MISSING,
-Whipped Body Butter (زبدة الجسم),M,L'Occitane,Pure shea butter,MISSING,g,230,230,MISSING,
 Whipped Body Butter (زبدة الجسم),M,Youth To The People,Superberry body butter (smaller size),MISSING,g,108,108,MISSING,
 Whipped Body Butter (زبدة الجسم),M,Weleda,Skin Food Body Butter,150,ml,132,132,88.0,
 Whipped Body Butter (زبدة الجسم),W,Waves Beauty,Floral Musk Body Butter,250,ml,128.7,128.7,51.5,saudi
@@ -140,14 +134,9 @@ Foot Cream (كريم القدمين),M,L'Occitane,Shea foot cream,MISSING,ml,50,
 Hand Cream (كريم اليدين),V,Neutrogena,Norwegian Formula Hand Cream,50,ml,34,34,68.0,import
 Hand Cream (كريم اليدين),W,Jayla,Hand cream (Floral Maze),30,ml,24,24,80.0,saudi; new
 Hand Cream (كريم اليدين),W,Ladeena,Marilyn hand cream,MISSING,ml,45,45,MISSING,saudi; new; size not published
-Lip Plump (مرطب الشفاه),W,Laneige,Lip Sleeping Mask,20,g,135,135,675.0,
 Lip Plump (مرطب الشفاه),W,Waves Beauty,Vanilla lip balm,10,ml,67.83,67.83,678.3,saudi; new
 Lip Plump (مرطب الشفاه),W,Jayla,Vanilla lip balm,MISSING,ml,55,55,MISSING,saudi; new; out of stock
-Flora / Natura (معطر الجسم),V,Victoria's Secret,Bare Vanilla Mist,250,ml,50,50,20.0,import
-Flora / Natura (معطر الجسم),V,Victoria's Secret,Coconut Passion Mist,250,ml,50,50,20.0,import
-Flora / Natura (معطر الجسم),V,Victoria's Secret,Temptation Mist,250,ml,52,52,20.8,import
-Flora / Natura (معطر الجسم),V,Victoria's Secret,Rush Mist,250,ml,73,73,29.2,import
-Flora / Natura (معطر الجسم),V,Victoria's Secret,Emerald Crush Mist,250,ml,63,63,25.2,
+Flora / Natura (معطر الجسم),V,Victoria's Secret,"Body mist (5 scents, 50 to 73)",250,ml,57.6,57.6,23.0,import
 Flora / Natura (معطر الجسم),V,Bath & Body Works,Sweet Pea Mist,236,ml,81,81,34.3,
 Flora / Natura (معطر الجسم),V,Sol de Janeiro,Cheirosa 68 Perfume Mist,90,ml,125,125,138.9,
 Flora / Natura (معطر الجسم),V,Riddiance,Body & Hair Mist,150,ml,49.45,49.45,33.0,
@@ -162,11 +151,7 @@ Flora / Natura (معطر الجسم),M,Body Spa,Patchouli body spray,100,ml,15,2
 Flora / Natura (معطر الجسم),S,MZN,Powder body mist,MISSING,ml,55,55,MISSING,saudi
 Flora / Natura (معطر الجسم),W,Jayla,La Poudrerie body mist,200,ml,70,70,35.0,saudi; size found
 Flora / Natura (معطر الجسم),W,Jayla,Soulful body mist,150,ml,84,84,56.0,saudi; new
-Flora / Natura (معطر الجسم),W,Ladeena,All over spray (Clean),100,ml,150,150,150.0,saudi; size found
-Flora / Natura (معطر الجسم),W,Waves Beauty,All Over Spray Musk Touch,100,ml,249.57,249.57,249.6,saudi
 Flora / Natura (معطر الجسم),W,Cotton Skin,Hair & body mist,50,ml,89,99,178.0,saudi; new
-a'musk (مسك),W,Almajed for Oud,Pure Musk All Over Spray,100,ml,59.01,118,59.0,saudi; spray
 a'musk (مسك),V,Hamil Al Musk,Altahara musk oil,6,ml,52,52,866.7,import
-a'musk (مسك),V,Tesori d'Oriente,White Musk,100,ml,58,58,58.0,import; spray
 a'musk (مسك),W,Ladeena,Marilyn musk,15,ml,75,75,500.0,saudi; size found
 a'musk (مسك),W,Jayla,Jayla Joy musk,15,ml,80,80,533.3,saudi; size found

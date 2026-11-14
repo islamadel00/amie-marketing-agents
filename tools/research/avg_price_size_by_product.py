@@ -8,7 +8,10 @@ Rows come from the three price files in research/market-2026-11 (all dated 2026-
 Each row: (source, brand, product, size, unit, price_now, price_regular, flag)
 price_now = what the shopper pays today (promo price if one is shown).
 One row per competitor product; the same product at two retailers is averaged.
-Left out: results marked not matching, sets, face products, multi-packs, and luxury outliers.
+Variants of one product (scents, colours) are merged into one row.
+Left out: results marked not matching, sets, multi-packs, all-over perfume sprays, lip masks, raw shea butter,
+and two price outliers (Tom Ford 502, Tree Hut 13). Highlighter keeps face sticks because no body stick was found.
+Waves Beauty prices are as displayed; they are most likely before VAT (x1.15 gives 180 / 148 / 78).
 """
 import csv, statistics as st, sys
 
@@ -16,8 +19,7 @@ OUT = sys.argv[1]
 N = None
 P = {  # a'mie product: (size, unit, price, [rows])
 "Deep Tan (زيت تان)": (150, "ml", 159, [
- ("W","Carrot Sun","Oil Gold",200,"ml",104.65,161,"price changed since 3 Nov (was 80.5)"),
- ("W","Carrot Sun","Sun Tan Oil Papaya",200,"ml",104.65,161,"price changed since 3 Nov (was 80.5)"),
+ ("W","Carrot Sun","Oil Gold / Papaya (2 variants)",200,"ml",104.65,161,"price changed since 3 Nov (was 80.5)"),
  ("V+M","Carrot Sun","Carrot Spray (Desertcart 64, Amazon 40)",200,"ml",52,82,"import"),
  ("V","Beesline","Suntan Oil Gold",200,"ml",92,184,""),
  ("V+M","Beesline","Deep Tan Carrot (Chefaa 83.95, Amazon 21.42, Nahdi 31.05)",200,"ml",45.5,70.6,""),
@@ -50,8 +52,7 @@ P = {  # a'mie product: (size, unit, price, [rows])
 "Glittery Gold (جل تان)": (120, "ml", 149, [
  ("V","Carroten","Tan Express Intensive Gel",150,"ml",143,143,"import"),
  ("M","Babaria","Bronze jelly coco",75,"ml",31.05,51.75,""),
- ("M","Babaria","Exotic bronze jelly",300,"ml",48.3,80.5,""),
- ("M","Babaria","Tropical jelly",300,"ml",55.2,92,""),
+ ("M","Babaria","Bronze jelly 300 ml (2 variants)",300,"ml",51.75,86.25,""),
  ("M","(no brand)","Coconut tanning accelerator gel",N,"ml",60,80.5,""),
  ("W","Surge","Glitter Tan",250,"ml",207,207,"saudi; size found"),
 ]),
@@ -71,7 +72,7 @@ P = {  # a'mie product: (size, unit, price, [rows])
  ("M","Vaseline","Bronze shimmer gel oil (Nahdi 62.1, Al-Dawaa 42.75)",200,"ml",52.4,59.5,""),
  ("M","Vaseline","Vanilla Glow gel oil (Nahdi 55.89, Al-Dawaa 42.75)",200,"ml",49.3,59.5,""),
  ("M","Bali Body","Body highlighter lotion",100,"ml",40,137.67,""),
- ("M+S","Hearts","Body Glow (Nahdi 88.32, own store 96)",120,"ml",92.2,103.2,"saudi?"),
+ ("M+S","Hearts","Body Glow (Nahdi 88.32, own store 96)",120,"ml",92.2,103.2,"saudi (nationality not confirmed)"),
  ("W","Besito Body","Besito Shimmer",N,"ml",96,160,"saudi; price changed since 3 Nov (was 160)"),
  ("W","Waves Beauty","Glowies body shimmer",120,"ml",156.52,156.52,"saudi; new"),
 ]),
@@ -79,7 +80,7 @@ P = {  # a'mie product: (size, unit, price, [rows])
  ("V","KASH Beauty","Highlight Sculpt Stick",N,"g",75.95,75.95,"face"),
  ("V","Rimmel","Glow Stick Highlighter",5,"g",55,55,"face"),
  ("V","Inglot","Cream Stick Highlighter",6.2,"g",83,103,"face"),
- ("S","Hearts","Highlighter stick",N,"g",35.7,42,"saudi?"),
+ ("S","Hearts","Highlighter stick",N,"g",35.7,42,"saudi (nationality not confirmed)"),
  ("M","Essence","Baby Got Glow highlighter stick",N,"g",19,19,"face"),
  ("M","Revolution","Blush & Highlight Stick",N,"g",55,55,"face"),
 ]),
@@ -136,19 +137,15 @@ P = {  # a'mie product: (size, unit, price, [rows])
  ("V","Tree Hut","Whipped Body Butter",N,"g",69.25,69.25,""),
  ("V","Kiehl's","Creme de Corps whipped",230,"g",281,281,"import"),
  ("M","Ashri Natural","Coconut body butter",100,"g",52,60,""),
- ("M","Taha","African shea butter",150,"g",29,29,""),
- ("M","African Shea Butter","Shea butter",250,"ml",24.99,24.99,""),
  ("M","Palmer's","Cocoa butter formula (Noon 23.5, Amazon 24.73)",100,"g",24.1,26.9,""),
  ("M","Skin Me","Taif rose body butter",200,"g",18.99,23.95,""),
  ("M","Dew","Body butter (2 variants)",250,"ml",15,15,""),
  ("M","Celia","Body butter (Nahdi 24.5, Al-Dawaa 20)",300,"g",22.25,40.4,""),
  ("M","Sorbet","Body butter (2 variants)",400,"ml",17.31,26.63,""),
- ("M","Fay","Body yogurt (2 variants)",280,"ml",32.78,43.7,""),
  ("W","Jayla","La Poudrerie body butter",350,"g",92,92,"saudi"),
  ("M","Tatcha","Indigo body butter",N,"g",247,247,""),
  ("M","Sol de Janeiro","Delicia Drench body butter (smaller size)",N,"g",120,120,""),
  ("M","Glossier","Creme de You body butter",N,"g",195,195,""),
- ("M","L'Occitane","Pure shea butter",N,"g",230,230,""),
  ("M","Youth To The People","Superberry body butter (smaller size)",N,"g",108,108,""),
  ("M","Weleda","Skin Food Body Butter",150,"ml",132,132,""),
  ("W","Waves Beauty","Floral Musk Body Butter",250,"ml",128.7,128.7,"saudi"),
@@ -181,16 +178,11 @@ P = {  # a'mie product: (size, unit, price, [rows])
  ("W","Ladeena","Marilyn hand cream",N,"ml",45,45,"saudi; new; size not published"),
 ]),
 "Lip Plump (مرطب الشفاه)": (10, "ml", 65, [
- ("W","Laneige","Lip Sleeping Mask",20,"g",135,135,""),
  ("W","Waves Beauty","Vanilla lip balm",10,"ml",67.83,67.83,"saudi; new"),
  ("W","Jayla","Vanilla lip balm",N,"ml",55,55,"saudi; new; out of stock"),
 ]),
 "Flora / Natura (معطر الجسم)": (150, "ml", 129, [
- ("V","Victoria's Secret","Bare Vanilla Mist",250,"ml",50,50,"import"),
- ("V","Victoria's Secret","Coconut Passion Mist",250,"ml",50,50,"import"),
- ("V","Victoria's Secret","Temptation Mist",250,"ml",52,52,"import"),
- ("V","Victoria's Secret","Rush Mist",250,"ml",73,73,"import"),
- ("V","Victoria's Secret","Emerald Crush Mist",250,"ml",63,63,""),
+ ("V","Victoria's Secret","Body mist (5 scents, 50 to 73)",250,"ml",57.6,57.6,"import"),
  ("V","Bath & Body Works","Sweet Pea Mist",236,"ml",81,81,""),
  ("V","Sol de Janeiro","Cheirosa 68 Perfume Mist",90,"ml",125,125,""),
  ("V","Riddiance","Body & Hair Mist",150,"ml",49.45,49.45,""),
@@ -205,14 +197,10 @@ P = {  # a'mie product: (size, unit, price, [rows])
  ("S","MZN","Powder body mist",N,"ml",55,55,"saudi"),
  ("W","Jayla","La Poudrerie body mist",200,"ml",70,70,"saudi; size found"),
  ("W","Jayla","Soulful body mist",150,"ml",84,84,"saudi; new"),
- ("W","Ladeena","All over spray (Clean)",100,"ml",150,150,"saudi; size found"),
- ("W","Waves Beauty","All Over Spray Musk Touch",100,"ml",249.57,249.57,"saudi"),
  ("W","Cotton Skin","Hair & body mist",50,"ml",89,99,"saudi; new"),
 ]),
 "a'musk (مسك)": (15, "ml", 99, [
- ("W","Almajed for Oud","Pure Musk All Over Spray",100,"ml",59.01,118,"saudi; spray"),
  ("V","Hamil Al Musk","Altahara musk oil",6,"ml",52,52,"import"),
- ("V","Tesori d'Oriente","White Musk",100,"ml",58,58,"import; spray"),
  ("W","Ladeena","Marilyn musk",15,"ml",75,75,"saudi; size found"),
  ("W","Jayla","Jayla Joy musk",15,"ml",80,80,"saudi; size found"),
 ]),
@@ -242,6 +230,10 @@ for name, (osz, ounit, oprice, comps) in P.items():
         n_with_size=len(sizes), n_same_size=len(same), avg_size=r(avg_size),
         min_size=r(min(sizes)) if sizes else "", max_size=r(max(sizes)) if sizes else "",
         avg_per100=r(avg100, 1), median_per100=r(med100, 1),
+        avg_now_x=round(avg_now, 2), avg_size_x=round(avg_size, 2) if avg_size else '',
+        saudi_avg_now_x=round(st.mean([c[5] for c in sa]), 2) if sa else '',
+        saudi_median_now=r(st.median([c[5] for c in sa])) if sa else '',
+        n_old=len([c for c in comps if c[0] != 'W']),
         n_saudi=len(sa), saudi_avg_now=r(st.mean([c[5] for c in sa])) if sa else '',
         saudi_avg_size=r(st.mean(sa_sz)) if sa_sz else '', n_rechecked=len([c for c in comps if c[0]=='W'])))
     for c in comps:

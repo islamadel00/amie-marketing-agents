@@ -17,7 +17,7 @@ def ar(p):
     for k, v in AR.items():
         if p.startswith(k): return v
     return p
-UNIT = {'Hair Wax': 'مل/جم', 'Sea Salt Scrub': 'مل/جم', 'Whipped Body Butter': 'مل/جم', 'Body Highlighter': 'جم', 'Lip Plump': 'مل/جم'}
+UNIT = {'Foot Cream': 'مل/جم', 'Hair Wax': 'مل/جم', 'Sea Salt Scrub': 'مل/جم', 'Whipped Body Butter': 'مل/جم', 'Body Highlighter': 'جم'}
 def unit(p):
     for k, v in UNIT.items():
         if p.startswith(k): return v
@@ -25,15 +25,15 @@ def unit(p):
 def chip(txt, c): return f'<span class="ix {c}">{txt}</span>'
 def size_verdict(s):
     if not s['avg_size'] or not s['our_size']: return chip('—', 'w')
-    a, o = float(s['avg_size']), float(s['our_size'])
+    a, o = float(s['avg_size_x']), float(s['our_size'])
     if abs(a - o) / o <= 0.15: return chip('قريب من حجمنا', 'g')
     return chip('أكبر من حجمنا', 'b') if a > o else chip('أصغر من حجمنا', 'w')
 def price_verdict(s):
-    a, o = float(s['avg_now']), float(s['our_price'])
+    a, o = float(s['avg_now_x']), float(s['our_price'])
     d = (o - a) / a * 100
     if abs(d) <= 10: return chip('قريب', 'g')
     return chip(f'أغلى {d:.0f}%', 'b') if d > 0 else chip(f'أرخص {-d:.0f}%', 'g')
-WEAK = {'Red Cherry': 'كلهم Carrot Sun', 'Body Highlighter': 'ستيكات وش', 'Sleek Brush': 'فرشتين مستوردين', 'Hand Cream': '3 منافسين بس', 'Lip Plump': '3 منافسين بس', "a'musk": 'بخاخات وزيوت'}
+WEAK = {'Red Cherry': 'كلهم Carrot Sun', 'Glittery Gold': '5 منافسين بس', 'Body Highlighter': 'ستيكات وش', 'Sleek Brush': 'فرشتين مستوردتين', 'Hand Cream': '3 منافسين بس', 'Lip Plump': 'منافسين اتنين بس', "a'musk": 'تلات زيوت مسك بس'}
 def weak(p):
     for k, v in WEAK.items():
         if p.startswith(k): return f" <small>· {v}</small>"
@@ -51,22 +51,25 @@ pages.append('''<section class="page cover"><img class="cimg" src="../market-dec
 
 # 01 summary
 total = sum(int(s['n']) for s in S); sa = sum(int(s['n_saudi']) for s in S); w = sum(int(s['n_rechecked']) for s in S)
-exp = [s for s in S if (float(s['our_price']) - float(s['avg_now'])) / float(s['avg_now']) > 0.10]
-big = [s for s in S if s['avg_size'] and s['our_size'] and float(s['avg_size']) > float(s['our_size']) * 1.1]
+exp = [s for s in S if (float(s['our_price']) - float(s['avg_now_x'])) / float(s['avg_now_x']) > 0.10]
+big = [s for s in S if s['avg_size_x'] and s['our_size'] and float(s['avg_size_x']) > float(s['our_size']) * 1.15]
+old = sum(int(s['n_old']) for s in S)
 kp = f'''<div class="kpis k4"><div class="kpi"><b>{len(S)}</b><span>منتج a'mie في المقارنة</span></div><div class="kpi"><b>{total}</b><span>منتج منافس محسوب</span></div>
-<div class="kpi"><b>{sa}</b><span>منهم من براندات سعودية</span></div><div class="kpi"><b>{w}</b><span>صفحة اتفتحت تاني يوم 14 نوفمبر</span></div></div>'''
+<div class="kpi"><b>{sa}</b><span>منهم من براندات سعودية</span></div><div class="kpi"><b>{w}</b><span>منتج اتراجع أو اتضاف يوم 14 نوفمبر</span></div></div>'''
 body = kp + f'''<div class="cols2"><div class="card"><h4>النتيجة</h4><ul class="pts">
-<li>a'mie <b>أغلى من متوسط السوق في {len(exp)} منتج من {len(S)}</b>. الاستثناءان: الفرشاة ومرطب الشفاه. زبدة الجسم أقرب منتج للمتوسط (أغلى 16%).</li>
-<li>المنافسين <b>أحجامهم أكبر في {len(big)} منتج</b>. الحجم قريب من حجمنا في لمعة الجسم وزبدة الجسم وماسكارا الشعر.</li>
-<li>قدام <b>البراندات السعودية</b> الفرق أصغر: a'mie قريبة منهم في زيت التان والسكراب، وأرخص في جل التان، وأغلى في اللمعة والواكس والمسك والمعطرات.</li>
-<li>كريم القدمين: المتوسط 47 ر.س لعلبة 108 مل، يعني a'mie أغلى. ترشيح رفع سعره في التقرير الأول محتاج مراجعة.</li></ul></div>
+<li>a'mie <b>أغلى من متوسط السوق في {len(exp)} منتج من {len(S)}</b>. الفرشاة أرخص، ومرطب الشفاه قريب (منافسين اتنين بس). زبدة الجسم أقرب منتج للمتوسط (أغلى 11%).</li>
+<li>المنافسين <b>أحجامهم أكبر في {len(big)} منتجات</b>: التان بأنواعه، الواكس، السكراب، كريم القدمين وكريم اليدين. الحجم قريب من حجمنا في لمعة الجسم وزبدة الجسم ومعطر الجسم ومرطب الشفاه.</li>
+<li>قدام <b>البراندات السعودية</b> الفرق أصغر في سعر العلبة: قريبين في زيت التان والسكراب والماسكارا ومرطب الشفاه، وأغلى في اللمعة والواكس والمسك والمعطرات. في سعر الـ100 مل a'mie أغلى في التان والسكراب، لأن عبواتهم أكبر.</li>
+<li>كريم القدمين: المتوسط 47 ر.س لعلبة 108 مل/جم، يعني a'mie أغلى. ترشيح رفع سعره في التقرير الأول محتاج مراجعة.</li></ul></div>
 <div class="card"><h4>الطريقة</h4><ul class="pts">
 <li><b>سعر البيع</b> = اللي العميلة بتدفعه اليوم (سعر العرض لو فيه عرض).</li>
 <li>المصادر: صفحات المنتجات عند المتاجر والبراندات، وأول نتايج نون وأمازون ونهدي والدواء وواتسونز وسيفورا.</li>
-<li>كل منتج منافس محسوب مرة واحدة. اتشالت المجموعات، ومنتجات الوش، والنتايج غير المطابقة، والأسعار الشاذة.</li>
+<li>كل منتج منافس محسوب مرة واحدة، والروايح والألوان من نفس المنتج متجمعة في صف واحد.</li>
+<li>اتشالت: المجموعات، النتايج غير المطابقة، بخاخات العطر "أول أوفر"، ماسكات الشفاه، وسعرين شاذين (Tom Ford 502، Tree Hut 13).</li>
 <li>متوسط الحجم محسوب على المنتجات اللي حجمها مكتوب بس.</li>
-<li>أسعار a'mie من زد يوم 14 نوفمبر.</li></ul></div></div>'''
-slide('01', 'SUMMARY', 'الخلاصة', body)
+<li>أسعار a'mie من زد يوم 14 نوفمبر (زبدة الجسم 119، مرطب الشفاه 65، الهايلايتر 79).</li>
+<li>{old} من {total} منتج لسه بسعر 3 نوفمبر. الأسعار زي ما هي معروضة، من غير الشحن.</li></ul></div></div>'''
+slide('01', 'SUMMARY', 'الخلاصة', body, 's01')
 
 # 02 main table
 tr = ''
@@ -88,17 +91,18 @@ for s in S:
         sa_p = sa_s = '—'; v = chip('مفيش منافس سعودي', 'w')
     else:
         sa_p = s['saudi_avg_now']; sa_s = f"{s['saudi_avg_size']} {u}" if s['saudi_avg_size'] else 'غير مكتوب'
-        d = (float(s['our_price']) - float(sa_p)) / float(sa_p) * 100
+        d = (float(s['our_price']) - float(s['saudi_avg_now_x'])) / float(s['saudi_avg_now_x']) * 100
         v = chip('قريب', 'g') if abs(d) <= 10 else (chip(f'أغلى {d:.0f}%', 'b') if d > 0 else chip(f'أرخص {-d:.0f}%', 'g'))
     o100 = s['our_per100'] or '—'; a100 = s['avg_per100'] or '—'
-    if s['our_per100'] and s['avg_per100']:
+    if p.startswith('Body Highlighter'): o100 = a100 = '—'; v100 = chip('—', 'w')
+    elif s['our_per100'] and s['avg_per100']:
         r = float(s['our_per100']) / float(s['avg_per100'])
         v100 = chip(f'×{r:.1f}', 'b' if r > 1.1 else 'g')
     else: v100 = chip('—', 'w')
     tr += f"<tr><td><b>{ar(p)}</b></td><td class='nm'>{s['our_price']}</td><td class='nm'>{s['n_saudi']}</td><td class='nm'><b>{sa_p}</b></td><td class='sz'>{sa_s}</td><td>{v}</td><td class='nm'>{o100}</td><td class='nm'>{a100}</td><td>{v100}</td></tr>"
-tbl = f'''<table class="t sm pr"><tr><th>منتج a'mie</th><th>سعرنا</th><th>عدد المنافسين السعوديين</th><th>متوسط سعر بيعهم</th><th>متوسط حجمهم</th><th>سعرنا مقابلهم</th><th>سعرنا لكل 100</th><th>متوسط السوق لكل 100</th><th>النسبة</th></tr>{tr}</table>
-<p class="note">البراندات السعودية: Surge، Waves، Besito، Ladeena، Jayla، Clara، Hearts، MZN، Cotton Skin، Clavar، Sunkissed، الماجد للعود. "لكل 100" = سعر 100 مل أو 100 جم، ومحسوب على المنتجات اللي حجمها مكتوب بس.</p>'''
-slide('03', 'SAUDI BRANDS & PRICE PER 100', 'قدام البراندات السعودية، وسعر الـ100 مل', tbl, 'tight')
+tbl = f'''<table class="t sm pr"><tr><th>منتج a'mie</th><th>سعرنا</th><th>عدد المنافسين السعوديين</th><th>متوسط سعر بيعهم</th><th>متوسط حجمهم</th><th>سعرنا مقابلهم</th><th>سعرنا لكل 100</th><th>متوسط السوق لكل 100</th><th>سعرنا كام مرة السوق</th></tr>{tr}</table>
+<p class="note">البراندات السعودية: Surge، Waves، Besito، Ladeena، Jayla، Clara، Hearts، MZN، Cotton Skin، Clavar، Sunkissed، الماجد للعود. Hearts جنسيتها مش مؤكدة. "لكل 100" = سعر 100 مل أو 100 جم على المنتجات اللي حجمها مكتوب بس. الهايلايتر من غير مقارنة لأن المنافسين بالجرام. لما عدد المنافسين السعوديين 1 أو 2، المتوسط ضعيف.</p>'''
+slide('03', 'SAUDI BRANDS & PRICE PER 100', 'قدام البراندات السعودية، وسعر الـ100 مل/جم', tbl, 'tight')
 
 # 04 web re-check
 ch = [r for r in ROWS if 'price changed' in r['flag']]
@@ -113,7 +117,7 @@ c2 = tb(new, ['المنتج', 'السعر', 'الحجم'], lambda r: [('nm', nmp
 c3 = tb(sz, ['المنتج', 'السعر', 'الحجم'], lambda r: [('nm', nmp(r)), ('nm', r['price_now_sar']), ('sz', f"<b>{szar(r)}</b>")])
 body = f'''<div class="cols3 wb"><div><h4>أسعار اتغيرت من 3 نوفمبر</h4>{c1}
 <p class="note">Besito نزّل السعر (المشطوب 150 و160). The Body Shop رجع للسعر العادي بعد عرض 74. Carrot Sun في نهدي طلع من 80.50.</p>
-<h4 style="margin-top:14px">ما اتغيرش</h4><p style="font-size:12px;direction:ltr;text-align:right;font-family:Montserrat">Slick Hair 110 / 87 / 155 · Clara 94 / 83 / 47 · Surge 195 · Waves 128.70 / 156.52 · Puravie 164 · Laneige 135 · Sol de Janeiro 125 · Beesline 83.95 / 109 · Almajed 59.01</p></div>
+<h4 style="margin-top:14px">ما اتغيرش</h4><p style="font-size:12px;direction:ltr;text-align:right;font-family:Montserrat">Slick Hair 110 / 87 · Clara 94 / 83 / 47 · Surge 195 · Waves 128.70 / 156.52 · Puravie 164 · Laneige 135 · Sol de Janeiro 125 · Beesline 83.95 / 109 · Almajed 59.01</p></div>
 <div><h4>منافسين جداد اتضافوا</h4>{c2}</div>
 <div><h4>أحجام كانت ناقصة ولقيناها</h4>{c3}</div></div>'''
 slide('04', 'WEB RE-CHECK · 14 NOV', 'المراجعة الثانية على الويب: إيه اللي اتغير', body)
@@ -145,10 +149,11 @@ slide('06', 'SAUDI BRANDS · DETAIL 2/2', 'المنافسين السعوديين
 # 06 limits
 body = '''<div class="cols2"><div class="card"><h4>حدود الأرقام</h4><ul class="pts">
 <li><b>المتوسط بيخلط الرخيص بالغالي:</b> براندات صيدليات بـ15–30 ر.س مع براندات فاخرة. للمقارنة المباشرة، جدول البراندات السعودية أدق.</li>
-<li><b>أحجام ناقصة:</b> Clara وHearts وBesito مش كاتبين الحجم على صفحاتهم. في الواكس 4 من 10 حجمهم معروف، وفي الماسكارا 3 من 8.</li>
-<li><b>مقارنات ضعيفة:</b> كريم التان (كل المنافسين Carrot Sun)، الهايلايتر (ستيكات وش)، الفرشاة، كريم اليدين ومرطب الشفاه (3 منافسين لكل واحد).</li>
+<li><b>أحجام ناقصة:</b> Clara وBesito وMZN وClavar وSunkissed مش كاتبين الحجم، وHearts كاتبة حجم البودي جلو بس. في الواكس 4 من 10 حجمهم معروف، وفي الماسكارا 3 من 8.</li>
+<li><b>مقارنات ضعيفة:</b> كريم التان (كل المنافسين Carrot Sun)، جل التان (5 منافسين)، الهايلايتر (ستيكات وش بالجرام)، الفرشاة، كريم اليدين، مرطب الشفاه، والمسك (2 أو 3 منافسين لكل واحد).</li>
+<li><b>مل وجرام:</b> السكراب والزبدة والواكس عندنا بالمل، وأغلب المنافسين بالجرام. المقارنة تقريبية.</li>
 <li><b>أسعار بالدولار:</b> Clara وJayla عرضوا السعر بالدولار، واتحوّل بسعر 3.75. النتيجة طابقت أسعار 3 نوفمبر بالريال.</li>
-<li><b>Waves:</b> أسعارها ممكن تكون من غير الضريبة (لو اتضربت في 1.15 بتطلع أرقام مقرّبة). استخدمنا السعر الظاهر.</li></ul></div>
+<li><b>Waves:</b> أسعارها على الأغلب من غير الضريبة. مع الضريبة تبقى 180 بدل 156.52، و148 بدل 128.70، و78 بدل 67.83. استخدمنا السعر الظاهر.</li></ul></div>
 <div class="card"><h4>صفحات ما اتفتحتش يوم 14 نوفمبر</h4><ul class="pts">
 <li>نون، الدواء، Desertcart، ليمون، Beauty Bay، كارفور، سنتربوينت، FirstCry: الموقع رفض الفتح الآلي. أسعارهم فضلت بتاريخ 3 نوفمبر.</li>
 <li>Hearts وMZN: المتجر ما عرضش المنتجات المطلوبة، فأسعارهم بتاريخ 3 نوفمبر.</li></ul>
@@ -166,6 +171,7 @@ table.t.pr small.d{{display:block;font-size:9.5px;color:#6B595C;line-height:1.3}
 table.t tr.cat td{{background:#F2E4DF;color:#5E2E21;font-weight:500;font-size:11px;padding:3px 10px}}
 .kpis.k4{{grid-template-columns:repeat(4,1fr)}} .ix{{white-space:nowrap;direction:rtl;font-family:'Readex Pro';font-weight:400;font-size:11px}} td.sz{{white-space:nowrap}}
 .tight table.t.sm{{font-size:11.5px}} .tight table.t.sm td{{padding:3.2px 8px}} .tight .note{{margin-top:2px;font-size:10.5px}} .tight .ph{{padding-bottom:6px}} .tight .body{{gap:8px}} .cols2{{align-items:start}} .cols3{{align-items:start}}
+.s01 .pts{{font-size:12.5px}} .s01 .kpi{{padding:9px 14px}} .s01 .kpi b{{font-size:23px}} .s01 .card{{padding:13px 16px}}
 .wb table.t.sm{{font-size:11px}} .wb table.t.sm td{{padding:4px 8px}} .wb td.nm{{text-align:left}} .wb th:first-child{{text-align:left}}
 .s05 table.t.sm{{font-size:11.5px}} .s05 table.t.sm td{{padding:4px 8px}}'''
 doc = f'<!doctype html><html lang="ar"><head><meta charset="utf-8"><title>a\'mie · Competitor Price &amp; Size</title><link rel="stylesheet" href="../market-deck/base.css"><link rel="stylesheet" href="../market-deck/extra.css"><style>{css}</style></head><body>' + ''.join(pages) + '</body></html>'
