@@ -38,3 +38,34 @@ slickhaircompany.co.uk (connection failed), phlur.com and aesop.com (blocked aut
 4. Product cards with a full-width add-to-cart button and no decoration.
 5. Two typefaces at most, large headings, light body text.
 6. Off-white or warm page colour, not pure white, on about half of them.
+
+## Product photo references (added 24 Nov 2026)
+Files: `products-sheet-1.jpg` to `products-sheet-3.jpg`. Each row is one brand; each product shows its first three gallery images in order.
+
+### The gallery order most of them follow
+1. Packshot on one flat backdrop (front view, soft shadow).
+2. Texture swatch or the product open / with its contents.
+3. Lifestyle or model shot, or an info card (benefits, scent notes, before / after).
+
+### By brand
+| Brand | Packshot backdrop | Second and third image | Fit for a'mie |
+|---|---|---|---|
+| Nécessaire | Light grey, identical for every product | Back of pack, texture swatch on the same grey | Best model for catalogue consistency |
+| Salt & Stone | Changes per scent: black, green, grey, terracotta macro | Macro of the product with water drops, moody light | Best model for hero and campaign shots |
+| Summer Fridays | Warm beige / blush | Product in a bag, scent-note card on beige | Closest colour world to a'mie's blush packaging |
+| Crown Affair | Soft grey | Texture swatches, labelled set card | Good for Hair Set: "what is in the set" card |
+| Moonglaze | Warm greige with a soft gradient and side light | Model portrait, detail crop | The tone already chosen |
+| Merit | Light grey | Single items, pouch | Clean set and pouch presentation |
+| OUAI | Warm beige | Colourful ingredient still-life, scent cards | Scent-note cards for Flora, Natura, a'musk |
+| Tan-Luxe | Light grey | Before / after, benefit card | Tan products: before / after block |
+| The Smooth Company | White | Model holding the product, dark benefit card | Direct product match, lower-end look |
+| Sol de Janeiro | White | Loud fruit and colour | Not a fit for a'mie's calm tone |
+| rhode | Black or white | Model close-ups | Minimal, strong contrast |
+| Flamingo Estate | Deep green / black | Rich still-life | Mood reference only |
+
+### Recommended gallery for every a'mie product
+1. Packshot on the greige backdrop (same for all products).
+2. Texture: swatch, open jar, or wax tip, on the same backdrop.
+3. "What's inside / notes" card: ingredients or scent notes on beige.
+4. In use: hand or hair, face not shown.
+5. Size or set contents: scale in hand, or every piece of the set labelled.
