@@ -69,7 +69,7 @@ Hands slowly massage the cream into the heel in small circular strokes; the crea
 ### F3: رجل ناعمة في جزمة الباليه
 **صورة:**
 ```
-Vertical 9:16 low-angle close-up on a warm wooden parquet floor. A smooth, moisturised foot with a soft natural sheen, ankle and lower leg in cream wide-leg linen trousers, slides into a pale pink satin ballet slipper; white tulle tutu edge at the top of frame, soft window light from the left. Elegant, quiet, realistic skin texture. Match the style reference frame. Top third calm for text. No products in frame.
+Vertical 9:16 low-angle close-up on a warm wooden parquet floor. A smooth, moisturised foot with a soft natural sheen, ankle and lower leg in cream wide-leg linen trousers, slides into a pale pink satin ballet slipper; a folded white tulle tutu softly out of focus behind, soft window light from the left. Elegant, quiet, realistic skin texture. Match the style reference frame. Top third calm for text. No products in frame.
 ```
 **Seedance:**
 ```
