@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;background:transparent}
+#s{width:1080px;height:1920px;position:relative;overflow:hidden;font-family:'IBM Plex Sans Arabic';direction:rtl}
+.cap{position:absolute;left:70px;right:70px;top:1180px;text-align:center;color:#fff;font-weight:600;font-size:76px;line-height:1.35;
+ text-shadow:0 2px 18px rgba(0,0,0,.55),0 0 4px rgba(0,0,0,.35)}
+.cap.hook{top:1150px;font-size:80px;left:30px;right:30px;white-space:nowrap}
+.cap.one{white-space:nowrap;font-size:68px;left:20px;right:20px}
+.cap span{display:inline-block;background:rgba(58,37,34,.38);padding:6px 34px 14px;border-radius:22px}
+.end{position:absolute;inset:0;background:#EAE1D8}
+.end .img{position:absolute;left:-60px;top:-214px;width:1250px}
+.end .logo{position:absolute;top:150px;left:50%;transform:translateX(-50%);width:260px}
+.end .t{position:absolute;top:1150px;left:0;right:0;text-align:center;color:#3A2522}
+.end .n{font-size:84px;font-weight:600;line-height:1.2}
+.end .c{font-size:40px;font-weight:400;color:#5E2E21;margin-top:14px}
+.end .p{margin-top:34px;display:flex;justify-content:center;align-items:baseline;gap:34px}
+.end .p b{font-size:104px;font-weight:600;color:#3A2522}
+.end .p b small{font-size:48px;font-weight:500;margin-right:10px}
+.end .p s{font-size:58px;color:#8a7468;font-weight:400;text-decoration-thickness:4px}
+.end .btn{display:inline-block;margin-top:46px;background:#663C3C;color:#fff;font-size:58px;font-weight:600;padding:20px 90px 30px;border-radius:999px}
+.end .u{margin-top:30px;font-size:38px;color:#5E2E21;direction:ltr;letter-spacing:2px;font-family:'IBM Plex Sans Arabic'}
+</style></head><body><div id="s"></div><script>
+const C={
+c1:'<div class="cap hook"><span>شعرك يتطاير طول اليوم؟</span></div>',
+c2:'<div class="cap"><span>واكس ستيك من a’mie</span></div>',
+c3:'<div class="cap"><span>يثبّت الشعر من أول مسحة</span></div>',
+c4:'<div class="cap"><span>وماسكارا للشعيرات الصغيرة</span></div>',
+c5:'<div class="cap one"><span>مرتّب طول اليوم، من غير حرارة</span></div>',
+end:`<div class="end"><img class="img" src="set.jpg"><img class="logo" src="logo.png">
+<div class="t"><div class="n">مجموعة الشعر</div><div class="c">واكس + ماسكارا + فرشاة + شنطة a’mie</div>
+<div class="p"><b>249<small>ر.س</small></b><s>282</s></div>
+<div class="btn">اطلبيها الحين</div><div class="u">amie-sa.com</div></div></div>`};
+window.show=k=>{document.getElementById('s').innerHTML=C[k]};
+</script></body></html>
