@@ -2,3 +2,4 @@
 # local export bundle (large, not for git)
 amie-export/
 amie-export.zip
+amie-export-part*.zip
