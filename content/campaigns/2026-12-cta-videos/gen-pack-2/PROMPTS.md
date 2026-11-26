@@ -13,6 +13,13 @@
 4. **المنتج نفسه لازم يطابق الرفرنس:** الشكل واللون واللوجو. لو الكلام على المنتج غلط، ولّد تاني.
 5. أنا هعمل نفس **اللون والجرين (grain)** على كل اللقطات في المونتاج، فتبان من نفس التصوير.
 
+## تحديث 26 نوفمبر
+- **W2 (السكراب):** اتعدلت وبقت جنب حوض الحمام، عشان لقطة الشاور كانت بتتمسك NSFW.
+- **W3 (الزبدة):** بقى مكتوب فيها إن الزبدة **بيضا مخفوقة، مش صفرا**.
+- **F1–F3 (كريم القدمين):** اتشالت كلمة bare، والموديل لابسة بنطلون كتان.
+- **ما تستخدمش الكلمات دي:** bare، wet، shower، sensual، intimate، slip dress.
+- وانت بتجرّب: صورة واحدة بجودة Medium. النهائي على High و2K.
+
 ## الإعدادات
 - **الصورة:** 9:16، أعلى جودة متاحة.
 - **Seedance:** image-to-video، 5 ثواني، 9:16، 1080p لو متاح.
@@ -42,7 +49,7 @@ shot on a full-frame cinema camera, 50mm lens, natural light, true-to-life skin 
 ### F1: الكريم على الكعب
 **صورة:**
 ```
-Vertical 9:16 close-up, a dancer sits on a warm honey-toned wooden parquet floor in soft window light, white tulle tutu edge visible at the top of frame. Her bare foot rests on the floor, heel toward camera. A hand squeezes the exact a'mie Foot Cream tube from the reference images (matte terracotta brick-red tube, black flip cap, white serif "Foot Cream" print and a'mie logo, keep exactly as in reference) and a soft ribbon of white cream lands on the heel. Satin pointe shoes with ribbons lie beside her on the floor. Match the lighting, colours and floor of the style reference frame. Calm, intimate, editorial. Top third calm for text.
+Vertical 9:16 close-up, a dancer sits on a warm honey-toned wooden parquet floor in soft window light, a white tulle tutu folded on the floor in the background. Her foot rests on the floor, heel toward camera; she wears cream wide-leg linen trousers rolled to the ankle. A hand squeezes the exact a'mie Foot Cream tube from the reference images (matte terracotta brick-red tube, black flip cap, white serif "Foot Cream" print and a'mie logo, keep exactly as in reference) and a soft ribbon of white cream lands on the heel. Satin pointe shoes with ribbons lie beside her on the floor. Match the lighting, colours and floor of the style reference frame. Calm, elegant, editorial. Top third calm for text.
 ```
 **Seedance:**
 ```
@@ -52,7 +59,7 @@ Slow push-in. The thumb presses the tube gently and a soft white ribbon of cream
 ### F2: تدليك الكريم
 **صورة:**
 ```
-Vertical 9:16 close-up on a warm wooden parquet floor in soft window light. Two hands with natural nude nails massage white cream into the heel and sole of a bare foot; the cream is partly absorbed, the skin looks soft and moisturised. White tulle and satin pointe shoes softly out of focus in the background. The exact a'mie Foot Cream tube (terracotta brick-red, black cap, as in reference) lies on the floor beside the foot. Match the style reference frame. Top third calm for text.
+Vertical 9:16 close-up on a warm wooden parquet floor in soft window light. Two hands with natural nude nails massage white cream into the heel of a foot (cream linen trousers at the ankle); the cream is partly absorbed, the skin looks soft and moisturised. White tulle and satin pointe shoes softly out of focus in the background. The exact a'mie Foot Cream tube (terracotta brick-red, black cap, as in reference) lies on the floor beside the foot. Match the style reference frame. Top third calm for text.
 ```
 **Seedance:**
 ```
@@ -62,7 +69,7 @@ Hands slowly massage the cream into the heel in small circular strokes; the crea
 ### F3: رجل ناعمة في جزمة الباليه
 **صورة:**
 ```
-Vertical 9:16 low-angle close-up on a warm wooden parquet floor. A smooth, moisturised bare foot with a soft natural sheen slides into a pale pink satin ballet slipper; white tulle tutu edge at the top of frame, soft window light from the left. Elegant, quiet, realistic skin texture. Match the style reference frame. Top third calm for text. No products in frame.
+Vertical 9:16 low-angle close-up on a warm wooden parquet floor. A smooth, moisturised foot with a soft natural sheen, ankle and lower leg in cream wide-leg linen trousers, slides into a pale pink satin ballet slipper; white tulle tutu edge at the top of frame, soft window light from the left. Elegant, quiet, realistic skin texture. Match the style reference frame. Top third calm for text. No products in frame.
 ```
 **Seedance:**
 ```
@@ -100,17 +107,17 @@ Fingers slowly scoop the scrub; a few salt grains fall back into the jar and spa
 ### W2: السكراب على الدراع
 **صورة:**
 ```
-Vertical 9:16 close-up of a wet forearm in a warm-beige shower with soft steam and water droplets. A hand massages pale pink salt scrub over the skin in small circles; the grains are visible, the skin glistens. Soft side light, calm luxury mood, realistic skin texture. No face, no product in frame. Top third calm for text.
+Vertical 9:16 close-up of a forearm and hand above a beige stone bathroom sink, warm soft light and a little steam. The hand gently massages pale pink salt scrub on the forearm in small circles; a cream towel and a sprig of dried lavender beside the sink. Calm spa mood, realistic. Top third calm for text. No text, no watermark, no products in frame.
 ```
 **Seedance:**
 ```
-The hand massages the scrub in slow small circles, a little warm water runs down the arm and rinses some grains away, revealing smooth glowing skin. Steam drifts. Slow, calm motion. No text.
+The hand massages the scrub in slow small circles over the sink; a little warm water from the tap rinses some grains away, revealing smooth glowing skin. Light steam drifts. Slow, calm motion. No text.
 ```
 
 ### W3: قوام الزبدة
 **صورة:**
 ```
-Vertical 9:16 macro close-up on a warm greige background with soft light from the left. The exact a'mie Lavender Whipped Body Butter jar from the reference images, open: opaque blush-pink jar, dark grey print "a'mie / Lavender / WHIPPED BODY BUTTER / 250 ML", filled with fluffy white whipped butter. A fingertip with a natural nude nail lifts a soft peak of the butter. The blush-pink lid with the a' monogram leans against the jar. Keep the jar exactly as in the reference. Top third calm for text.
+Vertical 9:16 macro close-up on a warm greige background with soft light from the left. The exact a'mie Lavender Whipped Body Butter jar from the reference images, open: opaque blush-pink jar, dark grey print "a'mie / Lavender / WHIPPED BODY BUTTER / 250 ML", filled with pure white fluffy whipped body butter (bright white like whipped cream, not yellow, not dairy butter). A fingertip with a natural nude nail lifts a soft peak of the butter. The blush-pink lid with the a' monogram leans against the jar. Keep the jar exactly as in the reference. Top third calm for text.
 ```
 **Seedance:**
 ```

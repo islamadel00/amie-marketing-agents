@@ -10,6 +10,11 @@
 
 بعد ما تولّدهم، ابعتلي الفيديوهات بأسمائها (G1، G2…)، وأنا أركّب الفيديو وأحط الكلام والـ CTA وآخر كادر.
 
+## تحديث 26 نوفمبر: تفادي فلتر NSFW
+- برومبتات G1 وG3 وG5 اتعدلت عشان ما تتمسكش NSFW: الموديل لابسة كم طويل، والكادر على الإيد والمعصم مش الكتف.
+- **ما تستخدمش الكلمات دي:** bare shoulder، bare skin، slip dress، wet، shower، sensual، intimate، collarbone.
+- **الإعدادات:** وانت بتجرّب، اعمل صورة واحدة بجودة Medium. لما الشكل يظبط، اعمل النهائي على High و2K.
+
 ## إزاي تستخدمه
 1. ارفع صور الرفرنس اللي في فولدر `references/` مع **كل** طلب فيه العبوة.
 2. انسخ برومبت الصورة، والمقاس **9:16**.
@@ -40,14 +45,14 @@ quiet luxury, editorial beauty photography, warm greige palette (#B9ABA0 to #E6D
 | G3 | «لمعة تبان في كل صورة» | توليد |
 | آخر كادر | «اطلبيها قبل مناسبتك الجاية» + 176 ر.س | أنا |
 
-### G1: الكتف في ضوء الشمعة + العبوة
+### G1: الإيد والمعصم في ضوء الشمعة + العبوة
 **صورة البداية:**
 ```
-Vertical 9:16 luxury beauty photograph, winter evening. Close crop of a woman's bare shoulder, collarbone and upper arm (face cropped out above the lips, no hands holding anything), wearing a dark espresso-brown satin evening dress with a thin strap. Her skin has a soft, even, water-like golden sheen from a body shimmer gel: smooth luminous highlight along the collarbone and shoulder, no visible glitter particles. Warm candlelight from the left side: two softly out-of-focus cream pillar candles in the left background, gentle warm glow, the rest of the background a deep warm greige-brown shadow. In the lower right foreground, standing upright on a warm greige stone surface, the exact a'mie Body Glow bottle from the reference images: matte cream/ivory cylinder with a short cream pump head, terracotta serif print reading BODY GLOW, small a'mie logo near the bottom, 120ML. Keep the bottle label, proportions and colour exactly as in the reference; bottle sharp and fully visible, about one quarter of the frame height. Shallow depth of field, editorial, refined, quiet luxury, natural skin texture, realistic. Keep the top third of the frame calm and darker for text. No extra text, no watermark, no other products.
+Vertical 9:16 elegant beauty product photograph, winter evening. A woman's arm and hand, fully dressed in a long-sleeve dark espresso-brown satin evening dress with the sleeve ending at the wrist, rests on a warm greige stone surface; the back of her hand and wrist have a soft, even, water-like golden glow, no glitter. Two softly out-of-focus cream pillar candles on the left, warm candlelight, deep greige-brown background. In the lower right, the exact a'mie Body Glow bottle from the reference images: matte cream/ivory cylinder, short cream pump, terracotta serif BODY GLOW print, a'mie logo, 120ML, exactly as in the reference; bottle sharp, about one quarter of the frame height. Editorial, quiet luxury, realistic. Top third calm for text. No text, no watermark, no other products.
 ```
 **Seedance:**
 ```
-Slow, smooth camera push-in toward the shoulder. Candle flames flicker gently and the warm light slowly glides across the collarbone, making the sheen on the skin shimmer softly like water. The woman breathes and turns her shoulder very slightly toward the light. The bottle stays still, sharp and unchanged. No new objects, no text, no fast motion, no face reveal.
+Slow, smooth camera push-in. Candle flames flicker gently and the warm light glides across the back of the hand and wrist, making the glow shimmer softly like water. The hand moves very slightly. The bottle stays still, sharp and unchanged. No new objects, no text, no fast motion.
 ```
 
 ### G2: ضغطة البامب في ضوء الشمعة
@@ -60,14 +65,14 @@ Vertical 9:16 close-up beauty photograph in warm candlelight. A woman's hand wit
 The finger presses the pump once, a small drop of golden gel lands on the forearm, then the fingertips spread it in one slow smooth stroke, leaving an even water-like sheen that catches the candlelight. Very slight slow push-in. Hands move naturally, five fingers each, the bottle label stays sharp and unchanged. No text, no fast motion.
 ```
 
-### G3: سهرة، الإيد في الشعر والكتف بيلمع
+### G3: سهرة، الإيد في الشعر
 **صورة البداية:**
 ```
-Vertical 9:16 editorial evening portrait, cropped from the lips down to the waist (no full face). A woman in a dark espresso-brown satin slip dress gently lifts her hand to the back of her sleek dark hair; her shoulders, collarbone and arms have a soft, even, water-like golden glow with no visible glitter. Warm side light from the left like candlelight and a soft warm bokeh of evening lights behind her, deep greige-brown tones. Elegant, intimate, quiet luxury, natural skin texture, realistic. Top third calm for text. No text, no watermark, no products in frame.
+Vertical 9:16 editorial evening photograph of a woman from behind and slightly to the side, wearing an elegant long-sleeve high-neck dark espresso satin dress, one hand smoothing her sleek dark low bun; the back of her hand has a soft golden glow, no glitter. Warm candlelight from the left, soft bokeh of evening lights, deep greige-brown tones. Quiet luxury, realistic. Top third calm for text. No text, no watermark, no products in frame.
 ```
 **Seedance:**
 ```
-Slow cinematic motion: she lifts her hand along her hair and turns her shoulder a little toward the light; the glow travels across her collarbone and arm. Background bokeh twinkles softly. Gentle slow push-in. No face reveal, no text, no fast motion.
+Slow cinematic motion: her hand glides along her sleek bun and she turns her head slightly toward the light (face stays hidden); the warm glow travels across the back of her hand. Background bokeh twinkles softly. Gentle slow push-in. No text, no fast motion.
 ```
 
 ---
@@ -95,11 +100,11 @@ Very slow, smooth orbit of the camera a few degrees to the right with a gentle p
 ### G5: بتشم دراعها
 **صورة البداية:**
 ```
-Vertical 9:16 close-up beauty photograph on a plain warm beige background (#E6DCD3). A woman, cropped from the tip of the nose down to the shoulders (eyes out of frame), brings the inside of her wrist close to her face as if smelling her skin, lips softly relaxed in a small smile. Her wrist and forearm have a soft, even, water-like golden sheen, no visible glitter. She wears a simple ivory knit top, thin gold bracelet. Soft window light from the left, gentle shadow to the right. Calm, sensual, quiet luxury, natural skin texture, realistic. Top third calm for text. No text, no watermark, no products in frame.
+Vertical 9:16 close-up beauty photograph on a plain warm beige background (#E6DCD3). A woman in a cream long-sleeve knit sweater, cropped from the chin down, lifts the inside of her wrist toward her face as if smelling a fragrance; the wrist has a soft golden glow, no glitter, thin gold bracelet. Soft window light from the left. Calm, elegant, realistic. Top third calm for text. No text, no watermark, no products in frame.
 ```
 **Seedance:**
 ```
-She slowly raises her wrist closer, inhales gently, and her lips relax into a soft smile; light glides across the glow on her wrist. Subtle slow push-in. Natural hand with five fingers, no face reveal above the nose, no text, no fast motion.
+She slowly raises her wrist closer as if smelling a fragrance, then lowers it with a small relaxed smile at the chin; light glides across the glow on her wrist. Subtle slow push-in. Natural hand with five fingers, face above the chin stays out of frame, no text, no fast motion.
 ```
 
 ---
